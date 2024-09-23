@@ -41,18 +41,6 @@
                 href="https://garywy.github.io/zh/posts/"
                 />
   </url><url>
-    <loc>https://garywy.github.io/zh/posts/blog/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://garywy.github.io/en/posts/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://garywy.github.io/zh/posts/blog/"
-                />
-  </url><url>
     <loc>https://garywy.github.io/zh/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -63,30 +51,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://garywy.github.io/zh/categories/"
-                />
-  </url><url>
-    <loc>https://garywy.github.io/zh/posts/read/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://garywy.github.io/en/posts/read/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://garywy.github.io/zh/posts/read/"
-                />
-  </url><url>
-    <loc>https://garywy.github.io/zh/search/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://garywy.github.io/en/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://garywy.github.io/zh/search/"
                 />
   </url><url>
     <loc>https://garywy.github.io/zh/series/</loc>
@@ -111,6 +75,54 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://garywy.github.io/zh/tags/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/zh/posts/tech/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/posts/tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/posts/tech/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/zh/posts/paper/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/posts/paper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/posts/paper/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/zh/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/search/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/zh/posts/study/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/posts/study/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/posts/study/"
                 />
   </url>
 </urlset>
