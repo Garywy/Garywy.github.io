@@ -10,9 +10,9 @@
     <atom:link href="https://garywy.github.io/zh/posts/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo&#43;GitHubpages建立个人博客</title>
-      <link>https://garywy.github.io/zh/posts/tech/hugo&#43;githubpages%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://garywy.github.io/zh/posts/tech/hugo&#43;github-pages%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Mon, 23 Sep 2024 17:33:57 +0900</pubDate>
-      <guid>https://garywy.github.io/zh/posts/tech/hugo&#43;githubpages%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://garywy.github.io/zh/posts/tech/hugo&#43;github-pages%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>1. 前言 原本是因为学习任务要求需要做一个Web Service，结果阴差阳错的发现了hugo这个工具。所以借此机会利用hugo制作了自己的第一个</description>
     </item>
   </channel>
