@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://garywy.github.io/zh/</loc>
-    <lastmod>2024-09-22T18:02:01+09:00</lastmod>
+    <lastmod>2024-09-23T17:33:57+09:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -13,6 +13,35 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://garywy.github.io/zh/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/zh/posts/tech/hugo&#43;githubpages%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2024-09-23T17:33:57+09:00</lastmod>
+  </url><url>
+    <loc>https://garywy.github.io/zh/posts/tech/</loc>
+    <lastmod>2024-09-23T17:33:57+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/posts/tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/posts/tech/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/zh/posts/</loc>
+    <lastmod>2024-09-23T17:33:57+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/posts/"
                 />
   </url><url>
     <loc>https://garywy.github.io/zh/posts/life/live/</loc>
@@ -39,19 +68,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://garywy.github.io/zh/posts/life/"
-                />
-  </url><url>
-    <loc>https://garywy.github.io/zh/posts/</loc>
-    <lastmod>2024-09-22T18:02:01+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://garywy.github.io/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://garywy.github.io/zh/posts/"
                 />
   </url><url>
     <loc>https://garywy.github.io/zh/archives/</loc>
@@ -124,18 +140,6 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://garywy.github.io/zh/about/"
-                />
-  </url><url>
-    <loc>https://garywy.github.io/zh/posts/tech/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://garywy.github.io/en/posts/tech/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://garywy.github.io/zh/posts/tech/"
                 />
   </url><url>
     <loc>https://garywy.github.io/zh/posts/paper/</loc>
