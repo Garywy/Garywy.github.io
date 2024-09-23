@@ -65,10 +65,10 @@ languages:
             name: 📚Article
             url: posts
             weight: 3
-#          - identifier: archives
-#            name: ⏱时间轴
-#            url: archives/
-#            weight: 20
+          - identifier: archives
+            name: ⏱Archives
+            url: archives/
+            weight: 20
 #          - identifier: tags
 #            name: 🔖Table
 #            url: tags
@@ -91,13 +91,13 @@ languages:
         imageHeight: 150
         buttons:
           - name: 🧑‍💻技术
-            url: posts/tech
+            url: posts/tech/
           - name: 📝论文
-            url: posts/paper
+            url: posts/paper/
           - name: 📖学习
-            url: posts/study
+            url: posts/study/
           - name: 😆生活
-            url: posts/life
+            url: posts/life/
       menu:
         main:
           - identifier: search
@@ -112,10 +112,10 @@ languages:
             name: 📚文章
             url: posts/
             weight: 3
-#          - identifier: archives
-#            name: ⏱时间轴
-#            url: archives/
-#            weight: 20
+          - identifier: archives
+            name: ⏱存档
+            url: archives/
+            weight: 20
 #          - identifier: tags
 #            name: 🔖标签
 #            url: tags
@@ -203,7 +203,7 @@ params:
         keys: ["title", "permalink", "summary"]
 
     twikoo:
-      version: 1.4.11
+      version: 1.6.39
 
 taxonomies:
     category: categories

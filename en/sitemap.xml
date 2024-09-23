@@ -28,6 +28,19 @@
                 href="https://garywy.github.io/en/posts/life/"
                 />
   </url><url>
+    <loc>https://garywy.github.io/en/posts/life/live/</loc>
+    <lastmod>2024-09-22T18:02:01+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/posts/life/live/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/posts/life/live/"
+                />
+  </url><url>
     <loc>https://garywy.github.io/en/posts/</loc>
     <lastmod>2024-09-22T18:02:01+09:00</lastmod>
     <xhtml:link
@@ -39,6 +52,42 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://garywy.github.io/en/posts/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/en/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/about/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/en/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/archives/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/en/archives/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/archives/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/archives/archives/"
                 />
   </url><url>
     <loc>https://garywy.github.io/en/categories/</loc>

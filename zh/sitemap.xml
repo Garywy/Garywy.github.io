@@ -15,6 +15,19 @@
                 href="https://garywy.github.io/zh/"
                 />
   </url><url>
+    <loc>https://garywy.github.io/zh/posts/life/live/</loc>
+    <lastmod>2024-09-22T18:02:01+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/posts/life/live/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/posts/life/live/"
+                />
+  </url><url>
     <loc>https://garywy.github.io/zh/posts/life/</loc>
     <lastmod>2024-09-22T18:02:01+09:00</lastmod>
     <xhtml:link
@@ -39,6 +52,18 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://garywy.github.io/zh/posts/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/zh/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/archives/"
                 />
   </url><url>
     <loc>https://garywy.github.io/zh/categories/</loc>
@@ -75,6 +100,30 @@
                 rel="alternate"
                 hreflang="zh"
                 href="https://garywy.github.io/zh/tags/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/zh/archives/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/archives/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/archives/archives/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/zh/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/about/"
                 />
   </url><url>
     <loc>https://garywy.github.io/zh/posts/tech/</loc>

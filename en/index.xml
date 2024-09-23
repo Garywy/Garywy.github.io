@@ -6,14 +6,21 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.130.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Sep 2024 18:02:01 +0900</lastBuildDate>
     <atom:link href="https://garywy.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Search</title>
-      <link>https://garywy.github.io/en/search/</link>
+      <title>Live</title>
+      <link>https://garywy.github.io/en/posts/life/live/</link>
+      <pubDate>Sun, 22 Sep 2024 18:02:01 +0900</pubDate>
+      <guid>https://garywy.github.io/en/posts/life/live/</guid>
+      <description>try something</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://garywy.github.io/en/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://garywy.github.io/en/search/</guid>
-      <description></description>
+      <guid>https://garywy.github.io/en/about/</guid>
+      <description> 1 2 3 4 5 6 7 NAME: Gary GENDER: Male EMAIL: gary510wyl@gmail.com OCCUPATION: Student </description>
     </item>
   </channel>
 </rss>
