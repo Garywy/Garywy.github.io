@@ -1,5 +1,6 @@
 baseURL: https://garywy.github.io/
 languageCode: en-us
+
 title: Gary's House
 theme: hugo-PaperMod
 
@@ -26,57 +27,10 @@ permalinks: #浏览器链接显示方式
   post: "/:title/"
   # post: "/:year/:month/:day/:title/"
 
-defaultContentLanguage: en # 最顶部首先展示的语言页面
+defaultContentLanguage: zh # 最顶部首先展示的语言页面
 defaultContentLanguageInSubdir: true
 
 languages:
-    en:
-      languageName: "English"
-      contentDir: content/English
-      weight: 1
-      profileMode:
-        enabled: true
-        title: Gary's House
-        subtitle: "It's happy to see you!"
-        imageUrl: "img/me.jpg" #图片放在static/img/Q.gif
-        imageTitle:
-        imageWidth: 150
-        imageHeight: 150
-        buttons:
-          - name: 🧑‍💻Tech
-            url: posts/tech
-          - name: 📝Paper
-            url: posts/paper
-          - name: 📖Study
-            url: posts/study
-          - name: 😆Life
-            url: posts/life
-      menu:
-        main:
-          - identifier: search
-            name: 🔍Search
-            url: search
-            weight: 1
-          - identifier: home
-            name: 🏠Homepage
-            url: /
-            weight: 2
-          - identifier: posts
-            name: 📚Article
-            url: posts
-            weight: 3
-          - identifier: archives
-            name: ⏱Archives
-            url: archives/
-            weight: 20
-#          - identifier: tags
-#            name: 🔖Table
-#            url: tags
-#            weight: 40
-          - identifier: about
-            name: 🙋🏻‍♂️About
-            url: about
-            weight: 50
     zh:
       languageName: "中文"
       contentDir: content/Chinese
@@ -124,6 +78,54 @@ languages:
             name: 🙋🏻‍♂️关于
             url: about
             weight: 50
+    en:
+      languageName: "English"
+      contentDir: content/English
+      weight: 1
+      profileMode:
+        enabled: true
+        title: Gary's House
+        subtitle: "It's happy to see you!"
+        imageUrl: "img/me.jpg" #图片放在static/img/Q.gif
+        imageTitle:
+        imageWidth: 150
+        imageHeight: 150
+        buttons:
+          - name: 🧑‍💻Tech
+            url: posts/tech
+          - name: 📝Paper
+            url: posts/paper
+          - name: 📖Study
+            url: posts/study
+          - name: 😆Life
+            url: posts/life
+      menu:
+        main:
+          - identifier: search
+            name: 🔍Search
+            url: search
+            weight: 1
+          - identifier: home
+            name: 🏠Homepage
+            url: /
+            weight: 2
+          - identifier: posts
+            name: 📚Article
+            url: posts
+            weight: 3
+          - identifier: archives
+            name: ⏱Archives
+            url: archives/
+            weight: 20
+#          - identifier: tags
+#            name: 🔖Table
+#            url: tags
+#            weight: 40
+          - identifier: about
+            name: 🙋🏻‍♂️About
+            url: about
+            weight: 50
+    
 
 outputs:
     home:
@@ -141,6 +143,8 @@ params:
     DateFormat: "2006-01-02"
     #ShowShareButtons: true
     ShowReadingTime: true
+    busuanzi:
+        enable: true
     # disableSpecialistPost: true
     displayFullLangName: true
     ShowPostNavLinks: true
@@ -177,9 +181,9 @@ params:
       icon: "./img/me.jpg"
       iconHeight: 35
 
-    # analytics:  #谷歌分析
-    #     google:
-    #         SiteVerificationTag: "XYZabc"
+    analytics:  #谷歌分析
+        google:
+            SiteVerificationTag: "XYZabc"
 
     assets:
         favicon: "./img/Q.jpg"
@@ -204,6 +208,9 @@ params:
 
     twikoo:
       version: 1.6.39
+  
+    
+
 
 taxonomies:
     category: categories
