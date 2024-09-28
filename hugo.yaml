@@ -74,6 +74,10 @@ languages:
 #            name: 🔖标签
 #            url: tags
 #            weight: 40
+          - identifier: music
+            name: 🎵音乐
+            url: music/
+            weight: 40
           - identifier: about
             name: 🙋🏻‍♂️关于
             url: about
@@ -121,6 +125,10 @@ languages:
 #            name: 🔖Table
 #            url: tags
 #            weight: 40
+          - identifier: music
+            name: 🎵music
+            url: music/
+            weight: 40
           - identifier: about
             name: 🙋🏻‍♂️About
             url: about
@@ -169,7 +177,7 @@ params:
         - name: email
           url: "https://gary510wyl@gmail.com/"
 #        - name: RSS
-#          url: "index.xml"
+#         url: "index.xml"
 
     # editPost:
     #     URL: "https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite/content"
@@ -209,7 +217,7 @@ params:
     twikoo:
       version: 1.6.39
   
-    
+
 
 
 taxonomies:
