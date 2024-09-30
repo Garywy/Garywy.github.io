@@ -6,8 +6,15 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.130.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Sep 2024 17:27:24 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 30 Sep 2024 21:05:14 +0900</lastBuildDate>
     <atom:link href="https://garywy.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>In the Aeroplane Over the Sea</title>
+      <link>https://garywy.github.io/en/music/2024-09-30/</link>
+      <pubDate>Mon, 30 Sep 2024 21:05:14 +0900</pubDate>
+      <guid>https://garywy.github.io/en/music/2024-09-30/</guid>
+      <description> Album Name: In the Aeroplane Over the Sea Singer: Neutral Milk Hotel Release Time: 1998-02-20 Record Company: Merge Records </description>
+    </item>
     <item>
       <title>Room On Fire</title>
       <link>https://garywy.github.io/en/music/2024-09-29/</link>
@@ -21,6 +28,13 @@
       <pubDate>Sat, 28 Sep 2024 20:57:57 +0900</pubDate>
       <guid>https://garywy.github.io/en/music/2024-09-28/</guid>
       <description>Album Name: Random Access Memories Singer: Daft Punk Release Time: 2013-05-17 Record Company: 索尼音乐</description>
+    </item>
+    <item>
+      <title>Hugo_githubpages</title>
+      <link>https://garywy.github.io/en/posts/tech/hugo_githubpages/</link>
+      <pubDate>Thu, 26 Sep 2024 11:09:46 +0900</pubDate>
+      <guid>https://garywy.github.io/en/posts/tech/hugo_githubpages/</guid>
+      <description>1. Preface Originally, I was required to create a web service for a school project, but I accidentally discovered the hugo tool. So I took this opportunity to use hugo to create my own personal blog. This article mainly covers the process of setting up a personal website, some of the problems I encountered and the solutions, I hope it will be helpful to you. Since the blogger is using</description>
     </item>
     <item>
       <title>About</title>

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Hugo_githubpages | Gary&#39;s House</title>
+<meta name="keywords" content="">
+<meta name="description" content="1. Preface Originally, I was required to create a web service for a school project, but I accidentally discovered the hugo tool. So I took this opportunity to use hugo to create my own personal blog. This article mainly covers the process of setting up a personal website, some of the problems I encountered and the solutions, I hope it will be helpful to you. Since the blogger is using">
+<meta name="author" content="Gary">
+<link rel="canonical" href="https://garywy.github.io/en/posts/tech/hugo_githubpages/">
+<meta name="google-site-verification" content="XYZabc">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.397ecfea235757aeed34e7152e1304c0d840fb0e35a533d106a346c6baddf019.css" integrity="sha256-OX7P6iNXV67tNOcVLhMEwNhA&#43;w41pTPRBqNGxrrd8Bk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://garywy.github.io/img/Q.jpg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://garywy.github.io/img/Q.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://garywy.github.io/img/Q.jpg">
+<link rel="apple-touch-icon" href="https://garywy.github.io/Q.jpg">
+<link rel="mask-icon" href="https://garywy.github.io/Q.jpg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://garywy.github.io/en/posts/tech/hugo_githubpages/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.1/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+
+<meta property="og:title" content="Hugo_githubpages" />
+<meta property="og:description" content="1. Preface Originally, I was required to create a web service for a school project, but I accidentally discovered the hugo tool. So I took this opportunity to use hugo to create my own personal blog. This article mainly covers the process of setting up a personal website, some of the problems I encountered and the solutions, I hope it will be helpful to you. Since the blogger is using" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://garywy.github.io/en/posts/tech/hugo_githubpages/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-09-26T11:09:46+09:00" />
+<meta property="article:modified_time" content="2024-09-26T11:09:46+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo_githubpages"/>
+<meta name="twitter:description" content="1. Preface Originally, I was required to create a web service for a school project, but I accidentally discovered the hugo tool. So I took this opportunity to use hugo to create my own personal blog. This article mainly covers the process of setting up a personal website, some of the problems I encountered and the solutions, I hope it will be helpful to you. Since the blogger is using"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://garywy.github.io/en/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Tech",
+      "item": "https://garywy.github.io/en/posts/tech/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Hugo_githubpages",
+      "item": "https://garywy.github.io/en/posts/tech/hugo_githubpages/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hugo_githubpages",
+  "name": "Hugo_githubpages",
+  "description": "1. Preface Originally, I was required to create a web service for a school project, but I accidentally discovered the hugo tool. So I took this opportunity to use hugo to create my own personal blog. This article mainly covers the process of setting up a personal website, some of the problems I encountered and the solutions, I hope it will be helpful to you. Since the blogger is using",
+  "keywords": [
+    
+  ],
+  "articleBody": "1. Preface Originally, I was required to create a web service for a school project, but I accidentally discovered the hugo tool. So I took this opportunity to use hugo to create my own personal blog. This article mainly covers the process of setting up a personal website, some of the problems I encountered and the solutions, I hope it will be helpful to you.\nSince the blogger is using mac os, there may be some differences from the windows system.\n2. hugo 2.1 hugo installation First, use the terminal to install hugo\nbrew install hugo If you don’t have brew, you need to install homebrew (mac os) in advance.\n2.2 Use hugo to create a blog First, use the following command to create a hugo blog.\nhugo new site filename [filename] Fill in any name you like. Note that all future operations need to be performed in this directory. After the creation is successful, go to the directory and you will find 9 files.\narchetypes This folder only has a default.md file, which only contains the file header. Its main function is that every time a new md file is created, it will be created according to the default format set in this file. +++ title = '{{ replace .File.ContentBaseName “-” “ ‘ | title }}’ #File name when created date = {{ .Date }} #Current date and time draft = true #Whether it is a draft +++ The following code is a method for creating a new md file in hugo. The blog is customized in it, and after the creation is successful, the title part in the above code will become blog.\nhugo new blog.md content The folder is empty inside and needs to be added by the user. For example, if you want to have a section about learning in your blog, you can create a folder called learning in this directory. hugo.toml This file is the hugo configuration file and is very important. Since the toml syntax is more troublesome, and most of the information found is to convert the toml file to a yaml file, it is recommended to use a configuration file in yaml format. Details will be provided later. layouts This folder is empty before a theme is added. After a theme is added, it mostly contains html files that are used to display various pages. themes This folder is saved in this directory after downloading the theme, and no changes need to be made. assets Used to store css files. data I haven’t used it and I’m not sure what it does. i18n I haven’t used it either. static This file can be used to store images. The above is an introduction to the relevant files. There is no need to remember them carefully, and you can come back to them later if necessary.\nNext, set the theme. Go to Hugo Themes and choose a theme you like. The theme I chose is PaperMod, the first theme on the website. Note that the configuration files for each theme are different, so you need to check the documentation for that theme for details. After clicking on your favorite theme, the word “download” will appear. Click “download” to go to the GitHub interface. Copy the GitHub address and enter the following code in the terminal:\ngit clone theme_address Replace theme_address with the GitHub address you copied. After the download is successful, you will find a folder named after the theme in your root directory. For example, after the PaperMod download is successful, a folder named hugo-PaperMod will appear. Move the entire folder to the themes folder. After that, you don’t need to do anything with the themes folder. Then add the following content to your configuration file, which is the hugo.toml file.\ntheme = 'theme_name' #theme = 'hugo-PaperMod' The above is the way to write a toml file. The yaml syntax is as follows:\ntheme: theme_name #theme: hugo-PaperMod If you are using the PaperMod theme, we recommend referring to hugo博客搭建 | PaperMod主题 for configuration file settings. Including related operations in the content folder, you can also refer to the above link, which is very clear.\n2.3 hugo startup hugo has two startup methods.\nhugo server hugo server -D Both commands can start the blog. After successful startup, copy the URL prompted to access the blog locally. The difference between the two commands is whether to display the md file with the header filedraft: true or not. hugo server cannot display files with the draft field set to true, so you need to be aware of this. Therefore, you can change the field to false in the default file, which will make things a bit easier.\nAfter completing the above in order, you can use hugo to complete your own static blog. In addition to the above links, you can also refer to the content of this blog Hugo + PaperMod to build a technical blog.\n2.4 Problems encountered when configuring hugo 2.4.1 Multilingual In the configuration file “hugo.yaml”, you can configure multiple languages. For example, my configuration file has both Chinese and English.\nlanguages: en: languageName: “English” contentDir: content/English weight: 1 profileMode: enabled: true title: Gary's House subtitle: ”It's happy to see you!” imageUrl: “img/me.jpg” #The image is stored in static/img/me.gif imageTitle: imageWidth: 150 imageHeight: 150 buttons: - name: 🧑‍💻Tech url: posts/tech ... zh: languageName: “Chinese” contentDir: content/Chinese weight: 1 profileMode: enabled: true title: Gary's House subtitle: “Nice to meet you!” imageUrl: ‘img/me.jpg’ #The image is stored in static/img/me.gif imageTitle: imageWidth: 150 imageHeight: 150 buttons: - name: 🧑‍💻技术 url: posts/tech/ ... If you have referenced the configuration file in the link mentioned above, copy and paste the part after itsen once, as shown above. In order to be multilingual, you need to create multiple folders under the content folder to store the content. How I created two folders, English and Chinese, in the content folder. Then place the respective files in the respective folders.\n2.4.2 Search page The main function of the search page is to provide an internal search. The PaperMod theme provides search.html, so we only need to do two things.\nCreate search.md in the same directory as the posts folder and change the content of the header file. +++ title = “Search” draft = false layout = ”search” +++ Then add the setting to the configuration file hugo.yaml. - identifier: search name: 🔍Search url: search weight: 1 identifier and name can be changed to your liking, and url must be followed by ``search’'.\nAddendum: If you want to display the current time on the search page, you need to modify layouts/_default/search.html. Add the following content to line 6 of your own search.html file to display the time on the search interface. html\n{{- (printf “%s ” .Title ) | htmlUnescape -}} ... {{ now.Format “2006-01-02” }}\n# 3. GitHub Pages deployment ## 3.1 Preliminary preparations First, you need to log in to your GitHub account and create two repositories. One is a private repository with a custom name, mine is my_blog, and the other is a public repository with the name `username.github.io`, where `username` is your GitHub username. This repository is mainly used to update and display blog content. You can add a readme file with any content when creating the repository. Follow the steps below for the public repository. Remember to upload all subsequent content to the `master` `branch`. ![](../GitHub_private.jpg) ## 3.2 Uploading local files to a GitHub private repository Refer to the article [Uploading files to GitHub via the terminal](https://blog.csdn.net/qq_46941656/article/details/119532631) to upload files to a GitHub repository. First go to the root directory of hugo (the directory containing all hugo files), and then upload the files in the following order. ```bash git init git add . git commit -m “comment” git remote rm origin git remote add origin private_repository_url git push origin master The above operation should successfully upload all files to the private repository.\nThe errors I encountered and the solutions:\nThe source reference specification master does not match. git branch -M master Changes not yet staged for commit: modify not yet added to commit (use “git add” and/or “git commit -a”). git add --all git commit -m “comment” git remote rm origin git remote add origin private_repository_url git push origin master 3.3 Upload the local public files to the GitHub public repository. First, the name of the public repository must be username.github.io. The main process for uploading is:\nCreate a public folder in the root directory of the local hugo. hugo -F --cleanDestinationDir Clone the GitHub public repository to the root directory of this hugo, and add all files in public and ``hugo.yaml``` (very important!) to the local repository. git clone public_repository_url cp hugo.yaml username.github.io/ mv public/* username.github.io/ cd username.github.io Upload the local repository to GitHub git add . git commit -m “rebuild_site $(date)” git push origin master The above is the process for the first upload. Subsequent uploads can be automated by executing the script. After completing the above, you can run hugo locally and try it with the set username.github.io. If it is successful, it proves to be feasible.\nSet up a script file to facilitate updating content each time. The script file can be saved in the root directory of hugo with any name. Mine is ``issue.sh’'. hugo -F --cleanDestinationDir cp hugo.yaml public/ rm -rf username.github.io/* mv public/* username.github.io/ rm -rf public cd username.github.io/ git add . git commit -m “rebuild_site $(date)” git push -u origin +master All the above ‘username.github.io’ needs to be replaced with ‘your own public repository name’. The ssh file is executed as follows:\n./issue.sh If the above is successfully completed, you can proceed to deploy GitHub Actions.\n3.4 GitHub Actions deployment This deployment is mainly to allow the static blog to be accessed by others, and is deployed on the GitHub website.\nGenerate a token First, you need to set a key. Go to your personal homepage, click Settings'', then find Developer Settings’’ at the bottom left, and follow the instructions on the page. Click “generate token” to create a key and remember the token that starts with “ghp_”.\nAdd token Next, add the token you just got to the location shown below. The name can be MY_BLOG. Add workflows First, make sure that the current branch is master. Then, execute the following steps in the order shown below to generate a hugo.yml file. The content of the hugo.yml file is as follows:\nyml name: pages-auto-build-deploy on:\nworkflow_dispatch: push: branches: - main\njobs: build-and-deploy: runs-on: ubuntu-latest steps: - uses: actions/checkout@v2 with: submodules: true fetch-depth: 0\n- name: Setup Hugo uses: peaceiris/actions-hugo@v2 with: hugo-version: '0.130.0' #You need to change this according to your own Hugo version. You can view the version with the command hugo version. extended: true #Determined based on the query result of hugo version. - name: Build Hugo run: hugo - name: Deploy uses: peaceiris/actions-gh-pages@v3 with: GitHub_token: ${{ secrets.MY_BLOG }} # MY_BLOG is the token name just added publish_dir: ./public commit_message: ${{ GitHub.event.head_commit.message }} After completing all the above operations, you can go to GitHub top and click ```Actions``` to check whether the workflow has been started successfully. After successful startup, anyone can directly access your blog using ```username.github.io``` . # Reference links I am stupid, and I have only completed the basic content of my blog after referring to the blogs and articles of many great gods. You can refer to the following links for a lot of additional content. 1. [Hugo blog setup | PaperMod theme](https://www.sulvblog.cn/posts/blog/build_hugo/) 2. [Hugo + PaperMod setup technical blog](https://kyxie.github.io/zh/blog/tech/papermod/) 3. [Deploying a hugo blog to github](https://www.wenhui.space/docs/04-build-blog-site/hugo_deploy_to_github/) 4. [Hugo+Github Pages+Github Action blog plan 3 – Configuring Github Action to enable automatic publishing](https://juejin.cn/post/7148029123263528974) ",
+  "wordCount" : "2234",
+  "inLanguage": "en",
+  "datePublished": "2024-09-26T11:09:46+09:00",
+  "dateModified": "2024-09-26T11:09:46+09:00",
+  "author":{
+    "@type": "Person",
+    "name": "Gary"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://garywy.github.io/en/posts/tech/hugo_githubpages/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gary's House",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://garywy.github.io/img/Q.jpg"
+    }
+  }
+}
+</script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://garywy.github.io/en/" accesskey="h" title="Gary&#39;s Blog (Alt + H)">
+                <img src="https://garywy.github.io/img/me.jpg" alt="" aria-label="logo"
+                    height="35">Gary&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="https://garywy.github.io/zh/" title="中文"
+                            aria-label="中文">中文</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://garywy.github.io/en/search" title="🔍Search (Alt &#43; /)" accesskey=/>
+                    <span>🔍Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/" title="🏠Homepage">
+                    <span>🏠Homepage</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/posts" title="📚Article">
+                    <span>📚Article</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/archives/" title="⏱Archives">
+                    <span>⏱Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/music/" title="🎵music">
+                    <span>🎵music</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/about" title="🙋🏻‍♂️About">
+                    <span>🙋🏻‍♂️About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://garywy.github.io/en/">Home</a>&nbsp;»&nbsp;<a href="https://garywy.github.io/en/posts/">Posts</a>&nbsp;»&nbsp;<a href="https://garywy.github.io/en/posts/tech/">Tech</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Hugo_githubpages
+    </h1>
+    <div class="post-meta"><span title='2024-09-26 11:09:46 +0900 JST'>2024-09-26</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Gary
+
+
+      <div  class="meta-item">&nbsp·&nbsp
+        <span id="busuanzi_container_page_pv">本文阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+      </div>
+    </div>
+
+
+
+  </header> 
+                    <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">Table of Contents</span>
+            </summary>
+
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#1-preface" aria-label="1. Preface">1. Preface</a></li>
+                    <li>
+                        <a href="#2-hugo" aria-label="2. hugo">2. hugo</a><ul>
+                            
+                    <li>
+                        <a href="#21-hugo-installation" aria-label="2.1 hugo installation">2.1 hugo installation</a></li>
+                    <li>
+                        <a href="#22-use-hugo-to-create-a-blog" aria-label="2.2 Use hugo to create a blog">2.2 Use hugo to create a blog</a></li>
+                    <li>
+                        <a href="#23-hugo-startup" aria-label="2.3 hugo startup">2.3 hugo startup</a></li>
+                    <li>
+                        <a href="#24-problems-encountered-when-configuring-hugo" aria-label="2.4 Problems encountered when configuring hugo">2.4 Problems encountered when configuring hugo</a><ul>
+                            
+                    <li>
+                        <a href="#241-multilingual" aria-label="2.4.1 Multilingual">2.4.1 Multilingual</a></li>
+                    <li>
+                        <a href="#242-search-page" aria-label="2.4.2 Search page">2.4.2 Search page</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#33-upload-the-local-public-files-to-the-github-public-repository" aria-label="3.3 Upload the local public files to the GitHub public repository.">3.3 Upload the local public files to the GitHub public repository.</a></li>
+                    <li>
+                        <a href="#34-github-actions-deployment" aria-label="3.4 GitHub Actions deployment">3.4 GitHub Actions deployment</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#workflow_dispatch" aria-label="workflow_dispatch:">workflow_dispatch:</a>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
+
+  <div class="post-content"><h1 id="1-preface">1. Preface<a hidden class="anchor" aria-hidden="true" href="#1-preface">#</a></h1>
+<p>Originally, I was required to create a web service for a school project, but I accidentally discovered the hugo tool. So I took this opportunity to use hugo to create my own personal blog. This article mainly covers the process of setting up a personal website, some of the problems I encountered and the solutions, I hope it will be helpful to you.</p>
+<p>Since the blogger is using mac os, there may be some differences from the windows system.</p>
+<h1 id="2-hugo">2. hugo<a hidden class="anchor" aria-hidden="true" href="#2-hugo">#</a></h1>
+<h2 id="21-hugo-installation">2.1 hugo installation<a hidden class="anchor" aria-hidden="true" href="#21-hugo-installation">#</a></h2>
+<p>First, use the terminal to install hugo</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">brew install hugo
+</span></span></code></pre></div><p>If you don&rsquo;t have brew, you need to install homebrew (mac os) in advance.</p>
+<h2 id="22-use-hugo-to-create-a-blog">2.2 Use hugo to create a blog<a hidden class="anchor" aria-hidden="true" href="#22-use-hugo-to-create-a-blog">#</a></h2>
+<p>First, use the following command to create a hugo blog.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new site filename
+</span></span></code></pre></div><p>[filename] Fill in any name you like. Note that all future operations need to be performed in this directory.
+After the creation is successful, go to the directory and you will find 9 files.</p>
+<ul>
+<li>archetypes
+This folder only has a default.md file, which only contains the file header. Its main function is that every time a new md file is created, it will be created according to the default format set in this file.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">title = &#39;{{ replace .File.ContentBaseName “-” “ ‘ | title }}’ <span class="ni">#File</span> name when created
+</span></span><span class="line"><span class="cl">date = {{ .Date }} <span class="ni">#Current</span> date and time
+</span></span><span class="line"><span class="cl">draft = true <span class="ni">#Whether</span> it is a draft
+</span></span><span class="line"><span class="cl">+++
+</span></span></code></pre></div><p>The following code is a method for creating a new md file in hugo. The blog is customized in it, and after the creation is successful, the title part in the above code will become blog.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new blog.md
+</span></span></code></pre></div><ul>
+<li>content    <br>
+The folder is empty inside and needs to be added by the user. For example, if you want to have a section about learning in your blog, you can create a folder called learning in this directory.</li>
+<li>hugo.toml    <br>
+This file is the hugo configuration file and is very important. Since the toml syntax is more troublesome, and most of the information found is to convert the toml file to a yaml file, it is recommended to use a configuration file in yaml format. Details will be provided later.</li>
+<li>layouts
+This folder is empty before a theme is added. After a theme is added, it mostly contains html files that are used to display various pages.</li>
+<li>themes
+This folder is saved in this directory after downloading the theme, and no changes need to be made.</li>
+<li>assets
+Used to store css files.</li>
+<li>data
+I haven&rsquo;t used it and I&rsquo;m not sure what it does.</li>
+<li>i18n
+I haven&rsquo;t used it either.</li>
+<li>static
+This file can be used to store images.</li>
+</ul>
+<p>The above is an introduction to the relevant files. There is no need to remember them carefully, and you can come back to them later if necessary.</p>
+<p>Next, set the theme. Go to <a href="https://themes.gohugo.io/">Hugo Themes</a> and choose a theme you like.
+The theme I chose is PaperMod, the first theme on the website. Note that the configuration files for each theme are different, so you need to check the documentation for that theme for details.
+After clicking on your favorite theme, the word “download” will appear. Click “download” to go to the GitHub interface.
+Copy the GitHub address and enter the following code in the terminal:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone theme_address
+</span></span></code></pre></div><p>Replace <code>theme_address</code> with the GitHub address you copied.
+After the download is successful, you will find a folder named after the theme in your root directory. For example, after the PaperMod download is successful, a folder named <code>hugo-PaperMod</code> will appear. Move the entire folder to the <code>themes</code> folder. After that, you don&rsquo;t need to do anything with the <code>themes</code> folder. Then add the following content to your configuration file, which is the <code>hugo.toml</code> file.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">theme</span> <span class="p">=</span> <span class="s1">&#39;theme_name&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c">#theme = &#39;hugo-PaperMod&#39;</span>
+</span></span></code></pre></div><p>The above is the way to write a toml file. The yaml syntax is as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">theme</span><span class="p">:</span><span class="w"> </span><span class="l">theme_name</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c">#theme: hugo-PaperMod</span><span class="w">
+</span></span></span></code></pre></div><p>If you are using the PaperMod theme, we recommend referring to <a href="https://www.sulvblog.cn/posts/blog/build_hugo/">hugo博客搭建 | PaperMod主题</a> for configuration file settings.
+Including related operations in the content folder, you can also refer to the above link, which is very clear.</p>
+<h2 id="23-hugo-startup">2.3 hugo startup<a hidden class="anchor" aria-hidden="true" href="#23-hugo-startup">#</a></h2>
+<p>hugo has two startup methods.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo server
+</span></span><span class="line"><span class="cl">hugo server -D
+</span></span></code></pre></div><p>Both commands can start the blog. After successful startup, copy the URL prompted to access the blog locally.
+The difference between the two commands is whether to display the md file with the header file<code>draft: true</code> or not.
+<code>hugo server</code> cannot display files with the <code>draft field set to true</code>, so you need to be aware of this. Therefore, you can change the field to <code>false</code> in the default file, which will make things a bit easier.</p>
+<p>After completing the above in order, you can use hugo to complete your own static blog.
+In addition to the above links, you can also refer to the content of this blog <a href="https://kyxie.github.io/zh/blog/tech/papermod/">Hugo + PaperMod to build a technical blog</a>.</p>
+<h2 id="24-problems-encountered-when-configuring-hugo">2.4 Problems encountered when configuring hugo<a hidden class="anchor" aria-hidden="true" href="#24-problems-encountered-when-configuring-hugo">#</a></h2>
+<h3 id="241-multilingual">2.4.1 Multilingual<a hidden class="anchor" aria-hidden="true" href="#241-multilingual">#</a></h3>
+<p>In the configuration file “hugo.yaml”, you can configure multiple languages. For example, my configuration file has both Chinese and English.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">languages</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">en</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">languageName</span><span class="p">:</span><span class="w"> </span><span class="l">“English”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">contentDir</span><span class="p">:</span><span class="w"> </span><span class="l">content/English</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">profileMode</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Gary&#39;s House</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">subtitle</span><span class="p">:</span><span class="w"> </span><span class="l">”It&#39;s happy to see you!”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">imageUrl</span><span class="p">:</span><span class="w"> </span><span class="l">“img/me.jpg”</span><span class="w"> </span><span class="c">#The image is stored in static/img/me.gif</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">imageTitle</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">imageWidth</span><span class="p">:</span><span class="w"> </span><span class="m">150</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">imageHeight</span><span class="p">:</span><span class="w"> </span><span class="m">150</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">buttons</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">🧑‍💻Tech</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">posts/tech</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="l">...</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">zh</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">languageName</span><span class="p">:</span><span class="w"> </span><span class="l">“Chinese”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">contentDir</span><span class="p">:</span><span class="w"> </span><span class="l">content/Chinese</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">profileMode</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Gary&#39;s House</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">subtitle</span><span class="p">:</span><span class="w"> </span><span class="l">“Nice to meet you!”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">imageUrl</span><span class="p">:</span><span class="w"> </span><span class="l">‘img/me.jpg’</span><span class="w"> </span><span class="c">#The image is stored in static/img/me.gif</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">imageTitle</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">imageWidth</span><span class="p">:</span><span class="w"> </span><span class="m">150</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">imageHeight</span><span class="p">:</span><span class="w"> </span><span class="m">150</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">buttons</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">🧑‍💻技术</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">posts/tech/</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="l">...</span><span class="w">
+</span></span></span></code></pre></div><p>If you have referenced the configuration file in the link mentioned above, copy and paste the part after its<code>en</code> once, as shown above.
+In order to be multilingual, you need to create multiple folders under the <code>content</code> folder to store the content. How I created two folders, <code>English</code> and <code>Chinese</code>, in the <code>content</code> folder. Then place the respective files in the respective folders.</p>
+<h3 id="242-search-page">2.4.2 Search page<a hidden class="anchor" aria-hidden="true" href="#242-search-page">#</a></h3>
+<p>The main function of the search page is to provide an internal search. The PaperMod theme provides <code>search.html</code>, so we only need to do two things.</p>
+<ol>
+<li>Create <code>search.md</code> in the same directory as the <code>posts folder</code> and change the content of the header file.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">title = “Search”
+</span></span><span class="line"><span class="cl">draft = false
+</span></span><span class="line"><span class="cl">layout = ”search”
+</span></span><span class="line"><span class="cl">+++
+</span></span></code></pre></div><ol start="2">
+<li>Then add the setting to the configuration file hugo.yaml.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl">- <span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l">search</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">🔍Search</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">search</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span></span></span></code></pre></div><p><code>identifier</code> and<code> name</code> can be changed to your liking, and<code> url</code> must be followed by ``search&rsquo;'.</p>
+<p>Addendum:
+If you want to display the current time on the search page, you need to modify <code>layouts/_default/search.html</code>. Add the following content to line 6 of your own <code>search.html</code> file to display the time on the search interface.
+html</p>
+<header class=“page-header”>
+<h1>{{- (printf “%s&nbsp;” .Title ) | htmlUnescape -}}
+...
+    </h1>
+<pre><code>&lt;p class=“post-date”&gt;{{ now.Format “2006-01-02” }}&lt;/p&gt;
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1"># 3. GitHub Pages deployment
+</span></span></span><span class="line"><span class="cl"><span class="c1">## 3.1 Preliminary preparations
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">First</span><span class="p">,</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">need</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">log</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">GitHub</span><span class="w"> </span><span class="n">account</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="n">two</span><span class="w"> </span><span class="n">repositories</span><span class="p">.</span><span class="w"> </span><span class="n">One</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">private</span><span class="w"> </span><span class="n">repository</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">custom</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">mine</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">my_blog</span><span class="p">,</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">other</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">public</span><span class="w"> </span><span class="n">repository</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">`</span><span class="n">username</span><span class="p">.</span><span class="n">github</span><span class="p">.</span><span class="n">io</span><span class="o">`</span><span class="p">,</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="o">`</span><span class="n">username</span><span class="o">`</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">GitHub</span><span class="w"> </span><span class="n">username</span><span class="p">.</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">repository</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">mainly</span><span class="w"> </span><span class="n">used</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="k">update</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">display</span><span class="w"> </span><span class="n">blog</span><span class="w"> </span><span class="n">content</span><span class="p">.</span><span class="w"> </span><span class="n">You</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="k">add</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">readme</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">any</span><span class="w"> </span><span class="n">content</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="n">creating</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">repository</span><span class="p">.</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">Follow</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">steps</span><span class="w"> </span><span class="n">below</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">public</span><span class="w"> </span><span class="n">repository</span><span class="p">.</span><span class="w"> </span><span class="n">Remember</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">upload</span><span class="w"> </span><span class="k">all</span><span class="w"> </span><span class="n">subsequent</span><span class="w"> </span><span class="n">content</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="o">`</span><span class="n">master</span><span class="o">`</span><span class="w"> </span><span class="o">`</span><span class="n">branch</span><span class="o">`</span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">!</span><span class="p">[](..</span><span class="o">/</span><span class="n">GitHub_private</span><span class="p">.</span><span class="n">jpg</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">## 3.2 Uploading local files to a GitHub private repository
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Refer</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">article</span><span class="w"> </span><span class="p">[</span><span class="n">Uploading</span><span class="w"> </span><span class="n">files</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">GitHub</span><span class="w"> </span><span class="n">via</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">terminal</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="p">.</span><span class="n">csdn</span><span class="p">.</span><span class="n">net</span><span class="o">/</span><span class="n">qq_46941656</span><span class="o">/</span><span class="n">article</span><span class="o">/</span><span class="n">details</span><span class="o">/</span><span class="mi">119532631</span><span class="p">)</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">upload</span><span class="w"> </span><span class="n">files</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">GitHub</span><span class="w"> </span><span class="n">repository</span><span class="p">.</span><span class="w">  
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">First</span><span class="w"> </span><span class="n">go</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="n">directory</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="nf">hugo</span><span class="w"> </span><span class="p">(</span><span class="n">the</span><span class="w"> </span><span class="n">directory</span><span class="w"> </span><span class="n">containing</span><span class="w"> </span><span class="k">all</span><span class="w"> </span><span class="n">hugo</span><span class="w"> </span><span class="n">files</span><span class="p">),</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="n">upload</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">files</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">following</span><span class="w"> </span><span class="k">order</span><span class="p">.</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">```</span><span class="n">bash</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">git</span><span class="w"> </span><span class="n">init</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">git</span><span class="w"> </span><span class="k">add</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">git</span><span class="w"> </span><span class="n">commit</span><span class="w"> </span><span class="o">-</span><span class="n">m</span><span class="w"> </span><span class="err">“</span><span class="n">comment</span><span class="err">”</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">git</span><span class="w"> </span><span class="n">remote</span><span class="w"> </span><span class="n">rm</span><span class="w"> </span><span class="n">origin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">git</span><span class="w"> </span><span class="n">remote</span><span class="w"> </span><span class="k">add</span><span class="w"> </span><span class="n">origin</span><span class="w"> </span><span class="n">private_repository_url</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">git</span><span class="w"> </span><span class="n">push</span><span class="w"> </span><span class="n">origin</span><span class="w"> </span><span class="n">master</span><span class="w">
+</span></span></span></code></pre></div><p>The above operation should successfully upload all files to the private repository.<br>
+The errors I encountered and the solutions:</p>
+<ol>
+<li>The source reference specification master does not match.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git branch -M master
+</span></span></code></pre></div><ol start="2">
+<li>Changes not yet staged for commit: modify not yet added to commit (use “git add” and/or “git commit -a”).</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add --all
+</span></span><span class="line"><span class="cl">git commit -m “comment”
+</span></span><span class="line"><span class="cl">git remote rm origin
+</span></span><span class="line"><span class="cl">git remote add origin private_repository_url
+</span></span><span class="line"><span class="cl">git push origin master
+</span></span></code></pre></div><h2 id="33-upload-the-local-public-files-to-the-github-public-repository">3.3 Upload the local public files to the GitHub public repository.<a hidden class="anchor" aria-hidden="true" href="#33-upload-the-local-public-files-to-the-github-public-repository">#</a></h2>
+<p>First, the name of the public repository must be <code>username.github.io</code>.
+The main process for uploading is:</p>
+<ol>
+<li>Create a public folder in the root directory of the local hugo.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo -F --cleanDestinationDir
+</span></span></code></pre></div><ol start="2">
+<li>Clone the GitHub public repository to the root directory of this hugo, and add all files in <code>public</code> and ``hugo.yaml``` (very important!) to the local repository.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone public_repository_url
+</span></span><span class="line"><span class="cl">cp hugo.yaml username.github.io/
+</span></span><span class="line"><span class="cl">mv public/* username.github.io/
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> username.github.io
+</span></span></code></pre></div><ol start="3">
+<li>Upload the local repository to GitHub</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m “rebuild_site <span class="k">$(</span>date<span class="k">)</span>”
+</span></span><span class="line"><span class="cl">git push origin master
+</span></span></code></pre></div><p>The above is the process for the first upload. Subsequent uploads can be automated by executing the script.
+After completing the above, you can run hugo locally and try it with the set <code>username.github.io</code>. If it is successful, it proves to be feasible.</p>
+<ol start="4">
+<li>Set up a script file to facilitate updating content each time.
+The script file can be saved in the root directory of hugo with any name. Mine is ``issue.sh&rsquo;'.</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo -F --cleanDestinationDir
+</span></span><span class="line"><span class="cl">cp hugo.yaml public/
+</span></span><span class="line"><span class="cl">rm -rf username.github.io/*
+</span></span><span class="line"><span class="cl">mv public/* username.github.io/
+</span></span><span class="line"><span class="cl">rm -rf public
+</span></span><span class="line"><span class="cl">cd username.github.io/
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m “rebuild_site $(date)”
+</span></span><span class="line"><span class="cl">git push -u origin +master    
+</span></span></code></pre></div><p>All the above ‘username.github.io’ needs to be replaced with ‘your own public repository name’.
+The ssh file is executed as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">./issue.sh
+</span></span></code></pre></div><p>If the above is successfully completed, you can proceed to deploy GitHub Actions.</p>
+<h2 id="34-github-actions-deployment">3.4 GitHub Actions deployment<a hidden class="anchor" aria-hidden="true" href="#34-github-actions-deployment">#</a></h2>
+<p>This deployment is mainly to allow the static blog to be accessed by others, and is deployed on the GitHub website.</p>
+<ol>
+<li>
+<p>Generate a token
+First, you need to set a key. Go to your personal homepage, click <code>Settings'', then find </code>Developer Settings&rsquo;&rsquo; at the bottom left, and follow the instructions on the page.
+<img loading="lazy" src="../action4.jpg" alt=""  />
+
+<img loading="lazy" src="../action5.jpg" alt=""  />
+
+Click “generate token” to create a key and remember the token that starts with “ghp_”.</p>
+</li>
+<li>
+<p>Add token
+Next, add the token you just got to the location shown below. The name can be MY_BLOG.
+<img loading="lazy" src="../action3.jpg" alt=""  />
+</p>
+</li>
+<li>
+<p>Add workflows
+First, make sure that the current <code>branch</code> is <code>master</code>.
+<img loading="lazy" src="../action0.jpg" alt=""  />
+
+Then, execute the following steps in the order shown below to generate a <code>hugo.yml</code> file.
+<img loading="lazy" src="../action1.jpg" alt=""  />
+
+<img loading="lazy" src="../action2.jpg" alt=""  />
+
+The content of the <code>hugo.yml</code> file is as follows:<br>
+yml
+name: pages-auto-build-deploy
+on:</p>
+</li>
+</ol>
+<h1 id="workflow_dispatch">workflow_dispatch:<a hidden class="anchor" aria-hidden="true" href="#workflow_dispatch">#</a></h1>
+<p>push:
+branches:
+- main</p>
+<p>jobs:
+build-and-deploy:
+runs-on: ubuntu-latest
+steps:
+- uses: actions/checkout@v2
+with:
+submodules: true
+fetch-depth: 0</p>
+<pre><code>  - name: Setup Hugo
+    uses: peaceiris/actions-hugo@v2
+    with:
+      hugo-version: '0.130.0' #You need to change this according to your own Hugo version. You can view the version with the command hugo version.
+      extended: true #Determined based on the query result of hugo version.
+
+  - name: Build Hugo
+    run: hugo 
+
+  - name: Deploy
+    uses: peaceiris/actions-gh-pages@v3
+    with:
+      GitHub_token: ${{ secrets.MY_BLOG }} # MY_BLOG is the token name just added
+      publish_dir: ./public
+      commit_message: ${{ GitHub.event.head_commit.message }}
+</code></pre>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="n">After</span><span class="w"> </span><span class="n">completing</span><span class="w"> </span><span class="k">all</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">above</span><span class="w"> </span><span class="n">operations</span><span class="p">,</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">go</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">GitHub</span><span class="w"> </span><span class="n">top</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">click</span><span class="w"> </span><span class="o">```</span><span class="n">Actions</span><span class="o">```</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="k">check</span><span class="w"> </span><span class="n">whether</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">workflow</span><span class="w"> </span><span class="n">has</span><span class="w"> </span><span class="n">been</span><span class="w"> </span><span class="n">started</span><span class="w"> </span><span class="n">successfully</span><span class="p">.</span><span class="w"> </span><span class="n">After</span><span class="w"> </span><span class="n">successful</span><span class="w"> </span><span class="n">startup</span><span class="p">,</span><span class="w"> </span><span class="n">anyone</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">directly</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">your</span><span class="w"> </span><span class="n">blog</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="o">```</span><span class="n">username</span><span class="p">.</span><span class="n">github</span><span class="p">.</span><span class="n">io</span><span class="o">```</span><span class="w"> </span><span class="p">.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1"># Reference links 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">I</span><span class="w"> </span><span class="n">am</span><span class="w"> </span><span class="n">stupid</span><span class="p">,</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">I</span><span class="w"> </span><span class="n">have</span><span class="w"> </span><span class="n">only</span><span class="w"> </span><span class="n">completed</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">basic</span><span class="w"> </span><span class="n">content</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">my</span><span class="w"> </span><span class="n">blog</span><span class="w"> </span><span class="n">after</span><span class="w"> </span><span class="n">referring</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">blogs</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">articles</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">many</span><span class="w"> </span><span class="n">great</span><span class="w"> </span><span class="n">gods</span><span class="p">.</span><span class="w"> </span><span class="n">You</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">refer</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">following</span><span class="w"> </span><span class="n">links</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">lot</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">additional</span><span class="w"> </span><span class="n">content</span><span class="p">.</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="mi">1</span><span class="p">.</span><span class="w"> </span><span class="p">[</span><span class="n">Hugo</span><span class="w"> </span><span class="n">blog</span><span class="w"> </span><span class="n">setup</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">PaperMod</span><span class="w"> </span><span class="n">theme</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">sulvblog</span><span class="p">.</span><span class="n">cn</span><span class="o">/</span><span class="n">posts</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">build_hugo</span><span class="o">/</span><span class="p">)</span><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="mi">2</span><span class="p">.</span><span class="w"> </span><span class="p">[</span><span class="n">Hugo</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">PaperMod</span><span class="w"> </span><span class="n">setup</span><span class="w"> </span><span class="n">technical</span><span class="w"> </span><span class="n">blog</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">kyxie</span><span class="p">.</span><span class="n">github</span><span class="p">.</span><span class="n">io</span><span class="o">/</span><span class="n">zh</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">tech</span><span class="o">/</span><span class="n">papermod</span><span class="o">/</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="mi">3</span><span class="p">.</span><span class="w"> </span><span class="p">[</span><span class="n">Deploying</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">hugo</span><span class="w"> </span><span class="n">blog</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">github</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">wenhui</span><span class="p">.</span><span class="n">space</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="mi">04</span><span class="o">-</span><span class="n">build</span><span class="o">-</span><span class="n">blog</span><span class="o">-</span><span class="n">site</span><span class="o">/</span><span class="n">hugo_deploy_to_github</span><span class="o">/</span><span class="p">)</span><span class="w">    
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="mi">4</span><span class="p">.</span><span class="w"> </span><span class="p">[</span><span class="n">Hugo</span><span class="o">+</span><span class="n">Github</span><span class="w"> </span><span class="n">Pages</span><span class="o">+</span><span class="n">Github</span><span class="w"> </span><span class="n">Action</span><span class="w"> </span><span class="n">blog</span><span class="w"> </span><span class="n">plan</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="err">–</span><span class="w"> </span><span class="n">Configuring</span><span class="w"> </span><span class="n">Github</span><span class="w"> </span><span class="n">Action</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">enable</span><span class="w"> </span><span class="n">automatic</span><span class="w"> </span><span class="n">publishing</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">juejin</span><span class="p">.</span><span class="n">cn</span><span class="o">/</span><span class="n">post</span><span class="o">/</span><span class="mi">7148029123263528974</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></div>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+<div>
+    <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">Comments</span>
+        <hr />
+    </div>
+    <div id="tcomment"></div>
+    <script src="https://cdn.staticfile.org/twikoo/1.6.39/twikoo.all.min.js"></script>
+    <script>
+        twikoo.init({
+            envId: "https://mangodb-theta.vercel.app/",  
+            el: "#tcomment",
+            lang: 'en-US',
+            path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        });
+    </script>
+</div>
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://garywy.github.io/en/">Gary&#39;s House</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    
+    <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv">
+        Views: <span id="busuanzi_value_site_pv"></span>
+    </span>
+    <span id="busuanzi_container_site_uv">
+        Visitors: <span id="busuanzi_value_site_uv"></span>
+    </span>
+    </div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
