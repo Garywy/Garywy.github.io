@@ -13,7 +13,7 @@
       <link>https://garywy.github.io/en/posts/tech/hugo_githubpages/</link>
       <pubDate>Thu, 26 Sep 2024 11:09:46 +0900</pubDate>
       <guid>https://garywy.github.io/en/posts/tech/hugo_githubpages/</guid>
-      <description>1. Preface Originally, I was required to create a web service for a school project, but I accidentally discovered the hugo tool. So I took this opportunity to use hugo to create my own personal blog. This article mainly covers the process of setting up a personal website, some of the problems I encountered and the solutions, I hope it will be helpful to you. Since the blogger is using</description>
+      <description>1. Preface Originally, I was required to create a web service for a research project, but I accidentally discovered Hugo. So I took this opportunity to use Hugo to make my blog. This article mainly covers the process of setting up a personal blog, some of the problems I encountered and the solutions, I hope it will be helpful to you. Since I am using mac os, there may be</description>
     </item>
   </channel>
 </rss>
