@@ -6,7 +6,28 @@
     <description>Recent content in Study on Gary&#39;s House</description>
     <generator>Hugo -- 0.130.0</generator>
     <language>en</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Sun, 29 Sep 2024 18:20:59 +0900</lastBuildDate>
     <atom:link href="https://garywy.github.io/en/posts/study/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DP_Question</title>
+      <link>https://garywy.github.io/en/posts/study/dp_question/</link>
+      <pubDate>Sun, 29 Sep 2024 18:20:59 +0900</pubDate>
+      <guid>https://garywy.github.io/en/posts/study/dp_question/</guid>
+      <description>Preface Because I always hit a wall with Dynamic Programming problems, I would like to summarize the solution to Dynamic Programming problems(DP).
+Basic solution to DP problems：
+Initial State State Transition Equation 1. Linear DP 1. 1 Example：Leetcode 300. Longest Increasing Subsequence Given an integer array nums, return the length of the longest strictly increasing subsequence.
+Example 1:
+Input: nums = [10, 9, 2, 5, 3, 7, 101, 18]
+Output: 4</description>
+    </item>
+    <item>
+      <title>Markdown Study Notes</title>
+      <link>https://garywy.github.io/en/posts/study/markdown_study_notes/</link>
+      <pubDate>Thu, 26 Sep 2024 17:31:12 +0900</pubDate>
+      <guid>https://garywy.github.io/en/posts/study/markdown_study_notes/</guid>
+      <description>Preface This article mainly summarizes the common syntax of Markdown, so that you can write Markdown files better by yourself.
+1. Basic Grammer 1.1 Title Use# to create a title. The number of # you use indicates the number of heading levels.
+Markdown Display # title1 title1 # title2 title2 # title3 title3 1.2 Line break Add 2 or more spaces after the text, or add a blank line (press enter twice).</description>
+    </item>
   </channel>
 </rss>

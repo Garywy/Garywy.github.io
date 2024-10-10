@@ -6,8 +6,15 @@
     <description>Recent content in 学习 on Gary&#39;s House</description>
     <generator>Hugo -- 0.130.0</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 26 Sep 2024 17:31:12 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 29 Sep 2024 18:20:59 +0900</lastBuildDate>
     <atom:link href="https://garywy.github.io/zh/posts/study/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DP_Question</title>
+      <link>https://garywy.github.io/zh/posts/study/dp_question/</link>
+      <pubDate>Sun, 29 Sep 2024 18:20:59 +0900</pubDate>
+      <guid>https://garywy.github.io/zh/posts/study/dp_question/</guid>
+      <description>前言 因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。 DP问题基本解题思路： 初始状态 状态转移方程 1. 线性DP 1.1 例题：Leet</description>
+    </item>
     <item>
       <title>Markdown学习笔记</title>
       <link>https://garywy.github.io/zh/posts/study/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>

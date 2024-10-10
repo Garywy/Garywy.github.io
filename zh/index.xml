@@ -6,8 +6,15 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.130.0</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 07 Oct 2024 23:04:49 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2024 23:25:05 +0900</lastBuildDate>
     <atom:link href="https://garywy.github.io/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Angel Face</title>
+      <link>https://garywy.github.io/zh/music/2024-10-10/</link>
+      <pubDate>Thu, 10 Oct 2024 23:25:05 +0900</pubDate>
+      <guid>https://garywy.github.io/zh/music/2024-10-10/</guid>
+      <description>专辑名称: Angel Face 歌手: Stephen Sanchez 发行时间: 2023-09-22 发行公司: Mercury Records / Republic Records</description>
+    </item>
     <item>
       <title>Madvillainy</title>
       <link>https://garywy.github.io/zh/music/2024-10-07/</link>
@@ -42,6 +49,13 @@
       <pubDate>Mon, 30 Sep 2024 21:05:20 +0900</pubDate>
       <guid>https://garywy.github.io/zh/music/2024-09-30/</guid>
       <description>专辑名称: In the Aeroplane Over the Sea 歌手: Neutral Milk Hotel 发行时间: 1998-02-20 发行公司: Merge Records</description>
+    </item>
+    <item>
+      <title>DP_Question</title>
+      <link>https://garywy.github.io/zh/posts/study/dp_question/</link>
+      <pubDate>Sun, 29 Sep 2024 18:20:59 +0900</pubDate>
+      <guid>https://garywy.github.io/zh/posts/study/dp_question/</guid>
+      <description>前言 因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。 DP问题基本解题思路： 初始状态 状态转移方程 1. 线性DP 1.1 例题：Leet</description>
     </item>
     <item>
       <title>Room On Fire</title>

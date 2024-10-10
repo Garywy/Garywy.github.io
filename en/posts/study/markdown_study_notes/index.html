@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Markdown Study Notes | Gary&#39;s House</title>
+<meta name="keywords" content="">
+<meta name="description" content="Preface This article mainly summarizes the common syntax of Markdown, so that you can write Markdown files better by yourself.
+1. Basic Grammer 1.1 Title Use# to create a title. The number of # you use indicates the number of heading levels.
+Markdown Display # title1 title1 # title2 title2 # title3 title3 1.2 Line break Add 2 or more spaces after the text, or add a blank line (press enter twice).">
+<meta name="author" content="Gary">
+<link rel="canonical" href="https://garywy.github.io/en/posts/study/markdown_study_notes/">
+<meta name="google-site-verification" content="XYZabc">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.397ecfea235757aeed34e7152e1304c0d840fb0e35a533d106a346c6baddf019.css" integrity="sha256-OX7P6iNXV67tNOcVLhMEwNhA&#43;w41pTPRBqNGxrrd8Bk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://garywy.github.io/img/Q.jpg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://garywy.github.io/img/Q.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://garywy.github.io/img/Q.jpg">
+<link rel="apple-touch-icon" href="https://garywy.github.io/Q.jpg">
+<link rel="mask-icon" href="https://garywy.github.io/Q.jpg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://garywy.github.io/en/posts/study/markdown_study_notes/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.1/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+
+<meta property="og:title" content="Markdown Study Notes" />
+<meta property="og:description" content="Preface This article mainly summarizes the common syntax of Markdown, so that you can write Markdown files better by yourself.
+1. Basic Grammer 1.1 Title Use# to create a title. The number of # you use indicates the number of heading levels.
+Markdown Display # title1 title1 # title2 title2 # title3 title3 1.2 Line break Add 2 or more spaces after the text, or add a blank line (press enter twice)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://garywy.github.io/en/posts/study/markdown_study_notes/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-09-26T17:31:12+09:00" />
+<meta property="article:modified_time" content="2024-09-26T17:31:12+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Markdown Study Notes"/>
+<meta name="twitter:description" content="Preface This article mainly summarizes the common syntax of Markdown, so that you can write Markdown files better by yourself.
+1. Basic Grammer 1.1 Title Use# to create a title. The number of # you use indicates the number of heading levels.
+Markdown Display # title1 title1 # title2 title2 # title3 title3 1.2 Line break Add 2 or more spaces after the text, or add a blank line (press enter twice)."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://garywy.github.io/en/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Study",
+      "item": "https://garywy.github.io/en/posts/study/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Markdown Study Notes",
+      "item": "https://garywy.github.io/en/posts/study/markdown_study_notes/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Markdown Study Notes",
+  "name": "Markdown Study Notes",
+  "description": "Preface This article mainly summarizes the common syntax of Markdown, so that you can write Markdown files better by yourself.\n1. Basic Grammer 1.1 Title Use# to create a title. The number of # you use indicates the number of heading levels.\nMarkdown Display # title1 title1 # title2 title2 # title3 title3 1.2 Line break Add 2 or more spaces after the text, or add a blank line (press enter twice).",
+  "keywords": [
+    
+  ],
+  "articleBody": "Preface This article mainly summarizes the common syntax of Markdown, so that you can write Markdown files better by yourself.\n1. Basic Grammer 1.1 Title Use# to create a title. The number of # you use indicates the number of heading levels.\nMarkdown Display # title1 title1 # title2 title2 # title3 title3 1.2 Line break Add 2 or more spaces after the text, or add a blank line (press enter twice).\n1.3 Emphasize Blod\n**text**or__text__ Italic\n*text*or_text_ *** Blod and Italic***\n***text***or___text___ _and*can be used interchangeably. 1.4 Quote Single Quotation\n\u003e Hello World! Hello World!\nMultiple Quotation \u003e Hello \u003e \u003e World! Hello\nWorld!\nBlockquote \u003e Hello \u003e \u003e\u003e World! Hello\nWorld!\nQuotation with other elements \u003e _Hello_ \u003e \u003e\u003e **World**! Hello\nWorld!\n1.5 List Ordered List 1. First 2. Second 1. S1 2. S2 3. Third First Second S1 S2 Third Unordered List\n+,-and*can be used interchangeably. - First - Second + S1 + S2 - Third First Second S1 S2 Third 1.6 Code Block Fence code (the type of code can be defined and the code is highlighted), using```or~~~.\n```python print(Hello World!) ``` print(Hello World!) You can use `or `` for text.\n`Hello` ``World`` Hello World 1.7 Dividing Line ---,***and___can represent dividing line.\n--- *** ___ 1.8 Link Link with title This is a [link](https://www.google.com/) This is a Link\nWebsite https://www.google.com/\n1.9 Picture Picture Display ![title](../img/display.jpeg) Add link for picture [![title](../img/display.jpeg)](https://www.google.com/) 1.10 Escape Character Escape Character is \\。\n\\# title # title\n",
+  "wordCount" : "246",
+  "inLanguage": "en",
+  "datePublished": "2024-09-26T17:31:12+09:00",
+  "dateModified": "2024-09-26T17:31:12+09:00",
+  "author":{
+    "@type": "Person",
+    "name": "Gary"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://garywy.github.io/en/posts/study/markdown_study_notes/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gary's House",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://garywy.github.io/img/Q.jpg"
+    }
+  }
+}
+</script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://garywy.github.io/en/" accesskey="h" title="Gary&#39;s Blog (Alt + H)">
+                <img src="https://garywy.github.io/img/me.jpg" alt="" aria-label="logo"
+                    height="35">Gary&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="https://garywy.github.io/zh/" title="中文"
+                            aria-label="中文">中文</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://garywy.github.io/en/search" title="🔍Search (Alt &#43; /)" accesskey=/>
+                    <span>🔍Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/" title="🏠Homepage">
+                    <span>🏠Homepage</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/posts" title="📚Article">
+                    <span>📚Article</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/archives/" title="⏱Archives">
+                    <span>⏱Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/music/" title="🎵music">
+                    <span>🎵music</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/about" title="🙋🏻‍♂️About">
+                    <span>🙋🏻‍♂️About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://garywy.github.io/en/">Home</a>&nbsp;»&nbsp;<a href="https://garywy.github.io/en/posts/">Posts</a>&nbsp;»&nbsp;<a href="https://garywy.github.io/en/posts/study/">Study</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Markdown Study Notes
+    </h1>
+    <div class="post-meta"><span title='2024-09-26 17:31:12 +0900 JST'>2024-09-26</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Gary
+
+
+      <div  class="meta-item">&nbsp·&nbsp
+        <span id="busuanzi_container_page_pv">本文阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+      </div>
+    </div>
+
+
+
+  </header> 
+                    <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">Table of Contents</span>
+            </summary>
+
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#preface" aria-label="Preface">Preface</a></li>
+                    <li>
+                        <a href="#1-basic-grammer" aria-label="1. Basic Grammer">1. Basic Grammer</a><ul>
+                            
+                    <li>
+                        <a href="#11-title" aria-label="1.1 Title">1.1 Title</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="title1">title1</a><ul>
+                            
+                    <li>
+                        <a href="#" aria-label="title2">title2</a><ul>
+                            
+                    <li>
+                        <a href="#" aria-label="title3">title3</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#12-line-break" aria-label="1.2 Line break">1.2 Line break</a></li>
+                    <li>
+                        <a href="#13-emphasize" aria-label="1.3 Emphasize">1.3 Emphasize</a></li>
+                    <li>
+                        <a href="#14-quote" aria-label="1.4 Quote">1.4 Quote</a></li>
+                    <li>
+                        <a href="#15-list" aria-label="1.5 List">1.5 List</a></li>
+                    <li>
+                        <a href="#16--code-block" aria-label="1.6  Code Block">1.6  Code Block</a></li>
+                    <li>
+                        <a href="#17-dividing-line" aria-label="1.7 Dividing Line">1.7 Dividing Line</a></li>
+                    <li>
+                        <a href="#18-link" aria-label="1.8 Link">1.8 Link</a></li>
+                    <li>
+                        <a href="#19-picture" aria-label="1.9 Picture">1.9 Picture</a></li>
+                    <li>
+                        <a href="#110-escape-character" aria-label="1.10 Escape Character">1.10 Escape Character</a>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
+
+  <div class="post-content"><h1 id="preface">Preface<a hidden class="anchor" aria-hidden="true" href="#preface">#</a></h1>
+<p>This article mainly summarizes the common syntax of Markdown, so that you can write Markdown files better by yourself.</p>
+<h1 id="1-basic-grammer">1. Basic Grammer<a hidden class="anchor" aria-hidden="true" href="#1-basic-grammer">#</a></h1>
+<h2 id="11-title">1.1 Title<a hidden class="anchor" aria-hidden="true" href="#11-title">#</a></h2>
+<p>Use<code>#</code> to create a title. The number of <code>#</code> you use indicates the number of heading levels.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Markdown</th>
+<th style="text-align:center">Display</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"># title1</td>
+<td style="text-align:center"><h1>title1</h1></td>
+</tr>
+<tr>
+<td style="text-align:center"># title2</td>
+<td style="text-align:center"><h2>title2</h2></td>
+</tr>
+<tr>
+<td style="text-align:center"># title3</td>
+<td style="text-align:center"><h3>title3</h3></td>
+</tr>
+</tbody>
+</table>
+<h2 id="12-line-break">1.2 Line break<a hidden class="anchor" aria-hidden="true" href="#12-line-break">#</a></h2>
+<p>Add <code>2 or more spaces</code> after the text, or <code>add a blank line</code> (press enter twice).</p>
+<h2 id="13-emphasize">1.3 Emphasize<a hidden class="anchor" aria-hidden="true" href="#13-emphasize">#</a></h2>
+<ul>
+<li><strong>Blod</strong><br>
+<code>**text**</code>or<code>__text__</code></li>
+</ul>
+<hr>
+<ul>
+<li><em>Italic</em><br>
+<code>*text*</code>or<code>_text_</code></li>
+</ul>
+<hr>
+<ul>
+<li>*** Blod and Italic***<br>
+<code>***text***</code>or<code>___text___</code> <br>
+<code>_</code>and<code>*</code>can be used interchangeably.</li>
+</ul>
+<hr>
+<h2 id="14-quote">1.4 Quote<a hidden class="anchor" aria-hidden="true" href="#14-quote">#</a></h2>
+<ul>
+<li>Single Quotation<br>
+<code>&gt; Hello World!</code></li>
+</ul>
+<blockquote>
+<p>Hello World!</p>
+</blockquote>
+<hr>
+<ul>
+<li>Multiple Quotation</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&gt; Hello
+</span></span><span class="line"><span class="cl">&gt;
+</span></span><span class="line"><span class="cl">&gt; World!
+</span></span></code></pre></div><blockquote>
+<p>Hello</p>
+<p>World!</p>
+</blockquote>
+<hr>
+<ul>
+<li>Blockquote</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&gt; Hello
+</span></span><span class="line"><span class="cl">&gt;
+</span></span><span class="line"><span class="cl">&gt;&gt; World!
+</span></span></code></pre></div><blockquote>
+<p>Hello</p>
+<blockquote>
+<p>World!</p>
+</blockquote>
+</blockquote>
+<hr>
+<ul>
+<li>Quotation with other elements</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&gt; _Hello_
+</span></span><span class="line"><span class="cl">&gt;
+</span></span><span class="line"><span class="cl">&gt;&gt; **World**!
+</span></span></code></pre></div><blockquote>
+<p><em>Hello</em></p>
+<blockquote>
+<p><strong>World</strong>!</p>
+</blockquote>
+</blockquote>
+<hr>
+<h2 id="15-list">1.5 List<a hidden class="anchor" aria-hidden="true" href="#15-list">#</a></h2>
+<ul>
+<li>Ordered List</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. First
+</span></span><span class="line"><span class="cl">2. Second
+</span></span><span class="line"><span class="cl">    1. S1
+</span></span><span class="line"><span class="cl">    2. S2
+</span></span><span class="line"><span class="cl">3. Third
+</span></span></code></pre></div><ol>
+<li>First</li>
+<li>Second
+<ol>
+<li>S1</li>
+<li>S2</li>
+</ol>
+</li>
+<li>Third</li>
+</ol>
+<hr>
+<ul>
+<li>Unordered List<br>
+<code>+</code>,<code>-</code>and<code>*</code>can be used interchangeably.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">- First
+</span></span><span class="line"><span class="cl">- Second
+</span></span><span class="line"><span class="cl">    + S1
+</span></span><span class="line"><span class="cl">    + S2
+</span></span><span class="line"><span class="cl">- Third
+</span></span></code></pre></div><ul>
+<li>First</li>
+<li>Second
+<ul>
+<li>S1</li>
+<li>S2</li>
+</ul>
+</li>
+<li>Third</li>
+</ul>
+<hr>
+<h2 id="16--code-block">1.6  Code Block<a hidden class="anchor" aria-hidden="true" href="#16--code-block">#</a></h2>
+<p>Fence code (the type of code can be defined and the code is highlighted), using<code>```</code>or<code>~~~</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">```python
+</span></span><span class="line"><span class="cl">print(Hello World!)
+</span></span><span class="line"><span class="cl">```
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">Hello</span> <span class="n">World</span><span class="err">!</span><span class="p">)</span>
+</span></span></code></pre></div><p>You can use <code>`</code>or<code> `` </code> for text.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="o">`</span><span class="n">Hello</span><span class="o">`</span><span class="w">     
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="o">``</span><span class="n">World</span><span class="o">``</span><span class="w">
+</span></span></span></code></pre></div><h2 id="world"><code>Hello</code>  <br>
+<code>World</code></h2>
+<h2 id="17-dividing-line">1.7 Dividing Line<a hidden class="anchor" aria-hidden="true" href="#17-dividing-line">#</a></h2>
+<p><code>---</code>,<code>***</code>and<code>___</code>can represent dividing line.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">***
+</span></span><span class="line"><span class="cl">___
+</span></span></code></pre></div><hr>
+<hr>
+<hr>
+<h2 id="18-link">1.8 Link<a hidden class="anchor" aria-hidden="true" href="#18-link">#</a></h2>
+<ul>
+<li>Link with title</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">This is a [link](https://www.google.com/)
+</span></span></code></pre></div><p>This is a <a href="https://www.google.com/">Link</a></p>
+<hr>
+<ul>
+<li>Website</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;https://www.google.com/&gt;
+</span></span></code></pre></div><p><a href="https://www.google.com/">https://www.google.com/</a></p>
+<hr>
+<h2 id="19-picture">1.9 Picture<a hidden class="anchor" aria-hidden="true" href="#19-picture">#</a></h2>
+<ul>
+<li>Picture Display</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">![title](../img/display.jpeg)
+</span></span></code></pre></div><p><img loading="lazy" src="../img/display.jpeg" alt="title"  />
+</p>
+<hr>
+<ul>
+<li>Add link for picture</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">[![title](../img/display.jpeg)](https://www.google.com/)
+</span></span></code></pre></div><p><a href="https://www.google.com/"><img loading="lazy" src="../img/display.jpeg" alt="title"  />
+</a></p>
+<hr>
+<h2 id="110-escape-character">1.10 Escape Character<a hidden class="anchor" aria-hidden="true" href="#110-escape-character">#</a></h2>
+<p>Escape Character is <code>\</code>。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">\# title
+</span></span></code></pre></div><p># title</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+<div>
+    <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">Comments</span>
+        <hr />
+    </div>
+    <div id="tcomment"></div>
+    <script src="https://cdn.staticfile.org/twikoo/1.6.39/twikoo.all.min.js"></script>
+    <script>
+        twikoo.init({
+            envId: "https://mangodb-theta.vercel.app/",  
+            el: "#tcomment",
+            lang: 'en-US',
+            path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        });
+    </script>
+</div>
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="https://garywy.github.io/en/">Gary&#39;s House</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    
+    <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv">
+        Views: <span id="busuanzi_value_site_pv"></span>
+    </span>
+    <span id="busuanzi_container_site_uv">
+        Visitors: <span id="busuanzi_value_site_uv"></span>
+    </span>
+    </div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
