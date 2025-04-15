@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://garywy.github.io/en/</loc>
+    <lastmod>2025-03-21T15:15:43+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/en/posts/paper/</loc>
+    <lastmod>2025-03-21T15:15:43+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/posts/paper/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/posts/paper/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/en/posts/</loc>
+    <lastmod>2025-03-21T15:15:43+09:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://garywy.github.io/zh/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://garywy.github.io/en/posts/"
+                />
+  </url><url>
+    <loc>https://garywy.github.io/en/posts/paper/research_lab_works/</loc>
+    <lastmod>2025-03-21T15:15:43+09:00</lastmod>
+  </url><url>
     <loc>https://garywy.github.io/en/music/2024-11-08/</loc>
     <lastmod>2024-11-08T16:06:26+09:00</lastmod>
     <xhtml:link
@@ -13,19 +55,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://garywy.github.io/en/music/2024-11-08/"
-                />
-  </url><url>
-    <loc>https://garywy.github.io/en/</loc>
-    <lastmod>2024-11-08T16:06:26+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://garywy.github.io/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://garywy.github.io/en/"
                 />
   </url><url>
     <loc>https://garywy.github.io/en/music/</loc>
@@ -130,19 +159,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://garywy.github.io/en/posts/study/dp_question/"
-                />
-  </url><url>
-    <loc>https://garywy.github.io/en/posts/</loc>
-    <lastmod>2024-09-29T18:20:59+09:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://garywy.github.io/zh/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://garywy.github.io/en/posts/"
                 />
   </url><url>
     <loc>https://garywy.github.io/en/posts/study/</loc>
@@ -261,18 +277,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://garywy.github.io/en/posts/life/"
-                />
-  </url><url>
-    <loc>https://garywy.github.io/en/posts/paper/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://garywy.github.io/zh/posts/paper/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://garywy.github.io/en/posts/paper/"
                 />
   </url><url>
     <loc>https://garywy.github.io/en/search/</loc>

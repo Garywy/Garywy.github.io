@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Research_lab_works | Gary&#39;s House</title>
+<meta name="keywords" content="">
+<meta name="description" content="The research is about a question with a wrong presupposition, and we need to correct the presupposition and give a correct result.
+CREPE: Open-Domain Question Answering with False Presuppositions 🎯 Target The authors introduced CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.
+📦 Dataset CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.
+Data Source: Reddit, the ELI5 subreddit.">
+<meta name="author" content="Gary">
+<link rel="canonical" href="https://garywy.github.io/en/posts/paper/research_lab_works/">
+<meta name="google-site-verification" content="XYZabc">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.397ecfea235757aeed34e7152e1304c0d840fb0e35a533d106a346c6baddf019.css" integrity="sha256-OX7P6iNXV67tNOcVLhMEwNhA&#43;w41pTPRBqNGxrrd8Bk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://garywy.github.io/img/Q.jpg">
+<link rel="icon" type="image/png" sizes="16x16" href="https://garywy.github.io/img/Q.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="https://garywy.github.io/img/Q.jpg">
+<link rel="apple-touch-icon" href="https://garywy.github.io/Q.jpg">
+<link rel="mask-icon" href="https://garywy.github.io/Q.jpg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://garywy.github.io/en/posts/paper/research_lab_works/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.1/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+
+<meta property="og:title" content="Research_lab_works" />
+<meta property="og:description" content="The research is about a question with a wrong presupposition, and we need to correct the presupposition and give a correct result.
+CREPE: Open-Domain Question Answering with False Presuppositions 🎯 Target The authors introduced CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.
+📦 Dataset CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.
+Data Source: Reddit, the ELI5 subreddit." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://garywy.github.io/en/posts/paper/research_lab_works/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-03-21T15:15:43+09:00" />
+<meta property="article:modified_time" content="2025-03-21T15:15:43+09:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Research_lab_works"/>
+<meta name="twitter:description" content="The research is about a question with a wrong presupposition, and we need to correct the presupposition and give a correct result.
+CREPE: Open-Domain Question Answering with False Presuppositions 🎯 Target The authors introduced CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.
+📦 Dataset CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.
+Data Source: Reddit, the ELI5 subreddit."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://garywy.github.io/en/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Paper",
+      "item": "https://garywy.github.io/en/posts/paper/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Research_lab_works",
+      "item": "https://garywy.github.io/en/posts/paper/research_lab_works/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Research_lab_works",
+  "name": "Research_lab_works",
+  "description": "The research is about a question with a wrong presupposition, and we need to correct the presupposition and give a correct result.\nCREPE: Open-Domain Question Answering with False Presuppositions 🎯 Target The authors introduced CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.\n📦 Dataset CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.\nData Source: Reddit, the ELI5 subreddit.",
+  "keywords": [
+    
+  ],
+  "articleBody": "The research is about a question with a wrong presupposition, and we need to correct the presupposition and give a correct result.\nCREPE: Open-Domain Question Answering with False Presuppositions 🎯 Target The authors introduced CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.\n📦 Dataset CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.\nData Source: Reddit, the ELI5 subreddit.\nData Numbers: 8,400 Reddit questions with:\nLabels (whether there are any false presuppositions). The false presuppositions and their corrections, if there are any false presuppositions in questions. 🛠️ Construction The questions in Reddit, and the most upvoted comments written by community users.\n1.1 Criteria and Solutions Naturalness of the questions -\u003e C1\nIf the questions are written by real, information-seeking users.\nC1’s solution:\nQuestions posted on the ELI5 subreddit. Filter questions and comments based on upvotes with a higher threshold. Split the training, the development, and the test data based on the time of the posting. The training set: posted in 2011-2018 The development set: posted in Jan-Jun of 2019 The test set: posted in Jul-Dec of 2019 Validity of the presupposition -\u003e C2\nIf the identified presupposition is highly likely made by the question writer.\nCorrectness and adequacy of the information -\u003e C3\nIf the correction is factually correct and adequate to convince the question writer.\nC2 \u0026 C3’s solution:\nBased on the most upvoted comments.\nC2: If the comment identifying a false presupposition has the most upvotes, it is likely that the presupposition is valid (made by the question writer). Personal Replenish of valid: The false presupposition in the original question was indeed posed by the question writer rather than misinterpreted or incorrectly inferred by the community users. C3: If the comment identifying a false presupposition has the most upvotes, it is highly likely to contain information that is correct and adequate. 1.2 Annotation tasks Input: Question(1) and the most voted comment(1)\nFilter out questions (subjective, uninformative, or rely on personal experience). Judge the most voted comment (whether a false presupposition in the question is identified). If there is a false presupposition (the most voted comment identified a false presupposition in the question), write the presupposition and a correction as a concise, declarative sentence. Pipeline:\n1 question was annotated by 2 annotators Step 1: If either of the annotators filtered out this question, then filter this question out. Step 2 \u0026 3: If the two annotators had the same label in this question (i.e., both of them consider the question to contain the false presupposition or not to contain the false presupposition), then the label and the corrections written by the two annotators are taken as Gold Reference. Otherwise, assign a third annotator to judge this question. 📖 Task 1. The main track Input: Question Only\nApproach: Search necessary background knowledge to perform the task from any information source except for Reddit and Quora.\n2. The GOLD-COMMENT track Input: Question and The most voted comment\nApproach: No search\n🧪 Experiments 1. Detection Judge whether there is a false presupposition in the question.\n(1) Trivial baselines Approach (Nearest Neighbor): Randomly assign FP (False Presupposition) or N (No false presupposition) uniformly. FP only always assigns FP. N only always assigns N.\nModel: c-REALM\n(2) GOLD-COMMENT track baselines Three classifiers based on CREPE datasets:\nQuestion only trains a RoBERTa-based classifier. (Doesn’t specify whether this classifier is based on RoBERTa-large). Comment only trains a RoBERTa-large-based classifier. Question⊕Comment trains a RoBERTa-large-based classifier.\nSame classifiers based on MNLI \u0026 BoolQ datasets, and tested on CREPE in a zero-shot fashion. (3) Main track baselines Input: Question\nOutput: The likelihood of the question having false presuppositions or not.\nRetrieve a set of k passages from the English Wikipedia by the c-REALM model. Concatenate the question and k passages to assign the likelihood of the question having false presuppositions or not by Softmax.\nModel: RoBERTa Special Operation (Self-labeling) Target: To label the unlabeled training questions.\nUse the Question⊕Comment to assign a silver label to the unlabeled training questions. Then train the classifier on the union of this silver data as well as the gold labeled data. (4) Human performance Two human workers perform the task for 186 questions for each track.\nHuman with the most voted comment: Assume the most voted comment as a ground truth in terms of factuality of the information and the validity of the presupposition. Human without the most voted comment: Human workers search over the web (except Quora and Reddit) to find information and make the best judgment about the validity of the presupposition. 2. Writing Give a question that contains a false presupposition, and it is required to generate the presupposition as well as the correction.\n(1) GOLD-COMMENT track baselines Copy baseline: Copy the question as a false presupposition and use the comment as a correction.\nQuestion⊕Comment Dedicated: Use a pretrained T5-base model to train two separate generators. The input is a concatenation of the question and the comment. One generator extracts the false presupposition from the question, while the other generates the correction.\nQuestion⊕Comment Unified: Design a unified model that can be used for both the presupposition and the correction.\nTraining:\nInput: (Question and Comment), Output: (Annotated correction) Input: (Question and Comment), Output: (“It is not the case that” + false presupposition) Generation:\nCorrection: Use a standard, beam search decoding to generate the correction. Presupposition: To generate the presupposition, we first decode a sequence with a constraint that it should start with “It is not the case that,” and then take the sequence that comes next as a presupposition. (2) Main track baselines The baselines are similar to Question⊕Comment Dedicated and Question⊕Comment Unified models in the GOLD-COMMENT track.\nThe only difference is that the model receives a question and a set of k passages from c-REALM instead of a question-comment pair.\nUse the Fusion-in-Decoder architecture to read multiple passages.\n📊 Results Detection Experiment Results Writing Experiment Results ⚠️ Limitations Use the most upvoted comments that are not perfect. One avenue for future work is to consider extra-linguistic context such as individuals’ backgrounds when judging the validity of presuppositions. This research does not include large-scale models. The researchers conducted a small-scale case study with GPT-3 text-davinci-002, but most generations are roughly on the right topic. The domain of CREPE is limited to online forums (Reddit). It is necessary to study false presuppositions on a broader set of domains that require domain expertise. Reference:\nXinyan Velocity Yu, Sewon Min, Luke Zettlemoyer, and Hannaneh Hajishirzi. CREPE: Open-domain question answering with false presuppositions. In Annual Meeting of the Association for Computational Linguistics, 2022. Evaluating Large Language Models for Health-related Queries with Presuppositions 🎯 Target Construct a dataset of health-related queries with varying degrees of presupposition: UPHILL Evaluate factual accuracy and consistency of InstructGPT, ChatGPT, GPT-4 and Bing Copilot. 📦 Dataset UPHILL, a dataset consisting of health-related queries with varying degrees of presuppositions.\nSource:\nPubHealth Monant Medical Misinformation Size:\n1945 claims × 5 degrees = 9725 presuppositions True: 766 False: 854 Mixture: 159 Fabricated: 166 Claim Sources:\nTrue, False, Mixture: From PubHealth and Monant Fabricated: From templates E.g., “[Action] treats [disease]”, “[Symptom] indicates [disease]” Slot-filled using terms from NHS health info Paraphrased using GPT-3.5-turbo 🛠️ Construction 1. Query Generation For each claim, generate 5 different degrees’ presuppositions by templetes. Degree Description 0 (Neutral) No assumptions; curious, factual inquiry 1 (Mild) Suggestive query with tentative belief 2 (Unequivocal) Clear presupposition invoking scientific legitimacy 3 (Writing Request) Request to write a report/article supporting the claim 4 (Writing Demand) Assertive demand for evidence-backed writing \u0026 citations Templetes 2. Entailment Model (InstructGPT, ChatGPT, GPT-4 and Bing Copilot) Feed into 4 models → obtain 5 responses per model per claim Check relation between claim and model response Labels: Agreement Disagreement Neither 3. Metrics Accuracy\nA response is accurate if: It agrees with a true claim It disagrees with a false claim Consistency\nA model is consistent if it maintains the same stance across all 5 responses for the same claim 📊 Results InstructGPT: Most susceptible to presuppositions Bing Copilot: Most robust Visual Results: 📄 P14312 Table 3 \u0026 4 📊 P14313 Figure 2 📄 P14314 Table 5 ⚠️ Limitations Entailment Model:\nUsed for evaluating agreement/disagreement; not perfectly reliable despite validation.\nTemplate-Based Queries:\nSimulate realistic search queries but don’t reflect actual user behavior (due to lack of search logs).\nGeographical Bias:\nClaims are mostly U.S.-based → limits global generalizability.\nEvaluation Scope:\nEvaluates factual accuracy only at the response level; does not perform fine-grained analysis.\nReference:\nNavreet Kaur, Monojit Choudhury, and Danish Pruthi. Evaluating large language models for health-related queries with presuppositions. In Findings of the Association for Computational Linguistics: ACL 2024, 2024. (QA)²: Question Answering with Questionable Assumptions 🎯 Target Construct a dataset to be an evaluation set with the goal of testing robustness to questionable assumptions.\n📦 Dataset (QA)² (Question Answering with Questionable Assumptions)\nData Source: NQ dataset by Google’s autocompletion API Data Size: 602 expert-annotated questions 50% contain questionable assumptions 50% are typical information-seeking questions (no questionable assumptions) Adaptation Set: 16 questions with questionable assumptions 16 questions without questionable assumptions Used for few-shot tuning or in-context demonstrations 🛠️ Construction 1. Question Collection Scraped English wh-questions using API with prefix strings: why, what, where, etc. Applied automatic filtering: Removed duplicates and bad/non-questions Used a stop word list (e.g., quizlet, brainly, lyrics) Imperfect data retained: syntax/tense errors allowed, since it reflects real data 2. Annotation Task (Crowdsourced) Annotators: 23 qualified workers from Amazon Mechanical Turk Goal: Flag whether a question contains a questionable assumption Type: Binary classification Data: 12,000 questions Each question reviewed by 5 annotators 1 annotation set = 20 questions (18 unlabeled + 2 labeled) Quality check: On average, 86% of annotators labeled the control questions correctly 3. Annotation Task (Expert) Annotators: 3 expert annotators (authors) Scope: Almost 720 questions(6% of 12,000) flagged by at least one crowdworker Process: Each expert → half of the questions independently annotate(Annotate the label, and give the abstract answer and its evidence) The last expert → verify the result of annotations(disagreements via adjudication) Final selection criteria: (C1) Flagged by at least 1 worker (C2) Justification for the abstractive answer can be found online (C3) No immediate ambiguity in question interpretation 📖 Tasks 1. End-to-End Abstractive QA (End-to-end QA) Input: Question Output: Abstractive answer generated by the model Evaluation: Randomly sample 100 answers Judged by 5 human raters from Prolific(refer to the answers given by experts) Use majority vote to determine acceptability (% acceptable reported) 2. Questionable Assumption Detection (Detection) Input: Question Goal: Detect whether it contains false or unverifiable assumptions Framing: Binary classification (Yes / No) Template examples: “Does {question} contain any invalid assumptions?” “Are any of the assumptions in {question} problematic?” 3. Questionable Assumption Verification (Verification) Input: Yes/No question derived from a questionable assumption (identified by expert) Goal: Judge the truth of the assumption Example: Original: where are the winter olympics held 2021 Assumption: the winter olympics were held in 2021 Derived question: were the winter olympics held in 2021? → Answer: No For valid questions: randomly select a true assumption and convert it into a Yes/No question 📊 Results ⚠️ Limitations The dataset is limited to wh-questions collected via Google’s Autocompletion API, which may not fully represent the diversity of real-world questions. Some questions with false or unverifiable assumptions might be subtle or ambiguous, making it difficult for annotators to reach consistent judgments. Verification of nonexistence relies on pragmatic inference rather than exhaustive factual proof, due to the challenge of confirming something does not exist. The oracle-based decomposition in the verification task does not reflect a real-world pipeline where assumption detection and verification must be jointly performed. Human evaluation in end-to-end QA introduces subjectivity and may vary depending on rater interpretation and context familiarity. The adaptation set is small (32 total), which may limit generalization in few-shot or in-context learning settings. Reference:\nNajoung Kim, Phu Mon Htut, Samuel R. Bowman, and Jackson Petty. (QA)2: Question answering with questionable assumptions, 2023. Won’t Get Fooled Again: Answering Questions with False Premises 🎯 Target Authors annotated a FalseQA dataset containing 2365 human-written FPQs, with the corresponding explanations for the false premises and the revised true premise questions.\n📦 Dataset FalseQA, a dataset containing 2365 human-written FPQs, with the corresponding explanations for the false premises and the revised true premise questions.\nSource: Human-written Size: 2365 FPQs (False Premise Questions) with: Corresponding explanations of the false premises Revised TPQs (True Premise Questions) Set Count Training 1187 Validation 491 Test 687 🛠️ Construction Step Description 1 Write FPQs based on source words (subject words from GenericsKB) 2 Revise each FPQ minimally into a TPQ (true premise question) 3 Write detailed explanations for FPQs and answers for TPQs Train/Validation: 1 explanation per question Test: 2 explanations per question 🧪 Experiments 1. Discriminating FPQs (Binary Classification) Train PLMs to classify questions into FPQs and TPQs Apply prompt learning to reduce the gap between pre-training and fine-tuning 2. Impact of Training Data Size Train with 32 / 256 / 1187 training pairs Result: Accuracy grows almost linearly as data size increases exponentially 3. Answering FPQs with Explanations Step 1: Model generates discriminating token (“tricky question” or “true question”) Step 2: Model continues to generate explanation (FPQ) or answer (TPQ) Example:\nInput → Question: Are tigers’ eggs bigger than chickens’ eggs?\nOutput → tricky question. Because tigers are mammals and do not lay eggs, the question assumes a false premise.\nLoss Calculation:\nTotal loss = binary loss (“tricky question” or “true question”) + generation loss (remaining tokens)\nDetails in Section 5.4 paragraph 2\u00263\nEvaluation:\nOnly explanation for FPQs is evaluated using ROUGE-L Two reference explanations used for test set 4. Answering Both FPQs and General Questions Use Data Replay (DR) to avoid catastrophic forgetting For every FPQ batch, add one ARC-DA batch Each group of ARC-DA samples is fixed for every 30 iterations Example: 120 batches\nBatch No. Data Type ARC-DA Sample Used 1, 3, 5, …, 59 FPQ (FalseQA) - 2, 4, 6, …, 60 ARC-DA ARC-DA sample A 61, 63, …, 119 FPQ (FalseQA) - 62, 64, …, 120 ARC-DA ARC-DA sample B ⚠️ Limitation Standardized response to FPQs is a rebuttal, which reflects a conventional style In real scenarios, creative responses (e.g., rhetorical questions) may be more natural Reference:\nShengding Hu, Yifan Luo, Huadong Wang, Xingyi Cheng, Zhiyuan Liu, and Maosong Sun. Won‘t get fooled again: Answering questions with false premises. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), 2023. The difference of Presupposition, Presumption, Premise and Questionable Assumption 1. Presupposition An implicit assumption that must be true for a statement to make sense. Often taken for granted without being explicitly stated.\nExample:\n1. \"When did you quit smoking?\" presupposes that you used to smoke. 2. \"John's children are very well-behaved\" presupposes that John has children. 3. \"Could you turn down the music?\" presupposes that music is playing. 2. presumption A belief accepted as true until proven otherwise. Often based on probability or convention rather than direct evidence.\nExample:\n1. In court, there is a presumption that the defendant is innocent until proven guilty. 2. There's a presumption that people signing contracts have read and understood them. 3. premise An explicitly stated proposition that serves as the foundation for an argument. Used consciously as part of logical reasoning.\nExample:\nPremise 1: All mammals are warm-blooded. Premise 2: Whales are mammals. Conclusion: Therefore, whales are warm-blooded. Premise 1: If it's raining, the ground is wet. Premise 2: It is raining. Conclusion: Therefore, the ground is wet. 4. Questionable Assumption An assumption that may be false, unwarranted, or dubious. Often identified as a weak point in reasoning that needs scrutiny.\nExample:\n1. \"Everyone I know owns a smartphone, so virtually everyone must own a smartphone.\" (Assumes your social circle represents the general population) 2. \"That restaurant was empty on a Tuesday night, so it must not be very good.\" (Assumes popularity at one specific time indicates quality) 3. \"He didn't smile when we met, so he must not like me.\" (Assumes a single behavior reliably indicates a particular attitude) Term Simple Definition Example with “Turmeric cures cancer” Presupposition An unstated background assumption that must be true for a sentence to make sense. “Why is turmeric effective in curing cancer?” presupposes that turmeric does cure cancer — this is taken for granted by the question. Presumption A belief automatically made based on context or common knowledge, without being stated. Hearing “Turmeric is often used in cancer treatments” might lead someone to presume it’s effective, even if that isn’t explicitly claimed or proven. Premise A clearly stated claim used as the basis of an argument. “Turmeric cures cancer” is explicitly stated to support a conclusion like “Therefore, people should take turmeric to treat cancer.” Questionable Assumption A false or unverifiable assumption likely believed by the speaker, even if not presupposed. “How much turmeric should cancer patients take daily?” assumes the speaker believes turmeric helps with cancer, even if it’s not logically presupposed. ",
+  "wordCount" : "2831",
+  "inLanguage": "en",
+  "datePublished": "2025-03-21T15:15:43+09:00",
+  "dateModified": "2025-03-21T15:15:43+09:00",
+  "author":{
+    "@type": "Person",
+    "name": "Gary"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://garywy.github.io/en/posts/paper/research_lab_works/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gary's House",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://garywy.github.io/img/Q.jpg"
+    }
+  }
+}
+</script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://garywy.github.io/en/" accesskey="h" title="Gary&#39;s Blog (Alt + H)">
+                <img src="https://garywy.github.io/img/me.jpg" alt="" aria-label="logo"
+                    height="35">Gary&#39;s Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="https://garywy.github.io/zh/" title="中文"
+                            aria-label="中文">中文</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://garywy.github.io/en/search" title="🔍Search (Alt &#43; /)" accesskey=/>
+                    <span>🔍Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/" title="🏠Homepage">
+                    <span>🏠Homepage</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/posts" title="📚Article">
+                    <span>📚Article</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/archives/" title="⏱Archives">
+                    <span>⏱Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/music/" title="🎵music">
+                    <span>🎵music</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://garywy.github.io/en/about" title="🙋🏻‍♂️About">
+                    <span>🙋🏻‍♂️About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://garywy.github.io/en/">Home</a>&nbsp;»&nbsp;<a href="https://garywy.github.io/en/posts/">Posts</a>&nbsp;»&nbsp;<a href="https://garywy.github.io/en/posts/paper/">Paper</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Research_lab_works
+    </h1>
+    <div class="post-meta"><span title='2025-03-21 15:15:43 +0900 JST'>2025-03-21</span>&nbsp;·&nbsp;14 min&nbsp;·&nbsp;Gary
+
+
+      <div  class="meta-item">&nbsp·&nbsp
+        <span id="busuanzi_container_page_pv">本文阅读量<span id="busuanzi_value_page_pv"></span>次</span>
+      </div>
+    </div>
+
+
+
+  </header> 
+                    <aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">Table of Contents</span>
+            </summary>
+
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#crepe-open-domain-question-answering-with-false-presuppositions" aria-label="CREPE: Open-Domain Question Answering with False Presuppositions"><strong>CREPE: Open-Domain Question Answering with False Presuppositions</strong></a><ul>
+                            
+                    <li>
+                        <a href="#-target" aria-label="🎯 Target">🎯 Target</a></li>
+                    <li>
+                        <a href="#-dataset" aria-label="📦 Dataset">📦 Dataset</a></li>
+                    <li>
+                        <a href="#-construction" aria-label="🛠️ Construction">🛠️ Construction</a><ul>
+                            
+                    <li>
+                        <a href="#11-criteria-and-solutions" aria-label="1.1 Criteria and Solutions">1.1 Criteria and Solutions</a></li>
+                    <li>
+                        <a href="#12-annotation-tasks" aria-label="1.2 Annotation tasks">1.2 Annotation tasks</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#-task" aria-label="📖 Task">📖 Task</a><ul>
+                            
+                    <li>
+                        <a href="#1-the-main-track" aria-label="1. The main track">1. The main track</a></li>
+                    <li>
+                        <a href="#2-the-gold-comment-track" aria-label="2. The GOLD-COMMENT track">2. The GOLD-COMMENT track</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#-experiments" aria-label="🧪 Experiments">🧪 Experiments</a><ul>
+                            
+                    <li>
+                        <a href="#1-detection" aria-label="1. Detection">1. Detection</a><ul>
+                            
+                    <li>
+                        <a href="#1-trivial-baselines" aria-label="(1) Trivial baselines">(1) Trivial baselines</a></li>
+                    <li>
+                        <a href="#2-gold-comment-track-baselines" aria-label="(2) GOLD-COMMENT track baselines">(2) GOLD-COMMENT track baselines</a></li>
+                    <li>
+                        <a href="#3-main-track-baselines" aria-label="(3) Main track baselines">(3) Main track baselines</a></li>
+                    <li>
+                        <a href="#special-operation-self-labeling" aria-label="Special Operation (Self-labeling)">Special Operation (Self-labeling)</a></li>
+                    <li>
+                        <a href="#4-human-performance" aria-label="(4) Human performance">(4) Human performance</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#2-writing" aria-label="2. Writing">2. Writing</a><ul>
+                            
+                    <li>
+                        <a href="#1-gold-comment-track-baselines" aria-label="(1) GOLD-COMMENT track baselines">(1) GOLD-COMMENT track baselines</a></li>
+                    <li>
+                        <a href="#2-main-track-baselines" aria-label="(2) Main track baselines">(2) Main track baselines</a></li></ul>
+                    </li></ul>
+                    </li>
+                    <li>
+                        <a href="#-results" aria-label="📊 Results">📊 Results</a><ul>
+                            
+                    <li>
+                        <a href="#detection-experiment-results" aria-label="Detection Experiment Results">Detection Experiment Results</a></li>
+                    <li>
+                        <a href="#writing-experiment-results" aria-label="Writing Experiment Results">Writing Experiment Results</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#-limitations" aria-label="⚠️ Limitations">⚠️ Limitations</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#evaluating-large-language-models-for-health-related-queries-with-presuppositions" aria-label="Evaluating Large Language Models for Health-related Queries with Presuppositions"><strong>Evaluating Large Language Models for Health-related Queries with Presuppositions</strong></a><ul>
+                            
+                    <li>
+                        <a href="#-target-1" aria-label="🎯 Target">🎯 Target</a></li>
+                    <li>
+                        <a href="#-dataset-1" aria-label="📦 Dataset">📦 Dataset</a></li>
+                    <li>
+                        <a href="#-construction-1" aria-label="🛠️ Construction">🛠️ Construction</a><ul>
+                            
+                    <li>
+                        <a href="#1-query-generation" aria-label="1. Query Generation">1. Query Generation</a></li>
+                    <li>
+                        <a href="#2-entailment-model-instructgpt-chatgpt-gpt-4-and-bing-copilot" aria-label="2. Entailment Model (InstructGPT, ChatGPT, GPT-4 and Bing Copilot)">2. Entailment Model (InstructGPT, ChatGPT, GPT-4 and Bing Copilot)</a></li>
+                    <li>
+                        <a href="#3-metrics" aria-label="3. Metrics">3. Metrics</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#-results-1" aria-label="📊 Results">📊 Results</a></li>
+                    <li>
+                        <a href="#-limitations-1" aria-label="⚠️ Limitations">⚠️ Limitations</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#qa-question-answering-with-questionable-assumptions" aria-label="(QA)²: Question Answering with Questionable Assumptions"><strong>(QA)²: Question Answering with Questionable Assumptions</strong></a><ul>
+                            
+                    <li>
+                        <a href="#-target-2" aria-label="🎯 Target">🎯 Target</a></li>
+                    <li>
+                        <a href="#-dataset-2" aria-label="📦 Dataset">📦 Dataset</a></li>
+                    <li>
+                        <a href="#-construction-2" aria-label="🛠️ Construction">🛠️ Construction</a><ul>
+                            
+                    <li>
+                        <a href="#1-question-collection" aria-label="1. Question Collection">1. Question Collection</a></li>
+                    <li>
+                        <a href="#2-annotation-task-crowdsourced" aria-label="2. Annotation Task (Crowdsourced)">2. Annotation Task (Crowdsourced)</a></li>
+                    <li>
+                        <a href="#3-annotation-task-expert" aria-label="3. Annotation Task (Expert)">3. Annotation Task (Expert)</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#-tasks" aria-label="📖 Tasks">📖 Tasks</a><ul>
+                            
+                    <li>
+                        <a href="#1-end-to-end-abstractive-qa-end-to-end-qa" aria-label="1. End-to-End Abstractive QA (End-to-end QA)">1. End-to-End Abstractive QA (End-to-end QA)</a></li>
+                    <li>
+                        <a href="#2-questionable-assumption-detection-detection" aria-label="2. Questionable Assumption Detection (Detection)">2. Questionable Assumption Detection (Detection)</a></li>
+                    <li>
+                        <a href="#3-questionable-assumption-verification-verification" aria-label="3. Questionable Assumption Verification (Verification)">3. Questionable Assumption Verification (Verification)</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#-results-2" aria-label="📊 Results">📊 Results</a></li>
+                    <li>
+                        <a href="#-limitations-2" aria-label="⚠️ Limitations">⚠️ Limitations</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#wont-get-fooled-again-answering-questions-with-false-premises" aria-label="Won’t Get Fooled Again: Answering Questions with False Premises"><strong>Won’t Get Fooled Again: Answering Questions with False Premises</strong></a><ul>
+                            
+                    <li>
+                        <a href="#-target-3" aria-label="🎯 Target">🎯 Target</a></li>
+                    <li>
+                        <a href="#-dataset-3" aria-label="📦 Dataset">📦 Dataset</a></li>
+                    <li>
+                        <a href="#-construction-3" aria-label="🛠️ Construction">🛠️ Construction</a></li>
+                    <li>
+                        <a href="#-experiments-1" aria-label="🧪 Experiments">🧪 Experiments</a><ul>
+                            
+                    <li>
+                        <a href="#1-discriminating-fpqs-binary-classification" aria-label="1. Discriminating FPQs (Binary Classification)">1. Discriminating FPQs (Binary Classification)</a></li>
+                    <li>
+                        <a href="#2-impact-of-training-data-size" aria-label="2. Impact of Training Data Size">2. Impact of Training Data Size</a></li>
+                    <li>
+                        <a href="#3-answering-fpqs-with-explanations" aria-label="3. Answering FPQs with Explanations">3. Answering FPQs with Explanations</a></li>
+                    <li>
+                        <a href="#4-answering-both-fpqs-and-general-questions" aria-label="4. Answering Both FPQs and General Questions">4. Answering Both FPQs and General Questions</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#-limitation" aria-label="⚠️ Limitation">⚠️ Limitation</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#the-difference-of-presupposition-presumption-premise-and-questionable-assumption" aria-label="The difference of Presupposition, Presumption, Premise and Questionable Assumption"><strong>The difference of <code>Presupposition</code>, <code>Presumption</code>, <code>Premise</code> and <code>Questionable Assumption</code></strong></a><ul>
+                            
+                    <li>
+                        <a href="#1-presupposition" aria-label="1. Presupposition">1. Presupposition</a></li>
+                    <li>
+                        <a href="#2-presumption" aria-label="2. presumption">2. presumption</a></li>
+                    <li>
+                        <a href="#3-premise" aria-label="3. premise">3. premise</a></li>
+                    <li>
+                        <a href="#4-questionable-assumption" aria-label="4. Questionable Assumption">4. Questionable Assumption</a>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
+
+  <div class="post-content"><p>The research is about a question with a wrong presupposition, and we need to correct the presupposition and give a correct result.</p>
+<h1 id="crepe-open-domain-question-answering-with-false-presuppositions"><strong>CREPE: Open-Domain Question Answering with False Presuppositions</strong><a hidden class="anchor" aria-hidden="true" href="#crepe-open-domain-question-answering-with-false-presuppositions">#</a></h1>
+<h2 id="-target">🎯 Target<a hidden class="anchor" aria-hidden="true" href="#-target">#</a></h2>
+<p>The authors introduced CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.</p>
+<h2 id="-dataset">📦 Dataset<a hidden class="anchor" aria-hidden="true" href="#-dataset">#</a></h2>
+<p><a href="https://github.com/velocityCavalry/CREPE">CREPE</a>, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.<br>
+<strong>Data Source</strong>: Reddit, <a href="http://www.reddit.com/r/explainlikeimfive">the ELI5 subreddit</a>.<br>
+<strong>Data Numbers</strong>: 8,400 Reddit questions with:</p>
+<ol>
+<li>Labels (whether there are any false presuppositions).</li>
+<li>The false presuppositions and their corrections, if there are any false presuppositions in questions.</li>
+</ol>
+<p><img loading="lazy" src="../img/statistics1.jpg" alt="Dataset statistics"  />
+</p>
+<p><img loading="lazy" src="../img/data_sample.jpg" alt="Sample Data"  />
+</p>
+<h2 id="-construction">🛠️ Construction<a hidden class="anchor" aria-hidden="true" href="#-construction">#</a></h2>
+<p>The questions in Reddit, and the most upvoted comments written by community users.</p>
+<h3 id="11-criteria-and-solutions">1.1 Criteria and Solutions<a hidden class="anchor" aria-hidden="true" href="#11-criteria-and-solutions">#</a></h3>
+<ol>
+<li>
+<p><strong>Naturalness of the questions</strong> -&gt; C1<br>
+If the questions are written by real, information-seeking users.</p>
+<p><strong>C1&rsquo;s solution</strong>:</p>
+<ul>
+<li>Questions posted on the ELI5 subreddit.</li>
+<li>Filter questions and comments based on upvotes with a higher threshold.</li>
+<li>Split the training, the development, and the test data based on the time of the posting.</li>
+<li><strong>The training set</strong>: posted in 2011-2018</li>
+<li><strong>The development set</strong>: posted in Jan-Jun of 2019</li>
+<li><strong>The test set</strong>: posted in Jul-Dec of 2019</li>
+</ul>
+</li>
+<li>
+<p><strong>Validity of the presupposition</strong> -&gt; C2<br>
+If the identified presupposition is highly likely made by the question writer.</p>
+</li>
+<li>
+<p><strong>Correctness and adequacy of the information</strong> -&gt; C3<br>
+If the correction is factually correct and adequate to convince the question writer.</p>
+<p><strong>C2 &amp; C3&rsquo;s solution</strong>:<br>
+Based on the most upvoted comments.</p>
+<ul>
+<li><strong>C2</strong>: If the comment identifying a false presupposition has the most upvotes, it is likely that the presupposition is valid (made by the question writer).</li>
+<li><strong>Personal Replenish of <code>valid</code></strong>: The false presupposition in the original question was indeed posed by the question writer rather than misinterpreted or incorrectly inferred by the community users.</li>
+<li><strong>C3</strong>: If the comment identifying a false presupposition has the most upvotes, it is highly likely to contain information that is correct and adequate.</li>
+</ul>
+</li>
+</ol>
+<h3 id="12-annotation-tasks">1.2 Annotation tasks<a hidden class="anchor" aria-hidden="true" href="#12-annotation-tasks">#</a></h3>
+<p>Input: Question(1) and the most voted comment(1)</p>
+<ol>
+<li>Filter out questions (subjective, uninformative, or rely on personal experience).</li>
+<li>Judge the most voted comment (whether a false presupposition in the question is identified).</li>
+<li>If there is a false presupposition (the most voted comment identified a false presupposition in the question), write the presupposition and a correction as a concise, declarative sentence.</li>
+</ol>
+<p><strong>Pipeline</strong>:</p>
+<ul>
+<li>1 question was annotated by 2 annotators</li>
+<li><strong>Step 1</strong>: If either of the annotators filtered out this question, then filter this question out.</li>
+<li><strong>Step 2 &amp; 3</strong>: If the two annotators had the same label in this question (i.e., both of them consider the question to contain the false presupposition or not to contain the false presupposition), then the label and the corrections written by the two annotators are taken as Gold Reference. Otherwise, assign a third annotator to judge this question.</li>
+</ul>
+<hr>
+<h2 id="-task">📖 Task<a hidden class="anchor" aria-hidden="true" href="#-task">#</a></h2>
+<h3 id="1-the-main-track">1. The main track<a hidden class="anchor" aria-hidden="true" href="#1-the-main-track">#</a></h3>
+<p><strong>Input</strong>: Question Only<br>
+<strong>Approach</strong>: Search necessary background knowledge to perform the task from any information source except for Reddit and Quora.</p>
+<h3 id="2-the-gold-comment-track">2. The GOLD-COMMENT track<a hidden class="anchor" aria-hidden="true" href="#2-the-gold-comment-track">#</a></h3>
+<p><strong>Input</strong>: Question and The most voted comment<br>
+<strong>Approach</strong>: No search</p>
+<hr>
+<h2 id="-experiments">🧪 Experiments<a hidden class="anchor" aria-hidden="true" href="#-experiments">#</a></h2>
+<h3 id="1-detection">1. Detection<a hidden class="anchor" aria-hidden="true" href="#1-detection">#</a></h3>
+<p>Judge whether there is a false presupposition in the question.</p>
+<h4 id="1-trivial-baselines">(1) Trivial baselines<a hidden class="anchor" aria-hidden="true" href="#1-trivial-baselines">#</a></h4>
+<p><strong>Approach (Nearest Neighbor)</strong>: Randomly assign FP (False Presupposition) or N (No false presupposition) uniformly. FP only always assigns FP. N only always assigns N.<br>
+<strong>Model</strong>: c-REALM</p>
+<h4 id="2-gold-comment-track-baselines">(2) GOLD-COMMENT track baselines<a hidden class="anchor" aria-hidden="true" href="#2-gold-comment-track-baselines">#</a></h4>
+<p>Three classifiers based on CREPE datasets:</p>
+<ol>
+<li><strong>Question only</strong> trains a RoBERTa-based classifier. (Doesn&rsquo;t specify whether this classifier is based on RoBERTa-large).</li>
+<li><strong>Comment only</strong> trains a RoBERTa-large-based classifier.</li>
+<li><strong>Question⊕Comment</strong> trains a RoBERTa-large-based classifier.<br>
+Same classifiers based on MNLI &amp; BoolQ datasets, and tested on CREPE in a zero-shot fashion.</li>
+</ol>
+<h4 id="3-main-track-baselines">(3) Main track baselines<a hidden class="anchor" aria-hidden="true" href="#3-main-track-baselines">#</a></h4>
+<p><strong>Input</strong>: Question<br>
+<strong>Output</strong>: The likelihood of the question having false presuppositions or not.</p>
+<ol>
+<li>Retrieve a set of k passages from the English Wikipedia by the c-REALM model.</li>
+<li>Concatenate the question and k passages to assign the likelihood of the question having false presuppositions or not by Softmax.<br>
+<strong>Model</strong>: RoBERTa</li>
+</ol>
+<h4 id="special-operation-self-labeling">Special Operation (Self-labeling)<a hidden class="anchor" aria-hidden="true" href="#special-operation-self-labeling">#</a></h4>
+<p><strong>Target</strong>: To label the unlabeled training questions.</p>
+<ol>
+<li>Use the <strong>Question⊕Comment</strong> to assign a silver label to the unlabeled training questions.</li>
+<li>Then train the classifier on the union of this silver data as well as the gold labeled data.</li>
+</ol>
+<h4 id="4-human-performance">(4) Human performance<a hidden class="anchor" aria-hidden="true" href="#4-human-performance">#</a></h4>
+<p>Two human workers perform the task for 186 questions for each track.</p>
+<ol>
+<li><strong>Human with the most voted comment</strong>: Assume the most voted comment as a ground truth in terms of factuality of the information and the validity of the presupposition.</li>
+<li><strong>Human without the most voted comment</strong>: Human workers search over the web (except Quora and Reddit) to find information and make the best judgment about the validity of the presupposition.</li>
+</ol>
+<hr>
+<h3 id="2-writing">2. Writing<a hidden class="anchor" aria-hidden="true" href="#2-writing">#</a></h3>
+<p>Give a question that contains a false presupposition, and it is required to generate the presupposition as well as the correction.</p>
+<h4 id="1-gold-comment-track-baselines">(1) GOLD-COMMENT track baselines<a hidden class="anchor" aria-hidden="true" href="#1-gold-comment-track-baselines">#</a></h4>
+<ol>
+<li>
+<p><strong>Copy baseline</strong>: Copy the question as a false presupposition and use the comment as a correction.</p>
+</li>
+<li>
+<p><strong>Question⊕Comment Dedicated</strong>: Use a pretrained T5-base model to train two separate generators. The input is a concatenation of the question and the comment. One generator extracts the false presupposition from the question, while the other generates the correction.</p>
+</li>
+<li>
+<p><strong>Question⊕Comment Unified</strong>: Design a unified model that can be used for both the presupposition and the correction.<br>
+<strong>Training</strong>:</p>
+<ul>
+<li>Input: (Question and Comment), Output: (Annotated correction)</li>
+<li>Input: (Question and Comment), Output: (&ldquo;It is not the case that&rdquo; + false presupposition)</li>
+</ul>
+<p><strong>Generation</strong>:</p>
+<ul>
+<li><strong>Correction</strong>: Use a standard, beam search decoding to generate the correction.</li>
+<li><strong>Presupposition</strong>: To generate the presupposition, we first decode a sequence with a constraint that it should start with “It is not the case that,” and then take the sequence that comes next as a presupposition.</li>
+</ul>
+</li>
+</ol>
+<h4 id="2-main-track-baselines">(2) Main track baselines<a hidden class="anchor" aria-hidden="true" href="#2-main-track-baselines">#</a></h4>
+<p>The baselines are similar to <strong>Question⊕Comment Dedicated</strong> and <strong>Question⊕Comment Unified</strong> models in the GOLD-COMMENT track.<br>
+The only difference is that the model receives a question and a set of k passages from c-REALM instead of a question-comment pair.<br>
+Use the <strong>Fusion-in-Decoder</strong> architecture to read multiple passages.</p>
+<hr>
+<h2 id="-results">📊 Results<a hidden class="anchor" aria-hidden="true" href="#-results">#</a></h2>
+<h3 id="detection-experiment-results">Detection Experiment Results<a hidden class="anchor" aria-hidden="true" href="#detection-experiment-results">#</a></h3>
+<p><img loading="lazy" src="../img/detection_results.jpg" alt="Detection Experiment Results"  />
+</p>
+<h3 id="writing-experiment-results">Writing Experiment Results<a hidden class="anchor" aria-hidden="true" href="#writing-experiment-results">#</a></h3>
+<p><img loading="lazy" src="../img/writing_results.jpg" alt="Writing Experiment Results"  />
+</p>
+<hr>
+<h2 id="-limitations">⚠️ Limitations<a hidden class="anchor" aria-hidden="true" href="#-limitations">#</a></h2>
+<ol>
+<li>Use the most upvoted comments that are not perfect. One avenue for future work is to consider extra-linguistic context such as individuals&rsquo; backgrounds when judging the validity of presuppositions.</li>
+<li>This research does not include large-scale models. The researchers conducted a small-scale case study with GPT-3 text-davinci-002, but most generations are roughly on the right topic.</li>
+<li>The domain of CREPE is limited to online forums (Reddit). It is necessary to study false presuppositions on a broader set of domains that require domain expertise.</li>
+</ol>
+<hr>
+<p><strong>Reference:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Xinyan Velocity Yu, Sewon Min, Luke Zettlemoyer, and Hannaneh Hajishirzi. CREPE: Open-domain question answering with false presuppositions. In Annual Meeting of the Association for Computational Linguistics, 2022.
+</span></span></code></pre></div><hr>
+<h1 id="evaluating-large-language-models-for-health-related-queries-with-presuppositions"><strong>Evaluating Large Language Models for Health-related Queries with Presuppositions</strong><a hidden class="anchor" aria-hidden="true" href="#evaluating-large-language-models-for-health-related-queries-with-presuppositions">#</a></h1>
+<hr>
+<h2 id="-target-1">🎯 Target<a hidden class="anchor" aria-hidden="true" href="#-target-1">#</a></h2>
+<ol>
+<li><strong>Construct</strong> a dataset of health-related queries with varying degrees of presupposition: <strong>UPHILL</strong></li>
+<li><strong>Evaluate</strong> factual accuracy and consistency of InstructGPT, ChatGPT, GPT-4 and Bing Copilot.</li>
+</ol>
+<hr>
+<h2 id="-dataset-1">📦 Dataset<a hidden class="anchor" aria-hidden="true" href="#-dataset-1">#</a></h2>
+<p><a href="https://github.com/navreeetkaur/UPHILL">UPHILL</a>, a dataset consisting of health-related queries with varying degrees of presuppositions.</p>
+<ul>
+<li>
+<p><strong>Source</strong>:</p>
+<ul>
+<li><a href="https://paperswithcode.com/dataset/pubhealth">PubHealth</a></li>
+<li><a href="https://github.com/kinit-sk/medical-misinformation-dataset">Monant Medical Misinformation</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Size</strong>:</p>
+<ul>
+<li><strong>1945 claims</strong> × <strong>5 degrees</strong> = <strong>9725 presuppositions</strong>
+<ul>
+<li>True: 766</li>
+<li>False: 854</li>
+<li>Mixture: 159</li>
+<li>Fabricated: 166</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Claim Sources</strong>:</p>
+<ul>
+<li>True, False, Mixture: From PubHealth and Monant</li>
+<li>Fabricated: From templates
+<ul>
+<li>E.g., &ldquo;[Action] treats [disease]&rdquo;, &ldquo;[Symptom] indicates [disease]&rdquo;</li>
+<li>Slot-filled using terms from <a href="https://www.nhs.uk/nhs-services/">NHS health info</a></li>
+<li>Paraphrased using GPT-3.5-turbo</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img loading="lazy" src="../img/examples_of_claims.jpg" alt="Examples of claims"  />
+</p>
+<hr>
+<h2 id="-construction-1">🛠️ Construction<a hidden class="anchor" aria-hidden="true" href="#-construction-1">#</a></h2>
+<h3 id="1-query-generation">1. Query Generation<a hidden class="anchor" aria-hidden="true" href="#1-query-generation">#</a></h3>
+<ul>
+<li>For <strong>each claim</strong>, generate <strong>5 different degrees&rsquo; presuppositions</strong> by templetes.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Degree</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0 (Neutral)</td>
+<td>No assumptions; curious, factual inquiry</td>
+</tr>
+<tr>
+<td>1 (Mild)</td>
+<td>Suggestive query with tentative belief</td>
+</tr>
+<tr>
+<td>2 (Unequivocal)</td>
+<td>Clear presupposition invoking scientific legitimacy</td>
+</tr>
+<tr>
+<td>3 (Writing Request)</td>
+<td>Request to write a report/article supporting the claim</td>
+</tr>
+<tr>
+<td>4 (Writing Demand)</td>
+<td>Assertive demand for evidence-backed writing &amp; citations</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Templetes</strong>
+<img loading="lazy" src="../img/templetes.jpg" alt="Templetes"  />
+</p>
+<h3 id="2-entailment-model-instructgpt-chatgpt-gpt-4-and-bing-copilot">2. Entailment Model (InstructGPT, ChatGPT, GPT-4 and Bing Copilot)<a hidden class="anchor" aria-hidden="true" href="#2-entailment-model-instructgpt-chatgpt-gpt-4-and-bing-copilot">#</a></h3>
+<ul>
+<li>Feed into <strong>4 models</strong> → obtain <strong>5 responses</strong> per model per claim</li>
+<li>Check relation between claim and model response</li>
+<li>Labels:
+<ul>
+<li><strong>Agreement</strong></li>
+<li><strong>Disagreement</strong></li>
+<li><strong>Neither</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="3-metrics">3. Metrics<a hidden class="anchor" aria-hidden="true" href="#3-metrics">#</a></h3>
+<p><strong>Accuracy</strong></p>
+<ul>
+<li>A response is accurate if:
+<ul>
+<li>It agrees with a <strong>true</strong> claim</li>
+<li>It disagrees with a <strong>false</strong> claim</li>
+</ul>
+</li>
+</ul>
+<p><strong>Consistency</strong></p>
+<ul>
+<li>A model is consistent if it maintains the same stance across all 5 responses for the same claim</li>
+</ul>
+<p><img loading="lazy" src="../img/whole_process.jpg" alt="whole process"  />
+</p>
+<hr>
+<h2 id="-results-1">📊 Results<a hidden class="anchor" aria-hidden="true" href="#-results-1">#</a></h2>
+<ul>
+<li><strong>InstructGPT</strong>: Most susceptible to presuppositions</li>
+<li><strong>Bing Copilot</strong>: Most robust</li>
+<li>Visual Results:
+<ul>
+<li>📄 P14312 Table 3 &amp; 4</li>
+<li>📊 P14313 Figure 2</li>
+<li>📄 P14314 Table 5</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="-limitations-1">⚠️ Limitations<a hidden class="anchor" aria-hidden="true" href="#-limitations-1">#</a></h2>
+<ol>
+<li>
+<p><strong>Entailment Model</strong>:<br>
+Used for evaluating agreement/disagreement; not perfectly reliable despite validation.</p>
+</li>
+<li>
+<p><strong>Template-Based Queries</strong>:<br>
+Simulate realistic search queries but don’t reflect actual user behavior (due to lack of search logs).</p>
+</li>
+<li>
+<p><strong>Geographical Bias</strong>:<br>
+Claims are mostly U.S.-based → limits global generalizability.</p>
+</li>
+<li>
+<p><strong>Evaluation Scope</strong>:<br>
+Evaluates factual accuracy only at the response level; does not perform fine-grained analysis.</p>
+</li>
+</ol>
+<hr>
+<p><strong>Reference:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Navreet Kaur, Monojit Choudhury, and Danish Pruthi. Evaluating large language models for health-related queries with presuppositions. In Findings of the Association for Computational Linguistics: ACL 2024, 2024.
+</span></span></code></pre></div><hr>
+<h1 id="qa-question-answering-with-questionable-assumptions"><strong>(QA)²: Question Answering with Questionable Assumptions</strong><a hidden class="anchor" aria-hidden="true" href="#qa-question-answering-with-questionable-assumptions">#</a></h1>
+<h2 id="-target-2">🎯 Target<a hidden class="anchor" aria-hidden="true" href="#-target-2">#</a></h2>
+<p>Construct a dataset to be an <strong>evaluation set</strong> with the goal of testing <strong>robustness to questionable assumptions</strong>.</p>
+<hr>
+<h2 id="-dataset-2">📦 Dataset<a hidden class="anchor" aria-hidden="true" href="#-dataset-2">#</a></h2>
+<p><a href="https://github.com/najoungkim/QAQA">(QA)²</a> (Question Answering with Questionable Assumptions)</p>
+<ul>
+<li><strong>Data Source</strong>: NQ dataset by Google’s autocompletion API</li>
+<li><strong>Data Size</strong>: 602 expert-annotated questions
+<ul>
+<li>50% contain <strong>questionable assumptions</strong></li>
+<li>50% are <strong>typical information-seeking questions</strong> (no questionable assumptions)</li>
+</ul>
+</li>
+<li><strong>Adaptation Set</strong>:
+<ul>
+<li>16 questions with questionable assumptions</li>
+<li>16 questions without questionable assumptions</li>
+<li>Used for few-shot tuning or in-context demonstrations</li>
+</ul>
+</li>
+</ul>
+<p><img loading="lazy" src="../img/dataset_statistics.jpg" alt="Dataset Statistics"  />
+</p>
+<hr>
+<h2 id="-construction-2">🛠️ Construction<a hidden class="anchor" aria-hidden="true" href="#-construction-2">#</a></h2>
+<p><img loading="lazy" src="../img/dataset_structure.jpg" alt="Dataset Structure"  />
+</p>
+<h3 id="1-question-collection">1. Question Collection<a hidden class="anchor" aria-hidden="true" href="#1-question-collection">#</a></h3>
+<ul>
+<li>Scraped <strong>English wh-questions</strong> using API with prefix strings: <code>why</code>, <code>what</code>, <code>where</code>, etc.</li>
+<li>Applied automatic filtering:
+<ul>
+<li>Removed duplicates and bad/non-questions</li>
+<li>Used a <strong>stop word list</strong> (e.g., <code>quizlet</code>, <code>brainly</code>, <code>lyrics</code>)</li>
+</ul>
+</li>
+<li><strong>Imperfect data retained</strong>: syntax/tense errors allowed, since it reflects real data</li>
+</ul>
+<hr>
+<h3 id="2-annotation-task-crowdsourced">2. Annotation Task (Crowdsourced)<a hidden class="anchor" aria-hidden="true" href="#2-annotation-task-crowdsourced">#</a></h3>
+<ul>
+<li>Annotators: <strong>23 qualified workers</strong> from Amazon Mechanical Turk</li>
+<li>Goal: <strong>Flag</strong> whether a question contains a <strong>questionable assumption</strong></li>
+<li>Type: <strong>Binary classification</strong></li>
+<li>Data:
+<ul>
+<li><strong>12,000 questions</strong></li>
+<li>Each question reviewed by <strong>5 annotators</strong></li>
+<li>1 annotation set = 20 questions (18 unlabeled + 2 labeled)</li>
+</ul>
+</li>
+<li>Quality check:
+<ul>
+<li>On average, 86% of annotators labeled the control questions correctly</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="3-annotation-task-expert">3. Annotation Task (Expert)<a hidden class="anchor" aria-hidden="true" href="#3-annotation-task-expert">#</a></h3>
+<ul>
+<li>Annotators: <strong>3 expert annotators</strong> (authors)</li>
+<li>Scope: Almost <strong>720 questions(6% of 12,000)</strong> flagged by <strong>at least one crowdworker</strong></li>
+<li>Process:
+<ul>
+<li>Each expert → half of the questions independently annotate(Annotate the label, and give the abstract answer and its evidence)</li>
+<li>The last expert → verify the result of annotations(disagreements via <strong>adjudication</strong>)</li>
+</ul>
+</li>
+<li>Final selection criteria:
+<ul>
+<li>(C1) Flagged by at least 1 worker</li>
+<li>(C2) Justification for the <strong>abstractive answer</strong> can be found online</li>
+<li>(C3) No <strong>immediate ambiguity</strong> in question interpretation</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="-tasks">📖 Tasks<a hidden class="anchor" aria-hidden="true" href="#-tasks">#</a></h2>
+<p><img loading="lazy" src="../img/task_io_examples.jpg" alt="Task IO Examples"  />
+</p>
+<h3 id="1-end-to-end-abstractive-qa-end-to-end-qa">1. End-to-End Abstractive QA (End-to-end QA)<a hidden class="anchor" aria-hidden="true" href="#1-end-to-end-abstractive-qa-end-to-end-qa">#</a></h3>
+<ul>
+<li><strong>Input</strong>: Question</li>
+<li><strong>Output</strong>: Abstractive answer generated by the model</li>
+<li><strong>Evaluation</strong>:
+<ul>
+<li>Randomly sample <strong>100 answers</strong></li>
+<li>Judged by <strong>5 human raters</strong> from Prolific(refer to the answers given by experts)</li>
+<li>Use <strong>majority vote</strong> to determine acceptability (% acceptable reported)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="2-questionable-assumption-detection-detection">2. Questionable Assumption Detection (Detection)<a hidden class="anchor" aria-hidden="true" href="#2-questionable-assumption-detection-detection">#</a></h3>
+<ul>
+<li><strong>Input</strong>: Question</li>
+<li><strong>Goal</strong>: Detect whether it contains <strong>false or unverifiable assumptions</strong></li>
+<li><strong>Framing</strong>: Binary classification (Yes / No)</li>
+<li><strong>Template examples</strong>:
+<ul>
+<li>&ldquo;Does {question} contain any invalid assumptions?&rdquo;</li>
+<li>&ldquo;Are any of the assumptions in {question} problematic?&rdquo;</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="3-questionable-assumption-verification-verification">3. Questionable Assumption Verification (Verification)<a hidden class="anchor" aria-hidden="true" href="#3-questionable-assumption-verification-verification">#</a></h3>
+<ul>
+<li><strong>Input</strong>: Yes/No question derived from a questionable assumption (identified by expert)</li>
+<li><strong>Goal</strong>: Judge the <strong>truth</strong> of the assumption</li>
+<li><strong>Example</strong>:
+<ul>
+<li>Original: <code>where are the winter olympics held 2021</code></li>
+<li>Assumption: <code>the winter olympics were held in 2021</code></li>
+<li>Derived question: <code>were the winter olympics held in 2021?</code> → Answer: <strong>No</strong></li>
+</ul>
+</li>
+<li>For valid questions: randomly select a <strong>true assumption</strong> and convert it into a Yes/No question</li>
+</ul>
+<hr>
+<h2 id="-results-2">📊 Results<a hidden class="anchor" aria-hidden="true" href="#-results-2">#</a></h2>
+<p><img loading="lazy" src="../img/experimental_results.jpg" alt="Experimental Results"  />
+</p>
+<hr>
+<h2 id="-limitations-2">⚠️ Limitations<a hidden class="anchor" aria-hidden="true" href="#-limitations-2">#</a></h2>
+<ul>
+<li>The dataset is limited to <strong>wh-questions</strong> collected via Google&rsquo;s Autocompletion API, which may not fully represent the diversity of real-world questions.</li>
+<li>Some <strong>questions with false or unverifiable assumptions</strong> might be subtle or ambiguous, making it difficult for annotators to reach consistent judgments.</li>
+<li>Verification of nonexistence relies on <strong>pragmatic inference</strong> rather than exhaustive factual proof, due to the challenge of confirming something does not exist.</li>
+<li>The <strong>oracle-based decomposition</strong> in the verification task does not reflect a real-world pipeline where assumption detection and verification must be jointly performed.</li>
+<li>Human evaluation in end-to-end QA introduces subjectivity and may vary depending on <strong>rater interpretation and context familiarity</strong>.</li>
+<li>The adaptation set is small (32 total), which may limit generalization in few-shot or in-context learning settings.</li>
+</ul>
+<hr>
+<p><strong>Reference:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Najoung Kim, Phu Mon Htut, Samuel R. Bowman, and Jackson Petty. (QA)2: Question answering with questionable assumptions, 2023.
+</span></span></code></pre></div><hr>
+<h1 id="wont-get-fooled-again-answering-questions-with-false-premises"><strong>Won’t Get Fooled Again: Answering Questions with False Premises</strong><a hidden class="anchor" aria-hidden="true" href="#wont-get-fooled-again-answering-questions-with-false-premises">#</a></h1>
+<hr>
+<h2 id="-target-3">🎯 Target<a hidden class="anchor" aria-hidden="true" href="#-target-3">#</a></h2>
+<p>Authors annotated a FalseQA dataset containing 2365 human-written FPQs, with the corresponding explanations for the false premises and the revised true premise questions.</p>
+<h2 id="-dataset-3">📦 Dataset<a hidden class="anchor" aria-hidden="true" href="#-dataset-3">#</a></h2>
+<p><a href="https://github.com/thunlp/FalseQA">FalseQA</a>, a dataset containing 2365 human-written FPQs, with the corresponding explanations for the false premises and the revised true premise questions.</p>
+<ul>
+<li><strong>Source</strong>: Human-written</li>
+<li><strong>Size</strong>: 2365 FPQs (False Premise Questions) with:
+<ul>
+<li>Corresponding explanations of the false premises</li>
+<li>Revised TPQs (True Premise Questions)</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Set</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Training</td>
+<td>1187</td>
+</tr>
+<tr>
+<td>Validation</td>
+<td>491</td>
+</tr>
+<tr>
+<td>Test</td>
+<td>687</td>
+</tr>
+</tbody>
+</table>
+<p><img loading="lazy" src="../img/Statistics.jpg" alt="Statistics"  />
+</p>
+<hr>
+<h2 id="-construction-3">🛠️ Construction<a hidden class="anchor" aria-hidden="true" href="#-construction-3">#</a></h2>
+<p><img loading="lazy" src="../img/the_categorization_and_examples_of_FPQ_questions.jpg" alt="the_categorization_and_examples_of_FPQ_questions"  />
+</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Write FPQs based on source words (subject words from <a href="https://paperswithcode.com/dataset/genericskb">GenericsKB</a>)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Revise each FPQ minimally into a TPQ (true premise question)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Write detailed explanations for FPQs and answers for TPQs</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<ul>
+<li>Train/Validation: 1 explanation per question</li>
+<li>Test: 2 explanations per question</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="-experiments-1">🧪 Experiments<a hidden class="anchor" aria-hidden="true" href="#-experiments-1">#</a></h2>
+<h3 id="1-discriminating-fpqs-binary-classification">1. Discriminating FPQs (Binary Classification)<a hidden class="anchor" aria-hidden="true" href="#1-discriminating-fpqs-binary-classification">#</a></h3>
+<ul>
+<li>Train PLMs to classify questions into FPQs and TPQs</li>
+<li>Apply prompt learning to reduce the gap between pre-training and fine-tuning</li>
+</ul>
+<h3 id="2-impact-of-training-data-size">2. Impact of Training Data Size<a hidden class="anchor" aria-hidden="true" href="#2-impact-of-training-data-size">#</a></h3>
+<ul>
+<li>Train with 32 / 256 / 1187 training pairs</li>
+<li>Result: Accuracy grows almost linearly as data size increases exponentially</li>
+</ul>
+<h3 id="3-answering-fpqs-with-explanations">3. Answering FPQs with Explanations<a hidden class="anchor" aria-hidden="true" href="#3-answering-fpqs-with-explanations">#</a></h3>
+<ul>
+<li>Step 1: Model generates discriminating token (&ldquo;tricky question&rdquo; or &ldquo;true question&rdquo;)</li>
+<li>Step 2: Model continues to generate explanation (FPQ) or answer (TPQ)</li>
+</ul>
+<p><strong>Example</strong>:<br>
+Input → Question: <em>Are tigers’ eggs bigger than chickens’ eggs?</em><br>
+Output → <em>tricky question. Because tigers are mammals and do not lay eggs, the question assumes a false premise.</em></p>
+<p><img loading="lazy" src="../img/the_annotation_process.jpg" alt="the_annotation_process"  />
+</p>
+<p><strong>Loss Calculation</strong>:<br>
+<code>Total loss = binary loss (“tricky question” or “true question”) + generation loss (remaining tokens)</code></p>
+<p>Details in Section 5.4 paragraph 2&amp;3</p>
+<p><strong>Evaluation</strong>:</p>
+<ul>
+<li>Only explanation for FPQs is evaluated using ROUGE-L</li>
+<li>Two reference explanations used for test set</li>
+</ul>
+<h3 id="4-answering-both-fpqs-and-general-questions">4. Answering Both FPQs and General Questions<a hidden class="anchor" aria-hidden="true" href="#4-answering-both-fpqs-and-general-questions">#</a></h3>
+<ul>
+<li>Use <strong>Data Replay (DR)</strong> to avoid catastrophic forgetting</li>
+<li>For every FPQ batch, add one ARC-DA batch</li>
+<li>Each group of ARC-DA samples is fixed for every 30 iterations</li>
+</ul>
+<p><strong>Example: 120 batches</strong></p>
+<table>
+<thead>
+<tr>
+<th>Batch No.</th>
+<th>Data Type</th>
+<th>ARC-DA Sample Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1, 3, 5, &hellip;, 59</td>
+<td>FPQ (FalseQA)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2, 4, 6, &hellip;, 60</td>
+<td>ARC-DA</td>
+<td>ARC-DA sample A</td>
+</tr>
+<tr>
+<td>61, 63, &hellip;, 119</td>
+<td>FPQ (FalseQA)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>62, 64, &hellip;, 120</td>
+<td>ARC-DA</td>
+<td>ARC-DA sample B</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-limitation">⚠️ Limitation<a hidden class="anchor" aria-hidden="true" href="#-limitation">#</a></h2>
+<ul>
+<li>Standardized response to FPQs is a rebuttal, which reflects a conventional style</li>
+<li>In real scenarios, creative responses (e.g., rhetorical questions) may be more natural</li>
+</ul>
+<hr>
+<p><strong>Reference:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Shengding Hu, Yifan Luo, Huadong Wang, Xingyi Cheng, Zhiyuan Liu, and Maosong Sun. Won‘t get fooled again: Answering questions with false premises. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), 2023.
+</span></span></code></pre></div><hr>
+<h1 id="the-difference-of-presupposition-presumption-premise-and-questionable-assumption"><strong>The difference of <code>Presupposition</code>, <code>Presumption</code>, <code>Premise</code> and <code>Questionable Assumption</code></strong><a hidden class="anchor" aria-hidden="true" href="#the-difference-of-presupposition-presumption-premise-and-questionable-assumption">#</a></h1>
+<h2 id="1-presupposition">1. Presupposition<a hidden class="anchor" aria-hidden="true" href="#1-presupposition">#</a></h2>
+<p>An implicit assumption that must be true for a statement to make sense. Often taken for granted without being explicitly stated.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. &#34;When did you quit smoking?&#34; 
+</span></span><span class="line"><span class="cl">presupposes that you used to smoke.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">2. &#34;John&#39;s children are very well-behaved&#34;
+</span></span><span class="line"><span class="cl">presupposes that John has children.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">3. &#34;Could you turn down the music?&#34; 
+</span></span><span class="line"><span class="cl">presupposes that music is playing.
+</span></span></code></pre></div><h2 id="2-presumption">2. presumption<a hidden class="anchor" aria-hidden="true" href="#2-presumption">#</a></h2>
+<p>A belief accepted as true until proven otherwise. Often based on probability or convention rather than direct evidence.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. In court, there is a presumption that the defendant is innocent until proven guilty.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">2. There&#39;s a presumption that people signing contracts have read and understood them.
+</span></span></code></pre></div><h2 id="3-premise">3. premise<a hidden class="anchor" aria-hidden="true" href="#3-premise">#</a></h2>
+<p>An explicitly stated proposition that serves as the foundation for an argument. Used consciously as part of logical reasoning.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Premise 1: All mammals are warm-blooded.
+</span></span><span class="line"><span class="cl">Premise 2: Whales are mammals.
+</span></span><span class="line"><span class="cl">Conclusion: Therefore, whales are warm-blooded.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Premise 1: If it&#39;s raining, the ground is wet.
+</span></span><span class="line"><span class="cl">Premise 2: It is raining.
+</span></span><span class="line"><span class="cl">Conclusion: Therefore, the ground is wet.
+</span></span></code></pre></div><h2 id="4-questionable-assumption">4. Questionable Assumption<a hidden class="anchor" aria-hidden="true" href="#4-questionable-assumption">#</a></h2>
+<p>An assumption that may be false, unwarranted, or dubious. Often identified as a weak point in reasoning that needs scrutiny.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">1. &#34;Everyone I know owns a smartphone, so virtually everyone must own a smartphone.&#34; 
+</span></span><span class="line"><span class="cl">(Assumes your social circle represents the general population)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">2. &#34;That restaurant was empty on a Tuesday night, so it must not be very good.&#34; 
+</span></span><span class="line"><span class="cl">(Assumes popularity at one specific time indicates quality)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">3. &#34;He didn&#39;t smile when we met, so he must not like me.&#34; 
+</span></span><span class="line"><span class="cl">(Assumes a single behavior reliably indicates a particular attitude)
+</span></span></code></pre></div><hr>
+<table>
+<thead>
+<tr>
+<th><strong>Term</strong></th>
+<th><strong>Simple Definition</strong></th>
+<th><strong>Example with &ldquo;Turmeric cures cancer&rdquo;</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Presupposition</strong></td>
+<td>An unstated background assumption that must be true for a sentence to make sense.</td>
+<td>&ldquo;Why is turmeric effective in curing cancer?&rdquo; presupposes that turmeric <em>does</em> cure cancer — this is taken for granted by the question.</td>
+</tr>
+<tr>
+<td><strong>Presumption</strong></td>
+<td>A belief automatically made based on context or common knowledge, without being stated.</td>
+<td>Hearing &ldquo;Turmeric is often used in cancer treatments&rdquo; might lead someone to presume it&rsquo;s effective, even if that isn’t explicitly claimed or proven.</td>
+</tr>
+<tr>
+<td><strong>Premise</strong></td>
+<td>A clearly stated claim used as the basis of an argument.</td>
+<td>&ldquo;Turmeric cures cancer&rdquo; is explicitly stated to support a conclusion like &ldquo;Therefore, people should take turmeric to treat cancer.&rdquo;</td>
+</tr>
+<tr>
+<td><strong>Questionable Assumption</strong></td>
+<td>A false or unverifiable assumption likely believed by the speaker, even if not presupposed.</td>
+<td>&ldquo;How much turmeric should cancer patients take daily?&rdquo; assumes the speaker believes turmeric helps with cancer, even if it&rsquo;s not logically presupposed.</td>
+</tr>
+</tbody>
+</table>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+<div>
+    <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">Comments</span>
+        <hr />
+    </div>
+    <div id="tcomment"></div>
+    <script src="https://cdn.staticfile.org/twikoo/1.6.39/twikoo.all.min.js"></script>
+    <script>
+        twikoo.init({
+            envId: "https://mangodb-theta.vercel.app/",  
+            el: "#tcomment",
+            lang: 'en-US',
+            path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        });
+    </script>
+</div>
+
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://garywy.github.io/en/">Gary&#39;s House</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+    
+    <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv">
+        Views: <span id="busuanzi_value_site_pv"></span>
+    </span>
+    <span id="busuanzi_container_site_uv">
+        Visitors: <span id="busuanzi_value_site_uv"></span>
+    </span>
+    </div></footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
