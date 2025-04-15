@@ -13,10 +13,11 @@
       <link>https://garywy.github.io/en/posts/paper/research_lab_works/</link>
       <pubDate>Fri, 21 Mar 2025 15:15:43 +0900</pubDate>
       <guid>https://garywy.github.io/en/posts/paper/research_lab_works/</guid>
-      <description>The research is about a question with a wrong presupposition, and we need to correct the presupposition and give a correct result.
-CREPE: Open-Domain Question Answering with False Presuppositions 🎯 Target The authors introduced CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.
+      <description>CREPE: Open-Domain Question Answering with False Presuppositions 🎯 Target The authors introduced CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.
 📦 Dataset CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.
-Data Source: Reddit, the ELI5 subreddit.</description>
+Data Source: Reddit, the ELI5 subreddit.
+Data Numbers: 8,400 Reddit questions with:
+Labels (whether there are any false presuppositions). The false presuppositions and their corrections, if there are any false presuppositions in questions.</description>
     </item>
   </channel>
 </rss>
