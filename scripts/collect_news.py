@@ -26,7 +26,10 @@ NEWS_SOURCES = {
 }
 
 # Hugo 整合文件输出目录和文件名配置
-OUTPUT_SUMMARY_DIR = ['/Users/gary/garyhouse/content/Chinese/posts/news/', '/Users/gary/garyhouse/content/English/posts/news/']
+OUTPUT_SUMMARY_DIRS = [
+    'content/Chinese/posts/news',  
+    'content/English/posts/news'
+]
 # 文件名格式：daily-news-summary-YYYYMMDD.md
 # 每天生成一个新文件，当天多次运行会覆盖当天文件
 SUMMARY_FILENAME_PREFIX = 'daily-news-summary'
