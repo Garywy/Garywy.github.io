@@ -1,1 +1,74 @@
+name: Auto News Summary & Hugo Deploy
 
+on:
+  # 定时触发：每天中午 12:00 PM JST (日本标准时间) 运行
+  # JST (UTC+9) 12:00 PM 对应 UTC 时间的 03:00 AM
+  schedule:
+    - cron: '0 3 * * *' 
+
+  # 允许手动从 GitHub Actions 界面触发此工作流
+  workflow_dispatch: 
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # 使用最新的 Ubuntu 运行环境
+
+    # 设置时区，确保脚本内部的时间处理和日志时间正确 (这不会影响cron的触发时间)
+    env:
+      TZ: Asia/Tokyo 
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true # 如果你的 Hugo 主题是 Git 子模块，需要这行
+          fetch-depth: 0   # 获取所有历史，这对于后续的 git push 操作是必要的
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x' # 使用最新的 Python 3 版本
+
+      - name: Install Python dependencies
+        run: pip install feedparser python-slugify # 安装脚本所需的所有 Python 库
+
+      - name: Run news generation script
+        # 运行你的 Python 脚本。脚本会自动生成 daily-news-summary-YYYYMMDD.md 文件到指定目录
+        run: python scripts/generate_daily_news_summary.py
+
+      - name: Commit and push new content (if any)
+        # 这一步非常关键！它会将脚本生成的新 Markdown 文件提交并推送到 GitHub 仓库
+        # GitHub Pages 或其他部署服务会从这个仓库部署
+        run: |
+          git config user.name "GitHub Actions Bot" # 设置提交者名称
+          git config user.email "github-actions-bot@users.noreply.github.com" # 设置提交者邮箱
+
+          # 检查是否有新的文件或内容被修改。如果 content/summary_news 下有变化，就提交。
+          # git add . 可以添加所有更改，包括新的 .md 文件
+          git add content/summary_news/ || echo "No summary news changes to add"
+
+          # git commit -m "..." 如果没有更改，这个命令会失败。
+          # "|| echo ..." 确保即使没有新文件也继续执行，不中断工作流
+          git commit -m "feat(auto): Daily news summary update $(date +%Y-%m-%d)" || echo "No new summary news to commit"
+
+          # 推送更改到 GitHub 仓库
+          git push || echo "No new summary news to push"
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest' # 使用最新版本的 Hugo
+          extended: true         # 某些主题可能需要 extended 版本
+
+      - name: Build Hugo site
+        run: hugo --minify # 编译你的 Hugo 网站，并进行代码压缩
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        # 只有当推送到 'master' 分支时才触发部署，防止其他分支的构建也触发部署
+        if: github.ref == 'refs/heads/master' # 注意：这里是 'master' 分支
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub 提供的自动认证令牌
+          publish_dir: ./public                     # Hugo 生成的静态文件目录
+          # publish_branch: gh-pages                # 如果你的 GitHub Pages 发布分支是 gh-pages，请取消注释这行
+                                                    # 默认情况下，它会推送到 gh-pages 分支，如果你的发布分支是 master 的 /docs 目录，则需要调整。
