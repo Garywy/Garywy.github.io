@@ -46,8 +46,8 @@ languages:
         buttons:
           - name: 🧑‍💻技术
             url: posts/tech/
-          - name: 📝论文
-            url: posts/paper/
+          - name: 📰新闻
+            url: posts/news/
           - name: 📖学习
             url: posts/study/
           - name: 😆生活
@@ -97,8 +97,8 @@ languages:
         buttons:
           - name: 🧑‍💻Tech
             url: posts/tech
-          - name: 📝Paper
-            url: posts/paper
+          - name: 📝News
+            url: posts/news
           - name: 📖Study
             url: posts/study
           - name: 😆Life

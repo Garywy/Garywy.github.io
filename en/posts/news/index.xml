@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>News on Gary&#39;s House</title>
+    <link>https://garywy.github.io/en/posts/news/</link>
+    <description>Recent content in News on Gary&#39;s House</description>
+    <generator>Hugo -- 0.130.0</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 25 Jul 2025 04:19:04 +0000</lastBuildDate>
+    <atom:link href="https://garywy.github.io/en/posts/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2025.07.25. Global News Roundup]</title>
+      <link>https://garywy.github.io/en/posts/news/daily-news-summary-20250725/</link>
+      <pubDate>Fri, 25 Jul 2025 04:19:04 +0000</pubDate>
+      <guid>https://garywy.github.io/en/posts/news/daily-news-summary-20250725/</guid>
+      <description>国家/地区: 中国 新华社 习近平接受外国新任驻华大使递交国书 - 2025-07-25T04:07:52+00:00 新华社北京7月25日电（记者邵艺博、曹嘉玥）7月25日上午，国家主席习近平在北京</description>
+    </item>
+  </channel>
+</rss>
