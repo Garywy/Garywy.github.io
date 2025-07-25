@@ -34,7 +34,7 @@ jobs:
 
       - name: Run news generation script
         # 运行你的 Python 脚本。脚本会自动生成 daily-news-summary-YYYYMMDD.md 文件到指定目录
-        run: python scripts/generate_daily_news_summary.py
+        run: python scripts/collect_news.py
 
       - name: Commit and push new content (if any)
         # 这一步非常关键！它会将脚本生成的新 Markdown 文件提交并推送到 GitHub 仓库
