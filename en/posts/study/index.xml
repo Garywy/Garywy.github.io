@@ -4,7 +4,7 @@
     <title>Study on Gary&#39;s House</title>
     <link>https://garywy.github.io/en/posts/study/</link>
     <description>Recent content in Study on Gary&#39;s House</description>
-    <generator>Hugo -- 0.130.0</generator>
+    <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 29 Sep 2024 18:20:59 +0900</lastBuildDate>
     <atom:link href="https://garywy.github.io/en/posts/study/index.xml" rel="self" type="application/rss+xml" />
@@ -13,21 +13,56 @@
       <link>https://garywy.github.io/en/posts/study/dp_question/</link>
       <pubDate>Sun, 29 Sep 2024 18:20:59 +0900</pubDate>
       <guid>https://garywy.github.io/en/posts/study/dp_question/</guid>
-      <description>Preface Because I always hit a wall with Dynamic Programming problems, I would like to summarize the solution to Dynamic Programming problems(DP).
-Basic solution to DP problems：
-Initial State State Transition Equation 1. Linear DP 1. 1 Example：Leetcode 300. Longest Increasing Subsequence Given an integer array nums, return the length of the longest strictly increasing subsequence.
-Example 1:
-Input: nums = [10, 9, 2, 5, 3, 7, 101, 18]
-Output: 4</description>
+      <description>&lt;h1 id=&#34;preface&#34;&gt;Preface&lt;/h1&gt;
+&lt;p&gt;Because I always hit a wall with Dynamic Programming problems,  I would like to summarize the solution to Dynamic Programming problems(DP).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Basic solution to DP problems：&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;Initial State&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;State Transition Equation&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;1--linear-dp&#34;&gt;1.  Linear DP&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;1. 1 Example：Leetcode 300.  Longest Increasing Subsequence&lt;/strong&gt; &lt;br&gt;
+Given an integer array nums,  return the length of the longest strictly increasing subsequence.&lt;/p&gt;
+&lt;p&gt;Example 1:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Input:&lt;/strong&gt; nums = [10, 9, 2, 5, 3, 7, 101, 18]&lt;br&gt;
+&lt;strong&gt;Output:&lt;/strong&gt; 4&lt;br&gt;
+&lt;strong&gt;Explanation:&lt;/strong&gt; The longest increasing subsequence is [2, 3, 7, 101],  therefore the length is 4.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Markdown Study Notes</title>
       <link>https://garywy.github.io/en/posts/study/markdown_study_notes/</link>
       <pubDate>Thu, 26 Sep 2024 17:31:12 +0900</pubDate>
       <guid>https://garywy.github.io/en/posts/study/markdown_study_notes/</guid>
-      <description>Preface This article mainly summarizes the common syntax of Markdown, so that you can write Markdown files better by yourself.
-1. Basic Grammer 1.1 Title Use# to create a title. The number of # you use indicates the number of heading levels.
-Markdown Display # title1 title1 # title2 title2 # title3 title3 1.2 Line break Add 2 or more spaces after the text, or add a blank line (press enter twice).</description>
+      <description>&lt;h1 id=&#34;preface&#34;&gt;Preface&lt;/h1&gt;
+&lt;p&gt;This article mainly summarizes the common syntax of Markdown, so that you can write Markdown files better by yourself.&lt;/p&gt;
+&lt;h1 id=&#34;1-basic-grammer&#34;&gt;1. Basic Grammer&lt;/h1&gt;
+&lt;h2 id=&#34;11-title&#34;&gt;1.1 Title&lt;/h2&gt;
+&lt;p&gt;Use&lt;code&gt;#&lt;/code&gt; to create a title. The number of &lt;code&gt;#&lt;/code&gt; you use indicates the number of heading levels.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Markdown&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Display&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;# title1&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;h1&gt;title1&lt;/h1&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;# title2&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;h2&gt;title2&lt;/h2&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;# title3&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;h3&gt;title3&lt;/h3&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;12-line-break&#34;&gt;1.2 Line break&lt;/h2&gt;
+&lt;p&gt;Add &lt;code&gt;2 or more spaces&lt;/code&gt; after the text, or &lt;code&gt;add a blank line&lt;/code&gt; (press enter twice).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

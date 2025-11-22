@@ -1,1185 +1,208 @@
-<!DOCTYPE html>
-<html lang="zh" dir="auto">
+<!doctype html><html lang=zh dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>DP_Question | Gary's House</title>
+<meta name=keywords content><meta name=description content="前言
+因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。
+DP问题基本解题思路：
 
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>DP_Question | Gary&#39;s House</title>
-<meta name="keywords" content="">
-<meta name="description" content="前言 因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。 DP问题基本解题思路： 初始状态 状态转移方程 1. 线性DP 1.1 例题：Leet">
-<meta name="author" content="Gary">
-<link rel="canonical" href="https://garywy.github.io/zh/posts/study/dp_question/">
-<meta name="google-site-verification" content="XYZabc">
+初始状态
+状态转移方程
 
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <meta name="referrer" content="no-referrer-when-downgrade">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.7e5251d8716d933fafcf3df70d7ecd02729661d6d232fc5dd0b8a85ef75e3409.css" integrity="sha256-flJR2HFtkz&#43;vzz33DX7NAnKWYdbSMvxd0LioXvdeNAk=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://garywy.github.io/img/Q.jpg">
-<link rel="icon" type="image/png" sizes="16x16" href="https://garywy.github.io/img/Q.jpg">
-<link rel="icon" type="image/png" sizes="32x32" href="https://garywy.github.io/img/Q.jpg">
-<link rel="apple-touch-icon" href="https://garywy.github.io/Q.jpg">
-<link rel="mask-icon" href="https://garywy.github.io/Q.jpg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="zh" href="https://garywy.github.io/zh/posts/study/dp_question/">
-<link rel="alternate" hreflang="en" href="https://garywy.github.io/en/posts/study/dp_question/">
-<noscript>
-    <style>
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
+1. 线性DP
+1.1 例题：Leetcode 300. Longest Increasing Subsequence 
+Given an integer array nums, return the length of the longest strictly increasing subsequence."><meta name=author content="Gary"><link rel=canonical href=https://garywy.github.io/zh/posts/study/dp_question/><meta name=google-site-verification content="XYZabc"><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><meta name=referrer content="no-referrer-when-downgrade"><link crossorigin=anonymous href=/assets/css/stylesheet.7e5251d8716d933fafcf3df70d7ecd02729661d6d232fc5dd0b8a85ef75e3409.css integrity="sha256-flJR2HFtkz+vzz33DX7NAnKWYdbSMvxd0LioXvdeNAk=" rel="preload stylesheet" as=style><link rel=icon href=https://garywy.github.io/img/Q.jpg><link rel=icon type=image/png sizes=16x16 href=https://garywy.github.io/img/Q.jpg><link rel=icon type=image/png sizes=32x32 href=https://garywy.github.io/img/Q.jpg><link rel=apple-touch-icon href=https://garywy.github.io/Q.jpg><link rel=mask-icon href=https://garywy.github.io/Q.jpg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=zh href=https://garywy.github.io/zh/posts/study/dp_question/><link rel=alternate hreflang=en href=https://garywy.github.io/en/posts/study/dp_question/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap" rel=stylesheet><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.1/highlight.min.js integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin=anonymous referrerpolicy=no-referrer></script><meta property="og:title" content="DP_Question"><meta property="og:description" content="前言
+因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。
+DP问题基本解题思路：
 
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --code-block-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
+初始状态
+状态转移方程
 
-            .list {
-                background: var(--theme);
-            }
+1. 线性DP
+1.1 例题：Leetcode 300. Longest Increasing Subsequence 
+Given an integer array nums, return the length of the longest strictly increasing subsequence."><meta property="og:type" content="article"><meta property="og:url" content="https://garywy.github.io/zh/posts/study/dp_question/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-09-29T18:20:59+09:00"><meta property="article:modified_time" content="2024-09-29T18:20:59+09:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="DP_Question"><meta name=twitter:description content="前言
+因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。
+DP问题基本解题思路：
 
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
+初始状态
+状态转移方程
 
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
-
-    </style>
-</noscript><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200..900&display=swap" rel="stylesheet">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.1/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-
-<meta property="og:title" content="DP_Question" />
-<meta property="og:description" content="前言 因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。 DP问题基本解题思路： 初始状态 状态转移方程 1. 线性DP 1.1 例题：Leet" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://garywy.github.io/zh/posts/study/dp_question/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-09-29T18:20:59+09:00" />
-<meta property="article:modified_time" content="2024-09-29T18:20:59+09:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="DP_Question"/>
-<meta name="twitter:description" content="前言 因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。 DP问题基本解题思路： 初始状态 状态转移方程 1. 线性DP 1.1 例题：Leet"/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "帖子",
-      "item": "https://garywy.github.io/zh/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "学习",
-      "item": "https://garywy.github.io/zh/posts/study/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  3 ,
-      "name": "DP_Question",
-      "item": "https://garywy.github.io/zh/posts/study/dp_question/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "DP_Question",
-  "name": "DP_Question",
-  "description": "前言 因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。 DP问题基本解题思路： 初始状态 状态转移方程 1. 线性DP 1.1 例题：Leet",
-  "keywords": [
-    
-  ],
-  "articleBody": "前言 因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。\nDP问题基本解题思路：\n初始状态 状态转移方程 1. 线性DP 1.1 例题：Leetcode 300. Longest Increasing Subsequence Given an integer array nums, return the length of the longest strictly increasing subsequence.\nExample 1:\nInput: nums = [10,9,2,5,3,7,101,18]\nOutput: 4\nExplanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.\nExample 2:\nInput: nums = [0,1,0,3,2,3]\nOutput: 4\nExample 3:\nInput: nums = [7,7,7,7,7,7,7]\nOutput: 1\n(1) 思路\n初始状态 本题dp[n]可以是前n个元素中的最长子序列的长度。所以dp[0]可以是说只有一个元素的时候，那最长子序列的长度就是1。 dp[0] = 1 状态转移方程 如果有两个元素的时候，需要判断第一个元素和第二个元素之间的大小关系。 nums=[1, 3]，那么此时dp[1] = dp[0] + 1。 nums=[3, 1]，那么此时dp[1] = dp[0] 如果有三个元素的时候，在已知dp[0]和dp[1]的情况下，需要判断第三个元素和之前所有元素的大小关系。 nums=[1, 3, x]，首先1和x比大小，如果1",
-  "wordCount" : "4558",
-  "inLanguage": "zh",
-  "datePublished": "2024-09-29T18:20:59+09:00",
-  "dateModified": "2024-09-29T18:20:59+09:00",
-  "author":{
-    "@type": "Person",
-    "name": "Gary"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://garywy.github.io/zh/posts/study/dp_question/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Gary's House",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://garywy.github.io/img/Q.jpg"
-    }
-  }
-}
-</script>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
-</head>
-
-<body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
-
-<header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://garywy.github.io/zh/" accesskey="h" title="Gary&#39;s Blog (Alt + H)">
-                <img src="https://garywy.github.io/img/me.jpg" alt="" aria-label="logo"
-                    height="35">Gary&#39;s Blog</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-                <ul class="lang-switch"><li>|</li>
-                    <li>
-                        <a href="https://garywy.github.io/en/" title="English"
-                            aria-label="English">English</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://garywy.github.io/zh/search" title="🔍搜索 (Alt &#43; /)" accesskey=/>
-                    <span>🔍搜索</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://garywy.github.io/zh/" title="🏠主页">
-                    <span>🏠主页</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://garywy.github.io/zh/posts/" title="📚文章">
-                    <span>📚文章</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://garywy.github.io/zh/archives/" title="⏱存档">
-                    <span>⏱存档</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://garywy.github.io/zh/music/" title="🎵音乐">
-                    <span>🎵音乐</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://garywy.github.io/zh/about" title="🙋🏻‍♂️关于">
-                    <span>🙋🏻‍♂️关于</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    
-</header>
-<main class="main">
-
-<article class="post-single">
-  <header class="post-header">
-    <div class="breadcrumbs"><a href="https://garywy.github.io/zh/">主页</a>&nbsp;»&nbsp;<a href="https://garywy.github.io/zh/posts/">帖子</a>&nbsp;»&nbsp;<a href="https://garywy.github.io/zh/posts/study/">学习</a></div>
-    <h1 class="post-title entry-hint-parent">
-      DP_Question
-    </h1>
-    <div class="post-meta"><span title='2024-09-29 18:20:59 +0900 JST'>2024-09-29</span>&nbsp;·&nbsp;10 分钟&nbsp;·&nbsp;Gary&nbsp;|&nbsp;语言:
-<ul class="i18n_list">
-    <li>
-        <a href="https://garywy.github.io/en/posts/study/dp_question/">English</a>
-    </li>
-</ul>
-
-
-      <div  class="meta-item">&nbsp·&nbsp
-        <span id="busuanzi_container_page_pv">本文阅读量<span id="busuanzi_value_page_pv"></span>次</span>
-      </div>
-    </div>
-
-
-
-  </header> 
-                    <aside id="toc-container" class="toc-container wide">
-    <div class="toc">
-        <details  open>
-            <summary accesskey="c" title="(Alt + C)">
-                <span class="details">目录</span>
-            </summary>
-
-            <div class="inner"><ul>
-                    <li>
-                        <a href="#%e5%89%8d%e8%a8%80" aria-label="前言">前言</a></li>
-                    <li>
-                        <a href="#1-%e7%ba%bf%e6%80%a7dp" aria-label="1. 线性DP">1. 线性DP</a></li>
-                    <li>
-                        <a href="#3-%e8%83%8c%e5%8c%85dp" aria-label="3. 背包DP">3. 背包DP</a></li>
-                    <li>
-                        <a href="#4-%e9%80%92%e6%8e%a8%e5%9e%8bdp" aria-label="4. 递推型DP">4. 递推型DP</a>
-                    </li>
-                </ul>
-            </div>
-        </details>
-    </div>
-</aside>
-<script>
-    let activeElement;
-    let elements;
-    window.addEventListener('DOMContentLoaded', function (event) {
-        checkTocPosition();
-
-        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
-         
-         activeElement = elements[0];
-         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
-         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-     }, false);
-
-    window.addEventListener('resize', function(event) {
-        checkTocPosition();
-    }, false);
-
-    window.addEventListener('scroll', () => {
-        
-        activeElement = Array.from(elements).find((element) => {
-            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
-                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
-                return element;
-            }
-        }) || activeElement
-
-        elements.forEach(element => {
-             const id = encodeURI(element.getAttribute('id')).toLowerCase();
-             if (element === activeElement){
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-             } else {
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
-             }
-         })
-     }, false);
-
-    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
-    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
-    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
-
-    function checkTocPosition() {
-        const width = document.body.scrollWidth;
-
-        if (width - main - (toc * 2) - (gap * 4) > 0) {
-            document.getElementById("toc-container").classList.add("wide");
-        } else {
-            document.getElementById("toc-container").classList.remove("wide");
-        }
-    }
-
-    function getOffsetTop(element) {
-        if (!element.getClientRects().length) {
-            return 0;
-        }
-        let rect = element.getBoundingClientRect();
-        let win = element.ownerDocument.defaultView;
-        return rect.top + win.pageYOffset;   
-    }
-</script>
-
-  <div class="post-content"><h1 id="前言">前言<a hidden class="anchor" aria-hidden="true" href="#前言">#</a></h1>
-<p>因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。<br>
-DP问题基本解题思路：</p>
-<ul>
-<li>初始状态</li>
-<li>状态转移方程</li>
-</ul>
-<h1 id="1-线性dp">1. 线性DP<a hidden class="anchor" aria-hidden="true" href="#1-线性dp">#</a></h1>
-<p><strong>1.1 例题：Leetcode 300. Longest Increasing Subsequence</strong> <br>
-Given an integer array nums, return the length of the longest strictly increasing subsequence.</p>
-<p>Example 1:</p>
-<blockquote>
-<p><strong>Input:</strong> nums = [10,9,2,5,3,7,101,18]<br>
-<strong>Output:</strong> 4<br>
-<strong>Explanation:</strong> The longest increasing subsequence is [2,3,7,101], therefore the length is 4.</p>
-</blockquote>
-<p>Example 2:</p>
-<blockquote>
-<p><strong>Input:</strong> nums = [0,1,0,3,2,3]<br>
-<strong>Output:</strong> 4</p>
-</blockquote>
-<p>Example 3:</p>
-<blockquote>
-<p><strong>Input:</strong> nums = [7,7,7,7,7,7,7]<br>
-<strong>Output:</strong> 1</p>
-</blockquote>
-<hr>
-<p><strong>(1) 思路</strong></p>
-<ul>
-<li>初始状态
-本题dp[n]可以是前n个元素中的最长子序列的长度。所以dp[0]可以是说只有一个元素的时候，那最长子序列的长度就是1。
-<ul>
-<li><code>dp[0] = 1</code></li>
-</ul>
-</li>
-<li>状态转移方程
-<ul>
-<li>如果有两个元素的时候，需要判断第一个元素和第二个元素之间的大小关系。
-<ul>
-<li><code>nums=[1, 3]</code>，那么此时<code>dp[1] = dp[0] + 1</code>。</li>
-<li><code>nums=[3, 1]</code>，那么此时<code>dp[1] = dp[0]</code></li>
-</ul>
-</li>
-<li>如果有三个元素的时候，在已知<code>dp[0]</code>和<code>dp[1]</code>的情况下，需要判断第三个元素和之前所有元素的大小关系。
-<ul>
-<li><code>nums=[1, 3, x]</code>，首先1和x比大小，如果<code>1&lt;x</code>的情况下，<code>dp[2] = dp[0] + 1</code>, 以此类推3和x比大小，如果<code>3&lt;x</code>的情况下，<code>dp[2] = dp[1] + 1</code>。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>此后的流程以此类推。</li>
-<li>dp[i]指的是第i个元素前最长子序列长度，所以最终结果就是max(dp)。</li>
-</ul>
-<hr>
-<p><strong>(2) Python代码</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">longest_increasing_subsequence</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="nb">list</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">res</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span> <span class="o">=</span> <span class="p">[]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">dp</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">nums</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
-</span></span><span class="line"><span class="cl">                <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">dp</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">dp</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">101</span><span class="p">,</span><span class="mi">18</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">longest_increasing_subsequence</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
-</span></span></code></pre></div><hr>
-<p><strong>1.2 例题：Leetcode 32. Longest Valid Parentheses</strong><br>
-Given a string containing just the characters &lsquo;(&rsquo; and &lsquo;)&rsquo;, return the length of the longest valid (well-formed) parentheses substring.</p>
-<p>Example 1:</p>
-<blockquote>
-<p><strong>Input:</strong> s = &ldquo;(()&rdquo;<br>
-<strong>Output:</strong> 2<br>
-<strong>Explanation:</strong> The longest valid parentheses substring is &ldquo;()&rdquo;.</p>
-</blockquote>
-<p>Example 2:</p>
-<blockquote>
-<p><strong>Input:</strong> s = &ldquo;)()())&rdquo;<br>
-<strong>Output:</strong> 4<br>
-<strong>Explanation:</strong> The longest valid parentheses substring is &ldquo;()()&rdquo;.</p>
-</blockquote>
-<p>Example 3:</p>
-<blockquote>
-<p><strong>Input:</strong> s = &quot;&quot;<br>
-<strong>Output:</strong> 0</p>
-</blockquote>
-<hr>
-<p><strong>(1) 思路</strong></p>
-<ul>
-<li>初始状态
-本题dp可以是前n个元素中的完整括号的个数。dp[0]就是只有一个元素，那么肯定不是完整括号，所以完整括号的个数为0。
-<ul>
-<li><code>dp[0] = 0</code></li>
-</ul>
-</li>
-<li>状态转移方程
-<ul>
-<li>如果当元素<code>s[i]==&quot;)&quot;</code>的时候，那么就需要判断前一个元素<code>s[i-1]==&quot;(&quot;?</code>。</li>
-<li>如果<code>s[i-1]==&quot;(&quot;</code>的时候，如果<code>i&gt;=2</code>的时候， <code>dp[i] = dp[i-2] + 2</code>；否则<code>dp[i] = 2</code>。</li>
-<li>如果<code>s[i-1]==&quot;)&quot;</code>的时候，那个就需要去找在该元素之前的<code>)</code>，也就是<code>s[i-1-dp[i-1]]</code>。所以上述的状态转移方程需要改变。如果<code>i&gt;=2</code>的时候， <code>dp[i] = dp[i-1] + dp[i-2-dp[i-1]] + 2</code>；否则<code>dp[i] = dp[i-1] + 2</code>。</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>(2) Python代码</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">longest_valid_parentheses</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;)&#34;</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;(&#34;</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl">                <span class="k">else</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl">            <span class="k">elif</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span> <span class="o">==</span> <span class="s2">&#34;(&#34;</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span> <span class="o">+</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl">                <span class="k">else</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">                    <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">dp</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="s2">&#34;(()&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">longest_valid_parentheses</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
-</span></span></code></pre></div><hr>
-<p><strong>1.3 例题 Leetcode 97. Interleaving String</strong><br>
-Given strings <code>s1</code>, <code>s2</code>, and <code>s3</code>, find whether <code>s3</code> is formed by an interleaving of <code>s1</code> and <code>s2</code>.<br>
-An interleaving of two strings <code>s</code> and <code>t</code> is a configuration where <code>s</code> and <code>t</code> are divided into <code>n</code> and <code>m</code> substrings respectively, such that:</p>
-<ul>
-<li><code>s = s1 + s2 + ... + sn</code></li>
-<li><code>t = t1 + t2 + ... + tm</code></li>
-<li><code>|n - m| &lt;= 1</code></li>
-<li>The interleaving is <code>s1 + t1 + s2 + t2 + s3 + t3 + ...</code>or <code>t1 + s1 + t2 + s2 + t3 + s3 + ...</code><br>
-Note: <code>a + b</code> is the concatenation of strings <code>a</code> and <code>b</code>.</li>
-</ul>
-<p>Example 1:</p>
-<blockquote>
-<p><strong>Input:</strong> s1 = &ldquo;aabcc&rdquo;, s2 = &ldquo;dbbca&rdquo;, s3 = &ldquo;aadbbcbcac&rdquo;<br>
-<strong>Output:</strong> true<br>
-<strong>Explanation:</strong><br>
-One way to obtain s3 is:<br>
-Split s1 into s1 = &ldquo;aa&rdquo; + &ldquo;bc&rdquo; + &ldquo;c&rdquo;, and s2 into s2 = &ldquo;dbbc&rdquo; + &ldquo;a&rdquo;.<br>
-Interleaving the two splits, we get &ldquo;aa&rdquo; + &ldquo;dbbc&rdquo; + &ldquo;bc&rdquo; + &ldquo;a&rdquo; + &ldquo;c&rdquo; = &ldquo;aadbbcbcac&rdquo;.<br>
-Since s3 can be obtained by interleaving s1 and s2, we return true.</p>
-</blockquote>
-<p>Example 2:</p>
-<blockquote>
-<p><strong>Input:</strong> s1 = &ldquo;aabcc&rdquo;, s2 = &ldquo;dbbca&rdquo;, s3 = &ldquo;aadbbbaccc&rdquo;<br>
-<strong>Output:</strong> false<br>
-<strong>Explanation:</strong> Notice how it is impossible to interleave s2 with any other string to obtain s3.</p>
-</blockquote>
-<p>Example 3:</p>
-<blockquote>
-<p><strong>Input:</strong> s1 = &ldquo;&rdquo;, s2 = &ldquo;&rdquo;, s3 = &quot;&quot;<br>
-<strong>Output:</strong> true</p>
-</blockquote>
-<hr>
-<p><strong>(1) 思路</strong></p>
-<ul>
-<li>初始状态
-本题dp是指<code>s1的前i个元素</code>和<code>s2的前j个元素</code>符合上述规则，即可以组合成为s3。
-<ul>
-<li><code>dp[0][0] = True</code></li>
-</ul>
-</li>
-<li>状态转移方程
-<ul>
-<li>首先考虑边界条件，即判断<code>dp[i][0]</code>和<code>dp[0][j]</code>。该情况是指<code>s1前i个元素是否为s3的前i个元素</code>或者<code>s2前j个元素是否为s3的前j个元素</code>。
-<ul>
-<li><code>dp[i][0] = dp[i-1][0] and s1[i-1] == s3[i-1] (i&gt;=1)</code></li>
-<li><code>dp[0][j] = dp[0][j-1] and s2[j-1] == s3[j-1] (j&gt;=1)</code></li>
-</ul>
-</li>
-<li>其次考虑<code>dp[i][j]</code>的情况。有两个可能性，一种是<code>s1的第i个元素是否等于s3的第i+j个元素</code>，另一种是<code>s2的第j个元素是否等于s3的第i+j个元素</code>。即有以下任何一种情况都成立。
-<ul>
-<li><code>dp[i][j] = dp[i-1][j] and s1[i-1] == s3[i+j-1] (i,j&gt;=1)</code></li>
-<li><code>dp[i][j] = dp[i][j-1] and s2[j-1] == s3[i+j-1] (i,j&gt;=1)</code></li>
-</ul>
-</li>
-<li>注意<code>第n个元素的下标为n-1</code>。</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>(2) Python代码</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">interleaving_string</span><span class="p">(</span><span class="n">s1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">s2</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">s3</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">m</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">m</span><span class="o">+</span><span class="n">n</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">s3</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="kc">False</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">False</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="ow">and</span> <span class="n">s1</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">s3</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">s2</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">s3</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">            <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="ow">and</span> <span class="n">s1</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">s3</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="ow">or</span> \
-</span></span><span class="line"><span class="cl">                       <span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">s2</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">s3</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">s1</span> <span class="o">=</span> <span class="s2">&#34;aabcc&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="n">s2</span> <span class="o">=</span> <span class="s2">&#34;dbbca&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="n">s3</span> <span class="o">=</span> <span class="s2">&#34;aadbbcbcac&#34;</span> 
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">interleaving_string</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">,</span> <span class="n">s3</span><span class="p">))</span>
-</span></span></code></pre></div><hr>
-<p><strong>1.4 例题 Leetcode 115. Distinct Subsequences</strong><br>
-Given two strings <code>s</code> and <code>t</code>, return the number of distinct subsequences of <code>s</code> which equals <code>t</code>.
-The test cases are generated so that the answer fits on a 32-bit signed integer.</p>
-<p>Example 1:</p>
-<blockquote>
-<p><strong>Input:</strong> s = &ldquo;rabbbit&rdquo;, t = &ldquo;rabbit&rdquo;<br>
-<strong>Output:</strong> 3  <br>
-<strong>Explanation:</strong><br>
-As shown below, there are 3 ways you can generate &ldquo;rabbit&rdquo; from s.  <br>
-<u><strong>rabb</strong></u>b<u><strong>it</strong></u><br>
-<u><strong>ra</strong></u>b<u><strong>bbit</strong></u><br>
-<u><strong>rab</strong></u>b<u><strong>bit</strong></u></p>
-</blockquote>
-<p>Example 2:</p>
-<blockquote>
-<p><strong>Input:</strong> s = &ldquo;babgbag&rdquo;, t = &ldquo;bag&rdquo;  <br>
-<strong>Output:</strong> 5<br>
-<strong>Explanation:</strong><br>
-As shown below, there are 5 ways you can generate &ldquo;bag&rdquo; from s.<br>
-<u><strong>ba</strong></u>b<u><strong>g</strong></u>bag<br>
-<u><strong>ba</strong></u>bgba<u><strong>g</strong></u><br>
-<u><strong>b</strong></u>abgb<u><strong>ag</strong></u><br>
-ba<u><strong>b</strong></u>gb<u><strong>ag</strong></u>  <br>
-babg<u><strong>bag</strong></u></p>
-</blockquote>
-<hr>
-<p><strong>(1) 思路</strong></p>
-<ul>
-<li>初始状态
-本题dp是指<code>t的前i个元素</code>在<code>s的前j个元素</code>中存在子序列的个数。
-<ul>
-<li><code>dp[0][j] = 1</code>，即<code>t中的前0个元素（“”）</code>在s中一定存在一个子序列。</li>
-</ul>
-</li>
-<li>状态转移方程
-<ul>
-<li>参考例题1.3，我们可以先穷举。
-<ul>
-<li><code>dp[1][0] = 0, dp[2][0] = 0, ...</code></li>
-<li><code>dp[1][1] = dp[0][0] + dp[0][1] if t[0] == s[0] else dp[0][1]</code></li>
-<li><code>dp[1][2] = dp[0][1] + dp[1][1] if t[0] == s[1] else dp[1][1]</code></li>
-<li><code>dp[2][1] = dp[1][0] + dp[2][0] if t[1] == s[0] else dp[2][0]</code></li>
-</ul>
-</li>
-<li>综上可得
-<ul>
-<li><code>dp[i][j] = dp[i-1][j-1] + dp[i][j-1] if t[i-1] == s[j-1] else dp[i][j-1] (i,j&gt;=1)</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>(2) Python代码</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">distinct_subsequences</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">t</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">            <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> \
-</span></span><span class="line"><span class="cl">                       <span class="k">else</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="s2">&#34;rabbbit&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="n">t</span> <span class="o">=</span> <span class="s2">&#34;rabbit&#34;</span>  
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">distinct_subsequences</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">t</span><span class="p">))</span>
-</span></span></code></pre></div><hr>
-<p><strong>1.5 例题 Leetcode 53. Maximum Subarray</strong><br>
-Given an integer array <code>nums</code>, find the subarray with the largest sum, and return its sum.</p>
-<p>Example 1:</p>
-<blockquote>
-<p><strong>Input:</strong> nums = [-2,1,-3,4,-1,2,1,-5,4]<br>
-<strong>Output:</strong> 6<br>
-<strong>Explanation:</strong> The subarray [4,-1,2,1] has the largest sum 6.</p>
-</blockquote>
-<p>Example 2:</p>
-<blockquote>
-<p><strong>Input:</strong> nums = [1] <br>
-<strong>Output:</strong> 1<br>
-<strong>Explanation:</strong> The subarray [1] has the largest sum 1.</p>
-</blockquote>
-<p>Example 3:</p>
-<blockquote>
-<p><strong>Input:</strong> nums = [5,4,-1,7,8]<br>
-<strong>Output:</strong> 23  <br>
-<strong>Explanation:</strong> The subarray [5,4,-1,7,8] has the largest sum 23.</p>
-</blockquote>
-<hr>
-<p><strong>(1) 思路</strong></p>
-<ul>
-<li>初始状态
-本题dp可以指<code>前i个元素中最大的和</code>。
-<ul>
-<li><code>dp[0] = -inf</code></li>
-</ul>
-</li>
-<li>状态转移方程
-<ul>
-<li><code>dp[i] = max(nums[i-1], nums[i-1]+dp[i-1])</code></li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>(2) Python代码</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">maximum_subarray</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="nb">list</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="s2">&#34;-inf&#34;</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">dp</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>  
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">maximum_subarray</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
-</span></span></code></pre></div><hr>
-<p><strong>1.6 例题 Leetcode 152. Maximum Product Subarray</strong><br>
-Given an integer array <code>nums</code>, find a subarray that has the largest product, and return the product.<br>
-The test cases are generated so that the answer will fit in a 32-bit integer.</p>
-<p>Example 1:</p>
-<blockquote>
-<p><strong>Input:</strong> nums = [2,3,-2,4]<br>
-<strong>Output:</strong> 6  <br>
-<strong>Explanation:</strong> [2,3] has the largest product 6.</p>
-</blockquote>
-<p>Example 2:</p>
-<blockquote>
-<p><strong>Input:</strong> nums = [-2,0,-1]<br>
-<strong>Output:</strong> 0<br>
-<strong>Explanation:</strong> The result cannot be 2, because [-2,-1] is not a subarray.</p>
-</blockquote>
-<hr>
-<p><strong>(1) 思路</strong></p>
-<ul>
-<li>初始状态
-本题思路与例题1.5几乎一致，但是在乘法中，存在负数相乘的情况，所以需要同时保存最大值和最小值。因此需要设置<code>dp_max</code>和<code>dp_min</code>。
-<ul>
-<li><code>dp_max[0] = 0, dp_min[0] = 0</code></li>
-</ul>
-</li>
-<li>状态转移方程
-<ul>
-<li><code>dp_max[i] = max(nums[i-1], nums[i-1]*dp_max[i-1], nums[i-1]*dp_min[i-1])</code></li>
-<li><code>dp_min[i] = min(nums[i-1], nums[i-1]*dp_max[i-1], nums[i-1]*dp_min[i-1])</code></li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>(2) Python代码</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">maximum_product_subarray</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="nb">list</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp_max</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp_min</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">dp_max</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">dp_max</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">dp_min</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">        <span class="n">dp_min</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">dp_max</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">dp_min</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">dp_max</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">maximum_product_subarray</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
-</span></span></code></pre></div><hr>
-<p><strong>1.7 例题 Leetcode 198. House Robber</strong><br>
-You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and <strong>it will automatically contact the police if two adjacent houses were broken into on the same night</strong>.</p>
-<p>Given an integer array <code>nums</code> representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.</p>
-<p>Example 1:</p>
-<blockquote>
-<p><strong>Input:</strong> nums = [1,2,3,1]<br>
-<strong>Output:</strong> 4<br>
-<strong>Explanation:</strong> Rob house 1 (money = 1) and then rob house 3 (money = 3).<br>
-Total amount you can rob = 1 + 3 = 4.</p>
-</blockquote>
-<p>Example 2:</p>
-<blockquote>
-<p><strong>Input:</strong> nums = [2,7,9,3,1]<br>
-<strong>Output:</strong> 12<br>
-<strong>Explanation:</strong> Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).<br>
-Total amount you can rob = 2 + 9 + 1 = 12.</p>
-</blockquote>
-<hr>
-<p><strong>(1) 思路</strong></p>
-<ul>
-<li>初始状态
-首先确定dp的含义，本题可以是前i家房屋中金钱的最大值。因此为一维，并可确定初始状态。
-<ul>
-<li><code>dp[0] = 0, dp[1] = nums[0]</code></li>
-</ul>
-</li>
-<li>状态转移方程<br>
-题目要求不能连续偷相邻房屋，例如<code>在偷第3家的时候，我们必须确保前一天偷的是第1家</code>。那么<code>dp[3]事实上就是第1家和第3家的金钱总和和第2家金钱中的最大值</code>，以此类推转移方程如下。
-<ul>
-<li><code>dp[i] = max(dp[i-2]+nums[i-1], dp[i-1]) (i&gt;=2)</code></li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>(2) Python代码</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">house_robber</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="nb">list</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">house_robber</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
-</span></span></code></pre></div><hr>
-<p><strong>1.8 例题 Leetcode 213. House Robber II</strong><br>
-You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and <strong>it will automatically contact the police if two adjacent houses were broken into on the same night</strong>.</p>
-<p>Given an integer array <code>nums</code> representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.</p>
-<p>Example 1:</p>
-<blockquote>
-<p><strong>Input:</strong> nums = [2,3,2]<br>
-<strong>Output:</strong> 3<br>
-<strong>Explanation:</strong> You cannot rob house 1 (money = 2) and then rob house 3 (money = 2), because they are adjacent houses.</p>
-</blockquote>
-<p>Example 2:</p>
-<blockquote>
-<p><strong>Input:</strong> nums = [1,2,3,1]<br>
-<strong>Output:</strong> 4<br>
-<strong>Explanation:</strong> Rob house 1 (money = 1) and then rob house 3 (money = 3).<br>
-Total amount you can rob = 1 + 3 = 4.</p>
-</blockquote>
-<p>Example 3:</p>
-<blockquote>
-<p><strong>Input:</strong> nums = [1,2,3]<br>
-<strong>Output:</strong> 3</p>
-</blockquote>
-<hr>
-<p><strong>(1) 思路</strong></p>
-<ul>
-<li>初始状态
-首先确定dp的含义，本题可以是前i家房屋中金钱的最大值。因此为一维，并可确定初始状态。
-<ul>
-<li><code>dp[0] = 0, dp[1] = nums[0]</code></li>
-</ul>
-</li>
-<li>状态转移方程<br>
-题目要求不能连续偷相邻房屋，例如<code>在偷第3家的时候，我们必须确保前一天偷的是第1家</code>。那么<code>dp[3]事实上就是第1家和第3家的金钱总和和第2家金钱中的最大值</code>，以此类推转移方程如下。
-<ul>
-<li><code>dp[i] = max(dp[i-2]+nums[i-1], dp[i-1]) (i&gt;=2)</code>
-以上均与例题1.8完全一致，但是首尾的房屋为连续排列。此时我们可以分为两个部分进行计算，若存在n个房屋，我们可以<code>先计算前n-1个房屋</code>，<code>再计算后n-1个房屋</code>，以此确保首尾不会连续，然后<code>取其中的最大值</code>。</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>(2) Python代码</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">house_robber</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="nb">list</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="n">nums</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">house_robber2</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="nb">list</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">house_robber</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="mi">1</span><span class="p">:]),</span> <span class="n">house_robber</span><span class="p">(</span><span class="n">nums</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
-</span></span><span class="line"><span class="cl"><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">house_robber2</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
-</span></span></code></pre></div><hr>
-<p><strong>1.9 例题 Leetcode 72. Edit Distance</strong><br>
-Given two strings <code>word1</code> and <code>word2</code>, return the minimum number of operations required to convert <code>word1</code> to <code>word2</code>.</p>
-<p>You have the following three operations permitted on a word:</p>
-<ul>
-<li>Insert a character</li>
-<li>Delete a character</li>
-<li>Replace a character</li>
-</ul>
-<p>Example 1:</p>
-<blockquote>
-<p><strong>Input:</strong> word1 = &ldquo;horse&rdquo;, word2 = &ldquo;ros&rdquo;<br>
-<strong>Output:</strong> 3<br>
-<strong>Explanation:</strong> <br>
-horse -&gt; rorse (replace &lsquo;h&rsquo; with &lsquo;r&rsquo;)     <br>
-rorse -&gt; rose (remove &lsquo;r&rsquo;)<br>
-rose -&gt; ros (remove &rsquo;e&rsquo;)</p>
-</blockquote>
-<p>Example 2:</p>
-<blockquote>
-<p><strong>Input:</strong> word1 = &ldquo;intention&rdquo;, word2 = &ldquo;execution&rdquo;<br>
-<strong>Output:</strong> 5<br>
-<strong>Explanation:</strong><br>
-intention -&gt; inention (remove &rsquo;t&rsquo;)<br>
-inention -&gt; enention (replace &lsquo;i&rsquo; with &rsquo;e&rsquo;)<br>
-enention -&gt; exention (replace &rsquo;n&rsquo; with &lsquo;x&rsquo;)<br>
-exention -&gt; exection (replace &rsquo;n&rsquo; with &lsquo;c&rsquo;)<br>
-exection -&gt; execution (insert &lsquo;u&rsquo;)</p>
-</blockquote>
-<hr>
-<p><strong>(1) 思路</strong></p>
-<ul>
-<li>初始状态
-首先确定dp的含义，本题可以是word1的前i个元素和word2的前j个元素之间的编辑距离。因此为二维，并可确定初始状态。
-<ul>
-<li><code>dp[0][0] = 0, dp[i][0] = i, dp[0][j] = j</code></li>
-</ul>
-</li>
-<li>状态转移方程 <br>
-该题目的简单来说就是<code>找到插入代价，消除代价以及置换代价中的最小值</code>。插入一个元素或消除一个元素，其都需要操作一次，<code>即插入代价和消除代价为1</code>。如果当word1中的第i个元素和word2中的第j个元素相等的时候，此时不需要置换，否则需要操作一次，<code>即置换代价为1或0</code>.
-<ul>
-<li><code>insert_cost = 1, delete_cost = 1</code></li>
-<li><code>replace_cost = 0 if word1[i-1] == word2[j-1] else 1</code></li>
-<li><code>dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1] + replace_cost) (i,j&gt;=1)</code></li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>(2) Python代码</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">edit_distance</span><span class="p">(</span><span class="n">word1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">word2</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">word2</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">word1</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">word1</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">word2</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">j</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">word1</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">word2</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">            <span class="n">replace_cost</span> <span class="o">=</span> <span class="mi">0</span> <span class="k">if</span> <span class="n">word1</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">word2</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="k">else</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">            <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">replace_cost</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">word1</span> <span class="o">=</span> <span class="s2">&#34;horse&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="n">word2</span> <span class="o">=</span> <span class="s2">&#34;ros&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">edit_distance</span><span class="p">(</span><span class="n">word1</span><span class="p">,</span> <span class="n">word2</span><span class="p">))</span>
-</span></span></code></pre></div><hr>
-<p><strong>1.10 例题 Leetcode 44. Wildcard Matching</strong><br>
-Given an input string (<code>s</code>) and a pattern (<code>p</code>), implement wildcard pattern matching with support for <code>'?'</code> and <code>'*'</code> where:</p>
-<ul>
-<li><code>'?'</code> Matches any single character.</li>
-<li><code>'*'</code> Matches any sequence of characters (including the empty sequence).</li>
-</ul>
-<p>The matching should cover the entire input string (not partial).</p>
-<p>Example 1:</p>
-<blockquote>
-<p><strong>Input:</strong> s = &ldquo;aa&rdquo;, p = &ldquo;a&rdquo;<br>
-<strong>Output:</strong> false<br>
-<strong>Explanation:</strong> &ldquo;a&rdquo; does not match the entire string &ldquo;aa&rdquo;.</p>
-</blockquote>
-<p>Example 2:</p>
-<blockquote>
-<p><strong>Input:</strong> s = &ldquo;aa&rdquo;, p = &ldquo;*&rdquo; <br>
-<strong>Output:</strong> true<br>
-<strong>Explanation:</strong> &lsquo;*&rsquo; matches any sequence.</p>
-</blockquote>
-<p>Example 3:</p>
-<blockquote>
-<p><strong>Input:</strong> s = &ldquo;cb&rdquo;, p = &ldquo;?a&rdquo;  <br>
-<strong>Output:</strong> false<br>
-<strong>Explanation:</strong> &lsquo;?&rsquo; matches &lsquo;c&rsquo;, but the second letter is &lsquo;a&rsquo;, which does not match &lsquo;b&rsquo;.</p>
-</blockquote>
-<hr>
-<p><strong>(1) 思路</strong></p>
-<ul>
-<li>初始状态
-首先确定dp的含义，本题是s的前i个元素和p的前j个元素之间是否匹配。因此为二维，并可确定初始状态。
-<ul>
-<li><code>dp[0][0] = True</code><br>
-由于只有<code>*</code>可以匹配空字符，所以需要判断第j个元素是否为<code>*</code>.</li>
-<li><code>dp[0][j] = dp[0][j-1] if p[j-1] == &quot;*&quot;</code></li>
-</ul>
-</li>
-<li>状态转移方程 <br>
-<code>如果p中第j个元素为*时</code>，那么任意匹配，即<code>dp[i][j] = dp[i-1][j] or dp[i][j-1]</code>， 表示是否使用该<code>*</code>.<br>
-<code>如果p中第j个元素为?</code>或<code>p中第j个元素为*与s的第i个元素相等时</code>，那么<code>dp[i][j] = dp[i-1][j-1]</code>.</li>
-</ul>
-<hr>
-<p><strong>(2) Python代码</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">wildcard_matching</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">p</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span> <span class="o">=</span> <span class="p">[[</span><span class="kc">False</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;*&#34;</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">            <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;*&#34;</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">                <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="ow">or</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;?&#34;</span> <span class="ow">or</span> <span class="n">p</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-</span></span><span class="line"><span class="cl">                <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="s2">&#34;cb&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="n">p</span> <span class="o">=</span> <span class="s2">&#34;?a&#34;</span> 
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">wildcard_matching</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">p</span><span class="p">))</span>
-</span></span></code></pre></div><h1 id="3-背包dp">3. 背包DP<a hidden class="anchor" aria-hidden="true" href="#3-背包dp">#</a></h1>
-<p><strong>2.1 例题 Leetcode 377. Combaination Sum IV</strong><br>
-Given an array of distinct integers <code>nums</code> and a <code>target</code> integer target, return <code>the number of possible combinations that add up to target</code>.</p>
-<p>The test cases are generated so that the answer can fit in a 32-bit integer.</p>
-<p>Example 1:</p>
-<blockquote>
-<p><strong>Input</strong>: nums = [1,2,3], target = 4<br>
-<strong>Output</strong>: 7<br>
-<strong>Explanation</strong>:<br>
-The possible combination ways are:
-(1, 1, 1, 1)<br>
-(1, 1, 2)<br>
-(1, 2, 1)<br>
-(1, 3)<br>
-(2, 1, 1)<br>
-(2, 2)<br>
-(3, 1).<br>
-Note that different sequences are counted as different combinations.</p>
-</blockquote>
-<p>Example 2:</p>
-<blockquote>
-<p><strong>Input</strong>: nums = [9], target = 3<br>
-<strong>Output</strong>: 0</p>
-</blockquote>
-<hr>
-<p><strong>(1) 思路</strong></p>
-<ul>
-<li>初始状态
-首先确定dp的含义，本题的<code>dp[i]是指当target是i的时候，有多少种组合</code>。当target=0的时候，只有一种组合那就是什么都不取，即：
-<ul>
-<li><code>dp[0] = 1</code></li>
-</ul>
-</li>
-<li>状态转移方程 <br>
-当target=i的时候，即<code>dp[i]</code>，我们需要对nums中每一个元素（num）进行判断。<code>如果当num&lt;=i的时候，那就意味着存在这种组合，那么剩下的就是取出当target=i-num的组合数，即dp[i-num]</code>。由此可得，转移方程为：
-<ul>
-<li><code>dp[i] += dp[i-num] if num &lt;= i</code></li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>(2) Python代码</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">combaination_sum</span><span class="p">(</span><span class="n">nums</span><span class="p">:</span> <span class="nb">list</span><span class="p">,</span> <span class="n">target</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">target</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">target</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;=</span> <span class="n">i</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">                <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="n">num</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">target</span> <span class="o">=</span> <span class="mi">4</span>   
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">combaination_sum</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">target</span><span class="p">))</span>
-</span></span></code></pre></div><h1 id="4-递推型dp">4. 递推型DP<a hidden class="anchor" aria-hidden="true" href="#4-递推型dp">#</a></h1>
-<p><strong>4.1 例题 Leetcode 70. Climbing Stairs</strong><br>
-You are climbing a staircase. It takes <code>n</code> steps to reach the top.</p>
-<p>Each time you can either climb <code>1</code> or <code>2</code> steps. In how many distinct ways can you climb to the top?</p>
-<p>Example 1:</p>
-<blockquote>
-<p><strong>Input</strong>: n = 2<br>
-<strong>Output</strong>: 2<br>
-<strong>Explanation</strong>: There are two ways to climb to the top.</p>
-<ol>
-<li>1 step + 1 step</li>
-<li>2 steps</li>
-</ol>
-</blockquote>
-<p>Example 2:</p>
-<blockquote>
-<p><strong>Input</strong>: n = 3<br>
-<strong>Output</strong>: 3<br>
-<strong>Explanation</strong>: There are three ways to climb to the top.</p>
-<ol>
-<li>1 step + 1 step + 1 step</li>
-<li>1 step + 2 steps</li>
-<li>2 steps + 1 step</li>
-</ol>
-</blockquote>
-<hr>
-<p><strong>(1) 思路</strong></p>
-<ul>
-<li>初始状态
-首先确定dp的含义，本题的<code>dp[i]是指在到达第i层有多少种方法</code>。当i=0或i=1的时候，只有一种组合那就是不走或走1步，即：
-<ul>
-<li><code>dp[0] = 1, dp[1] = 1</code></li>
-</ul>
-</li>
-<li>状态转移方程 <br>
-由题意可得，当我们想要到达第i层的时候，只有两种办法，一种是走了1步，另一种是走了2步。那么得知，想求<code>dp[i]</code>，可以求走i步到达i层<code>(dp[i-1])</code>和走2步到达i层<code>(dp[i-2])</code>的总数。由此可得，转移方程为：
-<ul>
-<li><code>dp[i] = dp[i-1] + dp[i-2] (i&gt;=2)</code></li>
-</ul>
-</li>
-</ul>
-<hr>
-<p><strong>(2) Python代码</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">climbing_stairs</span><span class="p">(</span><span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">3</span> 
-</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">climbing_stairs</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
-</span></span></code></pre></div>
-
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
-
-  </footer>
-<div>
-    <div class="pagination__title">
-        <span class="pagination__title-h" style="font-size: 20px;">Comments</span>
-        <hr />
-    </div>
-    <div id="tcomment"></div>
-    <script src="https://cdn.staticfile.org/twikoo/1.6.39/twikoo.all.min.js"></script>
-    <script>
-        twikoo.init({
-            envId: "https://mangodb-theta.vercel.app/",  
-            el: "#tcomment",
-            lang: 'en-US',
-            path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
-        });
-    </script>
-</div>
-
-</article>
-    </main>
-    
-<footer class="footer">
-        <span>&copy; 2025 <a href="https://garywy.github.io/zh/">Gary&#39;s House</a></span> · 
-
-    <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
-    
-    <div class="busuanzi-footer">
-    <span id="busuanzi_container_site_pv">
-        Views: <span id="busuanzi_value_site_pv"></span>
-    </span>
-    <span id="busuanzi_container_site_uv">
-        Visitors: <span id="busuanzi_value_site_uv"></span>
-    </span>
-    </div></footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-
-<script>
-    let menu = document.getElementById('menu')
-    if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-        menu.onscroll = function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            var id = this.getAttribute("href").substr(1);
-            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-<script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
-
-</script>
-<script>
-    document.querySelectorAll('pre > code').forEach((codeblock) => {
-        const container = codeblock.parentNode.parentNode;
-
-        const copybutton = document.createElement('button');
-        copybutton.classList.add('copy-code');
-        copybutton.innerHTML = '复制';
-
-        function copyingDone() {
-            copybutton.innerHTML = '已复制！';
-            setTimeout(() => {
-                copybutton.innerHTML = '复制';
-            }, 2000);
-        }
-
-        copybutton.addEventListener('click', (cb) => {
-            if ('clipboard' in navigator) {
-                navigator.clipboard.writeText(codeblock.textContent);
-                copyingDone();
-                return;
-            }
-
-            const range = document.createRange();
-            range.selectNodeContents(codeblock);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            try {
-                document.execCommand('copy');
-                copyingDone();
-            } catch (e) { };
-            selection.removeRange(range);
-        });
-
-        if (container.classList.contains("highlight")) {
-            container.appendChild(copybutton);
-        } else if (container.parentNode.firstChild == container) {
-            
-        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
-            
-            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
-        } else {
-            
-            codeblock.parentNode.appendChild(copybutton);
-        }
-    });
-</script>
-</body>
-
-</html>
+1. 线性DP
+1.1 例题：Leetcode 300. Longest Increasing Subsequence 
+Given an integer array nums, return the length of the longest strictly increasing subsequence."><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"帖子","item":"https://garywy.github.io/zh/posts/"},{"@type":"ListItem","position":2,"name":"学习","item":"https://garywy.github.io/zh/posts/study/"},{"@type":"ListItem","position":3,"name":"DP_Question","item":"https://garywy.github.io/zh/posts/study/dp_question/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"DP_Question","name":"DP_Question","description":"前言 因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。\nDP问题基本解题思路：\n初始状态 状态转移方程 1. 线性DP 1.1 例题：Leetcode 300. Longest Increasing Subsequence Given an integer array nums, return the length of the longest strictly increasing subsequence.\n","keywords":[],"articleBody":"前言 因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。\nDP问题基本解题思路：\n初始状态 状态转移方程 1. 线性DP 1.1 例题：Leetcode 300. Longest Increasing Subsequence Given an integer array nums, return the length of the longest strictly increasing subsequence.\nExample 1:\nInput: nums = [10,9,2,5,3,7,101,18]\nOutput: 4\nExplanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.\nExample 2:\nInput: nums = [0,1,0,3,2,3]\nOutput: 4\nExample 3:\nInput: nums = [7,7,7,7,7,7,7]\nOutput: 1\n(1) 思路\n初始状态 本题dp[n]可以是前n个元素中的最长子序列的长度。所以dp[0]可以是说只有一个元素的时候，那最长子序列的长度就是1。 dp[0] = 1 状态转移方程 如果有两个元素的时候，需要判断第一个元素和第二个元素之间的大小关系。 nums=[1, 3]，那么此时dp[1] = dp[0] + 1。 nums=[3, 1]，那么此时dp[1] = dp[0] 如果有三个元素的时候，在已知dp[0]和dp[1]的情况下，需要判断第三个元素和之前所有元素的大小关系。 nums=[1, 3, x]，首先1和x比大小，如果1","wordCount":"4558","inLanguage":"zh","datePublished":"2024-09-29T18:20:59+09:00","dateModified":"2024-09-29T18:20:59+09:00","author":{"@type":"Person","name":"Gary"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://garywy.github.io/zh/posts/study/dp_question/"},"publisher":{"@type":"Organization","name":"Gary's House","logo":{"@type":"ImageObject","url":"https://garywy.github.io/img/Q.jpg"}}}</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css><script src=https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js></script><script src=https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js></script></head><body id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://garywy.github.io/zh/ accesskey=h title="Gary's Blog (Alt + H)"><img src=https://garywy.github.io/img/me.jpg alt aria-label=logo height=35>Gary's Blog</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button><ul class=lang-switch><li>|</li><li><a href=https://garywy.github.io/en/ title=English aria-label=English>English</a></li></ul></div></div><ul id=menu><li><a href=https://garywy.github.io/zh/search title="🔍搜索 (Alt + /)" accesskey=/><span>🔍搜索</span></a></li><li><a href=https://garywy.github.io/zh/ title=🏠主页><span>🏠主页</span></a></li><li><a href=https://garywy.github.io/zh/posts/ title=📚文章><span>📚文章</span></a></li><li><a href=https://garywy.github.io/zh/archives/ title=⏱存档><span>⏱存档</span></a></li><li><a href=https://garywy.github.io/zh/music/ title=🎵音乐><span>🎵音乐</span></a></li><li><a href=https://garywy.github.io/zh/about title=🙋🏻‍♂️关于><span>🙋🏻‍♂️关于</span></a></li></ul></nav></header><main class=main><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://garywy.github.io/zh/>主页</a>&nbsp;»&nbsp;<a href=https://garywy.github.io/zh/posts/>帖子</a>&nbsp;»&nbsp;<a href=https://garywy.github.io/zh/posts/study/>学习</a></div><h1 class="post-title entry-hint-parent">DP_Question</h1><div class=post-meta><span title='2024-09-29 18:20:59 +0900 JST'>2024-09-29</span>&nbsp;·&nbsp;10 分钟&nbsp;·&nbsp;Gary&nbsp;|&nbsp;语言:<ul class=i18n_list><li><a href=https://garywy.github.io/en/posts/study/dp_question/>English</a></li></ul><div class=meta-item>&nbsp·&nbsp
+        <span id=busuanzi_container_page_pv>本文阅读量<span id=busuanzi_value_page_pv></span>次</span></div></div></header><aside id=toc-container class="toc-container wide"><div class=toc><details open><summary accesskey=c title="(Alt + C)"><span class=details>目录</span></summary><div class=inner><ul><li><a href=#%e5%89%8d%e8%a8%80 aria-label=前言>前言</a></li><li><a href=#1-%e7%ba%bf%e6%80%a7dp aria-label="1. 线性DP">1. 线性DP</a></li><li><a href=#3-%e8%83%8c%e5%8c%85dp aria-label="3. 背包DP">3. 背包DP</a></li><li><a href=#4-%e9%80%92%e6%8e%a8%e5%9e%8bdp aria-label="4. 递推型DP">4. 递推型DP</a></li></ul></div></details></div></aside><script>let activeElement,elements;window.addEventListener("DOMContentLoaded",function(){checkTocPosition(),elements=document.querySelectorAll("h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]"),activeElement=elements[0];const t=encodeURI(activeElement.getAttribute("id")).toLowerCase();document.querySelector(`.inner ul li a[href="#${t}"]`).classList.add("active")},!1),window.addEventListener("resize",function(){checkTocPosition()},!1),window.addEventListener("scroll",()=>{activeElement=Array.from(elements).find(e=>{if(getOffsetTop(e)-window.pageYOffset>0&&getOffsetTop(e)-window.pageYOffset<window.innerHeight/2)return e})||activeElement,elements.forEach(e=>{const t=encodeURI(e.getAttribute("id")).toLowerCase();e===activeElement?document.querySelector(`.inner ul li a[href="#${t}"]`).classList.add("active"):document.querySelector(`.inner ul li a[href="#${t}"]`).classList.remove("active")})},!1);const main=parseInt(getComputedStyle(document.body).getPropertyValue("--article-width"),10),toc=parseInt(getComputedStyle(document.body).getPropertyValue("--toc-width"),10),gap=parseInt(getComputedStyle(document.body).getPropertyValue("--gap"),10);function checkTocPosition(){const e=document.body.scrollWidth;e-main-toc*2-gap*4>0?document.getElementById("toc-container").classList.add("wide"):document.getElementById("toc-container").classList.remove("wide")}function getOffsetTop(e){if(!e.getClientRects().length)return 0;let t=e.getBoundingClientRect(),n=e.ownerDocument.defaultView;return t.top+n.pageYOffset}</script><div class=post-content><h1 id=前言>前言<a hidden class=anchor aria-hidden=true href=#前言>#</a></h1><p>因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。<br>DP问题基本解题思路：</p><ul><li>初始状态</li><li>状态转移方程</li></ul><h1 id=1-线性dp>1. 线性DP<a hidden class=anchor aria-hidden=true href=#1-线性dp>#</a></h1><p><strong>1.1 例题：Leetcode 300. Longest Increasing Subsequence</strong><br>Given an integer array nums, return the length of the longest strictly increasing subsequence.</p><p>Example 1:</p><blockquote><p><strong>Input:</strong> nums = [10,9,2,5,3,7,101,18]<br><strong>Output:</strong> 4<br><strong>Explanation:</strong> The longest increasing subsequence is [2,3,7,101], therefore the length is 4.</p></blockquote><p>Example 2:</p><blockquote><p><strong>Input:</strong> nums = [0,1,0,3,2,3]<br><strong>Output:</strong> 4</p></blockquote><p>Example 3:</p><blockquote><p><strong>Input:</strong> nums = [7,7,7,7,7,7,7]<br><strong>Output:</strong> 1</p></blockquote><hr><p><strong>(1) 思路</strong></p><ul><li>初始状态
+本题dp[n]可以是前n个元素中的最长子序列的长度。所以dp[0]可以是说只有一个元素的时候，那最长子序列的长度就是1。<ul><li><code>dp[0] = 1</code></li></ul></li><li>状态转移方程<ul><li>如果有两个元素的时候，需要判断第一个元素和第二个元素之间的大小关系。<ul><li><code>nums=[1, 3]</code>，那么此时<code>dp[1] = dp[0] + 1</code>。</li><li><code>nums=[3, 1]</code>，那么此时<code>dp[1] = dp[0]</code></li></ul></li><li>如果有三个元素的时候，在已知<code>dp[0]</code>和<code>dp[1]</code>的情况下，需要判断第三个元素和之前所有元素的大小关系。<ul><li><code>nums=[1, 3, x]</code>，首先1和x比大小，如果<code>1&lt;x</code>的情况下，<code>dp[2] = dp[0] + 1</code>, 以此类推3和x比大小，如果<code>3&lt;x</code>的情况下，<code>dp[2] = dp[1] + 1</code>。</li></ul></li></ul></li><li>此后的流程以此类推。</li><li>dp[i]指的是第i个元素前最长子序列长度，所以最终结果就是max(dp)。</li></ul><hr><p><strong>(2) Python代码</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>longest_increasing_subsequence</span><span class=p>(</span><span class=n>nums</span><span class=p>:</span> <span class=nb>list</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>res</span> <span class=o>=</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span> <span class=o>=</span> <span class=p>[]</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>nums</span><span class=p>)):</span>
+</span></span><span class=line><span class=cl>        <span class=n>dp</span><span class=o>.</span><span class=n>append</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>i</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=n>nums</span><span class=p>[</span><span class=n>j</span><span class=p>]</span> <span class=o>&lt;</span> <span class=n>nums</span><span class=p>[</span><span class=n>i</span><span class=p>]:</span>
+</span></span><span class=line><span class=cl>                <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=nb>max</span><span class=p>(</span><span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>],</span> <span class=n>dp</span><span class=p>[</span><span class=n>j</span><span class=p>]</span><span class=o>+</span><span class=mi>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nb>max</span><span class=p>(</span><span class=n>dp</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>nums</span> <span class=o>=</span> <span class=p>[</span><span class=mi>10</span><span class=p>,</span><span class=mi>9</span><span class=p>,</span><span class=mi>2</span><span class=p>,</span><span class=mi>5</span><span class=p>,</span><span class=mi>3</span><span class=p>,</span><span class=mi>7</span><span class=p>,</span><span class=mi>101</span><span class=p>,</span><span class=mi>18</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>longest_increasing_subsequence</span><span class=p>(</span><span class=n>nums</span><span class=p>))</span>
+</span></span></code></pre></div><hr><p><strong>1.2 例题：Leetcode 32. Longest Valid Parentheses</strong><br>Given a string containing just the characters &lsquo;(&rsquo; and &lsquo;)&rsquo;, return the length of the longest valid (well-formed) parentheses substring.</p><p>Example 1:</p><blockquote><p><strong>Input:</strong> s = &ldquo;(()&rdquo;<br><strong>Output:</strong> 2<br><strong>Explanation:</strong> The longest valid parentheses substring is &ldquo;()&rdquo;.</p></blockquote><p>Example 2:</p><blockquote><p><strong>Input:</strong> s = &ldquo;)()())&rdquo;<br><strong>Output:</strong> 4<br><strong>Explanation:</strong> The longest valid parentheses substring is &ldquo;()()&rdquo;.</p></blockquote><p>Example 3:</p><blockquote><p><strong>Input:</strong> s = ""<br><strong>Output:</strong> 0</p></blockquote><hr><p><strong>(1) 思路</strong></p><ul><li>初始状态
+本题dp可以是前n个元素中的完整括号的个数。dp[0]就是只有一个元素，那么肯定不是完整括号，所以完整括号的个数为0。<ul><li><code>dp[0] = 0</code></li></ul></li><li>状态转移方程<ul><li>如果当元素<code>s[i]==")"</code>的时候，那么就需要判断前一个元素<code>s[i-1]=="("?</code>。</li><li>如果<code>s[i-1]=="("</code>的时候，如果<code>i>=2</code>的时候， <code>dp[i] = dp[i-2] + 2</code>；否则<code>dp[i] = 2</code>。</li><li>如果<code>s[i-1]==")"</code>的时候，那个就需要去找在该元素之前的<code>)</code>，也就是<code>s[i-1-dp[i-1]]</code>。所以上述的状态转移方程需要改变。如果<code>i>=2</code>的时候， <code>dp[i] = dp[i-1] + dp[i-2-dp[i-1]] + 2</code>；否则<code>dp[i] = dp[i-1] + 2</code>。</li></ul></li></ul><hr><p><strong>(2) Python代码</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>longest_valid_parentheses</span><span class=p>(</span><span class=n>s</span><span class=p>:</span> <span class=nb>str</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span> <span class=o>=</span> <span class=p>[</span><span class=mi>0</span><span class=p>]</span><span class=o>*</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>s</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=n>s</span><span class=p>)):</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=n>s</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>==</span> <span class=s2>&#34;)&#34;</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=n>s</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=s2>&#34;(&#34;</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>                <span class=k>if</span> <span class=n>i</span> <span class=o>&gt;=</span> <span class=mi>2</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>                    <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>2</span><span class=p>]</span> <span class=o>+</span> <span class=mi>2</span>
+</span></span><span class=line><span class=cl>                <span class=k>else</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>                    <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=mi>2</span>
+</span></span><span class=line><span class=cl>            <span class=k>elif</span> <span class=n>s</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=o>-</span><span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]]</span> <span class=o>==</span> <span class=s2>&#34;(&#34;</span> <span class=ow>and</span> <span class=n>i</span> <span class=o>&gt;</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]:</span>
+</span></span><span class=line><span class=cl>                <span class=k>if</span> <span class=n>i</span> <span class=o>&gt;=</span> <span class=mi>2</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>                    <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>+</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>2</span><span class=o>-</span><span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]]</span> <span class=o>+</span> <span class=mi>2</span>
+</span></span><span class=line><span class=cl>                <span class=k>else</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>                    <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>+</span> <span class=mi>2</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nb>max</span><span class=p>(</span><span class=n>dp</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>s</span> <span class=o>=</span> <span class=s2>&#34;(()&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>longest_valid_parentheses</span><span class=p>(</span><span class=n>s</span><span class=p>))</span>
+</span></span></code></pre></div><hr><p><strong>1.3 例题 Leetcode 97. Interleaving String</strong><br>Given strings <code>s1</code>, <code>s2</code>, and <code>s3</code>, find whether <code>s3</code> is formed by an interleaving of <code>s1</code> and <code>s2</code>.<br>An interleaving of two strings <code>s</code> and <code>t</code> is a configuration where <code>s</code> and <code>t</code> are divided into <code>n</code> and <code>m</code> substrings respectively, such that:</p><ul><li><code>s = s1 + s2 + ... + sn</code></li><li><code>t = t1 + t2 + ... + tm</code></li><li><code>|n - m| &lt;= 1</code></li><li>The interleaving is <code>s1 + t1 + s2 + t2 + s3 + t3 + ...</code>or <code>t1 + s1 + t2 + s2 + t3 + s3 + ...</code><br>Note: <code>a + b</code> is the concatenation of strings <code>a</code> and <code>b</code>.</li></ul><p>Example 1:</p><blockquote><p><strong>Input:</strong> s1 = &ldquo;aabcc&rdquo;, s2 = &ldquo;dbbca&rdquo;, s3 = &ldquo;aadbbcbcac&rdquo;<br><strong>Output:</strong> true<br><strong>Explanation:</strong><br>One way to obtain s3 is:<br>Split s1 into s1 = &ldquo;aa&rdquo; + &ldquo;bc&rdquo; + &ldquo;c&rdquo;, and s2 into s2 = &ldquo;dbbc&rdquo; + &ldquo;a&rdquo;.<br>Interleaving the two splits, we get &ldquo;aa&rdquo; + &ldquo;dbbc&rdquo; + &ldquo;bc&rdquo; + &ldquo;a&rdquo; + &ldquo;c&rdquo; = &ldquo;aadbbcbcac&rdquo;.<br>Since s3 can be obtained by interleaving s1 and s2, we return true.</p></blockquote><p>Example 2:</p><blockquote><p><strong>Input:</strong> s1 = &ldquo;aabcc&rdquo;, s2 = &ldquo;dbbca&rdquo;, s3 = &ldquo;aadbbbaccc&rdquo;<br><strong>Output:</strong> false<br><strong>Explanation:</strong> Notice how it is impossible to interleave s2 with any other string to obtain s3.</p></blockquote><p>Example 3:</p><blockquote><p><strong>Input:</strong> s1 = &ldquo;&rdquo;, s2 = &ldquo;&rdquo;, s3 = ""<br><strong>Output:</strong> true</p></blockquote><hr><p><strong>(1) 思路</strong></p><ul><li>初始状态
+本题dp是指<code>s1的前i个元素</code>和<code>s2的前j个元素</code>符合上述规则，即可以组合成为s3。<ul><li><code>dp[0][0] = True</code></li></ul></li><li>状态转移方程<ul><li>首先考虑边界条件，即判断<code>dp[i][0]</code>和<code>dp[0][j]</code>。该情况是指<code>s1前i个元素是否为s3的前i个元素</code>或者<code>s2前j个元素是否为s3的前j个元素</code>。<ul><li><code>dp[i][0] = dp[i-1][0] and s1[i-1] == s3[i-1] (i>=1)</code></li><li><code>dp[0][j] = dp[0][j-1] and s2[j-1] == s3[j-1] (j>=1)</code></li></ul></li><li>其次考虑<code>dp[i][j]</code>的情况。有两个可能性，一种是<code>s1的第i个元素是否等于s3的第i+j个元素</code>，另一种是<code>s2的第j个元素是否等于s3的第i+j个元素</code>。即有以下任何一种情况都成立。<ul><li><code>dp[i][j] = dp[i-1][j] and s1[i-1] == s3[i+j-1] (i,j>=1)</code></li><li><code>dp[i][j] = dp[i][j-1] and s2[j-1] == s3[i+j-1] (i,j>=1)</code></li></ul></li><li>注意<code>第n个元素的下标为n-1</code>。</li></ul></li></ul><hr><p><strong>(2) Python代码</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>interleaving_string</span><span class=p>(</span><span class=n>s1</span><span class=p>:</span> <span class=nb>str</span><span class=p>,</span> <span class=n>s2</span><span class=p>:</span> <span class=nb>str</span><span class=p>,</span> <span class=n>s3</span><span class=p>:</span> <span class=nb>str</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>m</span><span class=p>,</span> <span class=n>n</span> <span class=o>=</span> <span class=nb>len</span><span class=p>(</span><span class=n>s1</span><span class=p>),</span> <span class=nb>len</span><span class=p>(</span><span class=n>s2</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=n>m</span><span class=o>+</span><span class=n>n</span> <span class=o>!=</span> <span class=nb>len</span><span class=p>(</span><span class=n>s3</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=kc>False</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span> <span class=o>=</span> <span class=p>[[</span><span class=kc>False</span><span class=p>]</span><span class=o>*</span><span class=p>(</span><span class=n>n</span><span class=o>+</span><span class=mi>1</span><span class=p>)</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=n>m</span><span class=o>+</span><span class=mi>1</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span><span class=p>[</span><span class=mi>0</span><span class=p>][</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=kc>True</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=n>m</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=mi>0</span><span class=p>]</span> <span class=ow>and</span> <span class=n>s1</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=n>s3</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=n>n</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>dp</span><span class=p>[</span><span class=mi>0</span><span class=p>][</span><span class=n>j</span><span class=p>]</span> <span class=o>=</span> <span class=n>dp</span><span class=p>[</span><span class=mi>0</span><span class=p>][</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=ow>and</span> <span class=n>s2</span><span class=p>[</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=n>s3</span><span class=p>[</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=n>m</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=n>n</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>            <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=n>j</span><span class=p>]</span> <span class=o>=</span> <span class=p>(</span><span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=n>j</span><span class=p>]</span> <span class=ow>and</span> <span class=n>s1</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=n>s3</span><span class=p>[</span><span class=n>i</span><span class=o>+</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>])</span> <span class=ow>or</span> \
+</span></span><span class=line><span class=cl>                       <span class=p>(</span><span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=ow>and</span> <span class=n>s2</span><span class=p>[</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=n>s3</span><span class=p>[</span><span class=n>i</span><span class=o>+</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>dp</span><span class=p>[</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>s1</span> <span class=o>=</span> <span class=s2>&#34;aabcc&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>s2</span> <span class=o>=</span> <span class=s2>&#34;dbbca&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>s3</span> <span class=o>=</span> <span class=s2>&#34;aadbbcbcac&#34;</span> 
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>interleaving_string</span><span class=p>(</span><span class=n>s1</span><span class=p>,</span> <span class=n>s2</span><span class=p>,</span> <span class=n>s3</span><span class=p>))</span>
+</span></span></code></pre></div><hr><p><strong>1.4 例题 Leetcode 115. Distinct Subsequences</strong><br>Given two strings <code>s</code> and <code>t</code>, return the number of distinct subsequences of <code>s</code> which equals <code>t</code>.
+The test cases are generated so that the answer fits on a 32-bit signed integer.</p><p>Example 1:</p><blockquote><p><strong>Input:</strong> s = &ldquo;rabbbit&rdquo;, t = &ldquo;rabbit&rdquo;<br><strong>Output:</strong> 3<br><strong>Explanation:</strong><br>As shown below, there are 3 ways you can generate &ldquo;rabbit&rdquo; from s.<br><u><strong>rabb</strong></u>b<u><strong>it</strong></u><br><u><strong>ra</strong></u>b<u><strong>bbit</strong></u><br><u><strong>rab</strong></u>b<u><strong>bit</strong></u></p></blockquote><p>Example 2:</p><blockquote><p><strong>Input:</strong> s = &ldquo;babgbag&rdquo;, t = &ldquo;bag&rdquo;<br><strong>Output:</strong> 5<br><strong>Explanation:</strong><br>As shown below, there are 5 ways you can generate &ldquo;bag&rdquo; from s.<br><u><strong>ba</strong></u>b<u><strong>g</strong></u>bag<br><u><strong>ba</strong></u>bgba<u><strong>g</strong></u><br><u><strong>b</strong></u>abgb<u><strong>ag</strong></u><br>ba<u><strong>b</strong></u>gb<u><strong>ag</strong></u><br>babg<u><strong>bag</strong></u></p></blockquote><hr><p><strong>(1) 思路</strong></p><ul><li>初始状态
+本题dp是指<code>t的前i个元素</code>在<code>s的前j个元素</code>中存在子序列的个数。<ul><li><code>dp[0][j] = 1</code>，即<code>t中的前0个元素（“”）</code>在s中一定存在一个子序列。</li></ul></li><li>状态转移方程<ul><li>参考例题1.3，我们可以先穷举。<ul><li><code>dp[1][0] = 0, dp[2][0] = 0, ...</code></li><li><code>dp[1][1] = dp[0][0] + dp[0][1] if t[0] == s[0] else dp[0][1]</code></li><li><code>dp[1][2] = dp[0][1] + dp[1][1] if t[0] == s[1] else dp[1][1]</code></li><li><code>dp[2][1] = dp[1][0] + dp[2][0] if t[1] == s[0] else dp[2][0]</code></li></ul></li><li>综上可得<ul><li><code>dp[i][j] = dp[i-1][j-1] + dp[i][j-1] if t[i-1] == s[j-1] else dp[i][j-1] (i,j>=1)</code></li></ul></li></ul></li></ul><hr><p><strong>(2) Python代码</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>distinct_subsequences</span><span class=p>(</span><span class=n>s</span><span class=p>:</span> <span class=nb>str</span><span class=p>,</span> <span class=n>t</span><span class=p>:</span> <span class=nb>str</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span> <span class=o>=</span> <span class=p>[[</span><span class=mi>0</span><span class=p>]</span><span class=o>*</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>s</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>)</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>t</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>s</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>dp</span><span class=p>[</span><span class=mi>0</span><span class=p>][</span><span class=n>j</span><span class=p>]</span> <span class=o>=</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=n>t</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=n>s</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>            <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=n>j</span><span class=p>]</span> <span class=o>=</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>+</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=k>if</span> <span class=n>t</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=n>s</span><span class=p>[</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> \
+</span></span><span class=line><span class=cl>                       <span class=k>else</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>dp</span><span class=p>[</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>s</span> <span class=o>=</span> <span class=s2>&#34;rabbbit&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>t</span> <span class=o>=</span> <span class=s2>&#34;rabbit&#34;</span>  
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>distinct_subsequences</span><span class=p>(</span><span class=n>s</span><span class=p>,</span> <span class=n>t</span><span class=p>))</span>
+</span></span></code></pre></div><hr><p><strong>1.5 例题 Leetcode 53. Maximum Subarray</strong><br>Given an integer array <code>nums</code>, find the subarray with the largest sum, and return its sum.</p><p>Example 1:</p><blockquote><p><strong>Input:</strong> nums = [-2,1,-3,4,-1,2,1,-5,4]<br><strong>Output:</strong> 6<br><strong>Explanation:</strong> The subarray [4,-1,2,1] has the largest sum 6.</p></blockquote><p>Example 2:</p><blockquote><p><strong>Input:</strong> nums = [1]<br><strong>Output:</strong> 1<br><strong>Explanation:</strong> The subarray [1] has the largest sum 1.</p></blockquote><p>Example 3:</p><blockquote><p><strong>Input:</strong> nums = [5,4,-1,7,8]<br><strong>Output:</strong> 23<br><strong>Explanation:</strong> The subarray [5,4,-1,7,8] has the largest sum 23.</p></blockquote><hr><p><strong>(1) 思路</strong></p><ul><li>初始状态
+本题dp可以指<code>前i个元素中最大的和</code>。<ul><li><code>dp[0] = -inf</code></li></ul></li><li>状态转移方程<ul><li><code>dp[i] = max(nums[i-1], nums[i-1]+dp[i-1])</code></li></ul></li></ul><hr><p><strong>(2) Python代码</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>maximum_subarray</span><span class=p>(</span><span class=n>nums</span><span class=p>:</span> <span class=nb>list</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span> <span class=o>=</span> <span class=p>[</span><span class=nb>float</span><span class=p>(</span><span class=s2>&#34;-inf&#34;</span><span class=p>)</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>nums</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=n>nums</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=nb>max</span><span class=p>(</span><span class=n>nums</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>],</span> <span class=n>nums</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span><span class=o>+</span><span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nb>max</span><span class=p>(</span><span class=n>dp</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>nums</span> <span class=o>=</span> <span class=p>[</span><span class=o>-</span><span class=mi>2</span><span class=p>,</span><span class=mi>1</span><span class=p>,</span><span class=o>-</span><span class=mi>3</span><span class=p>,</span><span class=mi>4</span><span class=p>,</span><span class=o>-</span><span class=mi>1</span><span class=p>,</span><span class=mi>2</span><span class=p>,</span><span class=mi>1</span><span class=p>,</span><span class=o>-</span><span class=mi>5</span><span class=p>,</span><span class=mi>4</span><span class=p>]</span>  
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>maximum_subarray</span><span class=p>(</span><span class=n>nums</span><span class=p>))</span>
+</span></span></code></pre></div><hr><p><strong>1.6 例题 Leetcode 152. Maximum Product Subarray</strong><br>Given an integer array <code>nums</code>, find a subarray that has the largest product, and return the product.<br>The test cases are generated so that the answer will fit in a 32-bit integer.</p><p>Example 1:</p><blockquote><p><strong>Input:</strong> nums = [2,3,-2,4]<br><strong>Output:</strong> 6<br><strong>Explanation:</strong> [2,3] has the largest product 6.</p></blockquote><p>Example 2:</p><blockquote><p><strong>Input:</strong> nums = [-2,0,-1]<br><strong>Output:</strong> 0<br><strong>Explanation:</strong> The result cannot be 2, because [-2,-1] is not a subarray.</p></blockquote><hr><p><strong>(1) 思路</strong></p><ul><li>初始状态
+本题思路与例题1.5几乎一致，但是在乘法中，存在负数相乘的情况，所以需要同时保存最大值和最小值。因此需要设置<code>dp_max</code>和<code>dp_min</code>。<ul><li><code>dp_max[0] = 0, dp_min[0] = 0</code></li></ul></li><li>状态转移方程<ul><li><code>dp_max[i] = max(nums[i-1], nums[i-1]*dp_max[i-1], nums[i-1]*dp_min[i-1])</code></li><li><code>dp_min[i] = min(nums[i-1], nums[i-1]*dp_max[i-1], nums[i-1]*dp_min[i-1])</code></li></ul></li></ul><hr><p><strong>(2) Python代码</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>maximum_product_subarray</span><span class=p>(</span><span class=n>nums</span><span class=p>:</span> <span class=nb>list</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=nb>len</span><span class=p>(</span><span class=n>nums</span><span class=p>)</span> <span class=o>==</span> <span class=mi>1</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>nums</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp_max</span> <span class=o>=</span> <span class=p>[</span><span class=mi>0</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>nums</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp_min</span> <span class=o>=</span> <span class=p>[</span><span class=mi>0</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>nums</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=n>nums</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>dp_max</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=nb>max</span><span class=p>(</span><span class=n>nums</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>],</span> <span class=n>nums</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span><span class=o>*</span><span class=n>dp_max</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>],</span> <span class=n>nums</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span><span class=o>*</span><span class=n>dp_min</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>        <span class=n>dp_min</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=nb>min</span><span class=p>(</span><span class=n>nums</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>],</span> <span class=n>nums</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span><span class=o>*</span><span class=n>dp_max</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>],</span> <span class=n>nums</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span><span class=o>*</span><span class=n>dp_min</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nb>max</span><span class=p>(</span><span class=n>dp_max</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>nums</span> <span class=o>=</span> <span class=p>[</span><span class=mi>2</span><span class=p>,</span><span class=mi>3</span><span class=p>,</span><span class=o>-</span><span class=mi>2</span><span class=p>,</span><span class=mi>4</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>maximum_product_subarray</span><span class=p>(</span><span class=n>nums</span><span class=p>))</span>
+</span></span></code></pre></div><hr><p><strong>1.7 例题 Leetcode 198. House Robber</strong><br>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and <strong>it will automatically contact the police if two adjacent houses were broken into on the same night</strong>.</p><p>Given an integer array <code>nums</code> representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.</p><p>Example 1:</p><blockquote><p><strong>Input:</strong> nums = [1,2,3,1]<br><strong>Output:</strong> 4<br><strong>Explanation:</strong> Rob house 1 (money = 1) and then rob house 3 (money = 3).<br>Total amount you can rob = 1 + 3 = 4.</p></blockquote><p>Example 2:</p><blockquote><p><strong>Input:</strong> nums = [2,7,9,3,1]<br><strong>Output:</strong> 12<br><strong>Explanation:</strong> Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1).<br>Total amount you can rob = 2 + 9 + 1 = 12.</p></blockquote><hr><p><strong>(1) 思路</strong></p><ul><li>初始状态
+首先确定dp的含义，本题可以是前i家房屋中金钱的最大值。因此为一维，并可确定初始状态。<ul><li><code>dp[0] = 0, dp[1] = nums[0]</code></li></ul></li><li>状态转移方程<br>题目要求不能连续偷相邻房屋，例如<code>在偷第3家的时候，我们必须确保前一天偷的是第1家</code>。那么<code>dp[3]事实上就是第1家和第3家的金钱总和和第2家金钱中的最大值</code>，以此类推转移方程如下。<ul><li><code>dp[i] = max(dp[i-2]+nums[i-1], dp[i-1]) (i>=2)</code></li></ul></li></ul><hr><p><strong>(2) Python代码</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>house_robber</span><span class=p>(</span><span class=n>nums</span><span class=p>:</span> <span class=nb>list</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span> <span class=o>=</span> <span class=p>[</span><span class=mi>0</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>nums</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span><span class=p>[</span><span class=mi>0</span><span class=p>],</span> <span class=n>dp</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>=</span> <span class=mi>0</span><span class=p>,</span> <span class=n>nums</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>2</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=n>nums</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=nb>max</span><span class=p>(</span><span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>2</span><span class=p>]</span><span class=o>+</span><span class=n>nums</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>],</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>dp</span><span class=p>[</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>nums</span> <span class=o>=</span> <span class=p>[</span><span class=mi>1</span><span class=p>,</span><span class=mi>2</span><span class=p>,</span><span class=mi>3</span><span class=p>,</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>house_robber</span><span class=p>(</span><span class=n>nums</span><span class=p>))</span>
+</span></span></code></pre></div><hr><p><strong>1.8 例题 Leetcode 213. House Robber II</strong><br>You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and <strong>it will automatically contact the police if two adjacent houses were broken into on the same night</strong>.</p><p>Given an integer array <code>nums</code> representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.</p><p>Example 1:</p><blockquote><p><strong>Input:</strong> nums = [2,3,2]<br><strong>Output:</strong> 3<br><strong>Explanation:</strong> You cannot rob house 1 (money = 2) and then rob house 3 (money = 2), because they are adjacent houses.</p></blockquote><p>Example 2:</p><blockquote><p><strong>Input:</strong> nums = [1,2,3,1]<br><strong>Output:</strong> 4<br><strong>Explanation:</strong> Rob house 1 (money = 1) and then rob house 3 (money = 3).<br>Total amount you can rob = 1 + 3 = 4.</p></blockquote><p>Example 3:</p><blockquote><p><strong>Input:</strong> nums = [1,2,3]<br><strong>Output:</strong> 3</p></blockquote><hr><p><strong>(1) 思路</strong></p><ul><li>初始状态
+首先确定dp的含义，本题可以是前i家房屋中金钱的最大值。因此为一维，并可确定初始状态。<ul><li><code>dp[0] = 0, dp[1] = nums[0]</code></li></ul></li><li>状态转移方程<br>题目要求不能连续偷相邻房屋，例如<code>在偷第3家的时候，我们必须确保前一天偷的是第1家</code>。那么<code>dp[3]事实上就是第1家和第3家的金钱总和和第2家金钱中的最大值</code>，以此类推转移方程如下。<ul><li><code>dp[i] = max(dp[i-2]+nums[i-1], dp[i-1]) (i>=2)</code>
+以上均与例题1.8完全一致，但是首尾的房屋为连续排列。此时我们可以分为两个部分进行计算，若存在n个房屋，我们可以<code>先计算前n-1个房屋</code>，<code>再计算后n-1个房屋</code>，以此确保首尾不会连续，然后<code>取其中的最大值</code>。</li></ul></li></ul><hr><p><strong>(2) Python代码</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>house_robber</span><span class=p>(</span><span class=n>nums</span><span class=p>:</span> <span class=nb>list</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span> <span class=o>=</span> <span class=p>[</span><span class=mi>0</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>nums</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span><span class=p>[</span><span class=mi>0</span><span class=p>],</span> <span class=n>dp</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>=</span> <span class=mi>0</span><span class=p>,</span> <span class=n>nums</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>2</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=n>nums</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=nb>max</span><span class=p>(</span><span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>2</span><span class=p>]</span><span class=o>+</span><span class=n>nums</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>],</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>])</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>dp</span><span class=p>[</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=k>def</span> <span class=nf>house_robber2</span><span class=p>(</span><span class=n>nums</span><span class=p>:</span> <span class=nb>list</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nb>max</span><span class=p>(</span><span class=n>house_robber</span><span class=p>(</span><span class=n>nums</span><span class=p>[</span><span class=mi>1</span><span class=p>:]),</span> <span class=n>house_robber</span><span class=p>(</span><span class=n>nums</span><span class=p>[:</span><span class=o>-</span><span class=mi>1</span><span class=p>]))</span>
+</span></span><span class=line><span class=cl><span class=n>nums</span> <span class=o>=</span> <span class=p>[</span><span class=mi>2</span><span class=p>,</span><span class=mi>3</span><span class=p>,</span><span class=mi>2</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>house_robber2</span><span class=p>(</span><span class=n>nums</span><span class=p>))</span>
+</span></span></code></pre></div><hr><p><strong>1.9 例题 Leetcode 72. Edit Distance</strong><br>Given two strings <code>word1</code> and <code>word2</code>, return the minimum number of operations required to convert <code>word1</code> to <code>word2</code>.</p><p>You have the following three operations permitted on a word:</p><ul><li>Insert a character</li><li>Delete a character</li><li>Replace a character</li></ul><p>Example 1:</p><blockquote><p><strong>Input:</strong> word1 = &ldquo;horse&rdquo;, word2 = &ldquo;ros&rdquo;<br><strong>Output:</strong> 3<br><strong>Explanation:</strong><br>horse -> rorse (replace &lsquo;h&rsquo; with &lsquo;r&rsquo;)<br>rorse -> rose (remove &lsquo;r&rsquo;)<br>rose -> ros (remove &rsquo;e&rsquo;)</p></blockquote><p>Example 2:</p><blockquote><p><strong>Input:</strong> word1 = &ldquo;intention&rdquo;, word2 = &ldquo;execution&rdquo;<br><strong>Output:</strong> 5<br><strong>Explanation:</strong><br>intention -> inention (remove &rsquo;t&rsquo;)<br>inention -> enention (replace &lsquo;i&rsquo; with &rsquo;e&rsquo;)<br>enention -> exention (replace &rsquo;n&rsquo; with &lsquo;x&rsquo;)<br>exention -> exection (replace &rsquo;n&rsquo; with &lsquo;c&rsquo;)<br>exection -> execution (insert &lsquo;u&rsquo;)</p></blockquote><hr><p><strong>(1) 思路</strong></p><ul><li>初始状态
+首先确定dp的含义，本题可以是word1的前i个元素和word2的前j个元素之间的编辑距离。因此为二维，并可确定初始状态。<ul><li><code>dp[0][0] = 0, dp[i][0] = i, dp[0][j] = j</code></li></ul></li><li>状态转移方程<br>该题目的简单来说就是<code>找到插入代价，消除代价以及置换代价中的最小值</code>。插入一个元素或消除一个元素，其都需要操作一次，<code>即插入代价和消除代价为1</code>。如果当word1中的第i个元素和word2中的第j个元素相等的时候，此时不需要置换，否则需要操作一次，<code>即置换代价为1或0</code>.<ul><li><code>insert_cost = 1, delete_cost = 1</code></li><li><code>replace_cost = 0 if word1[i-1] == word2[j-1] else 1</code></li><li><code>dp[i][j] = min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1] + replace_cost) (i,j>=1)</code></li></ul></li></ul><hr><p><strong>(2) Python代码</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>edit_distance</span><span class=p>(</span><span class=n>word1</span><span class=p>:</span> <span class=nb>str</span><span class=p>,</span> <span class=n>word2</span><span class=p>:</span> <span class=nb>str</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span> <span class=o>=</span> <span class=p>[[</span><span class=mi>0</span><span class=p>]</span><span class=o>*</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>word2</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>)</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>word1</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>word1</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=n>i</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>word2</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>dp</span><span class=p>[</span><span class=mi>0</span><span class=p>][</span><span class=n>j</span><span class=p>]</span> <span class=o>=</span> <span class=n>j</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=n>word1</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=n>word2</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>            <span class=n>replace_cost</span> <span class=o>=</span> <span class=mi>0</span> <span class=k>if</span> <span class=n>word1</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=n>word2</span><span class=p>[</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=k>else</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl>            <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=n>j</span><span class=p>]</span> <span class=o>=</span> <span class=nb>min</span><span class=p>(</span><span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=n>j</span><span class=p>]</span><span class=o>+</span><span class=mi>1</span><span class=p>,</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span><span class=o>+</span><span class=mi>1</span><span class=p>,</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span><span class=o>+</span><span class=n>replace_cost</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>dp</span><span class=p>[</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>word1</span> <span class=o>=</span> <span class=s2>&#34;horse&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>word2</span> <span class=o>=</span> <span class=s2>&#34;ros&#34;</span>
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>edit_distance</span><span class=p>(</span><span class=n>word1</span><span class=p>,</span> <span class=n>word2</span><span class=p>))</span>
+</span></span></code></pre></div><hr><p><strong>1.10 例题 Leetcode 44. Wildcard Matching</strong><br>Given an input string (<code>s</code>) and a pattern (<code>p</code>), implement wildcard pattern matching with support for <code>'?'</code> and <code>'*'</code> where:</p><ul><li><code>'?'</code> Matches any single character.</li><li><code>'*'</code> Matches any sequence of characters (including the empty sequence).</li></ul><p>The matching should cover the entire input string (not partial).</p><p>Example 1:</p><blockquote><p><strong>Input:</strong> s = &ldquo;aa&rdquo;, p = &ldquo;a&rdquo;<br><strong>Output:</strong> false<br><strong>Explanation:</strong> &ldquo;a&rdquo; does not match the entire string &ldquo;aa&rdquo;.</p></blockquote><p>Example 2:</p><blockquote><p><strong>Input:</strong> s = &ldquo;aa&rdquo;, p = &ldquo;*&rdquo;<br><strong>Output:</strong> true<br><strong>Explanation:</strong> &lsquo;*&rsquo; matches any sequence.</p></blockquote><p>Example 3:</p><blockquote><p><strong>Input:</strong> s = &ldquo;cb&rdquo;, p = &ldquo;?a&rdquo;<br><strong>Output:</strong> false<br><strong>Explanation:</strong> &lsquo;?&rsquo; matches &lsquo;c&rsquo;, but the second letter is &lsquo;a&rsquo;, which does not match &lsquo;b&rsquo;.</p></blockquote><hr><p><strong>(1) 思路</strong></p><ul><li>初始状态
+首先确定dp的含义，本题是s的前i个元素和p的前j个元素之间是否匹配。因此为二维，并可确定初始状态。<ul><li><code>dp[0][0] = True</code><br>由于只有<code>*</code>可以匹配空字符，所以需要判断第j个元素是否为<code>*</code>.</li><li><code>dp[0][j] = dp[0][j-1] if p[j-1] == "*"</code></li></ul></li><li>状态转移方程<br><code>如果p中第j个元素为*时</code>，那么任意匹配，即<code>dp[i][j] = dp[i-1][j] or dp[i][j-1]</code>， 表示是否使用该<code>*</code>.<br><code>如果p中第j个元素为?</code>或<code>p中第j个元素为*与s的第i个元素相等时</code>，那么<code>dp[i][j] = dp[i-1][j-1]</code>.</li></ul><hr><p><strong>(2) Python代码</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>wildcard_matching</span><span class=p>(</span><span class=n>s</span><span class=p>:</span> <span class=nb>str</span><span class=p>,</span> <span class=n>p</span><span class=p>:</span> <span class=nb>str</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span> <span class=o>=</span> <span class=p>[[</span><span class=kc>False</span><span class=p>]</span><span class=o>*</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>p</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>)</span> <span class=k>for</span> <span class=n>_</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=nb>len</span><span class=p>(</span><span class=n>s</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>)]</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span><span class=p>[</span><span class=mi>0</span><span class=p>][</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=kc>True</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=n>p</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=n>p</span><span class=p>[</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=s2>&#34;*&#34;</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>            <span class=n>dp</span><span class=p>[</span><span class=mi>0</span><span class=p>][</span><span class=n>j</span><span class=p>]</span> <span class=o>=</span> <span class=n>dp</span><span class=p>[</span><span class=mi>0</span><span class=p>][</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=n>s</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=n>j</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=nb>len</span><span class=p>(</span><span class=n>p</span><span class=p>)</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=n>p</span><span class=p>[</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=s2>&#34;*&#34;</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>                <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=n>j</span><span class=p>]</span> <span class=o>=</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=n>j</span><span class=p>]</span> <span class=ow>or</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=n>p</span><span class=p>[</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=s2>&#34;?&#34;</span> <span class=ow>or</span> <span class=n>p</span><span class=p>[</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>==</span> <span class=n>s</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]:</span>
+</span></span><span class=line><span class=cl>                <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>][</span><span class=n>j</span><span class=p>]</span> <span class=o>=</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=n>j</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>dp</span><span class=p>[</span><span class=o>-</span><span class=mi>1</span><span class=p>][</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>s</span> <span class=o>=</span> <span class=s2>&#34;cb&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>p</span> <span class=o>=</span> <span class=s2>&#34;?a&#34;</span> 
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>wildcard_matching</span><span class=p>(</span><span class=n>s</span><span class=p>,</span> <span class=n>p</span><span class=p>))</span>
+</span></span></code></pre></div><h1 id=3-背包dp>3. 背包DP<a hidden class=anchor aria-hidden=true href=#3-背包dp>#</a></h1><p><strong>2.1 例题 Leetcode 377. Combaination Sum IV</strong><br>Given an array of distinct integers <code>nums</code> and a <code>target</code> integer target, return <code>the number of possible combinations that add up to target</code>.</p><p>The test cases are generated so that the answer can fit in a 32-bit integer.</p><p>Example 1:</p><blockquote><p><strong>Input</strong>: nums = [1,2,3], target = 4<br><strong>Output</strong>: 7<br><strong>Explanation</strong>:<br>The possible combination ways are:
+(1, 1, 1, 1)<br>(1, 1, 2)<br>(1, 2, 1)<br>(1, 3)<br>(2, 1, 1)<br>(2, 2)<br>(3, 1).<br>Note that different sequences are counted as different combinations.</p></blockquote><p>Example 2:</p><blockquote><p><strong>Input</strong>: nums = [9], target = 3<br><strong>Output</strong>: 0</p></blockquote><hr><p><strong>(1) 思路</strong></p><ul><li>初始状态
+首先确定dp的含义，本题的<code>dp[i]是指当target是i的时候，有多少种组合</code>。当target=0的时候，只有一种组合那就是什么都不取，即：<ul><li><code>dp[0] = 1</code></li></ul></li><li>状态转移方程<br>当target=i的时候，即<code>dp[i]</code>，我们需要对nums中每一个元素（num）进行判断。<code>如果当num&lt;=i的时候，那就意味着存在这种组合，那么剩下的就是取出当target=i-num的组合数，即dp[i-num]</code>。由此可得，转移方程为：<ul><li><code>dp[i] += dp[i-num] if num &lt;= i</code></li></ul></li></ul><hr><p><strong>(2) Python代码</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>combaination_sum</span><span class=p>(</span><span class=n>nums</span><span class=p>:</span> <span class=nb>list</span><span class=p>,</span> <span class=n>target</span><span class=p>:</span> <span class=nb>int</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span> <span class=o>=</span> <span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>*</span> <span class=p>(</span><span class=n>target</span><span class=o>+</span><span class=mi>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span><span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>=</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>1</span><span class=p>,</span> <span class=n>target</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=n>num</span> <span class=ow>in</span> <span class=n>nums</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=n>num</span> <span class=o>&lt;=</span> <span class=n>i</span><span class=p>:</span>
+</span></span><span class=line><span class=cl>                <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>+=</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=n>num</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>dp</span><span class=p>[</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>nums</span> <span class=o>=</span> <span class=p>[</span><span class=mi>1</span><span class=p>,</span><span class=mi>2</span><span class=p>,</span><span class=mi>3</span><span class=p>]</span>
+</span></span><span class=line><span class=cl><span class=n>target</span> <span class=o>=</span> <span class=mi>4</span>   
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>combaination_sum</span><span class=p>(</span><span class=n>nums</span><span class=p>,</span> <span class=n>target</span><span class=p>))</span>
+</span></span></code></pre></div><h1 id=4-递推型dp>4. 递推型DP<a hidden class=anchor aria-hidden=true href=#4-递推型dp>#</a></h1><p><strong>4.1 例题 Leetcode 70. Climbing Stairs</strong><br>You are climbing a staircase. It takes <code>n</code> steps to reach the top.</p><p>Each time you can either climb <code>1</code> or <code>2</code> steps. In how many distinct ways can you climb to the top?</p><p>Example 1:</p><blockquote><p><strong>Input</strong>: n = 2<br><strong>Output</strong>: 2<br><strong>Explanation</strong>: There are two ways to climb to the top.</p><ol><li>1 step + 1 step</li><li>2 steps</li></ol></blockquote><p>Example 2:</p><blockquote><p><strong>Input</strong>: n = 3<br><strong>Output</strong>: 3<br><strong>Explanation</strong>: There are three ways to climb to the top.</p><ol><li>1 step + 1 step + 1 step</li><li>1 step + 2 steps</li><li>2 steps + 1 step</li></ol></blockquote><hr><p><strong>(1) 思路</strong></p><ul><li>初始状态
+首先确定dp的含义，本题的<code>dp[i]是指在到达第i层有多少种方法</code>。当i=0或i=1的时候，只有一种组合那就是不走或走1步，即：<ul><li><code>dp[0] = 1, dp[1] = 1</code></li></ul></li><li>状态转移方程<br>由题意可得，当我们想要到达第i层的时候，只有两种办法，一种是走了1步，另一种是走了2步。那么得知，想求<code>dp[i]</code>，可以求走i步到达i层<code>(dp[i-1])</code>和走2步到达i层<code>(dp[i-2])</code>的总数。由此可得，转移方程为：<ul><li><code>dp[i] = dp[i-1] + dp[i-2] (i>=2)</code></li></ul></li></ul><hr><p><strong>(2) Python代码</strong></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=k>def</span> <span class=nf>climbing_stairs</span><span class=p>(</span><span class=n>n</span><span class=p>:</span> <span class=nb>int</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span> <span class=o>=</span> <span class=p>[</span><span class=mi>0</span><span class=p>]</span> <span class=o>*</span> <span class=p>(</span><span class=n>n</span><span class=o>+</span><span class=mi>1</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    <span class=n>dp</span><span class=p>[</span><span class=mi>0</span><span class=p>],</span> <span class=n>dp</span><span class=p>[</span><span class=mi>1</span><span class=p>]</span> <span class=o>=</span> <span class=mi>1</span><span class=p>,</span> <span class=mi>1</span>
+</span></span><span class=line><span class=cl>    <span class=k>for</span> <span class=n>i</span> <span class=ow>in</span> <span class=nb>range</span><span class=p>(</span><span class=mi>2</span><span class=p>,</span> <span class=n>n</span><span class=o>+</span><span class=mi>1</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=p>]</span> <span class=o>=</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span> <span class=o>+</span> <span class=n>dp</span><span class=p>[</span><span class=n>i</span><span class=o>-</span><span class=mi>2</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>dp</span><span class=p>[</span><span class=o>-</span><span class=mi>1</span><span class=p>]</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>n</span> <span class=o>=</span> <span class=mi>3</span> 
+</span></span><span class=line><span class=cl><span class=nb>print</span><span class=p>(</span><span class=n>climbing_stairs</span><span class=p>(</span><span class=n>n</span><span class=p>))</span>
+</span></span></code></pre></div></div><footer class=post-footer><ul class=post-tags></ul></footer><div><div class=pagination__title><span class=pagination__title-h style=font-size:20px>Comments</span><hr></div><div id=tcomment></div><script src=https://cdn.staticfile.org/twikoo/1.6.39/twikoo.all.min.js></script><script>twikoo.init({envId:"https://mangodb-theta.vercel.app/",el:"#tcomment",lang:"en-US",path:window.TWIKOO_MAGIC_PATH||window.location.pathname})</script></div></article></main><footer class=footer><span>&copy; 2025 <a href=https://garywy.github.io/zh/>Gary's House</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span><div class=busuanzi-footer><span id=busuanzi_container_site_pv>Views: <span id=busuanzi_value_site_pv></span>
+</span><span id=busuanzi_container_site_uv>Visitors: <span id=busuanzi_value_site_uv></span></span></div></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script><script>document.querySelectorAll("pre > code").forEach(e=>{const n=e.parentNode.parentNode,t=document.createElement("button");t.classList.add("copy-code"),t.innerHTML="复制";function s(){t.innerHTML="已复制！",setTimeout(()=>{t.innerHTML="复制"},2e3)}t.addEventListener("click",t=>{if("clipboard"in navigator){navigator.clipboard.writeText(e.textContent),s();return}const n=document.createRange();n.selectNodeContents(e);const o=window.getSelection();o.removeAllRanges(),o.addRange(n);try{document.execCommand("copy"),s()}catch{}o.removeRange(n)}),n.classList.contains("highlight")?n.appendChild(t):n.parentNode.firstChild==n||(e.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?e.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(t):e.parentNode.appendChild(t))})</script></body></html>

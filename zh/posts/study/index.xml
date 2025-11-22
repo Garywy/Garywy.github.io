@@ -4,7 +4,7 @@
     <title>学习 on Gary&#39;s House</title>
     <link>https://garywy.github.io/zh/posts/study/</link>
     <description>Recent content in 学习 on Gary&#39;s House</description>
-    <generator>Hugo -- 0.130.0</generator>
+    <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
     <lastBuildDate>Fri, 20 Jun 2025 15:55:51 +0900</lastBuildDate>
     <atom:link href="https://garywy.github.io/zh/posts/study/index.xml" rel="self" type="application/rss+xml" />
@@ -13,21 +13,34 @@
       <link>https://garywy.github.io/zh/posts/study/mora/</link>
       <pubDate>Fri, 20 Jun 2025 15:55:51 +0900</pubDate>
       <guid>https://garywy.github.io/zh/posts/study/mora/</guid>
-      <description>因为作者正在进行日语Dajare的相关研究，其中涉及了关于日语文本在发音相似度方面的计算，因此本文旨在总结了日语中的发音单元（mora）以及</description>
+      <description>&lt;p&gt;因为作者正在进行日语Dajare的相关研究，其中涉及了关于日语文本在发音相似度方面的计算，因此本文旨在总结了日语中的发音单元（mora）以及单词的发音表达形式，以便于后续对本文发音相似性的计算。&lt;/p&gt;</description>
     </item>
     <item>
       <title>DP_Question</title>
       <link>https://garywy.github.io/zh/posts/study/dp_question/</link>
       <pubDate>Sun, 29 Sep 2024 18:20:59 +0900</pubDate>
       <guid>https://garywy.github.io/zh/posts/study/dp_question/</guid>
-      <description>前言 因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。 DP问题基本解题思路： 初始状态 状态转移方程 1. 线性DP 1.1 例题：Leet</description>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。&lt;br&gt;
+DP问题基本解题思路：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;初始状态&lt;/li&gt;
+&lt;li&gt;状态转移方程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;1-线性dp&#34;&gt;1. 线性DP&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;1.1 例题：Leetcode 300. Longest Increasing Subsequence&lt;/strong&gt; &lt;br&gt;
+Given an integer array nums, return the length of the longest strictly increasing subsequence.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Markdown学习笔记</title>
       <link>https://garywy.github.io/zh/posts/study/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Thu, 26 Sep 2024 17:31:12 +0900</pubDate>
       <guid>https://garywy.github.io/zh/posts/study/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <description>前言 本文主要为总结Markdown常用语法，以便于自已能够更好的书写Markdown文件。 1. 基本语法 1.1 标题 利用#符号创建标题，有几个#就是几</description>
+      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
+&lt;p&gt;本文主要为总结Markdown常用语法，以便于自已能够更好的书写Markdown文件。&lt;/p&gt;
+&lt;h1 id=&#34;1-基本语法&#34;&gt;1. 基本语法&lt;/h1&gt;
+&lt;h2 id=&#34;11-标题&#34;&gt;1.1 标题&lt;/h2&gt;
+&lt;p&gt;利用&lt;code&gt;#&lt;/code&gt;符号创建标题，有几个&lt;code&gt;#&lt;/code&gt;就是几级标题。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

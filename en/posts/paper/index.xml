@@ -4,7 +4,7 @@
     <title>Paper on Gary&#39;s House</title>
     <link>https://garywy.github.io/en/posts/paper/</link>
     <description>Recent content in Paper on Gary&#39;s House</description>
-    <generator>Hugo -- 0.130.0</generator>
+    <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 21 Mar 2025 15:15:43 +0900</lastBuildDate>
     <atom:link href="https://garywy.github.io/en/posts/paper/index.xml" rel="self" type="application/rss+xml" />
@@ -13,11 +13,19 @@
       <link>https://garywy.github.io/en/posts/paper/research_lab_works/</link>
       <pubDate>Fri, 21 Mar 2025 15:15:43 +0900</pubDate>
       <guid>https://garywy.github.io/en/posts/paper/research_lab_works/</guid>
-      <description>CREPE: Open-Domain Question Answering with False Presuppositions 🎯 Target The authors introduced CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.
-📦 Dataset CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.
-Data Source: Reddit, the ELI5 subreddit.
-Data Numbers: 8,400 Reddit questions with:
-Labels (whether there are any false presuppositions). The false presuppositions and their corrections, if there are any false presuppositions in questions.</description>
+      <description>&lt;h1 id=&#34;crepe-open-domain-question-answering-with-false-presuppositions&#34;&gt;&lt;strong&gt;CREPE: Open-Domain Question Answering with False Presuppositions&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;-target&#34;&gt;🎯 Target&lt;/h2&gt;
+&lt;p&gt;The authors introduced CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.&lt;/p&gt;
+&lt;h2 id=&#34;-dataset&#34;&gt;📦 Dataset&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/velocityCavalry/CREPE&#34;&gt;CREPE&lt;/a&gt;, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.&lt;br&gt;
+&lt;strong&gt;Data Source&lt;/strong&gt;: Reddit, &lt;a href=&#34;http://www.reddit.com/r/explainlikeimfive&#34;&gt;the ELI5 subreddit&lt;/a&gt;.&lt;br&gt;
+&lt;strong&gt;Data Numbers&lt;/strong&gt;: 8,400 Reddit questions with:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Labels (whether there are any false presuppositions).&lt;/li&gt;
+&lt;li&gt;The false presuppositions and their corrections, if there are any false presuppositions in questions.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;../img/statistics1.jpg&#34; alt=&#34;Dataset statistics&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

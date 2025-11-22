@@ -4,7 +4,7 @@
     <title>Tech on Gary&#39;s House</title>
     <link>https://garywy.github.io/en/posts/tech/</link>
     <description>Recent content in Tech on Gary&#39;s House</description>
-    <generator>Hugo -- 0.130.0</generator>
+    <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 26 Sep 2024 11:09:46 +0900</lastBuildDate>
     <atom:link href="https://garywy.github.io/en/posts/tech/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,9 @@
       <link>https://garywy.github.io/en/posts/tech/hugo_githubpages/</link>
       <pubDate>Thu, 26 Sep 2024 11:09:46 +0900</pubDate>
       <guid>https://garywy.github.io/en/posts/tech/hugo_githubpages/</guid>
-      <description>1. Preface Originally, I was required to create a web service for a research project, but I accidentally discovered Hugo. So I took this opportunity to use Hugo to make my blog. This article mainly covers the process of setting up a personal blog, some of the problems I encountered and the solutions, I hope it will be helpful to you. Since I am using mac os, there may be</description>
+      <description>&lt;h1 id=&#34;1-preface&#34;&gt;1. Preface&lt;/h1&gt;
+&lt;p&gt;Originally, I was required to create a web service for a research project, but I accidentally discovered Hugo. So I took this opportunity to use Hugo to make my blog. This article mainly covers the process of setting up a personal blog, some of the problems I encountered and the solutions, I hope it will be helpful to you.&lt;/p&gt;
+&lt;p&gt;Since I am using mac os, there may be some differences from the Windows system.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
