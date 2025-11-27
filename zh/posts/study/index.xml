@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>学习 on Gary&#39;s House</title>
-    <link>https://garywy.github.io/zh/posts/study/</link>
+    <link>https://garyforreal.me/zh/posts/study/</link>
     <description>Recent content in 学习 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
     <lastBuildDate>Fri, 20 Jun 2025 15:55:51 +0900</lastBuildDate>
-    <atom:link href="https://garywy.github.io/zh/posts/study/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://garyforreal.me/zh/posts/study/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>日语最小发音（Mora）的总结</title>
-      <link>https://garywy.github.io/zh/posts/study/mora/</link>
+      <link>https://garyforreal.me/zh/posts/study/mora/</link>
       <pubDate>Fri, 20 Jun 2025 15:55:51 +0900</pubDate>
-      <guid>https://garywy.github.io/zh/posts/study/mora/</guid>
+      <guid>https://garyforreal.me/zh/posts/study/mora/</guid>
       <description>&lt;p&gt;因为作者正在进行日语Dajare的相关研究，其中涉及了关于日语文本在发音相似度方面的计算，因此本文旨在总结了日语中的发音单元（mora）以及单词的发音表达形式，以便于后续对本文发音相似性的计算。&lt;/p&gt;</description>
     </item>
     <item>
       <title>DP_Question</title>
-      <link>https://garywy.github.io/zh/posts/study/dp_question/</link>
+      <link>https://garyforreal.me/zh/posts/study/dp_question/</link>
       <pubDate>Sun, 29 Sep 2024 18:20:59 +0900</pubDate>
-      <guid>https://garywy.github.io/zh/posts/study/dp_question/</guid>
+      <guid>https://garyforreal.me/zh/posts/study/dp_question/</guid>
       <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
 &lt;p&gt;因为总是在动态规划问题上碰壁，所以想总结一下动态规划问题的解决办法。&lt;br&gt;
 DP问题基本解题思路：&lt;/p&gt;
@@ -33,9 +33,9 @@ Given an integer array nums, return the length of the longest strictly increasin
     </item>
     <item>
       <title>Markdown学习笔记</title>
-      <link>https://garywy.github.io/zh/posts/study/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>https://garyforreal.me/zh/posts/study/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Thu, 26 Sep 2024 17:31:12 +0900</pubDate>
-      <guid>https://garywy.github.io/zh/posts/study/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://garyforreal.me/zh/posts/study/markdown%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
 &lt;p&gt;本文主要为总结Markdown常用语法，以便于自已能够更好的书写Markdown文件。&lt;/p&gt;
 &lt;h1 id=&#34;1-基本语法&#34;&gt;1. 基本语法&lt;/h1&gt;

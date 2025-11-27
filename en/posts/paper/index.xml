@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Paper on Gary&#39;s House</title>
-    <link>https://garywy.github.io/en/posts/paper/</link>
+    <link>https://garyforreal.me/en/posts/paper/</link>
     <description>Recent content in Paper on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 21 Mar 2025 15:15:43 +0900</lastBuildDate>
-    <atom:link href="https://garywy.github.io/en/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://garyforreal.me/en/posts/paper/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Research_lab_works</title>
-      <link>https://garywy.github.io/en/posts/paper/research_lab_works/</link>
+      <link>https://garyforreal.me/en/posts/paper/research_lab_works/</link>
       <pubDate>Fri, 21 Mar 2025 15:15:43 +0900</pubDate>
-      <guid>https://garywy.github.io/en/posts/paper/research_lab_works/</guid>
+      <guid>https://garyforreal.me/en/posts/paper/research_lab_works/</guid>
       <description>&lt;h1 id=&#34;crepe-open-domain-question-answering-with-false-presuppositions&#34;&gt;&lt;strong&gt;CREPE: Open-Domain Question Answering with False Presuppositions&lt;/strong&gt;&lt;/h1&gt;
 &lt;h2 id=&#34;-target&#34;&gt;🎯 Target&lt;/h2&gt;
 &lt;p&gt;The authors introduced CREPE, a QA dataset containing a natural distribution of presupposition failures from online information-seeking forums.&lt;/p&gt;

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>技术 on Gary&#39;s House</title>
-    <link>https://garywy.github.io/zh/posts/tech/</link>
+    <link>https://garyforreal.me/zh/posts/tech/</link>
     <description>Recent content in 技术 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
     <lastBuildDate>Mon, 23 Sep 2024 17:33:57 +0900</lastBuildDate>
-    <atom:link href="https://garywy.github.io/zh/posts/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://garyforreal.me/zh/posts/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo&#43;GitHubpages建立个人博客</title>
-      <link>https://garywy.github.io/zh/posts/tech/hugo&#43;github-pages%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <link>https://garyforreal.me/zh/posts/tech/hugo&#43;github-pages%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Mon, 23 Sep 2024 17:33:57 +0900</pubDate>
-      <guid>https://garywy.github.io/zh/posts/tech/hugo&#43;github-pages%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>https://garyforreal.me/zh/posts/tech/hugo&#43;github-pages%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
       <description>&lt;h1 id=&#34;1-前言&#34;&gt;1. 前言&lt;/h1&gt;
 &lt;p&gt;原本是因为学习任务要求需要做一个Web Service，结果阴差阳错的发现了hugo这个工具。所以借此机会利用hugo制作了自己的个人博客。此篇文章内容主要包括了搭建个人网站的流程，我在其中遇到的一些问题以及解决方案，希望能对你有帮助。&lt;/p&gt;</description>
     </item>
