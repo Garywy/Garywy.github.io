@@ -1,0 +1,9 @@
+baseURL = 'https://garyforreal.me'
+languageCode = 'en-us'
+title = 'GaryForReal'
+
+# Configure Hugo to work with the existing structure
+[params]
+  # Add any site parameters here
+
+# Since the en/ directory contains the built site, configure accordingly

@@ -63,10 +63,14 @@ jobs:
       - name: Build Hugo site
         run: hugo --minify # 编译你的 Hugo 网站，并进行代码压缩
 
+      - name: Create CNAME file in public directory
+        run: |
+          echo "garyforreal.me" > public/CNAME
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
-        # 只有当推送到 'master' 分支时才触发部署，防止其他分支的构建也触发部署
-        if: github.ref == 'refs/heads/master' # 注意：这里是 'master' 分支
+        # 只有当推送到 'main' 分支时才触发部署，防止其他分支的构建也触发部署
+        if: github.ref == 'refs/heads/main' # 注意：这里是 'main' 分支
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub 提供的自动认证令牌
           publish_dir: ./public                     # Hugo 生成的静态文件目录

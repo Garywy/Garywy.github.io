@@ -23,6 +23,10 @@ jobs:
       - name: Build Hugo
         run: hugo 
 
+      - name: Create CNAME file in public directory
+        run: |
+          echo "garyforreal.me" > public/CNAME
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
