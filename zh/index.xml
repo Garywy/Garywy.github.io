@@ -6,8 +6,33 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 05 Dec 2025 03:53:37 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Dec 2025 03:44:20 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2025.12.06. 全球新闻汇总]</title>
+      <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20251206/</link>
+      <pubDate>Sat, 06 Dec 2025 03:44:20 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/news/daily-news-summary-20251206/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20251206/80dabc91ce154667afc70d41be483831/c.html&#34;&gt;浙江持续推动木拱廊桥非遗保护传承&lt;/a&gt;&lt;/strong&gt; - 2025-12-06T03:25:54+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;　　一名游客站在泰顺县西旸镇三条桥上眺望山谷（资料照片）。新华社记者 江汉 摄　　新华社杭州12月6日电 题：浙江持续推动木拱廊桥非遗保护传承  新华社记者刘劼、魏一骏、纪航  初冬时节，中国东部浙江省泰顺县在阳光下还带着些许暖意。树龄约1000年的乌桕树旁，全国重点文物保护单位北涧桥迎来一批客人——30余名来自美国犹他州的青少年，近距离体验了不用一颗钉子搭建起的木拱桥。  “我觉得廊桥是最特别的建筑，桥上面像是一个房子，而且我听说廊桥没有用一个钉子就能建好，这太神奇了！”美国学生白安健惊叹不已。  廊桥，即桥面上有廊屋的桥梁。历史资料显示，早至唐代，泰顺山区的人们已开始依靠廊桥跨越河谷和山涧。除了通行，廊桥也兼具赶集、提供休憩场所及宗教场所等功能。在浙江省南部和福建省北部，木拱桥尤为集中。  “以北涧桥为例，它属于编梁式木拱廊桥，采用‘纵横’编织的榫卯结构，层与层之间有横梁穿插，拱内还有三角形木架，这种结构使廊桥有很强的承重能力，蕴含着古人的智慧。”温州市廊桥文化学会会长钟晓波说。　　游客行走在泰顺县泗溪镇北涧桥旁的碇步上（资料照片）。新华社记者 江汉 摄  然而，受城市化快速推进等&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-05</title>
+      <link>https://garyforreal.me/zh/posts/study/paper-2025-12-05-weekly/</link>
+      <pubDate>Fri, 05 Dec 2025 15:29:10 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/study/paper-2025-12-05-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;llms-know-more-than-words-a-genre-study-with-syntax-metaphor--phoneticshttpsarxivorgabs251204957v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.04957v1&#34;&gt;LLMs Know More Than Words: A Genre Study with Syntax, Metaphor &amp;amp; Phonetics&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Weiye Shi, Zhaowei Zhang, Shaoheng Yan, Yaodong Yang
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Large language models (LLMs) demonstrate remarkable potential across diverse language related tasks, yet whether they capture deeper linguistic properties, such as syntactic structure, phonetic cues, and metrical patterns from raw text remains unclear. To analysis whether LLMs can learn these features effectively and apply them to important nature language related tasks, we introduce a novel multilingual genre classification dataset derived from Project Gutenberg, a large-scale digital library offering free access to thousands of public domain literary works, comprising thousands of sentences per binary task (poetry vs. novel;drama vs. poetry;drama vs. novel) in six languages (English, French, German, Italian, Spanish, and Portuguese). We augment each with three explicit linguistic feature sets (syntactic tree structures, metaphor counts, and phonetic metrics) to evaluate their impact on classification performance. Experiments demonstrate that although LLM classifiers can learn latent linguistic structures either from raw text or from explicitly provided features, different features contribute unevenly across tasks, which underscores the importance of incorporating more complex linguistic signals during model training.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2025.12.05. 全球新闻汇总]</title>
       <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20251205/</link>
@@ -20,6 +45,24 @@
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20251205/e5aa8ee552b74a289d0d5b4a86bf3ff7/c.html&#34;&gt;“携手共筑安全：中国和非洲在行动”研讨会在埃塞俄比亚举行&lt;/a&gt;&lt;/strong&gt; - 2025-12-05T03:52:36+00:00&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;　　新华社亚的斯亚贝巴12月4日电（记者刘方强）“携手共筑安全：中国和非洲在行动”国际研讨会4日在位于埃塞俄比亚首都亚的斯亚贝巴的非洲联盟（非盟）总部举行，多国使节及非盟、联合国和智库媒体代表等参会。　　中国外交部安全司司长王立新在致辞时表示，当前国际形势变乱交织，中国推进“十五五”建设为世界带来广阔机遇。中非应携手践行全球安全倡议、全球治理倡议，推进和平安全的现代化，推动完善全球治理体系，共筑高水平中非命运共同体，为人类和平发展事业作出更大贡献。　　非盟委员会主席办公室副主任穆萨·穆罕默德·奥马尔说，如今非洲大陆所面临的安全问题并非局限于本地区，包括恐怖主义、武器非法流通和气候变化等。全球安全倡议坚持共同、综合、合作、可持续的安全观，这与非洲的主张不谋而合。　　中国驻非盟使团团长蒋烽发言时表示，全球安全倡议符合非洲国家寻求自主解决冲突、反对外部干涉的意愿。中方愿同非方一道，推动倡议在非洲落地生根，共筑新时代全天候中非命运共同体。　　联合国秘书长驻非盟特别代表帕尔费·奥南加-安扬加指出，全球安全倡议承诺遵守联合国宪章，维护以联合国为核心的国际体系和以国际法为基础的国际秩序，联合国对此表&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-04</title>
+      <link>https://garyforreal.me/zh/posts/study/paper-2025-12-04-weekly/</link>
+      <pubDate>Thu, 04 Dec 2025 08:53:15 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/study/paper-2025-12-04-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-cross-lingual&#34;&gt;🔍 cross-lingual&lt;/h2&gt;
+&lt;h3 id=&#34;kda-knowledge-distillation-adapter-for-cross-lingual-transferhttpsaclanthologyorg2025inlg-main8&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.inlg-main.8/&#34;&gt;KDA: Knowledge Distillation Adapter for Cross-Lingual Transfer&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Tue,)&lt;/p&gt;
+&lt;p&gt;Ta-Bao Nguyen, Nguyen-Phuong Phan, Tung Le and Huy Tien Nguyen in Proceedings of the 18th International Natural Language Generation Conference&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-code-switching&#34;&gt;🔍 code-switching&lt;/h2&gt;
+&lt;h3 id=&#34;can-code-switched-texts-activate-a-knowledge-switch-in-llms-a-case-study-on-english-korean-code-switchinghttpsaclanthologyorg2025findings-emnlp1215&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.findings-emnlp.1215/&#34;&gt;Can Code-Switched Texts Activate a Knowledge Switch in LLMs? A Case Study on English-Korean Code-Switching&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Fri,)&lt;/p&gt;
+&lt;p&gt;Seoyeon Kim, Huiseo Kim, Chanjun Park, Jinyoung Yeo and Dongha Lee in Findings of the Association for Computational Linguistics: EMNLP 2025&lt;/p&gt;</description>
     </item>
     <item>
       <title>[2025.12.04. 全球新闻汇总]</title>

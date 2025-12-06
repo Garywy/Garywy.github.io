@@ -6,8 +6,38 @@
     <description>Recent content in 学习 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 20 Jun 2025 15:55:51 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 05 Dec 2025 15:29:10 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/posts/study/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2025-12-05</title>
+      <link>https://garyforreal.me/zh/posts/study/paper-2025-12-05-weekly/</link>
+      <pubDate>Fri, 05 Dec 2025 15:29:10 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/study/paper-2025-12-05-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;llms-know-more-than-words-a-genre-study-with-syntax-metaphor--phoneticshttpsarxivorgabs251204957v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.04957v1&#34;&gt;LLMs Know More Than Words: A Genre Study with Syntax, Metaphor &amp;amp; Phonetics&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Weiye Shi, Zhaowei Zhang, Shaoheng Yan, Yaodong Yang
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Large language models (LLMs) demonstrate remarkable potential across diverse language related tasks, yet whether they capture deeper linguistic properties, such as syntactic structure, phonetic cues, and metrical patterns from raw text remains unclear. To analysis whether LLMs can learn these features effectively and apply them to important nature language related tasks, we introduce a novel multilingual genre classification dataset derived from Project Gutenberg, a large-scale digital library offering free access to thousands of public domain literary works, comprising thousands of sentences per binary task (poetry vs. novel;drama vs. poetry;drama vs. novel) in six languages (English, French, German, Italian, Spanish, and Portuguese). We augment each with three explicit linguistic feature sets (syntactic tree structures, metaphor counts, and phonetic metrics) to evaluate their impact on classification performance. Experiments demonstrate that although LLM classifiers can learn latent linguistic structures either from raw text or from explicitly provided features, different features contribute unevenly across tasks, which underscores the importance of incorporating more complex linguistic signals during model training.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-04</title>
+      <link>https://garyforreal.me/zh/posts/study/paper-2025-12-04-weekly/</link>
+      <pubDate>Thu, 04 Dec 2025 08:53:15 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/study/paper-2025-12-04-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-cross-lingual&#34;&gt;🔍 cross-lingual&lt;/h2&gt;
+&lt;h3 id=&#34;kda-knowledge-distillation-adapter-for-cross-lingual-transferhttpsaclanthologyorg2025inlg-main8&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.inlg-main.8/&#34;&gt;KDA: Knowledge Distillation Adapter for Cross-Lingual Transfer&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Tue,)&lt;/p&gt;
+&lt;p&gt;Ta-Bao Nguyen, Nguyen-Phuong Phan, Tung Le and Huy Tien Nguyen in Proceedings of the 18th International Natural Language Generation Conference&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-code-switching&#34;&gt;🔍 code-switching&lt;/h2&gt;
+&lt;h3 id=&#34;can-code-switched-texts-activate-a-knowledge-switch-in-llms-a-case-study-on-english-korean-code-switchinghttpsaclanthologyorg2025findings-emnlp1215&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.findings-emnlp.1215/&#34;&gt;Can Code-Switched Texts Activate a Knowledge Switch in LLMs? A Case Study on English-Korean Code-Switching&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Fri,)&lt;/p&gt;
+&lt;p&gt;Seoyeon Kim, Huiseo Kim, Chanjun Park, Jinyoung Yeo and Dongha Lee in Findings of the Association for Computational Linguistics: EMNLP 2025&lt;/p&gt;</description>
+    </item>
     <item>
       <title>日语最小发音（Mora）的总结</title>
       <link>https://garyforreal.me/zh/posts/study/mora/</link>
