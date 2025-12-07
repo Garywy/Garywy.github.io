@@ -6,8 +6,33 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 06 Dec 2025 03:44:20 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Dec 2025 03:59:13 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2025.12.07. Global News Roundup]</title>
+      <link>https://garyforreal.me/en/posts/news/daily-news-summary-20251207/</link>
+      <pubDate>Sun, 07 Dec 2025 03:59:13 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/news/daily-news-summary-20251207/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20251207/5e49a44b3ea94e618411096792bd6a13/c.html&#34;&gt;印度果阿邦火灾已造成至少25人死亡&lt;/a&gt;&lt;/strong&gt; - 2025-12-07T03:55:44+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;据印度媒体报道，印度西部果阿邦一夜总会7日凌晨发生火灾，已造成至少25人死亡、50余人受伤。       新华社新德里12月7日电　据印度媒体报道，印度西部果阿邦一夜总会7日凌晨发生火灾，已造成至少25人死亡、50余人受伤。  报道说，多数死者因吸入浓烟窒息死亡，其中大部分是夜总会的厨房工作人员，也有少量游客遇难。火势在消防人员全力扑救近两个小时后得到控制。初步信息显示，该夜总会涉嫌违反消防安全规范，相关调查正在进行中。  印度总统穆尔穆、总理莫迪当天在社交媒体上对遇难者表示哀悼。&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-06</title>
+      <link>https://garyforreal.me/en/posts/study/paper-2025-12-06-weekly/</link>
+      <pubDate>Sat, 06 Dec 2025 11:29:05 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/study/paper-2025-12-06-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;llms-know-more-than-words-a-genre-study-with-syntax-metaphor--phoneticshttpsarxivorgabs251204957v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.04957v1&#34;&gt;LLMs Know More Than Words: A Genre Study with Syntax, Metaphor &amp;amp; Phonetics&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Weiye Shi, Zhaowei Zhang, Shaoheng Yan, Yaodong Yang
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Large language models (LLMs) demonstrate remarkable potential across diverse language related tasks, yet whether they capture deeper linguistic properties, such as syntactic structure, phonetic cues, and metrical patterns from raw text remains unclear. To analysis whether LLMs can learn these features effectively and apply them to important nature language related tasks, we introduce a novel multilingual genre classification dataset derived from Project Gutenberg, a large-scale digital library offering free access to thousands of public domain literary works, comprising thousands of sentences per binary task (poetry vs. novel;drama vs. poetry;drama vs. novel) in six languages (English, French, German, Italian, Spanish, and Portuguese). We augment each with three explicit linguistic feature sets (syntactic tree structures, metaphor counts, and phonetic metrics) to evaluate their impact on classification performance. Experiments demonstrate that although LLM classifiers can learn latent linguistic structures either from raw text or from explicitly provided features, different features contribute unevenly across tasks, which underscores the importance of incorporating more complex linguistic signals during model training.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2025.12.06. Global News Roundup]</title>
       <link>https://garyforreal.me/en/posts/news/daily-news-summary-20251206/</link>
