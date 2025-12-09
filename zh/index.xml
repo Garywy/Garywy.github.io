@@ -6,8 +6,69 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 08 Dec 2025 03:57:24 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 09 Dec 2025 03:53:02 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2025.12.09. 全球新闻汇总]</title>
+      <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20251209/</link>
+      <pubDate>Tue, 09 Dec 2025 03:53:02 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/news/daily-news-summary-20251209/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20251209/de1e4eec269542d9b06ab8e1639611f8/c.html&#34;&gt;特朗普称将在联邦层面统一人工智能监管规则&lt;/a&gt;&lt;/strong&gt; - 2025-12-09T03:52:00+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;美国总统特朗普8日在社交媒体上称，他计划于本周签署一项行政令，在联邦层面统一对人工智能领域的监管规则，限制各州各自制定规则。       新华社华盛顿12月8日电（记者熊茂伶　杨伶）美国总统特朗普8日在社交媒体上称，他计划于本周签署一项行政令，在联邦层面统一对人工智能领域的监管规则，限制各州各自制定规则。  特朗普当天在“真实社交”平台上发文称，如果美国想要继续在人工智能领域保持领先，就必须只有一套规则。如果让50个州——其中许多还是“不良行为者”——参与制定规则和审批流程，美国这种领先地位不会持续太久。“你不能指望一家企业每次想做点什么，都得先获得50个州批准。那根本行不通！”特朗普说。  美国开放人工智能研究中心（OpenAI）首席执行官萨姆·奥尔特曼5月在国会听证会发言时表示，美国的人工智能发展不应被监管所放缓。“很难想象我们如何去遵守50套不同的法规，”奥尔特曼说，如果每个州都采取不同做法，这将带来很大负担，显著削弱企业的能力。  美国有线电视新闻网报道指出，在缺乏联邦立法的情况下，一些州已经通过法律，以应对人工智能可能带来的风险和伤害。针对特朗普最新表态，有美国媒体刊文表示担&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-09</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-09-weekly/</link>
+      <pubDate>Tue, 09 Dec 2025 01:30:00 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2025-12-09-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;m4-rag-a-massive-scale-multilingual-multi-cultural-multimodal-raghttpsarxivorgabs251205959v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.05959v1&#34;&gt;M4-RAG: A Massive-Scale Multilingual Multi-Cultural Multimodal RAG&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; David Anugraha, Patrick Amadeus Irawan, Anshul Singh, En-Shiun Annie Lee, Genta Indra Winata
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Vision-language models (VLMs) have achieved strong performance in visual question answering (VQA), yet they remain constrained by static training data. Retrieval-Augmented Generation (RAG) mitigates this limitation by enabling access to up-to-date, culturally grounded, and multilingual information; however, multilingual multimodal RAG remains largely underexplored. We introduce M4-RAG, a massive-scale benchmark covering 42 languages and 56 regional dialects and registers, comprising over 80,000 culturally diverse image-question pairs for evaluating retrieval-augmented VQA across languages and modalities. To balance realism with reproducibility, we build a controlled retrieval environment containing millions of carefully curated multilingual documents relevant to the query domains, approximating real-world retrieval conditions while ensuring consistent experimentation. Our systematic evaluation reveals that although RAG consistently benefits smaller VLMs, it fails to scale to larger models and often even degrades their performance, exposing a critical mismatch between model size and current retrieval effectiveness. M4-RAG provides a foundation for advancing next-generation RAG systems capable of reasoning seamlessly across languages, modalities, and cultural contexts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-09</title>
+      <link>https://garyforreal.me/zh/posts/study/paper-2025-12-09-weekly/</link>
+      <pubDate>Tue, 09 Dec 2025 00:32:16 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/study/paper-2025-12-09-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;m4-rag-a-massive-scale-multilingual-multi-cultural-multimodal-raghttpsarxivorgabs251205959v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.05959v1&#34;&gt;M4-RAG: A Massive-Scale Multilingual Multi-Cultural Multimodal RAG&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; David Anugraha, Patrick Amadeus Irawan, Anshul Singh, En-Shiun Annie Lee, Genta Indra Winata
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Vision-language models (VLMs) have achieved strong performance in visual question answering (VQA), yet they remain constrained by static training data. Retrieval-Augmented Generation (RAG) mitigates this limitation by enabling access to up-to-date, culturally grounded, and multilingual information; however, multilingual multimodal RAG remains largely underexplored. We introduce M4-RAG, a massive-scale benchmark covering 42 languages and 56 regional dialects and registers, comprising over 80,000 culturally diverse image-question pairs for evaluating retrieval-augmented VQA across languages and modalities. To balance realism with reproducibility, we build a controlled retrieval environment containing millions of carefully curated multilingual documents relevant to the query domains, approximating real-world retrieval conditions while ensuring consistent experimentation. Our systematic evaluation reveals that although RAG consistently benefits smaller VLMs, it fails to scale to larger models and often even degrades their performance, exposing a critical mismatch between model size and current retrieval effectiveness. M4-RAG provides a foundation for advancing next-generation RAG systems capable of reasoning seamlessly across languages, modalities, and cultural contexts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-08</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-08-weekly/</link>
+      <pubDate>Mon, 08 Dec 2025 04:07:26 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2025-12-08-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;m4-rag-a-massive-scale-multilingual-multi-cultural-multimodal-raghttpsarxivorgabs251205959v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.05959v1&#34;&gt;M4-RAG: A Massive-Scale Multilingual Multi-Cultural Multimodal RAG&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; David Anugraha, Patrick Amadeus Irawan, Anshul Singh, En-Shiun Annie Lee, Genta Indra Winata
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Vision-language models (VLMs) have achieved strong performance in visual question answering (VQA), yet they remain constrained by static training data. Retrieval-Augmented Generation (RAG) mitigates this limitation by enabling access to up-to-date, culturally grounded, and multilingual information; however, multilingual multimodal RAG remains largely underexplored. We introduce M4-RAG, a massive-scale benchmark covering 42 languages and 56 regional dialects and registers, comprising over 80,000 culturally diverse image-question pairs for evaluating retrieval-augmented VQA across languages and modalities. To balance realism with reproducibility, we build a controlled retrieval environment containing millions of carefully curated multilingual documents relevant to the query domains, approximating real-world retrieval conditions while ensuring consistent experimentation. Our systematic evaluation reveals that although RAG consistently benefits smaller VLMs, it fails to scale to larger models and often even degrades their performance, exposing a critical mismatch between model size and current retrieval effectiveness. M4-RAG provides a foundation for advancing next-generation RAG systems capable of reasoning seamlessly across languages, modalities, and cultural contexts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-08</title>
+      <link>https://garyforreal.me/zh/posts/study/paper-2025-12-08-weekly/</link>
+      <pubDate>Mon, 08 Dec 2025 04:07:26 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/study/paper-2025-12-08-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;m4-rag-a-massive-scale-multilingual-multi-cultural-multimodal-raghttpsarxivorgabs251205959v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.05959v1&#34;&gt;M4-RAG: A Massive-Scale Multilingual Multi-Cultural Multimodal RAG&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; David Anugraha, Patrick Amadeus Irawan, Anshul Singh, En-Shiun Annie Lee, Genta Indra Winata
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Vision-language models (VLMs) have achieved strong performance in visual question answering (VQA), yet they remain constrained by static training data. Retrieval-Augmented Generation (RAG) mitigates this limitation by enabling access to up-to-date, culturally grounded, and multilingual information; however, multilingual multimodal RAG remains largely underexplored. We introduce M4-RAG, a massive-scale benchmark covering 42 languages and 56 regional dialects and registers, comprising over 80,000 culturally diverse image-question pairs for evaluating retrieval-augmented VQA across languages and modalities. To balance realism with reproducibility, we build a controlled retrieval environment containing millions of carefully curated multilingual documents relevant to the query domains, approximating real-world retrieval conditions while ensuring consistent experimentation. Our systematic evaluation reveals that although RAG consistently benefits smaller VLMs, it fails to scale to larger models and often even degrades their performance, exposing a critical mismatch between model size and current retrieval effectiveness. M4-RAG provides a foundation for advancing next-generation RAG systems capable of reasoning seamlessly across languages, modalities, and cultural contexts.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2025.12.08. 全球新闻汇总]</title>
       <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20251208/</link>
@@ -23,15 +84,39 @@
     </item>
     <item>
       <title>Weekly Paper Notes - 2025-12-07</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-07-weekly/</link>
+      <pubDate>Sun, 07 Dec 2025 07:18:42 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2025-12-07-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-cross-lingual&#34;&gt;🔍 cross-lingual&lt;/h2&gt;
+&lt;h3 id=&#34;kda-knowledge-distillation-adapter-for-cross-lingual-transferhttpsaclanthologyorg2025inlg-main8&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.inlg-main.8/&#34;&gt;KDA: Knowledge Distillation Adapter for Cross-Lingual Transfer&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Tue,)&lt;/p&gt;
+&lt;p&gt;Ta-Bao Nguyen, Nguyen-Phuong Phan, Tung Le and Huy Tien Nguyen in Proceedings of the 18th International Natural Language Generation Conference&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://papersdb.wangyilin-0429.workers.dev/api/save?pid=https://aclanthology.org/papers/2025.inlg-main.8&#34;&gt;📥 Save to Zotero&lt;/a&gt;    &lt;a href=&#34;https://papersdb.wangyilin-0429.workers.dev/api/pdf?pid=https://aclanthology.org/papers/2025.inlg-main.8&#34;&gt;📄 Download PDF&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;are-knowledge-and-reference-in-multilingual-language-models-cross-lingually-consistenthttpsaclanthologyorg2025findings-emnlp267&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.findings-emnlp.267/&#34;&gt;Are Knowledge and Reference in Multilingual Language Models Cross-Lingually Consistent?&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Fri,)&lt;/p&gt;
+&lt;p&gt;Xi Ai, Mahardika Krisna Ihsani and Min-Yen Kan in Findings of the Association for Computational Linguistics: EMNLP 2025&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-07</title>
       <link>https://garyforreal.me/zh/posts/study/paper-2025-12-07-weekly/</link>
-      <pubDate>Sun, 07 Dec 2025 15:21:36 +0000</pubDate>
+      <pubDate>Sun, 07 Dec 2025 07:18:42 +0000</pubDate>
       <guid>https://garyforreal.me/zh/posts/study/paper-2025-12-07-weekly/</guid>
       <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
-&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
-&lt;h3 id=&#34;llms-know-more-than-words-a-genre-study-with-syntax-metaphor--phoneticshttpsarxivorgabs251204957v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.04957v1&#34;&gt;LLMs Know More Than Words: A Genre Study with Syntax, Metaphor &amp;amp; Phonetics&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Weiye Shi, Zhaowei Zhang, Shaoheng Yan, Yaodong Yang
-&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
-&lt;p&gt;Large language models (LLMs) demonstrate remarkable potential across diverse language related tasks, yet whether they capture deeper linguistic properties, such as syntactic structure, phonetic cues, and metrical patterns from raw text remains unclear. To analysis whether LLMs can learn these features effectively and apply them to important nature language related tasks, we introduce a novel multilingual genre classification dataset derived from Project Gutenberg, a large-scale digital library offering free access to thousands of public domain literary works, comprising thousands of sentences per binary task (poetry vs. novel;drama vs. poetry;drama vs. novel) in six languages (English, French, German, Italian, Spanish, and Portuguese). We augment each with three explicit linguistic feature sets (syntactic tree structures, metaphor counts, and phonetic metrics) to evaluate their impact on classification performance. Experiments demonstrate that although LLM classifiers can learn latent linguistic structures either from raw text or from explicitly provided features, different features contribute unevenly across tasks, which underscores the importance of incorporating more complex linguistic signals during model training.&lt;/p&gt;</description>
+&lt;h2 id=&#34;-cross-lingual&#34;&gt;🔍 cross-lingual&lt;/h2&gt;
+&lt;h3 id=&#34;kda-knowledge-distillation-adapter-for-cross-lingual-transferhttpsaclanthologyorg2025inlg-main8&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.inlg-main.8/&#34;&gt;KDA: Knowledge Distillation Adapter for Cross-Lingual Transfer&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Tue,)&lt;/p&gt;
+&lt;p&gt;Ta-Bao Nguyen, Nguyen-Phuong Phan, Tung Le and Huy Tien Nguyen in Proceedings of the 18th International Natural Language Generation Conference&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://papersdb.wangyilin-0429.workers.dev/api/save?pid=https://aclanthology.org/papers/2025.inlg-main.8&#34;&gt;📥 Save to Zotero&lt;/a&gt;    &lt;a href=&#34;https://papersdb.wangyilin-0429.workers.dev/api/pdf?pid=https://aclanthology.org/papers/2025.inlg-main.8&#34;&gt;📄 Download PDF&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;are-knowledge-and-reference-in-multilingual-language-models-cross-lingually-consistenthttpsaclanthologyorg2025findings-emnlp267&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.findings-emnlp.267/&#34;&gt;Are Knowledge and Reference in Multilingual Language Models Cross-Lingually Consistent?&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Fri,)&lt;/p&gt;
+&lt;p&gt;Xi Ai, Mahardika Krisna Ihsani and Min-Yen Kan in Findings of the Association for Computational Linguistics: EMNLP 2025&lt;/p&gt;</description>
     </item>
     <item>
       <title>[2025.12.07. 全球新闻汇总]</title>
@@ -95,6 +180,24 @@
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20251205/e5aa8ee552b74a289d0d5b4a86bf3ff7/c.html&#34;&gt;“携手共筑安全：中国和非洲在行动”研讨会在埃塞俄比亚举行&lt;/a&gt;&lt;/strong&gt; - 2025-12-05T03:52:36+00:00&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;　　新华社亚的斯亚贝巴12月4日电（记者刘方强）“携手共筑安全：中国和非洲在行动”国际研讨会4日在位于埃塞俄比亚首都亚的斯亚贝巴的非洲联盟（非盟）总部举行，多国使节及非盟、联合国和智库媒体代表等参会。　　中国外交部安全司司长王立新在致辞时表示，当前国际形势变乱交织，中国推进“十五五”建设为世界带来广阔机遇。中非应携手践行全球安全倡议、全球治理倡议，推进和平安全的现代化，推动完善全球治理体系，共筑高水平中非命运共同体，为人类和平发展事业作出更大贡献。　　非盟委员会主席办公室副主任穆萨·穆罕默德·奥马尔说，如今非洲大陆所面临的安全问题并非局限于本地区，包括恐怖主义、武器非法流通和气候变化等。全球安全倡议坚持共同、综合、合作、可持续的安全观，这与非洲的主张不谋而合。　　中国驻非盟使团团长蒋烽发言时表示，全球安全倡议符合非洲国家寻求自主解决冲突、反对外部干涉的意愿。中方愿同非方一道，推动倡议在非洲落地生根，共筑新时代全天候中非命运共同体。　　联合国秘书长驻非盟特别代表帕尔费·奥南加-安扬加指出，全球安全倡议承诺遵守联合国宪章，维护以联合国为核心的国际体系和以国际法为基础的国际秩序，联合国对此表&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-04</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-04-weekly/</link>
+      <pubDate>Thu, 04 Dec 2025 08:53:15 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2025-12-04-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-cross-lingual&#34;&gt;🔍 cross-lingual&lt;/h2&gt;
+&lt;h3 id=&#34;kda-knowledge-distillation-adapter-for-cross-lingual-transferhttpsaclanthologyorg2025inlg-main8&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.inlg-main.8/&#34;&gt;KDA: Knowledge Distillation Adapter for Cross-Lingual Transfer&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Tue,)&lt;/p&gt;
+&lt;p&gt;Ta-Bao Nguyen, Nguyen-Phuong Phan, Tung Le and Huy Tien Nguyen in Proceedings of the 18th International Natural Language Generation Conference&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-code-switching&#34;&gt;🔍 code-switching&lt;/h2&gt;
+&lt;h3 id=&#34;can-code-switched-texts-activate-a-knowledge-switch-in-llms-a-case-study-on-english-korean-code-switchinghttpsaclanthologyorg2025findings-emnlp1215&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.findings-emnlp.1215/&#34;&gt;Can Code-Switched Texts Activate a Knowledge Switch in LLMs? A Case Study on English-Korean Code-Switching&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Fri,)&lt;/p&gt;
+&lt;p&gt;Seoyeon Kim, Huiseo Kim, Chanjun Park, Jinyoung Yeo and Dongha Lee in Findings of the Association for Computational Linguistics: EMNLP 2025&lt;/p&gt;</description>
     </item>
     <item>
       <title>Weekly Paper Notes - 2025-12-04</title>
@@ -489,6 +592,14 @@ Given an integer array nums, return the length of the longest strictly increasin
 &lt;h1 id=&#34;1-基本语法&#34;&gt;1. 基本语法&lt;/h1&gt;
 &lt;h2 id=&#34;11-标题&#34;&gt;1.1 标题&lt;/h2&gt;
 &lt;p&gt;利用&lt;code&gt;#&lt;/code&gt;符号创建标题，有几个&lt;code&gt;#&lt;/code&gt;就是几级标题。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugo&#43;GitHubpages建立个人博客</title>
+      <link>https://garyforreal.me/zh/posts/study/hugo&#43;githubpages%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Mon, 23 Sep 2024 17:33:57 +0900</pubDate>
+      <guid>https://garyforreal.me/zh/posts/study/hugo&#43;githubpages%E5%BB%BA%E7%AB%8B%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>&lt;h1 id=&#34;1-前言&#34;&gt;1. 前言&lt;/h1&gt;
+&lt;p&gt;原本是因为学习任务要求需要做一个Web Service，结果阴差阳错的发现了hugo这个工具。所以借此机会利用hugo制作了自己的个人博客。此篇文章内容主要包括了搭建个人网站的流程，我在其中遇到的一些问题以及解决方案，希望能对你有帮助。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hugo&#43;GitHubpages建立个人博客</title>

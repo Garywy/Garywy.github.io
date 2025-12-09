@@ -6,8 +6,20 @@
     <description>Recent content in Paper on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Mar 2025 15:15:43 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 09 Dec 2025 01:30:00 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2025-12-09</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2025-12-09-weekly/</link>
+      <pubDate>Tue, 09 Dec 2025 01:30:00 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2025-12-09-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;m4-rag-a-massive-scale-multilingual-multi-cultural-multimodal-raghttpsarxivorgabs251205959v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.05959v1&#34;&gt;M4-RAG: A Massive-Scale Multilingual Multi-Cultural Multimodal RAG&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; David Anugraha, Patrick Amadeus Irawan, Anshul Singh, En-Shiun Annie Lee, Genta Indra Winata
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Vision-language models (VLMs) have achieved strong performance in visual question answering (VQA), yet they remain constrained by static training data. Retrieval-Augmented Generation (RAG) mitigates this limitation by enabling access to up-to-date, culturally grounded, and multilingual information; however, multilingual multimodal RAG remains largely underexplored. We introduce M4-RAG, a massive-scale benchmark covering 42 languages and 56 regional dialects and registers, comprising over 80,000 culturally diverse image-question pairs for evaluating retrieval-augmented VQA across languages and modalities. To balance realism with reproducibility, we build a controlled retrieval environment containing millions of carefully curated multilingual documents relevant to the query domains, approximating real-world retrieval conditions while ensuring consistent experimentation. Our systematic evaluation reveals that although RAG consistently benefits smaller VLMs, it fails to scale to larger models and often even degrades their performance, exposing a critical mismatch between model size and current retrieval effectiveness. M4-RAG provides a foundation for advancing next-generation RAG systems capable of reasoning seamlessly across languages, modalities, and cultural contexts.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Research_lab_works</title>
       <link>https://garyforreal.me/en/posts/paper/research_lab_works/</link>
