@@ -6,8 +6,21 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Thu, 11 Dec 2025 03:59:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Dec 2025 03:58:58 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2025.12.12. 全球新闻汇总]</title>
+      <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20251212/</link>
+      <pubDate>Fri, 12 Dec 2025 03:58:58 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/news/daily-news-summary-20251212/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20251212/348d2abe0bfe442294908c751ca0d3b4/c.html&#34;&gt;泽连斯基已提交“和平协议”修改版：主张俄乌对等撤军 领土问题未谈妥&lt;/a&gt;&lt;/strong&gt; - 2025-12-12T03:56:10+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;  新华社北京12月12日电　针对美国近期提出的解决乌克兰和俄罗斯冲突的“和平计划”20点框架协议，乌克兰总统泽连斯基11日证实，已向美国提交修改后的协议。他表示，美方依旧要求乌方在领土问题上作出大的让步，乌方则主张俄乌按对等原则在顿涅茨克地区撤军。  乌领土问题尚未谈妥  泽连斯基接受媒体采访时表示，乌美之间就协议尚存两大分歧需要继续讨论，一是顿涅茨克地区领土及一切相关问题，二是扎波罗热核电站“共管”问题。他称，顿涅茨克地区领土问题“实际上”是俄方通过美方给出的提议，但这些提议“完全不符合乌克兰利益”，乌美还需要继续对话并寻求更妥善的解决办法。  2025年11月20日，因俄乌冲突，乌克兰首都基辅主要街道的照明设施出现大面积停电，车辆在暮色中驶过独立广场。新华社记者李东旭摄  泽连斯基披露，美方提议乌方从其顿涅茨克地区控制区撤军，这些地方将变成“自由经济区”，俄罗斯军队不会进入；但美方没有说谁来管理这些地方，俄方则称这些地方为“非军事区”，只允许平民以及警察等非军事人员存在。  他表示，假如存在这种“自由经济区”或“非军事区”，那不能要求乌军单方面撤出；如果要求乌克兰军队后撤5公里或&amp;hellip;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2025.12.11. 全球新闻汇总]</title>
       <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20251211/</link>
@@ -60,34 +73,10 @@
 &lt;p&gt;Vision-language models (VLMs) have achieved strong performance in visual question answering (VQA), yet they remain constrained by static training data. Retrieval-Augmented Generation (RAG) mitigates this limitation by enabling access to up-to-date, culturally grounded, and multilingual information; however, multilingual multimodal RAG remains largely underexplored. We introduce M4-RAG, a massive-scale benchmark covering 42 languages and 56 regional dialects and registers, comprising over 80,000 culturally diverse image-question pairs for evaluating retrieval-augmented VQA across languages and modalities. To balance realism with reproducibility, we build a controlled retrieval environment containing millions of carefully curated multilingual documents relevant to the query domains, approximating real-world retrieval conditions while ensuring consistent experimentation. Our systematic evaluation reveals that although RAG consistently benefits smaller VLMs, it fails to scale to larger models and often even degrades their performance, exposing a critical mismatch between model size and current retrieval effectiveness. M4-RAG provides a foundation for advancing next-generation RAG systems capable of reasoning seamlessly across languages, modalities, and cultural contexts.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Weekly Paper Notes - 2025-12-09</title>
-      <link>https://garyforreal.me/zh/posts/study/paper-2025-12-09-weekly/</link>
-      <pubDate>Tue, 09 Dec 2025 00:32:16 +0000</pubDate>
-      <guid>https://garyforreal.me/zh/posts/study/paper-2025-12-09-weekly/</guid>
-      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
-&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
-&lt;h3 id=&#34;m4-rag-a-massive-scale-multilingual-multi-cultural-multimodal-raghttpsarxivorgabs251205959v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.05959v1&#34;&gt;M4-RAG: A Massive-Scale Multilingual Multi-Cultural Multimodal RAG&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; David Anugraha, Patrick Amadeus Irawan, Anshul Singh, En-Shiun Annie Lee, Genta Indra Winata
-&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
-&lt;p&gt;Vision-language models (VLMs) have achieved strong performance in visual question answering (VQA), yet they remain constrained by static training data. Retrieval-Augmented Generation (RAG) mitigates this limitation by enabling access to up-to-date, culturally grounded, and multilingual information; however, multilingual multimodal RAG remains largely underexplored. We introduce M4-RAG, a massive-scale benchmark covering 42 languages and 56 regional dialects and registers, comprising over 80,000 culturally diverse image-question pairs for evaluating retrieval-augmented VQA across languages and modalities. To balance realism with reproducibility, we build a controlled retrieval environment containing millions of carefully curated multilingual documents relevant to the query domains, approximating real-world retrieval conditions while ensuring consistent experimentation. Our systematic evaluation reveals that although RAG consistently benefits smaller VLMs, it fails to scale to larger models and often even degrades their performance, exposing a critical mismatch between model size and current retrieval effectiveness. M4-RAG provides a foundation for advancing next-generation RAG systems capable of reasoning seamlessly across languages, modalities, and cultural contexts.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Weekly Paper Notes - 2025-12-08</title>
       <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-08-weekly/</link>
       <pubDate>Mon, 08 Dec 2025 04:07:26 +0000</pubDate>
       <guid>https://garyforreal.me/zh/posts/paper/paper-2025-12-08-weekly/</guid>
-      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
-&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
-&lt;h3 id=&#34;m4-rag-a-massive-scale-multilingual-multi-cultural-multimodal-raghttpsarxivorgabs251205959v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.05959v1&#34;&gt;M4-RAG: A Massive-Scale Multilingual Multi-Cultural Multimodal RAG&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; David Anugraha, Patrick Amadeus Irawan, Anshul Singh, En-Shiun Annie Lee, Genta Indra Winata
-&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
-&lt;p&gt;Vision-language models (VLMs) have achieved strong performance in visual question answering (VQA), yet they remain constrained by static training data. Retrieval-Augmented Generation (RAG) mitigates this limitation by enabling access to up-to-date, culturally grounded, and multilingual information; however, multilingual multimodal RAG remains largely underexplored. We introduce M4-RAG, a massive-scale benchmark covering 42 languages and 56 regional dialects and registers, comprising over 80,000 culturally diverse image-question pairs for evaluating retrieval-augmented VQA across languages and modalities. To balance realism with reproducibility, we build a controlled retrieval environment containing millions of carefully curated multilingual documents relevant to the query domains, approximating real-world retrieval conditions while ensuring consistent experimentation. Our systematic evaluation reveals that although RAG consistently benefits smaller VLMs, it fails to scale to larger models and often even degrades their performance, exposing a critical mismatch between model size and current retrieval effectiveness. M4-RAG provides a foundation for advancing next-generation RAG systems capable of reasoning seamlessly across languages, modalities, and cultural contexts.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Weekly Paper Notes - 2025-12-08</title>
-      <link>https://garyforreal.me/zh/posts/study/paper-2025-12-08-weekly/</link>
-      <pubDate>Mon, 08 Dec 2025 04:07:26 +0000</pubDate>
-      <guid>https://garyforreal.me/zh/posts/study/paper-2025-12-08-weekly/</guid>
       <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
 &lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
 &lt;h3 id=&#34;m4-rag-a-massive-scale-multilingual-multi-cultural-multimodal-raghttpsarxivorgabs251205959v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.05959v1&#34;&gt;M4-RAG: A Massive-Scale Multilingual Multi-Cultural Multimodal RAG&lt;/a&gt;&lt;/h3&gt;
@@ -127,24 +116,6 @@
 &lt;p&gt;Xi Ai, Mahardika Krisna Ihsani and Min-Yen Kan in Findings of the Association for Computational Linguistics: EMNLP 2025&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Weekly Paper Notes - 2025-12-07</title>
-      <link>https://garyforreal.me/zh/posts/study/paper-2025-12-07-weekly/</link>
-      <pubDate>Sun, 07 Dec 2025 07:18:42 +0000</pubDate>
-      <guid>https://garyforreal.me/zh/posts/study/paper-2025-12-07-weekly/</guid>
-      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
-&lt;h2 id=&#34;-cross-lingual&#34;&gt;🔍 cross-lingual&lt;/h2&gt;
-&lt;h3 id=&#34;kda-knowledge-distillation-adapter-for-cross-lingual-transferhttpsaclanthologyorg2025inlg-main8&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.inlg-main.8/&#34;&gt;KDA: Knowledge Distillation Adapter for Cross-Lingual Transfer&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
-&lt;strong&gt;Venue:&lt;/strong&gt;  (Tue,)&lt;/p&gt;
-&lt;p&gt;Ta-Bao Nguyen, Nguyen-Phuong Phan, Tung Le and Huy Tien Nguyen in Proceedings of the 18th International Natural Language Generation Conference&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://papersdb.wangyilin-0429.workers.dev/api/save?pid=https://aclanthology.org/papers/2025.inlg-main.8&#34;&gt;📥 Save to Zotero&lt;/a&gt;    &lt;a href=&#34;https://papersdb.wangyilin-0429.workers.dev/api/pdf?pid=https://aclanthology.org/papers/2025.inlg-main.8&#34;&gt;📄 Download PDF&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&#34;are-knowledge-and-reference-in-multilingual-language-models-cross-lingually-consistenthttpsaclanthologyorg2025findings-emnlp267&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.findings-emnlp.267/&#34;&gt;Are Knowledge and Reference in Multilingual Language Models Cross-Lingually Consistent?&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
-&lt;strong&gt;Venue:&lt;/strong&gt;  (Fri,)&lt;/p&gt;
-&lt;p&gt;Xi Ai, Mahardika Krisna Ihsani and Min-Yen Kan in Findings of the Association for Computational Linguistics: EMNLP 2025&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>[2025.12.07. 全球新闻汇总]</title>
       <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20251207/</link>
       <pubDate>Sun, 07 Dec 2025 03:59:13 +0000</pubDate>
@@ -156,18 +127,6 @@
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20251207/5e49a44b3ea94e618411096792bd6a13/c.html&#34;&gt;印度果阿邦火灾已造成至少25人死亡&lt;/a&gt;&lt;/strong&gt; - 2025-12-07T03:55:44+00:00&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;据印度媒体报道，印度西部果阿邦一夜总会7日凌晨发生火灾，已造成至少25人死亡、50余人受伤。       新华社新德里12月7日电　据印度媒体报道，印度西部果阿邦一夜总会7日凌晨发生火灾，已造成至少25人死亡、50余人受伤。  报道说，多数死者因吸入浓烟窒息死亡，其中大部分是夜总会的厨房工作人员，也有少量游客遇难。火势在消防人员全力扑救近两个小时后得到控制。初步信息显示，该夜总会涉嫌违反消防安全规范，相关调查正在进行中。  印度总统穆尔穆、总理莫迪当天在社交媒体上对遇难者表示哀悼。&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Weekly Paper Notes - 2025-12-06</title>
-      <link>https://garyforreal.me/zh/posts/study/paper-2025-12-06-weekly/</link>
-      <pubDate>Sat, 06 Dec 2025 11:29:05 +0000</pubDate>
-      <guid>https://garyforreal.me/zh/posts/study/paper-2025-12-06-weekly/</guid>
-      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
-&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
-&lt;h3 id=&#34;llms-know-more-than-words-a-genre-study-with-syntax-metaphor--phoneticshttpsarxivorgabs251204957v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.04957v1&#34;&gt;LLMs Know More Than Words: A Genre Study with Syntax, Metaphor &amp;amp; Phonetics&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Weiye Shi, Zhaowei Zhang, Shaoheng Yan, Yaodong Yang
-&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
-&lt;p&gt;Large language models (LLMs) demonstrate remarkable potential across diverse language related tasks, yet whether they capture deeper linguistic properties, such as syntactic structure, phonetic cues, and metrical patterns from raw text remains unclear. To analysis whether LLMs can learn these features effectively and apply them to important nature language related tasks, we introduce a novel multilingual genre classification dataset derived from Project Gutenberg, a large-scale digital library offering free access to thousands of public domain literary works, comprising thousands of sentences per binary task (poetry vs. novel;drama vs. poetry;drama vs. novel) in six languages (English, French, German, Italian, Spanish, and Portuguese). We augment each with three explicit linguistic feature sets (syntactic tree structures, metaphor counts, and phonetic metrics) to evaluate their impact on classification performance. Experiments demonstrate that although LLM classifiers can learn latent linguistic structures either from raw text or from explicitly provided features, different features contribute unevenly across tasks, which underscores the importance of incorporating more complex linguistic signals during model training.&lt;/p&gt;</description>
     </item>
     <item>
       <title>[2025.12.06. 全球新闻汇总]</title>
@@ -212,24 +171,6 @@
       <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-04-weekly/</link>
       <pubDate>Thu, 04 Dec 2025 08:53:15 +0000</pubDate>
       <guid>https://garyforreal.me/zh/posts/paper/paper-2025-12-04-weekly/</guid>
-      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
-&lt;h2 id=&#34;-cross-lingual&#34;&gt;🔍 cross-lingual&lt;/h2&gt;
-&lt;h3 id=&#34;kda-knowledge-distillation-adapter-for-cross-lingual-transferhttpsaclanthologyorg2025inlg-main8&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.inlg-main.8/&#34;&gt;KDA: Knowledge Distillation Adapter for Cross-Lingual Transfer&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
-&lt;strong&gt;Venue:&lt;/strong&gt;  (Tue,)&lt;/p&gt;
-&lt;p&gt;Ta-Bao Nguyen, Nguyen-Phuong Phan, Tung Le and Huy Tien Nguyen in Proceedings of the 18th International Natural Language Generation Conference&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;-code-switching&#34;&gt;🔍 code-switching&lt;/h2&gt;
-&lt;h3 id=&#34;can-code-switched-texts-activate-a-knowledge-switch-in-llms-a-case-study-on-english-korean-code-switchinghttpsaclanthologyorg2025findings-emnlp1215&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.findings-emnlp.1215/&#34;&gt;Can Code-Switched Texts Activate a Knowledge Switch in LLMs? A Case Study on English-Korean Code-Switching&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
-&lt;strong&gt;Venue:&lt;/strong&gt;  (Fri,)&lt;/p&gt;
-&lt;p&gt;Seoyeon Kim, Huiseo Kim, Chanjun Park, Jinyoung Yeo and Dongha Lee in Findings of the Association for Computational Linguistics: EMNLP 2025&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Weekly Paper Notes - 2025-12-04</title>
-      <link>https://garyforreal.me/zh/posts/study/paper-2025-12-04-weekly/</link>
-      <pubDate>Thu, 04 Dec 2025 08:53:15 +0000</pubDate>
-      <guid>https://garyforreal.me/zh/posts/study/paper-2025-12-04-weekly/</guid>
       <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
 &lt;h2 id=&#34;-cross-lingual&#34;&gt;🔍 cross-lingual&lt;/h2&gt;
 &lt;h3 id=&#34;kda-knowledge-distillation-adapter-for-cross-lingual-transferhttpsaclanthologyorg2025inlg-main8&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.inlg-main.8/&#34;&gt;KDA: Knowledge Distillation Adapter for Cross-Lingual Transfer&lt;/a&gt;&lt;/h3&gt;
