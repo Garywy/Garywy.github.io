@@ -6,8 +6,33 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 14 Dec 2025 04:01:54 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Dec 2025 04:06:47 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2025.12.15. 全球新闻汇总]</title>
+      <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20251215/</link>
+      <pubDate>Mon, 15 Dec 2025 04:06:47 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/news/daily-news-summary-20251215/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20251215/c36e4cb7392a4e7ab1623ed4d50db57b/c.html&#34;&gt;学习规划建议每日问答丨怎样理解推进全国行政事业单位存量国有资产盘活共享&lt;/a&gt;&lt;/strong&gt; - 2025-12-15T04:05:11+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;  新华社北京12月15日电 《中共中央关于制定国民经济和社会发展第十五个五年规划的建议》提出：“推进全国行政事业单位存量国有资产盘活共享。”这是促进要素资源做优增量、盘活存量、高效配置的一项重要举措。  行政事业单位国有资产是党和国家事业发展的物质基础和重要保障，推进存量资产盘活共享十分必要、意义重大。一是提高资源配置效率的重要举措。当前，我国经济正经历从以增量扩能为主转向做优增量、盘活存量并举的深刻改变，行政事业单位存量国有资产规模大、分布广、形态多样，盘活存量不仅大有文章可做，也有利于优化资源配置，提高经济运行效率。二是提升国有资产使用效益的应有之义。近年来，通过各有关方面的共同努力，我国行政事业单位国有资产管理不断加强，但部分地区、部门资产使用效益不高，低效运转、闲置浪费和保障仍不够到位的现象并存。通过盘活存量、加强调剂共享，有利于更好发挥国有资产作用，创造更大效益。三是更好保障行政事业单位履职的客观要求。在增量资源增长有限的情况下，推进存量国有资产盘活共享，有利于进一步强化行政事业单位保障，促进相关领域事业发展。  近几年，国家有关部门积极采取措施，着力盘活行政事业单位国有资&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-14</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-14-weekly/</link>
+      <pubDate>Sun, 14 Dec 2025 15:23:14 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2025-12-14-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;grow-up-and-merge-scaling-strategies-for-efficient-language-adaptationhttpsarxivorgabs251210772v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.10772v1&#34;&gt;Grow Up and Merge: Scaling Strategies for Efficient Language Adaptation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Kevin Glocker, Kätriin Kukk, Romina Oji, Marcel Bollmann, Marco Kuhlmann, Jenny Kunz
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Achieving high-performing language models which include medium- and lower-resource languages remains a challenge. Massively multilingual models still underperform compared to language-specific adaptations, especially at smaller model scales. In this work, we investigate scaling as an efficient strategy for adapting pretrained models to new target languages. Through comprehensive scaling ablations with approximately FLOP-matched models, we test whether upscaling an English base model enables more effective and resource-efficient adaptation than standard continued pretraining. We find that, once exposed to sufficient target-language data, larger upscaled models can match or surpass the performance of smaller models continually pretrained on much more data, demonstrating the benefits of scaling for data efficiency. Scaling also helps preserve the base model&amp;rsquo;s capabilities in English, thus reducing catastrophic forgetting. Finally, we explore whether such scaled, language-specific models can be merged to construct modular and flexible multilingual systems. We find that while merging remains less effective than joint multilingual training, upscaled merges perform better than smaller ones. We observe large performance differences across merging methods, suggesting potential for improvement through merging approaches specialized for language-level integration.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2025.12.14. 全球新闻汇总]</title>
       <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20251214/</link>
@@ -96,7 +121,7 @@
     <item>
       <title>Weekly Paper Notes - 2025-12-09</title>
       <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-09-weekly/</link>
-      <pubDate>Tue, 09 Dec 2025 01:30:00 +0000</pubDate>
+      <pubDate>Tue, 09 Dec 2025 00:13:56 +0000</pubDate>
       <guid>https://garyforreal.me/zh/posts/paper/paper-2025-12-09-weekly/</guid>
       <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
 &lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;

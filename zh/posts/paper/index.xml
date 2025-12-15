@@ -6,12 +6,24 @@
     <description>Recent content in 论文 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 09 Dec 2025 01:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Dec 2025 15:23:14 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2025-12-14</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-14-weekly/</link>
+      <pubDate>Sun, 14 Dec 2025 15:23:14 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2025-12-14-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;grow-up-and-merge-scaling-strategies-for-efficient-language-adaptationhttpsarxivorgabs251210772v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.10772v1&#34;&gt;Grow Up and Merge: Scaling Strategies for Efficient Language Adaptation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Kevin Glocker, Kätriin Kukk, Romina Oji, Marcel Bollmann, Marco Kuhlmann, Jenny Kunz
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Achieving high-performing language models which include medium- and lower-resource languages remains a challenge. Massively multilingual models still underperform compared to language-specific adaptations, especially at smaller model scales. In this work, we investigate scaling as an efficient strategy for adapting pretrained models to new target languages. Through comprehensive scaling ablations with approximately FLOP-matched models, we test whether upscaling an English base model enables more effective and resource-efficient adaptation than standard continued pretraining. We find that, once exposed to sufficient target-language data, larger upscaled models can match or surpass the performance of smaller models continually pretrained on much more data, demonstrating the benefits of scaling for data efficiency. Scaling also helps preserve the base model&amp;rsquo;s capabilities in English, thus reducing catastrophic forgetting. Finally, we explore whether such scaled, language-specific models can be merged to construct modular and flexible multilingual systems. We find that while merging remains less effective than joint multilingual training, upscaled merges perform better than smaller ones. We observe large performance differences across merging methods, suggesting potential for improvement through merging approaches specialized for language-level integration.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2025-12-09</title>
       <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-09-weekly/</link>
-      <pubDate>Tue, 09 Dec 2025 01:30:00 +0000</pubDate>
+      <pubDate>Tue, 09 Dec 2025 00:13:56 +0000</pubDate>
       <guid>https://garyforreal.me/zh/posts/paper/paper-2025-12-09-weekly/</guid>
       <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
 &lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;

@@ -6,12 +6,24 @@
     <description>Recent content in Paper on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Dec 2025 01:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Dec 2025 15:23:14 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2025-12-14</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2025-12-14-weekly/</link>
+      <pubDate>Sun, 14 Dec 2025 15:23:14 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2025-12-14-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;grow-up-and-merge-scaling-strategies-for-efficient-language-adaptationhttpsarxivorgabs251210772v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.10772v1&#34;&gt;Grow Up and Merge: Scaling Strategies for Efficient Language Adaptation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Kevin Glocker, Kätriin Kukk, Romina Oji, Marcel Bollmann, Marco Kuhlmann, Jenny Kunz
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Achieving high-performing language models which include medium- and lower-resource languages remains a challenge. Massively multilingual models still underperform compared to language-specific adaptations, especially at smaller model scales. In this work, we investigate scaling as an efficient strategy for adapting pretrained models to new target languages. Through comprehensive scaling ablations with approximately FLOP-matched models, we test whether upscaling an English base model enables more effective and resource-efficient adaptation than standard continued pretraining. We find that, once exposed to sufficient target-language data, larger upscaled models can match or surpass the performance of smaller models continually pretrained on much more data, demonstrating the benefits of scaling for data efficiency. Scaling also helps preserve the base model&amp;rsquo;s capabilities in English, thus reducing catastrophic forgetting. Finally, we explore whether such scaled, language-specific models can be merged to construct modular and flexible multilingual systems. We find that while merging remains less effective than joint multilingual training, upscaled merges perform better than smaller ones. We observe large performance differences across merging methods, suggesting potential for improvement through merging approaches specialized for language-level integration.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2025-12-09</title>
       <link>https://garyforreal.me/en/posts/paper/paper-2025-12-09-weekly/</link>
-      <pubDate>Tue, 09 Dec 2025 01:30:00 +0000</pubDate>
+      <pubDate>Tue, 09 Dec 2025 00:13:56 +0000</pubDate>
       <guid>https://garyforreal.me/en/posts/paper/paper-2025-12-09-weekly/</guid>
       <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
 &lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
@@ -19,6 +31,54 @@
 &lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; David Anugraha, Patrick Amadeus Irawan, Anshul Singh, En-Shiun Annie Lee, Genta Indra Winata
 &lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
 &lt;p&gt;Vision-language models (VLMs) have achieved strong performance in visual question answering (VQA), yet they remain constrained by static training data. Retrieval-Augmented Generation (RAG) mitigates this limitation by enabling access to up-to-date, culturally grounded, and multilingual information; however, multilingual multimodal RAG remains largely underexplored. We introduce M4-RAG, a massive-scale benchmark covering 42 languages and 56 regional dialects and registers, comprising over 80,000 culturally diverse image-question pairs for evaluating retrieval-augmented VQA across languages and modalities. To balance realism with reproducibility, we build a controlled retrieval environment containing millions of carefully curated multilingual documents relevant to the query domains, approximating real-world retrieval conditions while ensuring consistent experimentation. Our systematic evaluation reveals that although RAG consistently benefits smaller VLMs, it fails to scale to larger models and often even degrades their performance, exposing a critical mismatch between model size and current retrieval effectiveness. M4-RAG provides a foundation for advancing next-generation RAG systems capable of reasoning seamlessly across languages, modalities, and cultural contexts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-08</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2025-12-08-weekly/</link>
+      <pubDate>Mon, 08 Dec 2025 04:07:26 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2025-12-08-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;m4-rag-a-massive-scale-multilingual-multi-cultural-multimodal-raghttpsarxivorgabs251205959v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.05959v1&#34;&gt;M4-RAG: A Massive-Scale Multilingual Multi-Cultural Multimodal RAG&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; David Anugraha, Patrick Amadeus Irawan, Anshul Singh, En-Shiun Annie Lee, Genta Indra Winata
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Vision-language models (VLMs) have achieved strong performance in visual question answering (VQA), yet they remain constrained by static training data. Retrieval-Augmented Generation (RAG) mitigates this limitation by enabling access to up-to-date, culturally grounded, and multilingual information; however, multilingual multimodal RAG remains largely underexplored. We introduce M4-RAG, a massive-scale benchmark covering 42 languages and 56 regional dialects and registers, comprising over 80,000 culturally diverse image-question pairs for evaluating retrieval-augmented VQA across languages and modalities. To balance realism with reproducibility, we build a controlled retrieval environment containing millions of carefully curated multilingual documents relevant to the query domains, approximating real-world retrieval conditions while ensuring consistent experimentation. Our systematic evaluation reveals that although RAG consistently benefits smaller VLMs, it fails to scale to larger models and often even degrades their performance, exposing a critical mismatch between model size and current retrieval effectiveness. M4-RAG provides a foundation for advancing next-generation RAG systems capable of reasoning seamlessly across languages, modalities, and cultural contexts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-07</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2025-12-07-weekly/</link>
+      <pubDate>Sun, 07 Dec 2025 07:18:42 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2025-12-07-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-cross-lingual&#34;&gt;🔍 cross-lingual&lt;/h2&gt;
+&lt;h3 id=&#34;kda-knowledge-distillation-adapter-for-cross-lingual-transferhttpsaclanthologyorg2025inlg-main8&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.inlg-main.8/&#34;&gt;KDA: Knowledge Distillation Adapter for Cross-Lingual Transfer&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Tue,)&lt;/p&gt;
+&lt;p&gt;Ta-Bao Nguyen, Nguyen-Phuong Phan, Tung Le and Huy Tien Nguyen in Proceedings of the 18th International Natural Language Generation Conference&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://papersdb.wangyilin-0429.workers.dev/api/save?pid=https://aclanthology.org/papers/2025.inlg-main.8&#34;&gt;📥 Save to Zotero&lt;/a&gt;    &lt;a href=&#34;https://papersdb.wangyilin-0429.workers.dev/api/pdf?pid=https://aclanthology.org/papers/2025.inlg-main.8&#34;&gt;📄 Download PDF&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;are-knowledge-and-reference-in-multilingual-language-models-cross-lingually-consistenthttpsaclanthologyorg2025findings-emnlp267&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.findings-emnlp.267/&#34;&gt;Are Knowledge and Reference in Multilingual Language Models Cross-Lingually Consistent?&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Fri,)&lt;/p&gt;
+&lt;p&gt;Xi Ai, Mahardika Krisna Ihsani and Min-Yen Kan in Findings of the Association for Computational Linguistics: EMNLP 2025&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-04</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2025-12-04-weekly/</link>
+      <pubDate>Thu, 04 Dec 2025 08:53:15 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2025-12-04-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-cross-lingual&#34;&gt;🔍 cross-lingual&lt;/h2&gt;
+&lt;h3 id=&#34;kda-knowledge-distillation-adapter-for-cross-lingual-transferhttpsaclanthologyorg2025inlg-main8&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.inlg-main.8/&#34;&gt;KDA: Knowledge Distillation Adapter for Cross-Lingual Transfer&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Tue,)&lt;/p&gt;
+&lt;p&gt;Ta-Bao Nguyen, Nguyen-Phuong Phan, Tung Le and Huy Tien Nguyen in Proceedings of the 18th International Natural Language Generation Conference&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-code-switching&#34;&gt;🔍 code-switching&lt;/h2&gt;
+&lt;h3 id=&#34;can-code-switched-texts-activate-a-knowledge-switch-in-llms-a-case-study-on-english-korean-code-switchinghttpsaclanthologyorg2025findings-emnlp1215&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.findings-emnlp.1215/&#34;&gt;Can Code-Switched Texts Activate a Knowledge Switch in LLMs? A Case Study on English-Korean Code-Switching&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Fri,)&lt;/p&gt;
+&lt;p&gt;Seoyeon Kim, Huiseo Kim, Chanjun Park, Jinyoung Yeo and Dongha Lee in Findings of the Association for Computational Linguistics: EMNLP 2025&lt;/p&gt;</description>
     </item>
     <item>
       <title>Research_lab_works</title>
