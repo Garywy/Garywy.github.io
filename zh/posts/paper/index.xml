@@ -6,8 +6,20 @@
     <description>Recent content in 论文 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 14 Dec 2025 15:23:14 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Dec 2025 15:23:23 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2025-12-21</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-21-weekly/</link>
+      <pubDate>Sun, 21 Dec 2025 15:23:23 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2025-12-21-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;from-essence-to-defense-adaptive-semantic-aware-watermarking-for-embedding-as-a-service-copyright-protectionhttpsarxivorgabs251216439v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.16439v1&#34;&gt;From Essence to Defense: Adaptive Semantic-aware Watermarking for Embedding-as-a-Service Copyright Protection&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Hao Li, Yubing Ren, Yanan Cao, Yingjie Li, Fang Fang, Xuebin Wang
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Benefiting from the superior capabilities of large language models in natural language understanding and generation, Embeddings-as-a-Service (EaaS) has emerged as a successful commercial paradigm on the web platform. However, prior studies have revealed that EaaS is vulnerable to imitation attacks. Existing methods protect the intellectual property of EaaS through watermarking techniques, but they all ignore the most important properties of embedding: semantics, resulting in limited harmlessness and stealthiness. To this end, we propose SemMark, a novel semantic-based watermarking paradigm for EaaS copyright protection. SemMark employs locality-sensitive hashing to partition the semantic space and inject semantic-aware watermarks into specific regions, ensuring that the watermark signals remain imperceptible and diverse. In addition, we introduce the adaptive watermark weight mechanism based on the local outlier factor to preserve the original embedding distribution. Furthermore, we propose Detect-Sampling and Dimensionality-Reduction attacks and construct four scenarios to evaluate the watermarking method. Extensive experiments are conducted on four popular NLP datasets, and SemMark achieves superior verifiability, diversity, stealthiness, and harmlessness.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2025-12-14</title>
       <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-14-weekly/</link>

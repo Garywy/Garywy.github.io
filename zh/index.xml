@@ -6,8 +6,33 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 21 Dec 2025 04:02:53 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Dec 2025 04:06:59 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2025.12.22. 全球新闻汇总]</title>
+      <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20251222/</link>
+      <pubDate>Mon, 22 Dec 2025 04:06:59 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/news/daily-news-summary-20251222/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20251222/3beebeff872e493faf0465be880ca4bc/c.html&#34;&gt;国务院安委办派出工作组对多地打击盗采矿产资源整治工作进行明查暗访&lt;/a&gt;&lt;/strong&gt; - 2025-12-22T03:39:03+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;  新华社北京12月22日电（记者黄韬铭）记者从国家矿山安监局获悉，按照国务院安委会办公室统一部署，由国家矿山安监局、公安部、自然资源部、生态环境部、市场监管总局、国家能源局等部门带队的6个专项工作组，近日分两批赴全国12个重点地区，开展针对废弃矿洞排查封堵整治、严厉打击盗采盗挖矿产资源行为的明查暗访工作。截至目前，已完成对广西、湖北、贵州、辽宁、河南、湖南、福建等地的明查暗访。  此次明查暗访重点围绕“排查是否全面、封堵是否有效、打击是否有力、机制是否健全”展开，推动压实属地责任，全面拧紧打击盗采“一件事”全链条责任。  截至目前，全国已累计排查出各类废弃矿洞96666个，整体封堵完成率达92.72%。整治工作开展以来，自然资源、公安等有关部门查处盗采矿产资源行为568起，行政处罚338人，移送司法机关处理102起，刑事处罚403人。各地区还对履职不力的属地政府主要负责人及监管人员开展约谈31人次，给予党政纪律处分29人次。  下一步，国务院安委会办公室将继续组织开展明查暗访，推动各地区进一步压实责任，切实筑牢矿产资源保护和安全生产防线。&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-21</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-21-weekly/</link>
+      <pubDate>Sun, 21 Dec 2025 15:23:23 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2025-12-21-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;from-essence-to-defense-adaptive-semantic-aware-watermarking-for-embedding-as-a-service-copyright-protectionhttpsarxivorgabs251216439v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.16439v1&#34;&gt;From Essence to Defense: Adaptive Semantic-aware Watermarking for Embedding-as-a-Service Copyright Protection&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Hao Li, Yubing Ren, Yanan Cao, Yingjie Li, Fang Fang, Xuebin Wang
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Benefiting from the superior capabilities of large language models in natural language understanding and generation, Embeddings-as-a-Service (EaaS) has emerged as a successful commercial paradigm on the web platform. However, prior studies have revealed that EaaS is vulnerable to imitation attacks. Existing methods protect the intellectual property of EaaS through watermarking techniques, but they all ignore the most important properties of embedding: semantics, resulting in limited harmlessness and stealthiness. To this end, we propose SemMark, a novel semantic-based watermarking paradigm for EaaS copyright protection. SemMark employs locality-sensitive hashing to partition the semantic space and inject semantic-aware watermarks into specific regions, ensuring that the watermark signals remain imperceptible and diverse. In addition, we introduce the adaptive watermark weight mechanism based on the local outlier factor to preserve the original embedding distribution. Furthermore, we propose Detect-Sampling and Dimensionality-Reduction attacks and construct four scenarios to evaluate the watermarking method. Extensive experiments are conducted on four popular NLP datasets, and SemMark achieves superior verifiability, diversity, stealthiness, and harmlessness.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2025.12.21. 全球新闻汇总]</title>
       <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20251221/</link>
