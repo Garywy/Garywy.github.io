@@ -6,8 +6,20 @@
     <description>Recent content in 论文 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 21 Dec 2025 15:23:23 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Dec 2025 15:24:24 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2025-12-28</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-28-weekly/</link>
+      <pubDate>Sun, 28 Dec 2025 15:24:24 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2025-12-28-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;model-merging-via-multi-teacher-knowledge-distillationhttpsarxivorgabs251221288v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.21288v1&#34;&gt;Model Merging via Multi-Teacher Knowledge Distillation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Seyed Arshan Dalili, Mehrdad Mahdavi
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Model merging has emerged as a lightweight alternative to joint multi-task learning (MTL), yet the generalization properties of merged models remain largely unexplored. Establishing such theoretical guarantees is non-trivial, as the merging process typically forbids access to the original training data and involves combining fine-tuned models trained on fundamentally heterogeneous data distributions. Without a principled understanding of these dynamics, current methods often rely on heuristics to approximate the optimal combination of parameters. This dependence is most critical in coefficient scaling, the weighting factors that modulate the magnitude of each fine-tuned model&amp;rsquo;s contribution to the shared parameter. However, without a principled objective to guide their selection, these methods lead to brittle performance and are highly sensitive to scaling initialization. We address this gap by (i) establishing a novel flatness-aware PAC-Bayes generalization bound specifically for the model merging setting. This analysis introduces a &amp;ldquo;cross-task heterogeneity&amp;rdquo; term that formally captures the mismatch between diverse fine-tuned model priors and the target multi-task distributions. Guided by this theoretical insight, (ii) we frame model merging as multi-teacher knowledge distillation on scarce, unlabeled data. We formally demonstrate that minimizing the student-teacher Kullback-Leibler divergence directly tightens the upper bound on the merged model&amp;rsquo;s excess risk. Guided by the flatness-aware bound derived, (iii) we operationalize this objective via SAMerging, a method that employs Sharpness-Aware Minimization (SAM) to find flat minima. Empirically, SAMerging establishes a new state of the art across vision and NLP benchmarks, achieving remarkable performance. The code is available at &lt;a href=&#34;https://github.com/arshandalili/SAMerging&#34;&gt;https://github.com/arshandalili/SAMerging&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2025-12-21</title>
       <link>https://garyforreal.me/zh/posts/paper/paper-2025-12-21-weekly/</link>

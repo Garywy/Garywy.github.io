@@ -6,8 +6,33 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 28 Dec 2025 04:10:56 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Dec 2025 04:13:21 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2025.12.29. Global News Roundup]</title>
+      <link>https://garyforreal.me/en/posts/news/daily-news-summary-20251229/</link>
+      <pubDate>Mon, 29 Dec 2025 04:13:21 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/news/daily-news-summary-20251229/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20251229/859d8b814b344c40881d9712afa0f6ab/c.html&#34;&gt;瞭望·第一学习丨新发展理念是关系我国发展全局的深刻变革&lt;/a&gt;&lt;/strong&gt; - 2025-12-29T04:05:09+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;创新发展理念揭示了发展的动力。       ◇新发展理念强调创新、协调、绿色、开放、共享发展协同共促，经济社会发展与环境保护协调共进，实现了向全面协调可持续发展的转变，是对传统发展理念的超越和升华，是我们党在发展理念上的一次质的飞跃，为中国经济社会的高质量发展奠定了坚实的理论基础  货轮在青岛自贸片区装卸货物（2025年11月5日摄） 新华社发（张进刚摄）  《中共中央关于制定国民经济和社会发展第十五个五年规划的建议》提出，经济社会发展以高质量发展为主题。理念是行动的先导，以新发展理念引领高质量发展是我国经济社会发展的指导原则。创新、协调、绿色、开放、共享的新发展理念，是以习近平同志为核心的党中央深刻洞察和科学把握我国发展新阶段基本特征的集中体现，实现了对传统发展理念的系统性变革和创造性超越，进一步科学回答了实现什么样的发展、怎样实现发展的问题，在战略性、纲领性高度上引领我国发展全局深刻变革。  对社会主义经济发展规律的全新总结和系统概括  新时代新阶段，以习近平同志为核心的党中央以马克思主义唯物史观为理论基础，对社会主义经济发展规律进行了全面梳理与深度洞察，进而作出全新总结与系统概括&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-28</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2025-12-28-weekly/</link>
+      <pubDate>Sun, 28 Dec 2025 15:24:24 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2025-12-28-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;model-merging-via-multi-teacher-knowledge-distillationhttpsarxivorgabs251221288v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.21288v1&#34;&gt;Model Merging via Multi-Teacher Knowledge Distillation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Seyed Arshan Dalili, Mehrdad Mahdavi
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Model merging has emerged as a lightweight alternative to joint multi-task learning (MTL), yet the generalization properties of merged models remain largely unexplored. Establishing such theoretical guarantees is non-trivial, as the merging process typically forbids access to the original training data and involves combining fine-tuned models trained on fundamentally heterogeneous data distributions. Without a principled understanding of these dynamics, current methods often rely on heuristics to approximate the optimal combination of parameters. This dependence is most critical in coefficient scaling, the weighting factors that modulate the magnitude of each fine-tuned model&amp;rsquo;s contribution to the shared parameter. However, without a principled objective to guide their selection, these methods lead to brittle performance and are highly sensitive to scaling initialization. We address this gap by (i) establishing a novel flatness-aware PAC-Bayes generalization bound specifically for the model merging setting. This analysis introduces a &amp;ldquo;cross-task heterogeneity&amp;rdquo; term that formally captures the mismatch between diverse fine-tuned model priors and the target multi-task distributions. Guided by this theoretical insight, (ii) we frame model merging as multi-teacher knowledge distillation on scarce, unlabeled data. We formally demonstrate that minimizing the student-teacher Kullback-Leibler divergence directly tightens the upper bound on the merged model&amp;rsquo;s excess risk. Guided by the flatness-aware bound derived, (iii) we operationalize this objective via SAMerging, a method that employs Sharpness-Aware Minimization (SAM) to find flat minima. Empirically, SAMerging establishes a new state of the art across vision and NLP benchmarks, achieving remarkable performance. The code is available at &lt;a href=&#34;https://github.com/arshandalili/SAMerging&#34;&gt;https://github.com/arshandalili/SAMerging&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2025.12.28. Global News Roundup]</title>
       <link>https://garyforreal.me/en/posts/news/daily-news-summary-20251228/</link>
@@ -322,6 +347,30 @@
 &lt;p&gt;美国总统特朗普8日在社交媒体上称，他计划于本周签署一项行政令，在联邦层面统一对人工智能领域的监管规则，限制各州各自制定规则。       新华社华盛顿12月8日电（记者熊茂伶　杨伶）美国总统特朗普8日在社交媒体上称，他计划于本周签署一项行政令，在联邦层面统一对人工智能领域的监管规则，限制各州各自制定规则。  特朗普当天在“真实社交”平台上发文称，如果美国想要继续在人工智能领域保持领先，就必须只有一套规则。如果让50个州——其中许多还是“不良行为者”——参与制定规则和审批流程，美国这种领先地位不会持续太久。“你不能指望一家企业每次想做点什么，都得先获得50个州批准。那根本行不通！”特朗普说。  美国开放人工智能研究中心（OpenAI）首席执行官萨姆·奥尔特曼5月在国会听证会发言时表示，美国的人工智能发展不应被监管所放缓。“很难想象我们如何去遵守50套不同的法规，”奥尔特曼说，如果每个州都采取不同做法，这将带来很大负担，显著削弱企业的能力。  美国有线电视新闻网报道指出，在缺乏联邦立法的情况下，一些州已经通过法律，以应对人工智能可能带来的风险和伤害。针对特朗普最新表态，有美国媒体刊文表示担&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Weekly Paper Notes - 2025-12-09</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2025-12-09-weekly/</link>
+      <pubDate>Tue, 09 Dec 2025 00:13:56 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2025-12-09-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;m4-rag-a-massive-scale-multilingual-multi-cultural-multimodal-raghttpsarxivorgabs251205959v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.05959v1&#34;&gt;M4-RAG: A Massive-Scale Multilingual Multi-Cultural Multimodal RAG&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; David Anugraha, Patrick Amadeus Irawan, Anshul Singh, En-Shiun Annie Lee, Genta Indra Winata
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Vision-language models (VLMs) have achieved strong performance in visual question answering (VQA), yet they remain constrained by static training data. Retrieval-Augmented Generation (RAG) mitigates this limitation by enabling access to up-to-date, culturally grounded, and multilingual information; however, multilingual multimodal RAG remains largely underexplored. We introduce M4-RAG, a massive-scale benchmark covering 42 languages and 56 regional dialects and registers, comprising over 80,000 culturally diverse image-question pairs for evaluating retrieval-augmented VQA across languages and modalities. To balance realism with reproducibility, we build a controlled retrieval environment containing millions of carefully curated multilingual documents relevant to the query domains, approximating real-world retrieval conditions while ensuring consistent experimentation. Our systematic evaluation reveals that although RAG consistently benefits smaller VLMs, it fails to scale to larger models and often even degrades their performance, exposing a critical mismatch between model size and current retrieval effectiveness. M4-RAG provides a foundation for advancing next-generation RAG systems capable of reasoning seamlessly across languages, modalities, and cultural contexts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-08</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2025-12-08-weekly/</link>
+      <pubDate>Mon, 08 Dec 2025 04:07:26 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2025-12-08-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;m4-rag-a-massive-scale-multilingual-multi-cultural-multimodal-raghttpsarxivorgabs251205959v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2512.05959v1&#34;&gt;M4-RAG: A Massive-Scale Multilingual Multi-Cultural Multimodal RAG&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; David Anugraha, Patrick Amadeus Irawan, Anshul Singh, En-Shiun Annie Lee, Genta Indra Winata
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2025)&lt;/p&gt;
+&lt;p&gt;Vision-language models (VLMs) have achieved strong performance in visual question answering (VQA), yet they remain constrained by static training data. Retrieval-Augmented Generation (RAG) mitigates this limitation by enabling access to up-to-date, culturally grounded, and multilingual information; however, multilingual multimodal RAG remains largely underexplored. We introduce M4-RAG, a massive-scale benchmark covering 42 languages and 56 regional dialects and registers, comprising over 80,000 culturally diverse image-question pairs for evaluating retrieval-augmented VQA across languages and modalities. To balance realism with reproducibility, we build a controlled retrieval environment containing millions of carefully curated multilingual documents relevant to the query domains, approximating real-world retrieval conditions while ensuring consistent experimentation. Our systematic evaluation reveals that although RAG consistently benefits smaller VLMs, it fails to scale to larger models and often even degrades their performance, exposing a critical mismatch between model size and current retrieval effectiveness. M4-RAG provides a foundation for advancing next-generation RAG systems capable of reasoning seamlessly across languages, modalities, and cultural contexts.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>[2025.12.08. Global News Roundup]</title>
       <link>https://garyforreal.me/en/posts/news/daily-news-summary-20251208/</link>
       <pubDate>Mon, 08 Dec 2025 03:57:24 +0000</pubDate>
@@ -333,6 +382,24 @@
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20251208/d1c7e415573f4fb4ab4b3feb694ec336/c.html&#34;&gt;特朗普对泽连斯基“失望” 美媒：时机耐人寻味&lt;/a&gt;&lt;/strong&gt; - 2025-12-08T03:50:49+00:00&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;  新华社北京12月8日电 美国总统特朗普7日晚说，对乌克兰总统泽连斯基感到“失望”，因为后者“还没读过”美方提出的“和平计划”。7日，俄罗斯对美国国家安全战略报告表示“欢迎”。美国媒体表示，特朗普表态的时机耐人寻味。  “我不得不说，对于泽连斯基总统至今没有读过该提议，我有点失望。”特朗普当晚在华盛顿肯尼迪中心出席一场活动时告诉记者，“不过，他的人民喜欢这个计划”。  10月17日，在美国首都华盛顿白宫，美国总统特朗普（左二）欢迎乌克兰总统泽连斯基（左三）。新华社记者 胡友松 摄  特朗普当晚还说，美方近来分别与俄罗斯和乌克兰两国领导人就“和平计划”展开会谈，“我相信，俄罗斯对此没意见，但我不确信泽连斯基对此是否没意见”。  美国和乌克兰代表团6日结束在美国佛罗里达州迈阿密举行的3天会谈，双方主要讨论了领土和安全保障问题。泽连斯基7日表示，与美方就“和平计划”的谈判具有建设性，但过程并不容易。  据美国阿克西奥斯新闻网站报道，泽连斯基6日与特朗普特使威特科夫和特朗普女婿库什纳进行了两小时的电话会议。乌方谈判代表预计将于8日从迈阿密返回欧洲，并在英国首都伦敦向泽连斯基通报美方新提议。泽&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-07</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2025-12-07-weekly/</link>
+      <pubDate>Sun, 07 Dec 2025 07:18:42 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2025-12-07-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-cross-lingual&#34;&gt;🔍 cross-lingual&lt;/h2&gt;
+&lt;h3 id=&#34;kda-knowledge-distillation-adapter-for-cross-lingual-transferhttpsaclanthologyorg2025inlg-main8&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.inlg-main.8/&#34;&gt;KDA: Knowledge Distillation Adapter for Cross-Lingual Transfer&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Tue,)&lt;/p&gt;
+&lt;p&gt;Ta-Bao Nguyen, Nguyen-Phuong Phan, Tung Le and Huy Tien Nguyen in Proceedings of the 18th International Natural Language Generation Conference&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://papersdb.wangyilin-0429.workers.dev/api/save?pid=https://aclanthology.org/papers/2025.inlg-main.8&#34;&gt;📥 Save to Zotero&lt;/a&gt;    &lt;a href=&#34;https://papersdb.wangyilin-0429.workers.dev/api/pdf?pid=https://aclanthology.org/papers/2025.inlg-main.8&#34;&gt;📄 Download PDF&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;are-knowledge-and-reference-in-multilingual-language-models-cross-lingually-consistenthttpsaclanthologyorg2025findings-emnlp267&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.findings-emnlp.267/&#34;&gt;Are Knowledge and Reference in Multilingual Language Models Cross-Lingually Consistent?&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Fri,)&lt;/p&gt;
+&lt;p&gt;Xi Ai, Mahardika Krisna Ihsani and Min-Yen Kan in Findings of the Association for Computational Linguistics: EMNLP 2025&lt;/p&gt;</description>
     </item>
     <item>
       <title>[2025.12.07. Global News Roundup]</title>
@@ -384,6 +451,24 @@
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20251205/e5aa8ee552b74a289d0d5b4a86bf3ff7/c.html&#34;&gt;“携手共筑安全：中国和非洲在行动”研讨会在埃塞俄比亚举行&lt;/a&gt;&lt;/strong&gt; - 2025-12-05T03:52:36+00:00&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;　　新华社亚的斯亚贝巴12月4日电（记者刘方强）“携手共筑安全：中国和非洲在行动”国际研讨会4日在位于埃塞俄比亚首都亚的斯亚贝巴的非洲联盟（非盟）总部举行，多国使节及非盟、联合国和智库媒体代表等参会。　　中国外交部安全司司长王立新在致辞时表示，当前国际形势变乱交织，中国推进“十五五”建设为世界带来广阔机遇。中非应携手践行全球安全倡议、全球治理倡议，推进和平安全的现代化，推动完善全球治理体系，共筑高水平中非命运共同体，为人类和平发展事业作出更大贡献。　　非盟委员会主席办公室副主任穆萨·穆罕默德·奥马尔说，如今非洲大陆所面临的安全问题并非局限于本地区，包括恐怖主义、武器非法流通和气候变化等。全球安全倡议坚持共同、综合、合作、可持续的安全观，这与非洲的主张不谋而合。　　中国驻非盟使团团长蒋烽发言时表示，全球安全倡议符合非洲国家寻求自主解决冲突、反对外部干涉的意愿。中方愿同非方一道，推动倡议在非洲落地生根，共筑新时代全天候中非命运共同体。　　联合国秘书长驻非盟特别代表帕尔费·奥南加-安扬加指出，全球安全倡议承诺遵守联合国宪章，维护以联合国为核心的国际体系和以国际法为基础的国际秩序，联合国对此表&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2025-12-04</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2025-12-04-weekly/</link>
+      <pubDate>Thu, 04 Dec 2025 08:53:15 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2025-12-04-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-cross-lingual&#34;&gt;🔍 cross-lingual&lt;/h2&gt;
+&lt;h3 id=&#34;kda-knowledge-distillation-adapter-for-cross-lingual-transferhttpsaclanthologyorg2025inlg-main8&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.inlg-main.8/&#34;&gt;KDA: Knowledge Distillation Adapter for Cross-Lingual Transfer&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Tue,)&lt;/p&gt;
+&lt;p&gt;Ta-Bao Nguyen, Nguyen-Phuong Phan, Tung Le and Huy Tien Nguyen in Proceedings of the 18th International Natural Language Generation Conference&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-code-switching&#34;&gt;🔍 code-switching&lt;/h2&gt;
+&lt;h3 id=&#34;can-code-switched-texts-activate-a-knowledge-switch-in-llms-a-case-study-on-english-korean-code-switchinghttpsaclanthologyorg2025findings-emnlp1215&#34;&gt;&lt;a href=&#34;https://aclanthology.org/2025.findings-emnlp.1215/&#34;&gt;Can Code-Switched Texts Activate a Knowledge Switch in LLMs? A Case Study on English-Korean Code-Switching&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt;
+&lt;strong&gt;Venue:&lt;/strong&gt;  (Fri,)&lt;/p&gt;
+&lt;p&gt;Seoyeon Kim, Huiseo Kim, Chanjun Park, Jinyoung Yeo and Dongha Lee in Findings of the Association for Computational Linguistics: EMNLP 2025&lt;/p&gt;</description>
     </item>
     <item>
       <title>[2025.12.04. Global News Roundup]</title>
