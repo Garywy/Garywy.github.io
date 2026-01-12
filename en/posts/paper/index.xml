@@ -6,8 +6,20 @@
     <description>Recent content in Paper on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Jan 2026 15:23:50 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jan 2026 15:25:07 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-01-11</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-01-11-weekly/</link>
+      <pubDate>Sun, 11 Jan 2026 15:25:07 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-01-11-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;code-mix-sentiment-analysis-on-hinglish-tweetshttpsarxivorgabs260105091v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2601.05091v1&#34;&gt;Code-Mix Sentiment Analysis on Hinglish Tweets&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Aashi Garg, Aneshya Das, Arshi Arya, Anushka Goyal, Aditi
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;The effectiveness of brand monitoring in India is increasingly challenged by the rise of Hinglish&amp;ndash;a hybrid of Hindi and English&amp;ndash;used widely in user-generated content on platforms like Twitter. Traditional Natural Language Processing (NLP) models, built for monolingual data, often fail to interpret the syntactic and semantic complexity of this code-mixed language, resulting in inaccurate sentiment analysis and misleading market insights. To address this gap, we propose a high-performance sentiment classification framework specifically designed for Hinglish tweets. Our approach fine-tunes mBERT (Multilingual BERT), leveraging its multilingual capabilities to better understand the linguistic diversity of Indian social media. A key component of our methodology is the use of subword tokenization, which enables the model to effectively manage spelling variations, slang, and out-of-vocabulary terms common in Romanized Hinglish. This research delivers a production-ready AI solution for brand sentiment tracking and establishes a strong benchmark for multilingual NLP in low-resource, code-mixed environments.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-01-04</title>
       <link>https://garyforreal.me/en/posts/paper/paper-2026-01-04-weekly/</link>

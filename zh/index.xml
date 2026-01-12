@@ -6,8 +6,33 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 11 Jan 2026 04:13:01 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Jan 2026 04:13:53 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.01.12. 全球新闻汇总]</title>
+      <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20260112/</link>
+      <pubDate>Mon, 12 Jan 2026 04:13:53 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/news/daily-news-summary-20260112/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20260112/c771524cfcef44259a699d900cbf7b5b/c.html&#34;&gt;六部门：医疗卫生机构不得开展殡仪服务&lt;/a&gt;&lt;/strong&gt; - 2026-01-12T04:09:34+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;  新华社北京1月12日电（记者李恒）根据国家卫生健康委等6部门12日公布的《医疗卫生机构亡故患者全流程服务管理规定》，医疗卫生机构应立足主责主业，不得开展殡仪服务。  根据规定，严禁在医疗卫生机构内任何场所陈列、展示、售卖殡仪服务用品，不得燃点香烛及焚烧祭祀用品等。严禁外包或以其他形式由第三方运营、管理遗体暂存区（或太平间），严禁通过出租出借场地、与第三方合作、购买服务等方式引入相关组织或个人在医疗卫生机构内提供殡仪服务。  殡葬是关系千家万户的民生问题，关乎群众的切身利益。规定明确了死亡证明签发主体、签发流程、死亡证明管理、遗体暂存区设置、亡故患者遗体转运管理、遗体暂存区管理、亡故患者遗体及时转出、医疗卫生机构涉亡故患者服务范围、亡故患者及家属个人信息保护、部门协同监管、违规违纪违法问题查处、政策法规宣传引导等十二条内容。  规定还强调，医疗卫生机构严禁接收和存放院外来源的遗体，不得承担其他部门委托的遗体存放业务。严禁使用院前急救车辆、非急救医疗转运车辆转运遗体。医疗卫生机构要加强内部重点场所巡视管理，防范并及时制止社会人员在本机构内开展殡仪服务的行为。&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-01-11</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-01-11-weekly/</link>
+      <pubDate>Sun, 11 Jan 2026 15:25:07 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-01-11-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;code-mix-sentiment-analysis-on-hinglish-tweetshttpsarxivorgabs260105091v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2601.05091v1&#34;&gt;Code-Mix Sentiment Analysis on Hinglish Tweets&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Aashi Garg, Aneshya Das, Arshi Arya, Anushka Goyal, Aditi
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;The effectiveness of brand monitoring in India is increasingly challenged by the rise of Hinglish&amp;ndash;a hybrid of Hindi and English&amp;ndash;used widely in user-generated content on platforms like Twitter. Traditional Natural Language Processing (NLP) models, built for monolingual data, often fail to interpret the syntactic and semantic complexity of this code-mixed language, resulting in inaccurate sentiment analysis and misleading market insights. To address this gap, we propose a high-performance sentiment classification framework specifically designed for Hinglish tweets. Our approach fine-tunes mBERT (Multilingual BERT), leveraging its multilingual capabilities to better understand the linguistic diversity of Indian social media. A key component of our methodology is the use of subword tokenization, which enables the model to effectively manage spelling variations, slang, and out-of-vocabulary terms common in Romanized Hinglish. This research delivers a production-ready AI solution for brand sentiment tracking and establishes a strong benchmark for multilingual NLP in low-resource, code-mixed environments.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.01.11. 全球新闻汇总]</title>
       <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20260111/</link>
