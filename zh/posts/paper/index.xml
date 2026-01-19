@@ -6,8 +6,20 @@
     <description>Recent content in 论文 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 11 Jan 2026 15:25:07 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Jan 2026 15:24:18 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-01-18</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-01-18-weekly/</link>
+      <pubDate>Sun, 18 Jan 2026 15:24:18 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-01-18-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;curve-a-benchmark-for-cultural-and-multilingual-long-video-reasoninghttpsarxivorgabs260110649v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2601.10649v1&#34;&gt;CURVE: A Benchmark for Cultural and Multilingual Long Video Reasoning&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Darshan Singh, Arsha Nagrani, Kawshik Manikantan, Harman Singh, Dinesh Tewari, Tobias Weyand, Cordelia Schmid, Anelia Angelova, Shachi Dave
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Recent advancements in video models have shown tremendous progress, particularly in long video understanding. However, current benchmarks predominantly feature western-centric data and English as the dominant language, introducing significant biases in evaluation. To address this, we introduce CURVE (Cultural Understanding and Reasoning in Video Evaluation), a challenging benchmark for multicultural and multilingual video reasoning. CURVE comprises high-quality, entirely human-generated annotations from diverse, region-specific cultural videos across 18 global locales. Unlike prior work that relies on automatic translations, CURVE provides complex questions, answers, and multi-step reasoning steps, all crafted in native languages. Making progress on CURVE requires a deeply situated understanding of visual cultural context. Furthermore, we leverage CURVE&amp;rsquo;s reasoning traces to construct evidence-based graphs and propose a novel iterative strategy using these graphs to identify fine-grained errors in reasoning. Our evaluations reveal that SoTA Video-LLMs struggle significantly, performing substantially below human-level accuracy, with errors primarily stemming from the visual perception of cultural elements. CURVE will be publicly available under &lt;a href=&#34;https://github.com/google-deepmind/neptune?tab=readme-ov-file&#34;&gt;https://github.com/google-deepmind/neptune?tab=readme-ov-file&lt;/a&gt;#minerva-cultural&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-01-11</title>
       <link>https://garyforreal.me/zh/posts/paper/paper-2026-01-11-weekly/</link>

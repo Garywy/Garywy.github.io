@@ -6,8 +6,33 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 18 Jan 2026 04:08:53 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jan 2026 04:15:23 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.01.19. Global News Roundup]</title>
+      <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260119/</link>
+      <pubDate>Mon, 19 Jan 2026 04:15:23 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/news/daily-news-summary-20260119/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20260119/8fd6adbc13874749a436b717bd28e229/c.html&#34;&gt;离岛免税购物火爆显示海南国际旅游消费中心活力&lt;/a&gt;&lt;/strong&gt; - 2026-01-19T04:05:55+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;  新华社海口1月19日电 题：离岛免税购物火爆显示海南国际旅游消费中心活力  新华社记者周慧敏  位于海南三亚海棠湾的三亚国际免税城内人潮涌动，收银台前等待结账的顾客排起长龙。来自白俄罗斯的游客安东入手了一款中意的手机。  “这款手机的价格比在白俄罗斯便宜多了！”安东说，这是他和家人第二次来海南度假，“这里的冬天很温暖”。  1月10日，顾客在海南三亚国际免税城购物。新华社记者 郭程 摄  隆冬时节，海南进入了旅游旺季。对于许多游客而言，免税购物已经成为行程中不可或缺的一环。自2025年12月18日海南自贸港正式启动全岛封关运作以来，海南离岛免税购物尤为火爆，凸显出海南建设国际旅游消费中心的强劲活力与巨大潜力。  据海口海关统计，2025年12月18日至2026年1月17日，海口海关共监管离岛免税购物金额48.6亿元，同比增长46.8%；购物人数74.5万人次，同比增长30.2%；购物件数349.4万件，同比增长14.6%。  免税消费的火爆，既源于全岛封关带来的超高人气，也得益于政策红利的集中释放。为推进更高水平对外开放，更好满足旅客多元化购物需求，自2025年11月1日起，海南离&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-01-18</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-01-18-weekly/</link>
+      <pubDate>Sun, 18 Jan 2026 15:24:18 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-01-18-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;curve-a-benchmark-for-cultural-and-multilingual-long-video-reasoninghttpsarxivorgabs260110649v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2601.10649v1&#34;&gt;CURVE: A Benchmark for Cultural and Multilingual Long Video Reasoning&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Darshan Singh, Arsha Nagrani, Kawshik Manikantan, Harman Singh, Dinesh Tewari, Tobias Weyand, Cordelia Schmid, Anelia Angelova, Shachi Dave
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Recent advancements in video models have shown tremendous progress, particularly in long video understanding. However, current benchmarks predominantly feature western-centric data and English as the dominant language, introducing significant biases in evaluation. To address this, we introduce CURVE (Cultural Understanding and Reasoning in Video Evaluation), a challenging benchmark for multicultural and multilingual video reasoning. CURVE comprises high-quality, entirely human-generated annotations from diverse, region-specific cultural videos across 18 global locales. Unlike prior work that relies on automatic translations, CURVE provides complex questions, answers, and multi-step reasoning steps, all crafted in native languages. Making progress on CURVE requires a deeply situated understanding of visual cultural context. Furthermore, we leverage CURVE&amp;rsquo;s reasoning traces to construct evidence-based graphs and propose a novel iterative strategy using these graphs to identify fine-grained errors in reasoning. Our evaluations reveal that SoTA Video-LLMs struggle significantly, performing substantially below human-level accuracy, with errors primarily stemming from the visual perception of cultural elements. CURVE will be publicly available under &lt;a href=&#34;https://github.com/google-deepmind/neptune?tab=readme-ov-file&#34;&gt;https://github.com/google-deepmind/neptune?tab=readme-ov-file&lt;/a&gt;#minerva-cultural&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.01.18. Global News Roundup]</title>
       <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260118/</link>
