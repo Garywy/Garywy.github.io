@@ -6,8 +6,33 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 25 Jan 2026 04:16:57 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Jan 2026 04:19:37 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.01.26. 全球新闻汇总]</title>
+      <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20260126/</link>
+      <pubDate>Mon, 26 Jan 2026 04:19:37 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/news/daily-news-summary-20260126/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20260126/0521c084f10c421fab5dede89c88e0e5/c.html&#34;&gt;一架私人商务飞机在美国缅因州坠毁&lt;/a&gt;&lt;/strong&gt; - 2026-01-26T03:56:45+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;  新华社旧金山1月25日电（记者吴晓凌）一架搭载8人的私人商务飞机25日晚在美国缅因州班戈国际机场起飞时坠毁。  据美媒报道，失事飞机为一架庞巴迪公务机。事故发生时机上共有8人，伤亡情况尚不清楚。  班戈国际机场当晚发表声明说，机场应急救援人员19时45分接到坠毁消息并迅速处置，机场暂时关闭。缅因州多地消防部门接到飞机坠毁报告后派员前往该机场进行救援。缅因州警察也赶赴现场协助班戈市警察处理。  美国联邦航空局发表声明说，美国联邦航空局和美国国家运输安全委员会将对该起事故展开调查。  美国东北部地区目前正遭遇大范围暴风雪天气。据报道，坠毁事故发生时，班戈国际机场能见度较低。&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-01-25</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-01-25-weekly/</link>
+      <pubDate>Sun, 25 Jan 2026 15:25:20 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-01-25-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;improving-training-efficiency-and-reducing-maintenance-costs-via-language-specific-model-merginghttpsarxivorgabs260116127v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2601.16127v1&#34;&gt;Improving Training Efficiency and Reducing Maintenance Costs via Language Specific Model Merging&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Alphaeus Dmonte, Vidhi Gupta, Daniel J Perry, Mark Arehart
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Fine-tuning a task-specific multilingual large language model (LLM) involves training the model on a multilingual dataset with examples in all the required languages. Updating one or more supported languages with additional data or adding support for a new language involves retraining the model, which can be computationally inefficient and creates a severe maintenance bottleneck. Recent research on merging multilingual multitask models has shown promise in terms of improved quality, but its computational and maintenance efficiency remains unstudied. In this work, we provide the first focused analysis of this merging strategy from an efficiency perspective, evaluating it across three independent tasks. We demonstrate significant efficiency gains while maintaining parity in terms of quality: this merging approach reduces the initial training time by up to 50%. We also demonstrate that updating an individual language and re-merging as part of model maintenance reduces training costs by more than 60%, compared to re-training the full multilingual model. We show this on both public and proprietary industry datasets confirming that the approach works well for industrial use cases in addition to academic settings already studied in previous work.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.01.25. 全球新闻汇总]</title>
       <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20260125/</link>
