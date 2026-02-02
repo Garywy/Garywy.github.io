@@ -6,8 +6,33 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 01 Feb 2026 05:06:12 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Feb 2026 05:02:28 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.02.02. 全球新闻汇总]</title>
+      <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20260202/</link>
+      <pubDate>Mon, 02 Feb 2026 05:02:28 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/news/daily-news-summary-20260202/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20260202/4a285d41690743cda98a7862736a4d5b/c.html&#34;&gt;金建希就首案一审判决提出上诉&lt;/a&gt;&lt;/strong&gt; - 2026-02-02T04:55:54+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;　　新华社首尔2月2日电（记者黄昕欣）据韩国YTN电视台2日报道，前总统尹锡悦妻子金建希表示对首案一审判决结果不服并提出上诉。&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-02-01</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-02-01-weekly/</link>
+      <pubDate>Sun, 01 Feb 2026 15:30:48 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-02-01-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;just-dub-it-video-dubbing-via-joint-audio-visual-diffusionhttpsarxivorgabs260122143v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2601.22143v1&#34;&gt;JUST-DUB-IT: Video Dubbing via Joint Audio-Visual Diffusion&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Anthony Chen, Naomi Ken Korem, Tavi Halperin, Matan Ben Yosef, Urska Jelercic, Ofir Bibi, Or Patashnik, Daniel Cohen-Or
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Audio-Visual Foundation Models, which are pretrained to jointly generate sound and visual content, have recently shown an unprecedented ability to model multi-modal generation and editing, opening new opportunities for downstream tasks. Among these tasks, video dubbing could greatly benefit from such priors, yet most existing solutions still rely on complex, task-specific pipelines that struggle in real-world settings. In this work, we introduce a single-model approach that adapts a foundational audio-video diffusion model for video-to-video dubbing via a lightweight LoRA. The LoRA enables the model to condition on an input audio-video while jointly generating translated audio and synchronized facial motion. To train this LoRA, we leverage the generative model itself to synthesize paired multilingual videos of the same speaker. Specifically, we generate multilingual videos with language switches within a single clip, and then inpaint the face and audio in each half to match the language of the other half. By leveraging the rich generative prior of the audio-visual model, our approach preserves speaker identity and lip synchronization while remaining robust to complex motion and real-world dynamics. We demonstrate that our approach produces high-quality dubbed videos with improved visual fidelity, lip synchronization, and robustness compared to existing dubbing pipelines.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.02.01. 全球新闻汇总]</title>
       <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20260201/</link>
