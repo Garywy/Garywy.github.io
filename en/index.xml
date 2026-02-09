@@ -6,8 +6,33 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Feb 2026 05:08:17 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Feb 2026 05:06:32 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.02.09. Global News Roundup]</title>
+      <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260209/</link>
+      <pubDate>Mon, 09 Feb 2026 05:06:32 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/news/daily-news-summary-20260209/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20260209/69a369f681154c9a99f4021d9367a262/c.html&#34;&gt;贵州省自然资源厅原一级巡视员郭强接受纪律审查和监察调查&lt;/a&gt;&lt;/strong&gt; - 2026-02-09T04:46:47+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;据贵州省纪委监委9日通报，贵州省自然资源厅原一级巡视员郭强涉嫌严重违纪违法，目前正接受贵州省纪委监委纪律审查和监察调查。       新华社贵阳2月9日电（记者杨欣）据贵州省纪委监委9日通报，贵州省自然资源厅原一级巡视员郭强涉嫌严重违纪违法，目前正接受贵州省纪委监委纪律审查和监察调查。&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-02-08</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-02-08-weekly/</link>
+      <pubDate>Sun, 08 Feb 2026 15:31:07 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-02-08-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;self-improving-multilingual-long-reasoning-via-translation-reasoning-integrated-traininghttpsarxivorgabs260205940v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2602.05940v1&#34;&gt;Self-Improving Multilingual Long Reasoning via Translation-Reasoning Integrated Training&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Junxiao Liu, Zhijun Wang, Yixiao Li, Zhejian Lai, Liqian Huang, Xin Huang, Xue Han, Junlan Feng, Shujian Huang
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Long reasoning models often struggle in multilingual settings: they tend to reason in English for non-English questions; when constrained to reasoning in the question language, accuracies drop substantially. The struggle is caused by the limited abilities for both multilingual question understanding and multilingual reasoning. To address both problems, we propose TRIT (Translation-Reasoning Integrated Training), a self-improving framework that integrates the training of translation into multilingual reasoning. Without external feedback or additional multilingual data, our method jointly enhances multilingual question understanding and response generation. On MMATH, our method outperforms multiple baselines by an average of 7 percentage points, improving both answer correctness and language consistency. Further analysis reveals that integrating translation training improves cross-lingual question alignment by over 10 percentage points and enhances translation quality for both mathematical questions and general-domain text, with gains up to 8.4 COMET points on FLORES-200.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.02.08. Global News Roundup]</title>
       <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260208/</link>
