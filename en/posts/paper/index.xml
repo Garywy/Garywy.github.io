@@ -6,8 +6,20 @@
     <description>Recent content in Paper on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Feb 2026 15:31:07 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Feb 2026 15:30:24 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-02-15</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-02-15-weekly/</link>
+      <pubDate>Sun, 15 Feb 2026 15:30:24 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-02-15-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;a-technical-curriculum-on-language-oriented-artificial-intelligence-in-translation-and-specialised-communicationhttpsarxivorgabs260212251v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2602.12251v1&#34;&gt;A technical curriculum on language-oriented artificial intelligence in translation and specialised communication&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Ralph Krüger
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;This paper presents a technical curriculum on language-oriented artificial intelligence (AI) in the language and translation (L&amp;amp;T) industry. The curriculum aims to foster domain-specific technical AI literacy among stakeholders in the fields of translation and specialised communication by exposing them to the conceptual and technical/algorithmic foundations of modern language-oriented AI in an accessible way. The core curriculum focuses on 1) vector embeddings, 2) the technical foundations of neural networks, 3) tokenization and 4) transformer neural networks. It is intended to help users develop computational thinking as well as algorithmic awareness and algorithmic agency, ultimately contributing to their digital resilience in AI-driven work environments. The didactic suitability of the curriculum was tested in an AI-focused MA course at the Institute of Translation and Multilingual Communication at TH Koeln. Results suggest the didactic effectiveness of the curriculum, but participant feedback indicates that it should be embedded into higher-level didactic scaffolding - e.g., in the form of lecturer support - in order to enable optimal learning conditions.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-02-08</title>
       <link>https://garyforreal.me/en/posts/paper/paper-2026-02-08-weekly/</link>
