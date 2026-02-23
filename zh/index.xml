@@ -6,8 +6,33 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 22 Feb 2026 04:53:52 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Feb 2026 05:03:33 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.02.23. 全球新闻汇总]</title>
+      <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20260223/</link>
+      <pubDate>Mon, 23 Feb 2026 05:03:33 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/news/daily-news-summary-20260223/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20260223/fef97567f45e47ab97c84e0f3b462394/c.html&#34;&gt;女足亚洲杯灯光秀点亮悉尼夜空&lt;/a&gt;&lt;/strong&gt; - 2026-02-23T04:58:47+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;  为迎接即将到来的2026年女足亚洲杯，500架无人机22日晚点亮悉尼达令港上空。  本届女足亚洲杯将于3月1日至21日在澳大利亚举办，共12支球队参赛，分为三个小组。卫冕冠军中国队与孟加拉国、乌兹别克斯坦、朝鲜队分在B组。  新华社音视频部制作&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-02-22</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-02-22-weekly/</link>
+      <pubDate>Sun, 22 Feb 2026 15:30:32 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-02-22-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;clef-hipe-2026-evaluating-accurate-and-efficient-person-place-relation-extraction-from-multilingual-historical-textshttpsarxivorgabs260217663v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2602.17663v1&#34;&gt;CLEF HIPE-2026: Evaluating Accurate and Efficient Person-Place Relation Extraction from Multilingual Historical Texts&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Juri Opitz, Corina Raclé, Emanuela Boros, Andrianos Michail, Matteo Romanello, Maud Ehrmann, Simon Clematide
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;HIPE-2026 is a CLEF evaluation lab dedicated to person-place relation extraction from noisy, multilingual historical texts. Building on the HIPE-2020 and HIPE-2022 campaigns, it extends the series toward semantic relation extraction by targeting the task of identifying person&amp;ndash;place associations in multiple languages and time periods. Systems are asked to classify relations of two types - $at$ (&amp;ldquo;Has the person ever been at this place?&amp;rdquo;) and $isAt$ (&amp;ldquo;Is the person located at this place around publication time?&amp;rdquo;) - requiring reasoning over temporal and geographical cues. The lab introduces a three-fold evaluation profile that jointly assesses accuracy, computational efficiency, and domain generalization. By linking relation extraction to large-scale historical data processing, HIPE-2026 aims to support downstream applications in knowledge-graph construction, historical biography reconstruction, and spatial analysis in digital humanities.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.02.22. 全球新闻汇总]</title>
       <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20260222/</link>
