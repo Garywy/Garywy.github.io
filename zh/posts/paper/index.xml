@@ -6,8 +6,20 @@
     <description>Recent content in 论文 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 22 Feb 2026 15:30:32 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2026 15:28:56 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-03-01</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-03-01-weekly/</link>
+      <pubDate>Sun, 01 Mar 2026 15:28:56 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-03-01-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;agentvista-evaluating-multimodal-agents-in-ultra-challenging-realistic-visual-scenarioshttpsarxivorgabs260223166v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2602.23166v1&#34;&gt;AgentVista: Evaluating Multimodal Agents in Ultra-Challenging Realistic Visual Scenarios&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Zhaochen Su, Jincheng Gao, Hangyu Guo, Zhenhua Liu, Lueyang Zhang, Xinyu Geng, Shijue Huang, Peng Xia, Guanyu Jiang, Cheng Wang, Yue Zhang, Yi R. Fung, Junxian He
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Real-world multimodal agents solve multi-step workflows grounded in visual evidence. For example, an agent can troubleshoot a device by linking a wiring photo to a schematic and validating the fix with online documentation, or plan a trip by interpreting a transit map and checking schedules under routing constraints. However, existing multimodal benchmarks mainly evaluate single-turn visual reasoning or specific tool skills, and they do not fully capture the realism, visual subtlety, and long-horizon tool use that practical agents require. We introduce AgentVista, a benchmark for generalist multimodal agents that spans 25 sub-domains across 7 categories, pairing realistic and detail-rich visual scenarios with natural hybrid tool use. Tasks require long-horizon tool interactions across modalities, including web search, image search, page navigation, and code-based operations for both image processing and general programming. Comprehensive evaluation of state-of-the-art models exposes significant gaps in their ability to carry out long-horizon multimodal tool use. Even the best model in our evaluation, Gemini-3-Pro with tools, achieves only 27.3% overall accuracy, and hard instances can require more than 25 tool-calling turns. We expect AgentVista to accelerate the development of more capable and reliable multimodal agents for realistic and ultra-challenging problem solving.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-02-22</title>
       <link>https://garyforreal.me/zh/posts/paper/paper-2026-02-22-weekly/</link>
