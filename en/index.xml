@@ -6,8 +6,33 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Mar 2026 04:47:56 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 04:57:08 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.03.09. Global News Roundup]</title>
+      <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260309/</link>
+      <pubDate>Mon, 09 Mar 2026 04:57:08 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/news/daily-news-summary-20260309/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20260309/3230dd608c344a4d94f472ce8e62c51b/c.html&#34;&gt;国际油价暴涨致日韩股市早盘大跌&lt;/a&gt;&lt;/strong&gt; - 2026-03-09T04:47:40+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;　　新华社东京3月9日电（记者刘春燕　李诗萌）受美国和以色列与伊朗军事冲突引发国际油价暴涨冲击，日本东京股市两大股指9日早盘大跌，韩国股市主要股指暴跌先后触发“临时停牌”及熔断机制。　　由于国际油价已突破每桶100美元并仍持续飙升，市场担忧情绪骤然升级，投资者纷纷采取避险抛售操作。当天，日本大阪交易所一度对日经股指期货采取临时熔断措施。早盘结束时，东京股市日经225种股票平均价格指数下跌3880.38点，跌幅为6.98%；东京证券交易所股票价格指数下跌208.21点，跌幅为5.60%。　　大和证券日美股票首席策略师坪井裕豪说，如果油价持续高涨，日本国内生产总值或被拉低数万亿日元，将不可避免地对企业业绩产生影响。　　与此同时，韩国综合股价指数（KOSPI）和被称作“韩版纳斯达克”的高斯达克指数（KOSDAQ）9日开盘均大跌。开盘不久，因韩国KOSPI 200指数期货剧烈波动，韩国证券交易所启动“临时停牌”措施。此后，KOSPI暴跌超8%，触发市场熔断机制。　　据韩联社报道，韩国总统李在明9日表示，中东地区危机加剧对全球贸易以及高度依赖中东能源的韩国经济构成相当大的负担。韩国希望与战略合作&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-03-08</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-03-08-weekly/</link>
+      <pubDate>Sun, 08 Mar 2026 15:28:43 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-03-08-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;leveraging-llm-parametric-knowledge-for-fact-checking-without-retrievalhttpsarxivorgabs260305471v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2603.05471v1&#34;&gt;Leveraging LLM Parametric Knowledge for Fact Checking without Retrieval&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Artem Vazhentsev, Maria Marina, Daniil Moskovskiy, Sergey Pletenev, Mikhail Seleznyov, Mikhail Salnikov, Elena Tutubalina, Vasily Konovalov, Irina Nikishina, Alexander Panchenko, Viktor Moskvoretskii
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Trustworthiness is a core research challenge for agentic AI systems built on Large Language Models (LLMs). To enhance trust, natural language claims from diverse sources, including human-written text, web content, and model outputs, are commonly checked for factuality by retrieving external knowledge and using an LLM to verify the faithfulness of claims to the retrieved evidence. As a result, such methods are constrained by retrieval errors and external data availability, while leaving the models intrinsic fact-verification capabilities largely unused. We propose the task of fact-checking without retrieval, focusing on the verification of arbitrary natural language claims, independent of their source. To study this setting, we introduce a comprehensive evaluation framework focused on generalization, testing robustness to (i) long-tail knowledge, (ii) variation in claim sources, (iii) multilinguality, and (iv) long-form generation. Across 9 datasets, 18 methods and 3 models, our experiments indicate that logit-based approaches often underperform compared to those that leverage internal model representations. Building on this finding, we introduce INTRA, a method that exploits interactions between internal representations and achieves state-of-the-art performance with strong generalization. More broadly, our work establishes fact-checking without retrieval as a promising research direction that can complement retrieval-based frameworks, improve scalability, and enable the use of such systems as reward signals during training or as components integrated into the generation process.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.03.08. Global News Roundup]</title>
       <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260308/</link>
