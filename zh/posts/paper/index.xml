@@ -6,8 +6,20 @@
     <description>Recent content in 论文 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 08 Mar 2026 15:28:43 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Mar 2026 15:33:50 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-03-15</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-03-15-weekly/</link>
+      <pubDate>Sun, 15 Mar 2026 15:33:50 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-03-15-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;long-context-encoder-models-for-polish-language-understandinghttpsarxivorgabs260312191v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2603.12191v1&#34;&gt;Long-Context Encoder Models for Polish Language Understanding&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Sławomir Dadas, Rafał Poświata, Marek Kozłowski, Małgorzata Grębowiec, Michał Perełkiewicz, Paweł Klimiuk, Przemysław Boruta
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;While decoder-only Large Language Models (LLMs) have recently dominated the NLP landscape, encoder-only architectures remain a cost-effective and parameter-efficient standard for discriminative tasks. However, classic encoders like BERT are limited by a short context window, which is insufficient for processing long documents. In this paper, we address this limitation for the Polish by introducing a high-quality Polish model capable of processing sequences of up to 8192 tokens. The model was developed by employing a two-stage training procedure that involves positional embedding adaptation and full parameter continuous pre-training. Furthermore, we propose compressed model variants trained via knowledge distillation. The models were evaluated on 25 tasks, including the KLEJ benchmark, a newly introduced financial task suite (FinBench), and other classification and regression tasks, specifically those requiring long-document understanding. The results demonstrate that our model achieves the best average performance among Polish and multilingual models, significantly outperforming competitive solutions in long-context tasks while maintaining comparable quality on short texts.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-03-08</title>
       <link>https://garyforreal.me/zh/posts/paper/paper-2026-03-08-weekly/</link>
