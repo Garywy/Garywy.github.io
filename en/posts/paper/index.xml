@@ -6,8 +6,20 @@
     <description>Recent content in Paper on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Mar 2026 15:51:35 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2026 15:38:02 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-04-05</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-04-05-weekly/</link>
+      <pubDate>Sun, 05 Apr 2026 15:38:02 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-04-05-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;cv-18-ner-augmented-common-voice-for-named-entity-recognition-from-arabic-speechhttpsarxivorgabs260402209v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2604.02209v1&#34;&gt;CV-18 NER: Augmented Common Voice for Named Entity Recognition from Arabic Speech&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Youssef Saidi, Haroun Elleuch, Fethi Bougares
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;End-to-end speech Named Entity Recognition (NER) aims to directly extract entities from speech. Prior work has shown that end-to-end (E2E) approaches can outperform cascaded pipelines for English, French, and Chinese, but Arabic remains under-explored due to its morphological complexity, the absence of short vowels, and limited annotated resources. We introduce CV-18 NER, the first publicly available dataset for NER from Arabic speech, created by augmenting the Arabic Common Voice 18 corpus with manual NER annotations following the fine-grained Wojood schema (21 entity types). We benchmark both pipeline systems (ASR + text NER) and E2E models based on Whisper and AraBEST-RQ. E2E systems substantially outperform the best pipeline configuration on the test set, reaching 37.0% CoER (AraBEST-RQ 300M) and 38.0% CVER (Whisper-medium). Further analysis shows that Arabic-specific self-supervised pretraining yields strong ASR performance, while multilingual weak supervision transfers more effectively to joint speech-to-entity learning, and that larger models may be harder to adapt in this low-resource setting. Our dataset and models are publicly released, providing the first open benchmark for end-to-end named entity recognition from Arabic speech &lt;a href=&#34;https://huggingface.co/datasets/Elyadata/CV18-NER&#34;&gt;https://huggingface.co/datasets/Elyadata/CV18-NER&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-03-29</title>
       <link>https://garyforreal.me/en/posts/paper/paper-2026-03-29-weekly/</link>
