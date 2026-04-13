@@ -6,8 +6,20 @@
     <description>Recent content in Paper on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 05 Apr 2026 15:38:02 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 15:40:08 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-04-12</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-04-12-weekly/</link>
+      <pubDate>Sun, 12 Apr 2026 15:40:08 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-04-12-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;what-they-saw-not-just-where-they-looked-semantic-scanpath-similarity-via-vlms-and-nlp-metrichttpsarxivorgabs260408494v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2604.08494v1&#34;&gt;What They Saw, Not Just Where They Looked: Semantic Scanpath Similarity via VLMs and NLP metric&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Mohamed Amine Kerkouri, Marouane Tliba, Bin Wang, Aladine Chetouani, Ulas Bagci, Alessandro Bruno
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Scanpath similarity metrics are central to eye-movement research, yet existing methods predominantly evaluate spatial and temporal alignment while neglecting semantic equivalence between attended image regions. We present a semantic scanpath similarity framework that integrates vision-language models (VLMs) into eye-tracking analysis. Each fixation is encoded under controlled visual context (patch-based and marker-based strategies) and transformed into concise textual descriptions, which are aggregated into scanpath-level representations. Semantic similarity is then computed using embedding-based and lexical NLP metrics and compared against established spatial measures, including MultiMatch and DTW. Experiments on free-viewing eye-tracking data demonstrate that semantic similarity captures partially independent variance from geometric alignment, revealing cases of high content agreement despite spatial divergence. We further analyze the impact of contextual encoding on description fidelity and metric stability. Our findings suggest that multimodal foundation models enable interpretable, content-aware extensions of classical scanpath analysis, providing a complementary dimension for gaze research within the ETRA community.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-04-05</title>
       <link>https://garyforreal.me/en/posts/paper/paper-2026-04-05-weekly/</link>
