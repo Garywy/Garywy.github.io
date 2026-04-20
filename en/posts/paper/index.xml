@@ -6,8 +6,20 @@
     <description>Recent content in Paper on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Apr 2026 15:40:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2026 15:43:48 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-04-19</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-04-19-weekly/</link>
+      <pubDate>Sun, 19 Apr 2026 15:43:48 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-04-19-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;prompt-to-gesture-measuring-the-capabilities-of-image-to-video-deictic-gesture-generationhttpsarxivorgabs260414953v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2604.14953v1&#34;&gt;Prompt-to-Gesture: Measuring the Capabilities of Image-to-Video Deictic Gesture Generation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Hassan Ali, Doreen Jirak, Luca Müller, Stefan Wermter
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Gesture recognition research, unlike NLP, continues to face acute data scarcity, with progress constrained by the need for costly human recordings or image processing approaches that cannot generate authentic variability in the gestures themselves. Recent advancements in image-to-video foundation models have enabled the generation of photorealistic, semantically rich videos guided by natural language. These capabilities open up new possibilities for creating effort-free synthetic data, raising the critical question of whether video Generative AI models can augment and complement traditional human-generated gesture data. In this paper, we introduce and analyze prompt-based video generation to construct a realistic deictic gestures dataset and rigorously evaluate its effectiveness for downstream tasks. We propose a data generation pipeline that produces deictic gestures from a small number of reference samples collected from human participants, providing an accessible approach that can be leveraged both within and beyond the machine learning community. Our results demonstrate that the synthetic gestures not only align closely with real ones in terms of visual fidelity but also introduce meaningful variability and novelty that enrich the original data, further supported by superior performance of various deep models using a mixed dataset. These findings highlight that image-to-video techniques, even in their early stages, offer a powerful zero-shot approach to gesture synthesis with clear benefits for downstream tasks.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-04-12</title>
       <link>https://garyforreal.me/en/posts/paper/paper-2026-04-12-weekly/</link>
