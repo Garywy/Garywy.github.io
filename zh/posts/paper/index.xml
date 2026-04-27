@@ -6,8 +6,20 @@
     <description>Recent content in 论文 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 19 Apr 2026 15:43:48 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2026 15:46:51 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-04-26</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-04-26-weekly/</link>
+      <pubDate>Sun, 26 Apr 2026 15:46:51 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-04-26-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;multilinguality-at-the-edge-developing-language-models-for-the-global-southhttpsarxivorgabs260421637v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2604.21637v1&#34;&gt;Multilinguality at the Edge: Developing Language Models for the Global South&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Lester James V. Miranda, Songbo Hu, Roi Reichart, Anna Korhonen
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Where and how language models (LMs) are deployed determines who can benefit from them. However, there are several challenges that prevent effective deployment of LMs in non-English-speaking and hardware constrained communities in the Global South. We call this challenge the last mile: the intersection of multilinguality and edge deployment, where the goals are aligned but the technical requirements often compete. Studying these two fields together is both a need, as linguistically diverse communities often face the most severe infrastructure constraints, and an opportunity, as edge and multilingual NLP research remain largely siloed. To understand the state of the art and the challenges of combining the two areas, we survey 232 papers that tackle this problem across the language modelling pipeline, from data collection to development and deployment. We also discuss open questions and provide actionable recommendations for different stakeholders in the NLP ecosystem. Finally, we hope that this work contributes to the development of inclusive and equitable language technologies.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-04-19</title>
       <link>https://garyforreal.me/zh/posts/paper/paper-2026-04-19-weekly/</link>

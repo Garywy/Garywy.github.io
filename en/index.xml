@@ -6,8 +6,33 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Apr 2026 05:43:56 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 06:06:38 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.04.27. Global News Roundup]</title>
+      <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260427/</link>
+      <pubDate>Mon, 27 Apr 2026 06:06:38 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/news/daily-news-summary-20260427/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20260427/01db85aa26f343eba2261a6605778fd0/c.html&#34;&gt;菲律宾首都国际机场一处工地挖出生锈炸弹&lt;/a&gt;&lt;/strong&gt; - 2026-04-27T06:02:53+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;  新华社马尼拉4月27日电（记者李萌　赵晨捷）据菲律宾媒体27日报道，菲律宾首都马尼拉的国际机场一处工地在26日施工时挖掘出多枚生锈炸弹，初步判断为历史遗留的炸弹。&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-04-26</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-04-26-weekly/</link>
+      <pubDate>Sun, 26 Apr 2026 15:46:51 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-04-26-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;multilinguality-at-the-edge-developing-language-models-for-the-global-southhttpsarxivorgabs260421637v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2604.21637v1&#34;&gt;Multilinguality at the Edge: Developing Language Models for the Global South&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Lester James V. Miranda, Songbo Hu, Roi Reichart, Anna Korhonen
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Where and how language models (LMs) are deployed determines who can benefit from them. However, there are several challenges that prevent effective deployment of LMs in non-English-speaking and hardware constrained communities in the Global South. We call this challenge the last mile: the intersection of multilinguality and edge deployment, where the goals are aligned but the technical requirements often compete. Studying these two fields together is both a need, as linguistically diverse communities often face the most severe infrastructure constraints, and an opportunity, as edge and multilingual NLP research remain largely siloed. To understand the state of the art and the challenges of combining the two areas, we survey 232 papers that tackle this problem across the language modelling pipeline, from data collection to development and deployment. We also discuss open questions and provide actionable recommendations for different stakeholders in the NLP ecosystem. Finally, we hope that this work contributes to the development of inclusive and equitable language technologies.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.04.26. Global News Roundup]</title>
       <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260426/</link>
