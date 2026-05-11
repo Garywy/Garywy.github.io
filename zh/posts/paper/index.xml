@@ -6,8 +6,20 @@
     <description>Recent content in 论文 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 03 May 2026 15:52:35 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 15:58:34 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-05-10</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-05-10-weekly/</link>
+      <pubDate>Sun, 10 May 2026 15:58:34 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-05-10-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;who-and-what-using-linguistic-features-and-annotator-characteristics-to-analyze-annotation-variationhttpsarxivorgabs260506318v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2605.06318v1&#34;&gt;Who and What? Using Linguistic Features and Annotator Characteristics to Analyze Annotation Variation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Maximilian Maurer, Maximilian Linde, Gabriella Lapesa
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Human label variation has been established as a central phenomenon in NLP: the perspectives different annotators have on the same item need to be embraced. Data collection practices thus shifted towards increasing the annotator numbers and releasing disaggregated datasets, harmful language being most resourced due to its high subjectivity. While this resulted in rich information about \textit{who} annotated (sociodemographics, attitudes, etc.), the \textit{what} (e.g., linguistic properties of items), and their interplay has received little attention. We present the first large-scale analysis of four reference datasets for harmful language detection, bringing together annotator characteristics, linguistic properties of the items, and their interactions in a statistically informed picture. We find that interactions are crucial, revealing intersectional effects ignored in previous work, and that a strong role is played by lexical cues and annotator attitudes. Effect patterns, however, vary considerably across datasets. This urges caution about generalization and transferability.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-05-03</title>
       <link>https://garyforreal.me/zh/posts/paper/paper-2026-05-03-weekly/</link>

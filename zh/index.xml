@@ -6,8 +6,39 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 10 May 2026 06:15:56 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 06:43:49 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.05.11. 全球新闻汇总]</title>
+      <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20260511/</link>
+      <pubDate>Mon, 11 May 2026 06:43:49 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/news/daily-news-summary-20260511/</guid>
+      <description>&lt;h2 id=&#34;国家地区-中国&#34;&gt;国家/地区: 中国&lt;/h2&gt;
+&lt;h3 id=&#34;新华社&#34;&gt;新华社&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20260511/ee6722fa0e6a4e2097d0bd23af897211/c.html&#34;&gt;口袋里的光影课丨看见花海找主体&lt;/a&gt;&lt;/strong&gt; - 2026-05-11T06:42:37+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;摄影小口诀：花海在前入画屏古建巍峨衬远景俯身弯腰寻角度长焦定格留光影 记者：邢广利&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://www.news.cn/20260511/d2892b6dadaf464f9b091c418fa95207/c.html&#34;&gt;一名美国人汉坦病毒检测呈弱阳性&lt;/a&gt;&lt;/strong&gt; - 2026-05-11T06:39:55+00:00&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;　　新华社纽约5月10日电（记者徐静）美国卫生与公众服务部10日晚间宣布，搭乘涉汉坦病毒疫情邮轮“洪迪厄斯”号的一名美国人汉坦病毒检测呈弱阳性，另一人出现轻微症状。　　美国卫生与公众服务部在社交媒体上发帖称，搭乘“洪迪厄斯”号邮轮的17名美国公民目前正乘飞机返回美国。出于谨慎考虑，上述两人被安排在飞机的生物隔离单元。另据路透社报道，这名出现轻微症状的乘客尚未被确认感染汉坦病毒。　　美国卫生与公众服务部称，飞机将先把17人送往内布拉斯加州奥马哈市的内布拉斯加大学医学中心。之后每名乘客都将接受临床评估，并根据各自状况得到相应的护理和支持。　　据美国媒体此前报道，多名曾乘坐该邮轮的美籍乘客已在美国接受居家隔离。&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-05-10</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-05-10-weekly/</link>
+      <pubDate>Sun, 10 May 2026 15:58:34 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-05-10-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;who-and-what-using-linguistic-features-and-annotator-characteristics-to-analyze-annotation-variationhttpsarxivorgabs260506318v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2605.06318v1&#34;&gt;Who and What? Using Linguistic Features and Annotator Characteristics to Analyze Annotation Variation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Maximilian Maurer, Maximilian Linde, Gabriella Lapesa
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Human label variation has been established as a central phenomenon in NLP: the perspectives different annotators have on the same item need to be embraced. Data collection practices thus shifted towards increasing the annotator numbers and releasing disaggregated datasets, harmful language being most resourced due to its high subjectivity. While this resulted in rich information about \textit{who} annotated (sociodemographics, attitudes, etc.), the \textit{what} (e.g., linguistic properties of items), and their interplay has received little attention. We present the first large-scale analysis of four reference datasets for harmful language detection, bringing together annotator characteristics, linguistic properties of the items, and their interactions in a statistically informed picture. We find that interactions are crucial, revealing intersectional effects ignored in previous work, and that a strong role is played by lexical cues and annotator attitudes. Effect patterns, however, vary considerably across datasets. This urges caution about generalization and transferability.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.05.10. 全球新闻汇总]</title>
       <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20260510/</link>
