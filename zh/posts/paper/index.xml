@@ -6,8 +6,22 @@
     <description>Recent content in 论文 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 17 May 2026 16:23:41 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 16:13:31 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-05-24</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-05-24-weekly/</link>
+      <pubDate>Sun, 24 May 2026 16:13:31 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-05-24-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;No papers found for this category this week.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-linguistics&#34;&gt;🔍 linguistics&lt;/h2&gt;
+&lt;h3 id=&#34;tokenisation-via-convex-relaxationshttpsarxivorgabs260522821v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2605.22821v1&#34;&gt;Tokenisation via Convex Relaxations&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Jan Tempus, Philip Whittington, Craig W. Schmidt, Dennis Komm, Tiago Pimentel
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Tokenisation is an integral part of the current NLP pipeline. Current tokenisation algorithms such as BPE and Unigram are greedy algorithms &amp;ndash; they make locally optimal decisions without considering the resulting vocabulary as a whole. We instead formulate tokeniser construction as a linear program and solve it using convex optimisation tools, yielding a new algorithm we call ConvexTok. We find ConvexTok consistently improves intrinsic tokenisation metrics and the bits-per-byte (BpB) achieved by language models; it also improves downstream task performance, but less consistently. Furthermore, ConvexTok allows the user to certify how far their tokeniser is from optimal, with respect to a certain objective, via a lower bound, and we empirically find it to be within 1% of optimal at common vocabulary sizes.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-05-17</title>
       <link>https://garyforreal.me/zh/posts/paper/paper-2026-05-17-weekly/</link>
