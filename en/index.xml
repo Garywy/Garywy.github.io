@@ -6,8 +6,27 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 31 May 2026 07:09:30 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 08:47:37 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.06.01. Global News Roundup]</title>
+      <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260601/</link>
+      <pubDate>Mon, 01 Jun 2026 08:47:37 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/news/daily-news-summary-20260601/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-05-31</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-05-31-weekly/</link>
+      <pubDate>Sun, 31 May 2026 16:16:02 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-05-31-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;towards-human-like-interactive-speech-recognition-with-agentic-correction-and-semantic-evaluationhttpsarxivorgabs260529430v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2605.29430v1&#34;&gt;Towards Human-Like Interactive Speech Recognition With Agentic Correction and Semantic Evaluation&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Zixuan Jiang, Yanqiao Zhu, Peng Wang, Qinyuan Chen, Xinjian Zhao, Xipeng Qiu, Wupeng Wang, Zhifu Gao, Xiangang Li, Kai Yu, Xie Chen
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Automatic speech recognition (ASR) is a core component of human&amp;ndash;computer interaction and an increasingly important front-end for LLM-based assistants and agents. However, most current ASR systems still follow a single-pass paradigm, which is poorly aligned with human communication, where misunderstandings are resolved through iterative clarification and refinement. This mismatch makes it difficult to correct meaning-critical errors once they occur. Meanwhile, token-level metrics such as WER or CER cannot adequately reflect such a problem. To address these limitations, we formulate \emph{Interactive ASR} as a multi-turn refinement task and propose \textbf{Agentic ASR}, a closed-loop framework that combines a single-pass ASR front-end with semantic correction, intent routing, and reasoning-based editing. We further introduce the \textbf{Sentence-level Semantic Error Rate} ($S^2ER$), an LLM-based semantic evaluation metric, together with an \textbf{Interactive Simulation System} for scalable and reproducible benchmarking. Experiments on multilingual, named-entity-intensive, and code-switching benchmarks show that iterative interaction consistently reduces semantic errors, with much larger gains in $S^2ER$ than in conventional token-level metrics. Human&amp;ndash;AI alignment and ablation studies further validate the reliability of the semantic judge and the robustness of the proposed framework. The code is available at: &lt;a href=&#34;https://interactiveasr.github.io/&#34;&gt;https://interactiveasr.github.io/&lt;/a&gt; and the live demo is available at &lt;a href=&#34;https://i-asr.sjtuxlance.com/&#34;&gt;https://i-asr.sjtuxlance.com/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.05.31. Global News Roundup]</title>
       <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260531/</link>
