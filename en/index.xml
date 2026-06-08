@@ -6,8 +6,27 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 07 Jun 2026 07:17:23 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 08:23:46 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.06.08. Global News Roundup]</title>
+      <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260608/</link>
+      <pubDate>Mon, 08 Jun 2026 08:23:46 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/news/daily-news-summary-20260608/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-06-07</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-06-07-weekly/</link>
+      <pubDate>Sun, 07 Jun 2026 16:20:17 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-06-07-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;chi-nas-dal-soch-el-sent-de-legn----auditing-text-corpora-for-lombardhttpsarxivorgabs260606349v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2606.06349v1&#34;&gt;&amp;ldquo;Chi nas dal soch el sent de legn&amp;rdquo; &amp;ndash; Auditing Text Corpora for Lombard&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Edoardo Signoroni, Pavel Rychlý
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Several of the world&amp;rsquo;s languages are still under-resourced in terms of Natural Language Processing (NLP) tools. This is mostly due to the lack of high-quality datasets to train, develop, and evaluate systems and models for several tasks, such as Machine Translation (MT). We conduct a manual audit of the parallel and monolingual corpora available for Lombard, an under-resourced language continuum from Italy. Our analysis reveals that the perceived abundance of web-scraped data is an illusion, with massive datasets plagued by severe language misidentification, boilerplate text, and non-linguistic noise. Furthermore, we analyze the orthographic composition of the valid Lombard portions across web-scraped datasets, curated corpora, and benchmarks. Our findings show conflicting orthographical systems and severe representational bias across all corpora: high-quality data is heavily skewed towards Western Lombard varieties, with Eastern ones left on the margins. This underscores the need for variety-aware, community-driven data curation rather than purely quantity-driven scraping.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.06.07. Global News Roundup]</title>
       <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260607/</link>
