@@ -6,8 +6,27 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 05 Jul 2026 06:53:48 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 07:26:04 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.07.06. Global News Roundup]</title>
+      <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260706/</link>
+      <pubDate>Mon, 06 Jul 2026 07:26:04 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/news/daily-news-summary-20260706/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-07-05</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-07-05-weekly/</link>
+      <pubDate>Sun, 05 Jul 2026 16:12:36 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-07-05-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;language-models-as-measurement-apparatus-for-culturehttpsarxivorgabs260702459v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2607.02459v1&#34;&gt;Language Models as Measurement Apparatus for Culture&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Kent K. Chang
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Language models are increasingly used to quantify cultural phenomena, but what makes such measurement distinctively cultural? This paper argues that NLP work on culture is a material-discursive practice: the apparatus &amp;ndash; model, data, annotation, evaluation &amp;ndash; participates in constituting the cultural reality it measures, rather than passively recording it. Drawing on Karen Barad&amp;rsquo;s concept of the agential cut &amp;ndash; the contingent boundary between phenomenon and instrument &amp;ndash; I show that the apparatus&amp;rsquo;s substantive design choices draw such boundaries, and that the boundary is entangled from the start because language models have already internalized much of the cultural material they measure. I illustrate this through three case studies on television and film dialogue (measuring structure, interaction, and deviation) and three examinations of the apparatus itself (erasure of cultural markers, attunement to historical material, and agency in an agentic workflow). This big picture analysis proposes a research program that is theory-driven, empirically rigorous, and culturally contingent, treating each agential cut as a conscious commitment, at once methodological and ethical.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.07.05. Global News Roundup]</title>
       <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260705/</link>
