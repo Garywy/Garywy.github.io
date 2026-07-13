@@ -6,8 +6,27 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 12 Jul 2026 06:16:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 06:32:52 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.07.13. 全球新闻汇总]</title>
+      <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20260713/</link>
+      <pubDate>Mon, 13 Jul 2026 06:32:52 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/news/daily-news-summary-20260713/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-07-12</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-07-12-weekly/</link>
+      <pubDate>Sun, 12 Jul 2026 16:02:22 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-07-12-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;validity-of-llms-as-data-annotators-amalia-on-authorityhttpsarxivorgabs260708731v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2607.08731v1&#34;&gt;Validity of LLMs as data annotators: AMALIA on authority&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Manuel Pita
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;A national language model offers a linguistic community its own instrument for measuring what its citizens say and value. Portugal&amp;rsquo;s AMALIA, a publicly funded 9B-parameter model for European Portuguese, appears competitive on agreement alone: asked to code the moral foundation of authority, it agrees with trained human coders to within six F1 points of open models eight to thirteen times its size. Yet agreement is reliability, not validity. For theoretical constructs that must be inferred rather than read from surface features, the question is whether the model follows the construct&amp;rsquo;s theory or reaches the right code by correlated shortcuts. We test this with the recovery gap: the loss in performance when a holistic prompt is decomposed into the codebook&amp;rsquo;s atomic clauses and recombined by the theory&amp;rsquo;s explicit rule. If calibration closes that gap, some portability should survive across models and languages; where it does not, the construct-model instrument is the likely locus of failure. We ask whether a calibrated English instrument transfers to AMALIA-9B and to European Portuguese. For one construct and one corpus, it does not. Decomposition recovers only about half of AMALIA&amp;rsquo;s holistic performance, and error analysis suggests reliance on surface correlates, especially moral outrage near authority figures. An open multilingual LLM closes the gap on the same Portuguese corpus under the same instructions, pointing away from the corpus as the main explanation. AMALIA can still screen and pre-code at scale, but it cannot yet measure this construct well enough to stand alone. The study is a single counterexample, not a verdict on national models; it argues that sovereign-LLM benchmark batteries should test not only agreement with human coders, but the evidential route by which that agreement is warranted.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.07.12. 全球新闻汇总]</title>
       <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20260712/</link>
