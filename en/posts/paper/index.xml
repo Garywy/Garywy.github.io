@@ -6,8 +6,20 @@
     <description>Recent content in Paper on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jul 2026 16:33:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2026 16:03:20 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-08-02</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-08-02-weekly/</link>
+      <pubDate>Sun, 02 Aug 2026 16:03:20 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-08-02-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;paichecker-uncovering-and-checking-pr-issue-misalignment-in-swe-bench-like-benchmarkshttpsarxivorgabs260728587v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2607.28587v1&#34;&gt;PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Manyi Wang, Junjielong Xu, Pinjia He
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;SWE-bench-like benchmarks are widely used for evaluating LLM&amp;rsquo;s issue resolution capability. They typically follow a common construction pipeline: each PR (Pull Request) is paired with its linked issue by extracting issue references from the PR description; the issue description is used as the problem statement, and the PR patch serves as the test oracle. However, due to the inherent complexity of developing and maintaining large repositories, such PR-Issue pairings are often misaligned in practice. In this work, we systematically study SWE-bench Verified instances, finding that 13.6% exhibit misalignment across five patterns in eleven fine-grained scenarios. To enable reliable and scalable construction of those benchmarks in the future, we propose PAIChecker, a multi-agent system for checking PR-Issue misalignment in SWE-bench-like benchmarks. Specifically, PAIChecker adopts a three-phase design that combines specific pattern identification, cross-agent label synthesis, and code-level validation, thereby enabling more accurate, generalizable, and progressively verified detection. Experiments on SWE-Gym and SWE-bench Multilingual show that PAIchecker achieves the best performance across all four LLM backbones, reaching up to 92.12% and 91.67% binary accuracy, respectively.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-07-26</title>
       <link>https://garyforreal.me/en/posts/paper/paper-2026-07-26-weekly/</link>
