@@ -6,8 +6,20 @@
     <description>Recent content in 论文 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 02 Aug 2026 16:03:20 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 15:35:19 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-08-09</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-08-09-weekly/</link>
+      <pubDate>Sun, 09 Aug 2026 15:35:19 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-08-09-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;rp-opsd-reasoning-pivot-guided-on-policy-self-distillation-for-multilingual-reasoning-transferhttpsarxivorgabs260806347v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2608.06347v1&#34;&gt;RP-OPSD: Reasoning-Pivot-Guided On-Policy Self-Distillation for Multilingual Reasoning Transfer&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Xinye Wang, Junxiao Liu, Shujian Huang
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Multilingual reasoning transfer is crucial for extending reasoning capabilities of large language models (LLMs) beyond high-resource languages. On-policy self-distillation (OPSD) and its variants have emerged as a promising paradigm, providing dense token-level supervision on student-generated rollouts, yet their objectives do not explicitly prioritize reasoning signals most critical to cross-lingual transfer. We characterize that target-language reasoning comprises the generation of both surface text and reasoning pivots, which are decisions that advance or redirect the reasoning process and shape subsequent inference. This motivates concentrating privileged distillation around such pivots. We therefore propose RP-OPSD, Reasoning-Pivot-guided On-Policy Self-Distillation, using the distributional shift between matched teacher views with and without an English reference solution as an operational proxy to guide privileged distillation and reference anchoring. Experiments on mathematical reasoning benchmarks covering 17 languages and multiple difficulty levels show that our method outperforms strong multilingual reasoning baselines and OPSD variants. Further analysis reveals that RP-OPSD concentrates privileged distillation on reasoning-control and problem-condistioned state-update tokens, while downweighting it for tokens that mainly support surface realization. Our code is available at &lt;a href=&#34;https://github.com/NJUNLP/RP-OPSD&#34;&gt;https://github.com/NJUNLP/RP-OPSD&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-08-02</title>
       <link>https://garyforreal.me/zh/posts/paper/paper-2026-08-02-weekly/</link>
