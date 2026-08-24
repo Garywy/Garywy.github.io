@@ -6,8 +6,20 @@
     <description>Recent content in 论文 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 16 Aug 2026 15:24:48 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2026 15:25:57 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-08-23</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-08-23-weekly/</link>
+      <pubDate>Sun, 23 Aug 2026 15:25:57 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-08-23-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;auditing-cross-lingual-fairness-in-language-model-watermarkinghttpsarxivorgabs260820047v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2608.20047v1&#34;&gt;Auditing Cross-Lingual Fairness in Language Model Watermarking&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Alexander Nemecek, Osama Zafar, Debargha Ganguly, Vikash Singh, Vipin Chaudhary, Erman Ayday
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Watermarking schemes for large language model output are evaluated almost exclusively on English text using each scheme&amp;rsquo;s detection threshold and a narrow set of quality measurements. Multilingual deployment exposes evaluation-design choices that are inconsequential on English but determine conclusions cross-lingually. We propose an evaluation framework with four components: detection thresholds calibrated empirically per deployment context, a threshold-independent companion measurement that distinguishes calibration failures from detection failures, three disjoint quality measurement paradigms (distributional, paired-semantic, and reference-perplexity), and a generalized-entropy decomposition of cross-language disparity over a typological family partition. Applied to six watermarking schemes, three open-weight generators, eleven languages spanning four scripts and eight typological families, and both base and instruction-tuned regimes, the framework reveals failure modes that single-language single-paradigm evaluation cannot surface. Across detection and quality, observed disparity is predominantly between-family on the typological partition, indicating that cross-lingual fairness gaps in watermarking are structural to language properties rather than idiosyncratic to particular languages.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-08-16</title>
       <link>https://garyforreal.me/zh/posts/paper/paper-2026-08-16-weekly/</link>
