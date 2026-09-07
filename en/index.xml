@@ -6,8 +6,27 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 06 Sep 2026 07:54:48 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 08:15:05 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.09.07. Global News Roundup]</title>
+      <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260907/</link>
+      <pubDate>Mon, 07 Sep 2026 08:15:05 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/news/daily-news-summary-20260907/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-09-06</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-09-06-weekly/</link>
+      <pubDate>Sun, 06 Sep 2026 17:33:11 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-09-06-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;espo-error-structured-prompt-optimization-via-diagnose-diversify-and-stabilizehttpsarxivorgabs260904197v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2609.04197v1&#34;&gt;ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Lihao Liu, Peng Tang, Kunwar Yashraj Singh, Shabnam Ghadar
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Evolutionary prompt optimizers such as GEPA suffer from prompt bloat: each iteration appends rules and caveats, producing prompts up to 3$\times$ longer yet no more accurate. We trace this to three deficiencies - incomplete error observation, limited search diversity, and unreliable selection - and propose ESPO (Error-Structured Prompt Optimization), which decomposes prompt optimization into three phases: Diagnose clusters all training errors into structural patterns in one round; Propose generates candidates via four complementary strategies with independent biases; Select applies bootstrap stability selection. On seven public NLP benchmarks - Tweet, MMLU, GSM8K, HotpotQA, ScoNe, HoVer, and PUPA - ESPO improves average accuracy by $+$3.76 pp over the state-of-the-art (74.67% vs 70.91% for GEPA), matching or exceeding GEPA on every dataset while producing prompts 47% shorter (1,004 vs 1,878 chars) and faster at inference. Cross-model experiments across four additional student models (Gemma 3 12B, Mistral 14B, Qwen3 32B, Claude Haiku 4.5) show ESPO yields the best average accuracy on every model tested, with the largest gap on Qwen3 GSM8K (15.00% $\to$ 91.40%). A generalization bound (Appendix) grounds each phase in a corresponding term of the test-time gap, and the ablation confirms a key prediction: adding diversity without bootstrap selection actually hurts performance ($-$1.20%).&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.09.06. Global News Roundup]</title>
       <link>https://garyforreal.me/en/posts/news/daily-news-summary-20260906/</link>
