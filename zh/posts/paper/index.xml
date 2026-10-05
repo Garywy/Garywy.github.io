@@ -6,8 +6,24 @@
     <description>Recent content in 论文 on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 27 Sep 2026 18:56:47 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 18:47:44 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-10-04</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-10-04-weekly/</link>
+      <pubDate>Sun, 04 Oct 2026 18:47:44 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-10-04-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;No papers found for this category this week.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-linguistics&#34;&gt;🔍 linguistics&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;No papers found for this category this week.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-psycholinguistics&#34;&gt;🔍 psycholinguistics&lt;/h2&gt;
+&lt;h3 id=&#34;cost-augmented-schrödinger-bridges-on-graphs-are-exactly-solvable-a-feynman-kac-tilt-replaces-learned-controlhttpsarxivorgabs261002195v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2610.02195v1&#34;&gt;Cost-augmented Schrödinger bridges on graphs are exactly solvable: a Feynman-Kac tilt replaces learned control&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Akshay Balsubramani
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;The generalized Schrödinger bridge on a graph moves mass between two distributions while charging a cost for the states visited. It has been approached by learning the rates of a controlled continuous-time Markov chain, with a temporal-difference penalty that restores the cost. A state cost folds into the reference process as a Feynman-Kac tilt. The cost-augmented bridge is then a plain bridge against the tilted reference, and the penalty is unnecessary. The bridge is computed exactly by alternating two endpoint rescalings, each one sparse matrix-exponential application; nothing is discretized in time or learned. The alternation converges at a rate set by the endpoint coupling alone. For a quadratic congestion cost on time-averaged occupancies, damped best response around the exact bridge is gradient descent on a strongly convex function, and its residual bounds its error. On a protein-folding model, a free-energy cost lowers the expected barrier of the folding paths. On the learned approach&amp;rsquo;s road network, roll-outs of the exact bridge match the target within sampling error, and on networks with millions of intersections its memory grows linearly.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-09-27</title>
       <link>https://garyforreal.me/zh/posts/paper/paper-2026-09-27-weekly/</link>
