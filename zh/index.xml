@@ -6,8 +6,27 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 11 Oct 2026 09:58:32 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 10:39:12 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/zh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.10.12. 全球新闻汇总]</title>
+      <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20261012/</link>
+      <pubDate>Mon, 12 Oct 2026 10:39:12 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/news/daily-news-summary-20261012/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-10-11</title>
+      <link>https://garyforreal.me/zh/posts/paper/paper-2026-10-11-weekly/</link>
+      <pubDate>Sun, 11 Oct 2026 19:24:49 +0000</pubDate>
+      <guid>https://garyforreal.me/zh/posts/paper/paper-2026-10-11-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;latent-core-tokenizer-compress-but-meaningfullyhttpsarxivorgabs261012376v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2610.12376v1&#34;&gt;Latent Core Tokenizer: Compress, but Meaningfully&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Felermino D. M. A. Ali, Millicent Ochieng, Ogbemi Ekwejunor-Etchie, Ade Famoti, Jacki O&amp;rsquo;Neill, Debjit Paul
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Tokenizers are commonly optimized for compression, but a compact vocabulary does not necessarily distribute its capacity evenly across languages. We introduce the Latent Core Tokenizer (LCT), a language-agnostic approach that separates structural discovery from vocabulary construction. LCT uses Minimum Description Length, entropy-based boundary signals, and morphotactic constraints to identify reusable linguistic units before constructing a shared vocabulary. Across 104 languages with a 200K-token vocabulary, LCT achieves lower fertility and higher MorphScore than BPE, Unigram, and parity-aware BPE, while maintaining comparable cross-lingual disparity in tokenization cost. Across four multilingual downstream benchmarks, LCT improves aggregate score by 1.48, 1.83, and 2.00 points over BPE, Unigram, and parity-aware BPE, respectively. Our findings show that compression alone does not predict representation quality and highlight the importance of morphology-driven structural discovery and how frequency is used to allocate the final vocabulary across languages.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.10.11. 全球新闻汇总]</title>
       <link>https://garyforreal.me/zh/posts/news/daily-news-summary-20261011/</link>
