@@ -6,8 +6,20 @@
     <description>Recent content in Paper on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 18 Oct 2026 17:53:39 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 18:14:57 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/posts/paper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Weekly Paper Notes - 2026-10-25</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-10-25-weekly/</link>
+      <pubDate>Sun, 25 Oct 2026 18:14:57 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-10-25-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;can-an-agent-debug-a-web-corpus-agentic-auditing-of-slovak-fineweb2httpsarxivorgabs261031636v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2610.31636v1&#34;&gt;Can an Agent Debug a Web Corpus? Agentic Auditing of Slovak FineWeb2&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Marek Šuppa, Ivan Vykopal, Jaroslav Kopčan
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Multilingual pipelines such as FineWeb2 apply one recipe across a thousand languages, leaving the failure modes of individual languages unanticipated. We use an LLM once, as a corpus debugger rather than a classifier: a tool-using agent explores the corpus through a read-only, budgeted API and compiles each finding into an executable test, which a native speaker then validates. On the 26.5M-document Slovak portion of FineWeb2, three runs costing $2.21-$2.84 each found seven findings over four phenomena. The largest is a machine-generated content farm of 1,408,437 documents (5.32%) that passed the pipeline&amp;rsquo;s filters, 86.6% of it passing even stricter thresholds. Blinded labels support 6 of the 7 findings (defect rates .53-1.00 against .08 in a random control) and do not support one. The compiled suite scans the full corpus in 0.7 s of wall-clock time without a GPU, against $12k-$90k per LLM classification pass. The best static sampling baseline validates more selectors than any agent run, at under half the cost. The agent contributes exact prevalence, a precision estimate checked against sampled documents, an account of why the pipeline missed each slice, and a reusable test. We release the framework, Slovak test suite, validation data and agent trajectories.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Weekly Paper Notes - 2026-10-18</title>
       <link>https://garyforreal.me/en/posts/paper/paper-2026-10-18-weekly/</link>
