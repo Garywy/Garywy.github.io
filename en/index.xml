@@ -6,8 +6,27 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Nov 2026 10:24:36 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 10:54:49 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.11.02. Global News Roundup]</title>
+      <link>https://garyforreal.me/en/posts/news/daily-news-summary-20261102/</link>
+      <pubDate>Mon, 02 Nov 2026 10:54:49 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/news/daily-news-summary-20261102/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-11-01</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-11-01-weekly/</link>
+      <pubDate>Sun, 01 Nov 2026 19:25:57 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-11-01-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;machine-learning-based-detection-of-mobile-money-scan-messages-in-ghana-a-comparative-evaluation-of-naive-bayes-support-vector-machine-and-randon-forest-classifiershttpsarxivorgabs261040544v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2610.40544v1&#34;&gt;Machine Learning-Based Detection of Mobile Money Scan Messages in Ghana: A Comparative Evaluation of Naive Bayes, Support Vector Machine, and Randon Forest Classifiers&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Ibrahim Salifu, Muhaisin Tiyumba Nantogmah
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Mobile money (MoMo) is Ghana&amp;rsquo;s preferred retail payment channel, recording GHC518.4 billion in transactions in December 2025 and over 26.7 million active accounts (Graphic Online, 2026). This growth has coincided with increased social-engineering fraud over Short Message Service (SMS) and Unstructured Supplementary Service Data (USSD), where fraudsters impersonate network operators, agents, relatives, or regulators to obtain personal identification numbers (PINs), identity data, or funds. We present a supervised machine-learning pipeline for classifying scam and legitimate Ghanaian MoMo SMS messages using a labelled corpus of 220 messages across 18 scam and legitimate subcategories. Domain-specific normalisation of currency amounts, phone numbers, and USSD codes preceded TF-IDF vectorisation of unigrams and bigrams. Using stratified five-fold cross-validation and a 20% held-out test set, we trained and evaluated Multinomial Naive Bayes, linear support vector machine (SVM), and Random Forest classifiers using accuracy, precision, recall, F1-score, Matthews correlation coefficient (MCC), and area under the receiver operating characteristic curve (AUC-ROC). Held-out accuracy, F1, and AUC were 1.00 for Naive Bayes and linear SVM; cross-validated accuracy averaged 96.6% (+/-3.3), 94.9% (+/-4.6), and 92.0% (+/-4.2). Discriminative n-grams reflected imperative urgency (&amp;ldquo;send,&amp;rdquo; &amp;ldquo;claim,&amp;rdquo; &amp;ldquo;please send&amp;rdquo;) and PIN solicitation (&amp;ldquo;PIN,&amp;rdquo; &amp;ldquo;pincode&amp;rdquo;); legitimate messages featured confirmatory and cautionary language (&amp;ldquo;balance,&amp;rdquo; &amp;ldquo;successful,&amp;rdquo; &amp;ldquo;do not share&amp;rdquo;). Findings are contextualised in Sub-Saharan African SMS fraud detection, small template-based corpus ceiling effects, and a pathway toward larger naturalistic multilingual corpora. Interpretable classical classifiers achieve high accuracy on structured MoMo scam text and suit carrier- or handset-level filtering in low-resource, on-device settings.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.11.01. Global News Roundup]</title>
       <link>https://garyforreal.me/en/posts/news/daily-news-summary-20261101/</link>
