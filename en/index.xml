@@ -6,8 +6,27 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 08 Nov 2026 10:09:16 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 11:18:23 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.11.09. Global News Roundup]</title>
+      <link>https://garyforreal.me/en/posts/news/daily-news-summary-20261109/</link>
+      <pubDate>Mon, 09 Nov 2026 11:18:23 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/news/daily-news-summary-20261109/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-11-08</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-11-08-weekly/</link>
+      <pubDate>Sun, 08 Nov 2026 19:25:03 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-11-08-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;label-wording-augmentation-in-a-typed-decision-encoder-gains-on-unfamiliar-words-not-on-abbreviations-or-codeshttpsarxivorgabs261108439v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2611.08439v1&#34;&gt;Label-Wording Augmentation in a Typed-Decision Encoder: Gains on Unfamiliar Words, Not on Abbreviations or Codes&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Vladimir Beskorovainyi
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Typed-decision models score options that the caller supplies at request time, so their accuracy depends on label wording that the model&amp;rsquo;s developer does not control. We compare two releases of a 307M-parameter multilingual cross-encoder, Ru-Jev, trained on thirteen Russian-language tasks; the later release adds an augmentation that presents labels in several surface forms. Holding questions fixed and varying only how eighteen routing labels are worded, we evaluate ten label vocabularies, produced by three separate processes and checked for overlap with the training data, with five candidates per question and, for eight of them, also with eighteen. On held-out vocabularies made of ordinary or borrowed words (English-derived jargon, office slang, department names), the augmented release is more accurate in every setting, by up to 0.24. Eleven of these fourteen gains survive a Holm correction (slang with eighteen candidates and descriptive sentences with five do not), and for jargon on all labels the label-level interval excludes zero in both settings. On abbreviations and opaque codes it gives no usable gain: on abbreviations it is not better, and worse on the clean slice, and on opaque codes both releases stay at or below chance once labels related to training options are removed. In most cells where accuracy rises, the risk-coverage area falls, but with eighteen candidates confident errors rise on jargon and slang. On two datasets neither release saw, accuracy moves by -8.4 and +5.6 points. We also report four evaluation hazards from comparing the two releases.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.11.08. Global News Roundup]</title>
       <link>https://garyforreal.me/en/posts/news/daily-news-summary-20261108/</link>
