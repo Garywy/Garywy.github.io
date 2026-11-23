@@ -6,8 +6,27 @@
     <description>Recent content on Gary&#39;s House</description>
     <generator>Hugo -- 0.141.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 22 Nov 2026 11:05:13 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 12:10:43 +0000</lastBuildDate>
     <atom:link href="https://garyforreal.me/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[2026.11.23. Global News Roundup]</title>
+      <link>https://garyforreal.me/en/posts/news/daily-news-summary-20261123/</link>
+      <pubDate>Mon, 23 Nov 2026 12:10:43 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/news/daily-news-summary-20261123/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Weekly Paper Notes - 2026-11-22</title>
+      <link>https://garyforreal.me/en/posts/paper/paper-2026-11-22-weekly/</link>
+      <pubDate>Sun, 22 Nov 2026 20:58:09 +0000</pubDate>
+      <guid>https://garyforreal.me/en/posts/paper/paper-2026-11-22-weekly/</guid>
+      <description>&lt;h1 id=&#34;weekly-paper-notes&#34;&gt;Weekly Paper Notes&lt;/h1&gt;
+&lt;h2 id=&#34;-multilingual&#34;&gt;🔍 multilingual&lt;/h2&gt;
+&lt;h3 id=&#34;hybrid-retrieval-for-government-scheme-search-in-english-and-marathihttpsarxivorgabs261126514v1&#34;&gt;&lt;a href=&#34;https://arxiv.org/abs/2611.26514v1&#34;&gt;Hybrid Retrieval for Government Scheme Search in English and Marathi&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Authors:&lt;/strong&gt; Aishwarya Gunjal, Kanchan Khemnar, Pawan Poojary, Pranav Kulkarni, Raviraj Joshi, Manish Khodaskar
+&lt;strong&gt;Venue:&lt;/strong&gt; arXiv (2026)&lt;/p&gt;
+&lt;p&gt;Retrieving government schemes requires matching citizens&amp;rsquo; information needs to formal administrative descriptions, often across languages and terminology. We present a bilingual search system for Maharashtra government schemes and public services that combines BM25 retrieval with sentence-embedding similarity through equal-weight score fusion. The system indexes aligned English-Marathi scheme descriptions and supports multilingual, Marathi-focused, and translation-mediated semantic configurations. Evaluation on manually curated bilingual queries compares BM25, dense retrieval, and hybrid retrieval using IndicSBERT and MahaSBERT. BM25 provides a strong baseline with a mean reciprocal rank (MRR) of 0.864. Hybrid retrieval increases MRR to 0.872 with IndicSBERT and 0.879 with MahaSBERT, whereas the corresponding dense-only systems achieve 0.663 and 0.655. MahaSBERT-based fusion also increases precision from 0.781 to 0.808 while matching BM25 recall at 0.946. These results support the complementary use of lexical and semantic signals in this collection, while showing that improvements over a strong lexical baseline are modest and metric-dependent. The study provides an application-focused analysis of hybrid retrieval for bilingual public-service information access.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>[2026.11.22. Global News Roundup]</title>
       <link>https://garyforreal.me/en/posts/news/daily-news-summary-20261122/</link>
